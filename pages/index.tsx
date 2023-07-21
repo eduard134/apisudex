@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Borcan from "./components/parallax_borcan";
 
 export default function Home() {
   return (
@@ -15,9 +16,12 @@ export default function Home() {
         <div>Favoarea mierei - artă a naturii</div>
         <div>Mierea este un sărut al soarelui pentru pământ.</div>
         <div>
-          <button>Produse <span></span></button>
+          <button>
+            Produse <span></span>
+          </button>
         </div>
       </div>
+      <Borcan />
     </>
   );
 }
