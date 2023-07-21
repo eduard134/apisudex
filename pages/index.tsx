@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Borcan from "./components/parallax_borcan";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <button className="sm:border-2 bg-[#1c1e2b] text-white font-medium text-sm p-3 border-solid border-[#e6e5e2]-400 rounded-[50px]">Produse <span className="bg-[#d9b306] rounded-[50px] "> > </span></button>
         </div>
       </div>
+      <Borcan />
     </>
   );
 }
