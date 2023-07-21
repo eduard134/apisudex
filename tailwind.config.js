@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       fontFamily: {
         'comic-sans': ['Comic Sans MS', 'cursive'],
-        'domine': ['Domine', 'serif'],
         'varela': ['Varela Round', 'sans-serif']
       },
     },
