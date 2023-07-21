@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import back from "../images/borcan.jpg";
+import borcan from "../images/bee1.png";
 
 const Borcan = () => {
   const [marginTop, setMarginTop] = useState(0);
@@ -22,7 +24,12 @@ const Borcan = () => {
   };
   return (
     <>
-      <div className="bg-['/public/image/borcan.jpg'] h-10 w-10">das</div>
+      <div
+        className="h-1/5 w-1/5 bg-cover bg-center flex items-center justify-center rounded-[200px] overflow-hidden ml-10"
+        style={{ backgroundImage: `url('../borcan.jpg')` }}
+      >
+        <Image src={borcan} width={0} height={0} alt="" className="p-10 " />
+      </div>
     </>
   );
 };
