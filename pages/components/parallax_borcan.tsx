@@ -25,7 +25,7 @@ const Borcan = () => {
   return (
     <>
       <div
-        className="h-1/5 w-1/5 bg-cover bg-center flex items-center justify-center rounded-[200px] overflow-hidden ml-10"
+        className="h-1/5 w-1/5 bg-cover bg-center flex items-center justify-center rounded-[200px] overflow-hidden mt-[7.5%]"
         style={{ backgroundImage: `url('../borcan.jpg')` }}
       >
         <Image src={borcan} width={0} height={0} alt="" className="p-10 " />
