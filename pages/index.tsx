@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import Borcan from "./components/parallax_borcan";
 import drop from "./images/drop.png";
 import bee3 from "./images/bee3.png";
@@ -16,13 +15,6 @@ export default function Home() {
   };
   return (
     <>
-      <div>
-        <Head>
-          <title>ApiSudex</title>
-          <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-          <meta name="description" content="" />
-        </Head>
-      </div>
       <div className="flex justify-center ">
         <div className="items-center mr-[22.5%] mt-20">
           <div className="text-7xl text-[#1c1e2b] font-bold ">
@@ -42,15 +34,39 @@ export default function Home() {
         </div>
         <Borcan />
       </div>
-      <Image src={bee3} alt="" className="float-right -mr-10 "></Image>
-      <Image src={bee4} alt="" className="float-right"></Image>
-      <Image
-        src={bee5}
-        alt="Albina"
-        className="absolute top-0 left-0"
-        height={0}
-        width={0}
-      ></Image>
+      <div className="flex justify-evenly ">
+        <div className="items-center mr-[39.5%] mt-20 ">
+          <Image
+            src={bee3}
+            alt=""
+            className=" w-[70%] bg-white mb-1 p-5 rounded-[20px]"
+          ></Image>
+          <div className="w-[70%] mb-10 bg-white rounded-[15px] flex">
+            <button>
+              <Link href="/shop">
+                <span className=" pl-4 pr-5  text-black font-semibold text-lg">
+                  Reduceri
+                </span>
+              </Link>
+            </button>
+            <div className="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div className="justify-end flex">
+          <Image
+            src={bee5}
+            alt="Albina"
+            className="absolute w-20 mt-10 -rotate-[20deg]"
+          ></Image>
+        </div>
+      </div>
+      <div>
+        <Image src={bee4} alt="" className=""></Image>
+      </div>
     </>
   );
 }
