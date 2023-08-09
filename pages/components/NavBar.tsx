@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="left-0 top-0 w-full z-10 ease-in duration-300 ">
-      <div className=" max-w-[1240px] m-auto sm:mt-4 sm:w-8/12 flex justify-between items-center sm:p-0 p-5 text-black  font-medium text-xl  sm:border-2 border-solid border-[#e6e5e2]-400 rounded-[50px]">
+    <div className="left-0 top-0 w-full z-10 mt-5">
+      <div className="max-w-[1240px] m-auto sm:mt-4 sm:w-8/12 flex justify-between items-center sm:p-0 p-5 text-black  font-medium text-xl  sm:border-2 rounded-[50px] bg-white/70 drop-shadow-lg ">
         <Link href="/" className="flex items-center">
           <Image src="/logo.png" alt="A&D" width={100} height={100} />
           <p> ApiSudex</p>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/about">Despre Noi</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 mr-3">
             <Link href="/contacte">Contacte</Link>
           </li>
         </ul>
