@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center ">
-        <div className="items-center mr-[22.5%] mt-20">
+        <div className="items-center mr-[22%] mt-20">
           <div className="text-7xl text-[#1c1e2b] font-bold ">
             Miere <br /> Proaspătă
           </div>
@@ -25,7 +25,7 @@ export default function Home() {
             și propolis
           </div>
           <button
-            className="text-white font-medium text-sm flex leading-6 items-cemter w-fit flex sm:border-2 bg-[#1c1e2b] px-4 py-2 border-solid border-[#e6e5e2]-400 rounded-[50px] relative"
+            className="text-white font-medium text-sm flex leading-6 items-cemter w-fit sm:border-2 bg-[#1c1e2b] px-4 py-2 border-solid border-[#e6e5e2]-400 rounded-[50px] relative"
             onClick={handleClick}
           >
             Produse
@@ -34,38 +34,26 @@ export default function Home() {
         </div>
         <Borcan />
       </div>
-      <div className="flex justify-evenly ">
-        <div className="items-center mr-[39.5%] mt-20 ">
-          <Image
-            src={bee3}
-            alt=""
-            className=" w-[70%] bg-white mb-1 p-5 rounded-[20px]"
-          ></Image>
-          <div className="w-[70%] mb-10 bg-white rounded-[15px] flex">
-            <button>
-              <Link href="/shop">
-                <span className=" pl-4 pr-5  text-black font-semibold text-lg">
-                  Reduceri
-                </span>
-              </Link>
-            </button>
-            <div className="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+      <div className=" w-1/2 -ml-10 grid place-items-center mt-[20vh] ">
+        <Image
+          src={bee3}
+          alt=""
+          className=" w-[30%] bg-white mb-1 p-5 rounded-[20px]"
+        ></Image>
+        <div className="w-[30%] mb-10 bg-white rounded-[15px] flex">
+          <button>
+            <Link href="/shop">
+              <span className=" pl-4 pr-5  text-black font-semibold text-lg">
+                Reduceri
+              </span>
+            </Link>
+          </button>
+          <div className="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <div className="justify-end flex">
-          <Image
-            src={bee5}
-            alt="Albina"
-            className="absolute w-20 mt-10 -rotate-[20deg]"
-          ></Image>
-        </div>
-      </div>
-      <div>
-        <Image src={bee4} alt="" className=""></Image>
       </div>
     </>
   );
