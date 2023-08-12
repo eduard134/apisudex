@@ -1,0 +1,109 @@
+[
+    {
+      "id": 1,
+      "categoryId":1 ,
+      "image": "/images/12-rame-corp.png",
+      "image1": "/images/12-rame-corp1.png",
+      "name": "Corp 12 Rame",
+      "pret1": "NoN"
+    },
+    {
+      "id": 2,
+      "categoryId":1 ,
+      "image": "/images/Caldare_32l.png",
+      "name": "Caldare 32L",
+      "pret1": "NoN"
+    },
+    {
+      "id": 3,
+      "categoryId":1 ,
+      "image": "/images/Capac_10_rame.png",
+      "name": "Capac 10 Rame",
+      "pret1": "NoN"
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "image": "/images/Capac_12_rame__fiert_1.png",
+      "image1": "/images/Capac_12_rame__fiert.png",
+      "name": "Capac 12 Rame Fiert",
+      "pret1": "NoN"
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "image": "/images/Capac_12_rame_Nefiert_1.png",
+      "image1": "/images/Capac_12_rame_Nefiert.png",
+      "name": "Capac 12 Rame Nefiert",
+      "pret1": "NoN"
+    },
+    {
+      "id": 6,
+      "categoryId": 1,
+      "image": "/images/Corp_10_rame__fiert_1.png",
+      "image1": "/images/Corp_10_rame__fiert.png",
+      "name": "Corp 10 Rame Fiert",
+      "pret1": "NoN"
+    },
+    {
+      "id": 7,
+      "categoryId": 1,
+      "image": "/images/Corp_10_rame__nefiert_1.png",
+      "image1": "/images/Corp_10_rame__nefiert.png",
+      "name": "Corp 10 Rame Nefiert",
+      "pret1": "NoN"
+    },
+    {
+      "id": 8,
+      "categoryId": 1,
+      "image": "/images/Fund_10_rame.png",
+      "image1": "/images/Fund_10_rame1.png",
+      "name": "Fund 10 Rame",
+      "pret1": "NoN"
+    },
+    {
+      "id": 9,
+      "categoryId": 1,
+      "image": "/images/Fund_12_rame__fiert_1.png",
+      "image1": "/images/Fund_12_rame__fiert.png",
+      "name": "Fund 12 Rame Fiert",
+      "pret1": "NoN"
+    },
+    {
+      "id": 10,
+      "categoryId": 2,
+      "image": "/images/Fund_12_rame_nefiert_.png",
+      "name": "Fund 12 Rame Nefiert",
+      "pret1": "NoN"
+    },
+    {
+      "id": 11,
+      "categoryId": 2,
+      "image": "/images/Inel_10rame.png",
+      "image1": "/images/Inel_10rame1.png",
+      "name": "Inel 10 Rame",
+      "pret1": "NoN"
+    },
+    {
+      "id": 12,
+      "categoryId": 2,
+      "image": "/images/Rama_300_cu_ceara.png",
+      "image1": "/images/Rama_300_cu_ceara1.png",
+      "name": "Rama 300 cu ceara",
+      "pret1": "NoN"
+    },
+    {
+      "id": 13,
+      "categoryId": 2,
+      "image": "/images/Sirop_Invertit-Dulcofruct.png",
+      "name": "Sirop Invertit-Dulcofruct",
+      "pret1": "NoN"
+    },
+    {
+        "id": 14,
+        "categoryId": 2,
+        "image": "/images/Sirop_Invertit-Dulcofruct.png",
+        "name": "Fagure",
+        "pret1": "NoN"
+      }
+]

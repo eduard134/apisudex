@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import back from "../images/borcan.jpg";
-import borcan from "../images/bee1.png";
+import back from "/public/images/borcan.jpg";
+import borcan from "/public/images/bee1.png";
 
 const Borcan = () => {
   const [marginTop, setMarginTop] = useState(0);

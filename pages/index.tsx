@@ -2,10 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Borcan from "./components/parallax_borcan";
-import drop from "./images/drop.png";
-import bee3 from "./images/bee3.png";
-import bee4 from "./images/bee4.png";
-import bee5 from "./images/bee5.png";
+import drop from "/public/images/drop.png";
+import bee3 from "/public/images/bee3.png";
+import bee4 from "/public/images/bee4.png";
+import bee5 from "/public/images/bee5.png";
+import productsData from "../public/products.json";
+
+interface Product {
+  id: number;
+  categoryId: number;
+  image: string;
+  name: string;
+  pret1: string;
+}
 
 export default function Home() {
   const router = useRouter();
@@ -34,26 +43,25 @@ export default function Home() {
         </div>
         <Borcan />
       </div>
-      <div className=" w-1/2 -ml-10 grid place-items-center mt-[20vh] ">
-        <Image
-          src={bee3}
-          alt=""
-          className=" w-[30%] bg-white mb-1 p-5 rounded-[20px]"
-        ></Image>
-        <div className="w-[30%] mb-10 bg-white rounded-[15px] flex">
-          <button>
-            <Link href="/shop">
-              <span className=" pl-4 pr-5  text-black font-semibold text-lg">
-                Reduceri
-              </span>
-            </Link>
-          </button>
-          <div className="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div className="flex mt-40 justify-center mb-40 bg-gray-400 p-10 items-center">
+        {productsData.slice(0, 4).map((product: Product) => (
+          <div
+            key={product.id}
+            className="mr-[7.5vw] justify-center items-center border-solid border-[#1c1e2b] border-2 rounded-[30px] p-5 h-[40vh] bg-gray-500"
+          >
+            <Image
+              src={product.image}
+              alt={product.name}
+              width={200}
+              height={0}
+            />
+            <div className="">{product.name}</div>
+            <Link href={`/product/${product.id}`}>Vezi Produs</Link>
           </div>
-        </div>
+        ))}
+        <p className="text-center text-6xl leading-normal">
+          Produsele <br /> Noastre <br /> Populare
+        </p>
       </div>
     </>
   );
