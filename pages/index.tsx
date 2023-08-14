@@ -58,10 +58,7 @@ export default function Home() {
             <div className="">{product.name}</div>
             <Link href={`/product/${product.id}`}>Vezi Produs</Link>
           </div>
-        ))}
-        <p className="text-center text-6xl leading-normal">
-          Produsele <br /> Noastre <br /> Populare
-        </p>
+        </div>
       </div>
     </>
   );

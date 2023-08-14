@@ -11,6 +11,9 @@ module.exports = {
         'comic-sans': ['Comic Sans MS', 'cursive'],
         'varela': ['Varela Round', 'sans-serif']
       },
+      colors:{
+        'yello': '#ffbb00'
+      }
     },
   },
   plugins: [],
