@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import beebanner from "../images/bee-banner.jpg";
-import beebanner1 from "../images/bee-banner1.jpg";
-import beebanner2 from "../images/bee-banner2.jpg";
+import beebanner from "../images/bee banner.jpg";
+import beebanner1 from "../images/bee banner1.jpg";
+import beebanner2 from "../images/bee banner2.jpg";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -18,9 +18,6 @@ export default function Shop() {
       <Swiper
         spaceBetween={30}
         effect="fade"
-        pagination={{
-          clickable: false,
-        }}
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,
@@ -36,6 +33,7 @@ export default function Shop() {
               layout="responsive"
               className="block"
             />
+            
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-center bg-cover">
