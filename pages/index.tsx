@@ -23,51 +23,54 @@ export default function Home() {
   const handleClick = () => {
     router.push("/shop");
   };
+
   return (
     <>
-      <div className="flex justify-center ">
-        <div className="items-center mr-[22%] mt-20">
-          <div className="text-7xl text-[#1c1e2b] font-bold ">
+      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 mt-10 md:mt-20">
+        <div className="md:items-center md:mr-[22%] text-center md:text-left">
+          <div className="text-4xl md:text-7xl text-[#1c1e2b] font-bold mb-4 md:mb-6">
             Miere <br /> Proaspătă
           </div>
-          <div className="text-[#413f4a] py-3 font-medium ">
-            Mierea crudă este un ingredient atât de simplu, <br /> conține polen
-            și propolis
+          <div className="text-[#413f4a] text-sm md:text-base py-3 font-medium mb-6">
+            Mierea crudă este un ingredient atât de simplu,{" "}
+            <br className="hidden md:block" /> conține polen și propolis
           </div>
           <button
-            className="text-white font-medium text-sm flex leading-6 items-center w-fit sm:border-2 bg-[#1c1e2b] px-4 py-2 border-solid border-[#e6e5e2]-400 rounded-[50px] relative"
+            className="text-white font-medium text-xs md:text-sm flex leading-6 items-center w-fit bg-[#1c1e2b] px-3 md:px-4 py-1 md:py-2 rounded-[50px] relative "
             onClick={handleClick}
           >
             Produse
-            <Image src={drop} alt="" className="ml-2 mt-1 w-5 " />
+            <Image src={drop} alt="" className="ml-2 mt-1 w-4 md:w-5 " />
           </button>
         </div>
         <Borcan />
       </div>
-      <div className="flex mt-40 justify-center bg-dark_purple p-10 items-center">
+      <div className="flex flex-col md:flex-row justify-center mt-10 md:mt-40 bg-dark_purple p-4 md:p-10 items-center">
         {productsData.slice(0, 4).map((product: Product) => (
           <div
             key={product.id}
-            className="mr-[5vw] justify-center items-center rounded-[5px] p-5 h-[40vh] bg-slate-100"
+            className="mb-6 md:mb-0 md:mr-6 flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[40vh] md:w-[20%] bg-slate-100"
           >
             <Link href={`/product/${product.id}`}>
-              <div className="h-[80%] justify-center flex items-center">
+              <div className="h-[60%] w-full mb-2 md:mb-4 flex justify-center items-center">
                 <Image
                   src={`${product.image}`}
                   alt={product.name}
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                 />
               </div>
-              <div className="font-bold text-lg text-slate-600">
+              <div className="font-bold text-base md:text-lg text-slate-600 mb-1 md:mb-2">
                 {product.pret1}
               </div>
-              <div className="font-medium text-slate-600">{product.name}</div>
+              <div className="font-medium text-slate-600 text-sm md:text-base">
+                {product.name}
+              </div>
             </Link>
           </div>
         ))}
-        <p className="text-center text-6xl leading-normal text-white">
-          Produsele <br /> Noastre <br /> Populare
+        <p className="text-center text-4xl md:text-6xl leading-normal text-white mt-6 md:mt-0">
+          Produsele <br className="hidden md:block " /> Noastre <br /> Populare
         </p>
       </div>
       <Footer />
