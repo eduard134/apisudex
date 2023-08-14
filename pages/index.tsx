@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Borcan from "./components/parallax_borcan";
-import drop from "/public/images/drop.png";
-import bee3 from "/public/images/bee3.png";
-import bee4 from "/public/images/bee4.png";
-import bee5 from "/public/images/bee5.png";
-import productsData from "../public/products.json";
+import drop from "./images/drop.png";
+import bee3 from "./images/bee3.png";
+import bee4 from "./images/bee4.png";
+import bee5 from "./images/bee5.png";
+import productsData from "./products.json";
 
 interface Product {
   id: number;
@@ -47,7 +47,7 @@ export default function Home() {
         {productsData.slice(0, 4).map((product: Product) => (
           <div
             key={product.id}
-            className="mr-[7.5vw] justify-center items-center border-solid border-[#1c1e2b] border-2 rounded-[30px] p-5 h-[40vh] bg-gray-500"
+            className="mr-[5vw] justify-center items-center border-solid border-[#1c1e2b] border-2 rounded-[30px] p-5 h-[40vh] bg-gray-500"
           >
             <Image
               src={product.image}
