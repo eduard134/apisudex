@@ -34,11 +34,11 @@ export default function Home() {
             și propolis
           </div>
           <button
-            className="text-white font-medium text-sm flex leading-6 items-cemter w-fit sm:border-2 bg-[#1c1e2b] px-4 py-2 border-solid border-[#e6e5e2]-400 rounded-[50px] relative"
+            className="text-white font-medium text-sm flex leading-6 items-center w-fit sm:border-2 bg-[#1c1e2b] px-4 py-2 border-solid border-[#e6e5e2]-400 rounded-[50px] relative"
             onClick={handleClick}
           >
             Produse
-            <Image src={drop} alt="" className="ml-2 mt-1 w-5 "></Image>
+            <Image src={drop} alt="" className="ml-2 mt-1 w-5 " />
           </button>
         </div>
         <Borcan />
@@ -47,19 +47,22 @@ export default function Home() {
         {productsData.slice(0, 4).map((product: Product) => (
           <div
             key={product.id}
-            className="mr-[5vw] justify-center items-center border-solid border-[#1c1e2b] border-2 rounded-[30px] p-5 h-[40vh] bg-gray-500"
+            className="mr-[7.5vw] justify-center items-center border-solid border-[#1c1e2b] border-2 rounded-[30px] p-5 h-[40vh] bg-gray-500"
           >
             <Image
               src={product.image}
               alt={product.name}
               width={200}
-              height={0}
+              height={200}
             />
-            <div className="">{product.name}</div>
+            <div>{product.name}</div>
             <Link href={`/product/${product.id}`}>Vezi Produs</Link>
           </div>
-        </div>
+        ))}
       </div>
+      <p className="text-center text-6xl leading-normal">
+        Produsele <br /> Noastre <br /> Populare
+      </p>
     </>
   );
 }
