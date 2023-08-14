@@ -2,10 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Borcan from "./components/parallax_borcan";
-import drop from "./images/drop.png";
-import bee3 from "./images/bee3.png";
-import bee4 from "./images/bee4.png";
-import bee5 from "./images/bee5.png";
+import drop from "/public/images/drop.png";
+import bee3 from "/public/images/bee3.png";
+import bee4 from "/public/images/bee4.png";
+import bee5 from "/public/images/bee5.png";
+import productsData from "../public/products.json";
+
+interface Product {
+  id: number;
+  categoryId: number;
+  image: string;
+  name: string;
+  pret1: string;
+}
 
 export default function Home() {
   const router = useRouter();
@@ -48,11 +57,11 @@ export default function Home() {
               </span>
             </Link>
           </button>
-            <div className="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div className="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </>
