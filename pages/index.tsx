@@ -7,6 +7,7 @@ import bee3 from "./images/bee3.png";
 import bee4 from "./images/bee4.png";
 import bee5 from "./images/bee5.png";
 import productsData from "./products.json";
+import Footer from "./components/Footer";
 
 interface Product {
   id: number;
@@ -43,26 +44,33 @@ export default function Home() {
         </div>
         <Borcan />
       </div>
-      <div className="flex mt-40 justify-center mb-40 bg-gray-400 p-10 items-center">
+      <div className="flex mt-40 justify-center bg-dark_purple p-10 items-center">
         {productsData.slice(0, 4).map((product: Product) => (
           <div
             key={product.id}
-            className="mr-[7.5vw] justify-center items-center border-solid border-[#1c1e2b] border-2 rounded-[30px] p-5 h-[40vh] bg-gray-500"
+            className="mr-[5vw] justify-center items-center rounded-[5px] p-5 h-[40vh] bg-slate-100"
           >
-            <Image
-              src={product.image}
-              alt={product.name}
-              width={200}
-              height={200}
-            />
-            <div>{product.name}</div>
-            <Link href={`/product/${product.id}`}>Vezi Produs</Link>
+            <Link href={`/product/${product.id}`}>
+              <div className="h-[80%] justify-center flex items-center">
+                <Image
+                  src={`${product.image}`}
+                  alt={product.name}
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <div className="font-bold text-lg text-slate-600">
+                {product.pret1}
+              </div>
+              <div className="font-medium text-slate-600">{product.name}</div>
+            </Link>
           </div>
         ))}
+        <p className="text-center text-6xl leading-normal text-white">
+          Produsele <br /> Noastre <br /> Populare
+        </p>
       </div>
-      <p className="text-center text-6xl leading-normal">
-        Produsele <br /> Noastre <br /> Populare
-      </p>
+      <Footer />
     </>
   );
 }
