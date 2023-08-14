@@ -48,11 +48,11 @@ export default function Home() {
               </span>
             </Link>
           </button>
-          <div className="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+            <div className="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
         </div>
       </div>
     </>
