@@ -54,7 +54,7 @@ export default function Home() {
             <Link href={`/product/${product.id}`}>
               <div className="h-[60%] w-full mb-2 md:mb-4 flex justify-center items-center">
                 <Image
-                  src={`/${product.image}`}
+                  src={`${product.image}`}
                   alt={product.name}
                   width={150}
                   height={150}
