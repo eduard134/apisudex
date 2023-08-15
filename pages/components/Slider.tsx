@@ -18,6 +18,9 @@ export default function Shop() {
       <Swiper
         spaceBetween={30}
         effect="fade"
+        pagination={{
+          clickable: true,
+        }}
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,
@@ -33,7 +36,6 @@ export default function Shop() {
               layout="responsive"
               className="block"
             />
-            
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-center bg-cover">
