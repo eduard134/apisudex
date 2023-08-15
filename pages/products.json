@@ -5,21 +5,26 @@
       "image": "/images/12-rame-corp.png",
       "image1": "/images/12-rame-corp1.png",
       "name": "Corp 12 Rame",
-      "pret1": "NoN"
+      "pret1": "490 Lei"
     },
     {
       "id": 2,
       "categoryId":1 ,
       "image": "/images/Caldare_32l.png",
       "name": "Caldare 32L",
-      "pret1": "NoN"
+      "pret1": "89 Lei"
     },
     {
       "id": 3,
       "categoryId":1 ,
       "image": "/images/Capac_10_rame.png",
       "name": "Capac 10 Rame",
-      "pret1": "NoN"
+      "name1": "Capac 10 Rame din zinc, termos izolat",
+      "name2": "Capac 10 Rame din aluminiu, neizolat",
+      "name3": "Capac 10 Rame din aliniu, izolat",
+      "pret1": "290 Lei",
+      "pret2": "150 Lei",
+      "pret3": "190 Lei"
     },
     {
       "id": 4,

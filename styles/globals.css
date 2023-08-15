@@ -84,3 +84,20 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
   background-image: linear-gradient(304deg, #fd0, #fbb034, #fd0);
 }
+
+.hover-circle {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 50%;
+  left: -5px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.group:hover .hover-circle {
+  opacity: 1;
+}

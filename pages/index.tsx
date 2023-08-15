@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 mt-10 md:mt-20">
         <div className="md:items-center md:mr-[22%] text-center md:text-left">
-          <div className="text-4xl md:text-7xl text-black font-bold mb-4 md:mb-6 font-recoleta bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple">
+          <div className="text-4xl md:text-7xl text-black font-bold mb-4 md:mb-6 font-recoleta bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple ">
             Miere <br /> Proaspătă
           </div>
           <div className="text-[#413f4a] text-lg md:text-base py-3 font-medium mb-6 font-varela ">
@@ -49,12 +49,12 @@ export default function Home() {
         {productsData.slice(0, 4).map((product: Product) => (
           <div
             key={product.id}
-            className="mb-6 md:mb-0 md:mr-6 flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[40vh] md:w-[20%] bg-slate-100"
+            className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[40vh] md:w-[12.5%] bg-slate-100"
           >
             <Link href={`/product/${product.id}`}>
-              <div className="h-[60%] w-full mb-2 md:mb-4 flex justify-center items-center">
+              <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
                 <Image
-                  src={`${product.image}`}
+                  src={product.image}
                   alt={product.name}
                   width={150}
                   height={150}
@@ -69,8 +69,9 @@ export default function Home() {
             </Link>
           </div>
         ))}
-        <p className="text-center text-4xl md:text-6xl font-bold leading-normal mt-6 md:mt-0 bg-cover bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400">
-          Produsele <br className="hidden md:block " /> Noastre <br /> Populare
+        <p className="text-center text-2xl md:text-6xl font-bold leading-loose mt-6 md:mt-0 bg-cover bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 font-recoleta">
+          Produsele <br className="hidden md:block " /> Noastre <br />
+          Populare
         </p>
       </div>
       <Footer />
