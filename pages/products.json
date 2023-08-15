@@ -2,30 +2,30 @@
     {
       "id": 1,
       "categoryId":1 ,
-      "image": "/12-rame-corp.png",
-      "image1": "/12-rame-corp1.png",
+      "image": "/images/12-rame-corp.png",
+      "image1": "/images/12-rame-corp1.png",
       "name": "Corp 12 Rame",
       "pret1": "NoN"
     },
     {
       "id": 2,
       "categoryId":1 ,
-      "image": "/Caldare_32l.png",
+      "image": "/images/Caldare_32l.png",
       "name": "Caldare 32L",
       "pret1": "NoN"
     },
     {
       "id": 3,
       "categoryId":1 ,
-      "image": "/Capac_10_rame.png",
+      "image": "/images/Capac_10_rame.png",
       "name": "Capac 10 Rame",
       "pret1": "NoN"
     },
     {
       "id": 4,
       "categoryId": 1,
-      "image": "/Capac_12_rame__fiert_1.png",
-      "image1": "/Capac_12_rame__fiert.png",
+      "image": "/images/Capac_12_rame__fiert_1.png",
+      "image1": "/images/Capac_12_rame__fiert.png",
       "name": "Capac 12 Rame Fiert",
       "pret1": "NoN"
     },

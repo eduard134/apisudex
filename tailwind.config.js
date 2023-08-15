@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,12 +11,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'comic-sans': ['Comic Sans MS', 'cursive'],
-        'varela': ['Varela Round', 'sans-serif']
+        'varela': ['Varela Round', 'sans-serif'],
+        'recoleta': ['Recoleta Bold', 'sans-serif']
       },
       colors: {
         'yello': '#ffbb00',
-        'dark_purple': "#2B2C3D"
+        'dark_purple': "#2B2C3D",
+        'indigo': "#5A5B86"
       }
     },
   },
