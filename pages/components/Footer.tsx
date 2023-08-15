@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mt-10"  />
-      <div className="bottom-0 flex flex-col sm:flex-row justify-between text-black p-5 sm:p-10 items-center">
+      <div className="bottom-0 flex flex-col sm:flex-row justify-between text-[#2b2c3d] p-5 sm:p-10 items-center">
         <div className="block">
           <h1 className="mb-4 flex justify-center text-xl font-semibold uppercase md:justify-start">
             SOCIAL
@@ -117,15 +117,15 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="bg-yellow-500 h-[2px] mr-6 ml-8 " />
+      <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 " />
       <div className=" p-6 text-center  flex justify-between">
         <p className="font-semibold ml-2 text-gray-500">
-          © 2023 ApiSudex eCommerce Group, All Rights Reserved{" "}
+          © 2023 ApiSudex eCommerce Group, All Rights Reserved
         </p>
         <Link href="/" className="flex items-center sm:p-0">
           <Image src="/logo.png" alt="ApiSudex" width={30} height={30} />
           <p className="bg-cover bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400">
-            {" "}
+            
             ApiSudex
           </p>
         </Link>

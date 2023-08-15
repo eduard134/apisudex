@@ -19,16 +19,16 @@ const Navbar = () => {
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Acasă</Link>
+            <Link href="/" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Acasă</Link>
           </li>
           <li className="p-4">
-            <Link href="/shop" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Shop</Link>
+            <Link href="/shop" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Shop</Link>
           </li>
           <li className="p-4">
-            <Link href="/about" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Despre Noi</Link>
+            <Link href="/about" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Despre Noi</Link>
           </li>
           <li className="p-4 mr-3">
-            <Link href="/contacte" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Contacte</Link>
+            <Link href="/contacte" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Contacte</Link>
           </li>
         </ul>
 
@@ -49,25 +49,25 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Acasă</Link>
+              <Link href="/" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Acasă</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/shop" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Shop</Link>
+              <Link href="/shop" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Shop</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/about" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Despre Noi</Link>
+              <Link href="/about" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Despre Noi</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/contacte" className="hover:border-b-4 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Contacte</Link>
+              <Link href="/contacte" className="hover:border-b-2 rounded-lg  hover:border-yellow-500 hover:ease duration-150">Contacte</Link>
             </li>
           </ul>
         </div>
