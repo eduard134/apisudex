@@ -60,10 +60,10 @@ export default function Home() {
                   height={150}
                 />
               </div>
-              <div className="font-bold text-base md:text-lg text-slate-600 mb-1 md:mb-2">
+              <div className="font-bold text-base md:text-lg text-slate-600 mb-1 md:mb-2 font-varela">
                 {product.pret1}
               </div>
-              <div className="font-medium text-slate-600 text-sm md:text-base">
+              <div className="font-medium text-slate-600 text-sm md:text-base font-varela">
                 {product.name}
               </div>
             </Link>

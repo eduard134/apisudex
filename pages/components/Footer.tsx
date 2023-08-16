@@ -133,12 +133,12 @@ const Footer = () => {
       </div>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 " />
       <div className=" p-6 text-center  flex justify-between">
-        <p className="font-semibold ml-2 text-gray-500">
+        <p className="font-semibold ml-2 text-gray-500 font-varela">
           © 2023 ApiSudex eCommerce Group, All Rights Reserved
         </p>
         <Link href="/" className="flex items-center sm:p-0">
           <Image src="/logo.png" alt="ApiSudex" width={30} height={30} />
-          <p className="bg-cover bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400">
+          <p className="bg-cover bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 font-varela">
             ApiSudex
           </p>
         </Link>
