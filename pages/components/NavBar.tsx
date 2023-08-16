@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="left-0 top-0 w-full z-10 mt-5">
-      <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-xl font-varela">
+      <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
         <Link href="/" className="flex items-center sm:p-4">
           <Image src="/logo.png" alt="ApiSudex" width={40} height={40} />
           <p className="bg-cover bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 mt-2 font-black text-2xl">
@@ -24,7 +24,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link
               href="/"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
             >
               Acasă
             </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link
               href="/shop"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
             >
               Shop
             </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link
               href="/about"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
             >
               Despre Noi
             </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <li className="p-4 mr-3">
             <Link
               href="/contacte"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
             >
               Contacte
             </Link>
