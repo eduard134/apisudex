@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'varela': ['Varela Round', 'sans-serif'],
-        'recoleta': ['Recoleta Bold', 'sans-serif']
+        'recoleta': ['Recoleta Bold', 'sans-serif'],
       },
       colors: {
         'yello': '#ffbb00',

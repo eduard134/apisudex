@@ -18,24 +18,29 @@ export default function Shop() {
       <Swiper
         spaceBetween={30}
         effect="fade"
-        pagination={{
-          clickable: true,
-        }}
         autoplay={{
-          delay: 4500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay, Pagination]}
         className="w-full h-full"
       >
         <SwiperSlide className="bg-center bg-cover">
-          <div className="w-full h-full">
+          <div className="w-full h-full relative">
             <Image
               src={beebanner}
               alt=""
               layout="responsive"
-              className="block"
+              className="block  "
             />
+            <div className="text-white absolute top-1/2 left-1/2 transform translate-x-1/4 font-recoleta drop-shadow-2xl fade-in">
+              <h1 className="text-[100px] text-[#EEEEEE] font-bold leading-snug">
+                ApiSudex
+              </h1>
+              <span className="text-[20px] text-[#ffda05] leading-6">
+                Un producător de încredere <br /> pentru inventar apicol
+              </span>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-center bg-cover">
@@ -46,6 +51,14 @@ export default function Shop() {
               layout="responsive"
               className="block"
             />
+            <div className="text-white absolute top-1/4 float-left ml-5  font-recoleta drop-shadow-2xl fade-in">
+              <h1 className="text-[60px] text-[#ffae00] font-bold leading-sm">
+                Descoperă acum{" "}
+              </h1>
+              <span className="text-[22px] text-[#ffffff]">
+                bonusurile și ofertele speciale!
+              </span>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="bg-center bg-cover">
@@ -54,8 +67,18 @@ export default function Shop() {
               src={beebanner2}
               alt=""
               layout="responsive"
-              className="block"
+              className="block "
             />
+            <div className="text-white absolute top-4 right-8 text-right font-recoleta drop-shadow-2xl fade-in">
+              <h1 className="text-[55px] text-white font-bold leading-sm">
+                Calitatea este fundamentul{" "}
+              </h1>
+              <span className="text-[22px] text-[#2b2c3d]">
+                {" "}
+                pe care ne construim relațiile <br /> de lungă durată cu
+                clienții noștri
+              </span>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
