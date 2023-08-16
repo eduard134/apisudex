@@ -1,18 +1,20 @@
 [
     {
       "id": 1,
-      "categoryId":1 ,
+      "categoryId": 1,
       "image": "/images/12-rame-corp.png",
       "image1": "/images/12-rame-corp1.png",
       "name": "Corp 12 Rame",
-      "pret1": "490 Lei"
+      "pret1": "490 Lei",
+      "description": "description"
     },
     {
       "id": 2,
       "categoryId":1 ,
       "image": "/images/Caldare_32l.png",
       "name": "Caldare 32L",
-      "pret1": "89 Lei"
+      "pret1": "89 Lei",
+      "description": "description"
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "name3": "Capac 10 Rame din aliniu, izolat",
       "pret1": "290 Lei",
       "pret2": "150 Lei",
-      "pret3": "190 Lei"
+      "pret3": "190 Lei",
+      "description": "description"
     },
     {
       "id": 4,
@@ -32,7 +35,8 @@
       "image": "/images/Capac_12_rame__fiert_1.png",
       "image1": "/images/Capac_12_rame__fiert.png",
       "name": "Capac 12 Rame Fiert",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 5,
@@ -40,7 +44,8 @@
       "image": "/images/Capac_12_rame_Nefiert_1.png",
       "image1": "/images/Capac_12_rame_Nefiert.png",
       "name": "Capac 12 Rame Nefiert",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 6,
@@ -48,7 +53,8 @@
       "image": "/images/Corp_10_rame__fiert_1.png",
       "image1": "/images/Corp_10_rame__fiert.png",
       "name": "Corp 10 Rame Fiert",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 7,
@@ -56,7 +62,8 @@
       "image": "/images/Corp_10_rame__nefiert_1.png",
       "image1": "/images/Corp_10_rame__nefiert.png",
       "name": "Corp 10 Rame Nefiert",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 8,
@@ -64,7 +71,8 @@
       "image": "/images/Fund_10_rame.png",
       "image1": "/images/Fund_10_rame1.png",
       "name": "Fund 10 Rame",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 9,
@@ -72,14 +80,16 @@
       "image": "/images/Fund_12_rame__fiert_1.png",
       "image1": "/images/Fund_12_rame__fiert.png",
       "name": "Fund 12 Rame Fiert",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 10,
       "categoryId": 2,
       "image": "/images/Fund_12_rame_nefiert_.png",
       "name": "Fund 12 Rame Nefiert",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 11,
@@ -87,7 +97,8 @@
       "image": "/images/Inel_10rame.png",
       "image1": "/images/Inel_10rame1.png",
       "name": "Inel 10 Rame",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 12,
@@ -95,20 +106,23 @@
       "image": "/images/Rama_300_cu_ceara.png",
       "image1": "/images/Rama_300_cu_ceara1.png",
       "name": "Rama 300 cu ceara",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
       "id": 13,
       "categoryId": 2,
       "image": "/images/Sirop_Invertit-Dulcofruct.png",
       "name": "Sirop Invertit-Dulcofruct",
-      "pret1": "NoN"
+      "pret1": "NoN",
+      "description": "description"
     },
     {
         "id": 14,
         "categoryId": 2,
         "image": "/images/Sirop_Invertit-Dulcofruct.png",
         "name": "Fagure",
-        "pret1": "NoN"
+        "pret1": "NoN",
+        "description": "description"
       }
 ]
