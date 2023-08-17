@@ -19,7 +19,6 @@
   }
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -85,23 +84,38 @@ body {
   background-image: linear-gradient(304deg, #fd0, #fbb034, #fd0);
 }
 
-.fade-in{
+.fade-in {
   animation: fadeIn 3s;
 }
 
-@keyframes fadeIn{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@-moz-keyframes fadeIn{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes fadeIn{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .hover-circle {
