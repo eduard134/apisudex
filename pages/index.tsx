@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 mt-10 md:mt-20">
         <div className="md:items-center md:mr-[22%] text-center md:text-left">
-          <div className="text-4xl md:text-7xl text-black font-bold mb-4 md:mb-6 font-recoleta bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple ">
+          <div className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 font-recoleta bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple ">
             Miere <br /> Proaspătă
           </div>
           <div className="text-[#413f4a] text-lg md:text-base py-3 font-medium mb-6 font-varela ">
