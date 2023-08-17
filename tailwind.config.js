@@ -13,6 +13,8 @@ module.exports = {
       fontFamily: {
         'varela': ['Varela Round', 'sans-serif'],
         'recoleta': ['Recoleta Bold', 'sans-serif'],
+        'point': ["Point Soft DEMO Semi Bold"],
+
       },
       colors: {
         'yello': '#ffbb00',
