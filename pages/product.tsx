@@ -14,13 +14,10 @@ export default function Product() {
   const router = useRouter();
   const { id: productId } = router.query;
 
-  console.log("Product ID from query:", productId);
 
   const product: Product | undefined = productsData.find(
     (p) => p.id === parseInt(productId as string)
   );
-
-  console.log("Product found:", product);
 
   return (
     <div className="flex flex-col items-center mt-10">
