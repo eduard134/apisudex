@@ -7,11 +7,11 @@
     {
       "id": 2,
       "denumire": "Accesorii/Inventar",
-      "img": "/images/stup_categ.png"
+      "img": "/images/acces.png"
     },
     {
       "id": 3,
       "denumire": "Bonusuri",
-      "img": "/images/stup_categ.png"
+      "img": "/images/sale.png"
     }
   ]
