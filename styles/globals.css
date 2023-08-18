@@ -136,3 +136,32 @@ body {
 .group:hover .hover-circle {
   opacity: 1;
 }
+
+
+.tooltip {
+  top: -10px; /* Adjust as needed */
+  opacity: 0;
+  visibility: hidden;
+  /* ... other tooltip styles ... */
+}
+
+.icon:hover .tooltip_f {
+  top: -35px; /* Adjust as needed */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  background-color: #3E84F6;
+}
+
+.icon:hover .tooltip_i {
+  top: -35px; /* Adjust as needed */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  background-color: #EF4444;
+}
+
+input::placeholder,
+        textarea::placeholder {
+          color: black; /* Change to your desired color */
+        }
