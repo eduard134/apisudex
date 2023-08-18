@@ -1,27 +1,12 @@
 [
     {
       "id": 1,
-      "denumire": "Asortate",
-      "img": "asortate.png"
+      "denumire": "Stupuri",
+      "img": ".png"
     },
     {
       "id": 2,
-      "denumire": "Cookies",
+      "denumire": "Accesorii/Inventar",
       "img": "cookies.png"
-    },
-    {
-      "id": 3,
-      "denumire": "Biscuiți cu magiun",
-      "img": "magiun.png"
-    },
-    {
-      "id": 4,
-      "denumire": "Biscuiți cu ciocolată",
-      "img": "ciocolata.png"
-    },
-    {
-      "id": 5,
-      "denumire": "Altele",
-      "img": "altele.png"
     }
   ]
