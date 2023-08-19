@@ -12,12 +12,11 @@ const ComponentName = () => {
         <div className="left">
           <div className="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2756.409353302793!2d28.651426975908052!3d46.30170717717151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9df555fe6dec3%3A0xa392f947c29c702e!2sStradela%20Tretiacov%20129%2C%20Comrat%2C%20Moldova!5e0!3m2!1sen!2s!4v1692304649697!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2191.6413154079637!2d28.62833713850771!3d46.303605006470754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDbCsDE4JzEyLjciTiAyOMKwMzcnNDIuMyJF!5e0!3m2!1sen!2s!4v1692481297652!5m2!1sen!2s"
               width="650"
               height="350"
               style={{ border: 0 }}
               allowFullScreen
-              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="rounded-xl"
             ></iframe>
