@@ -1,6 +1,7 @@
 import React from "react";
 import categoriesData from "../categories.json";
 import Link from "next/link";
+import Image from "next/image";
 
 const Categorii = () => {
   return (
@@ -15,8 +16,17 @@ const Categorii = () => {
             className="mt-8 mb-8 md:mb-0 md:mr-5 flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[30vh] md:w-[12.5%] bg-gradient-to-br via-orange-400 from-yellow-500 
         to-yellow-500 transition-shadow-transform duration-150 ease-linear hover:shadow-xl hover:scale-105 font-varela"
           >
-            <img src={category.img} alt={category.denumire} />
-            <span>{category.denumire}</span>
+            <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
+              <Image
+                src={category.img}
+                alt={category.denumire}
+                width={150}
+                height={150}
+              />
+            </div>
+            <span className="mt-2 text-lg font-semibold text-white">
+              {category.denumire}
+            </span>
           </Link>
         ))}
       </div>

@@ -1,128 +1,222 @@
 [
-    {
-      "id": 1,
-      "categoryId": 1,
-      "image": "/images/12-rame-corp.png",
-      "image1": "/images/12-rame-corp1.png",
-      "name": "Corp 12 Rame",
-      "pret1": "490 Lei",
-      "description": "description"
-    },
-    {
-      "id": 2,
-      "categoryId":1 ,
-      "image": "/images/Caldare_32l.png",
-      "name": "Caldare 32L",
-      "pret1": "89 Lei",
-      "description": "description"
-    },
-    {
-      "id": 3,
-      "categoryId":1 ,
-      "image": "/images/Capac_10_rame.png",
-      "name": "Capac 10 Rame",
-      "name1": "Capac 10 Rame din zinc, termos izolat",
-      "name2": "Capac 10 Rame din aluminiu, neizolat",
-      "name3": "Capac 10 Rame din aliniu, izolat",
-      "pret1": "290 Lei",
-      "pret2": "150 Lei",
-      "pret3": "190 Lei",
-      "description": "description"
-    },
-    {
-      "id": 4,
-      "categoryId": 1,
-      "image": "/images/Capac_12_rame__fiert_1.png",
-      "image1": "/images/Capac_12_rame__fiert.png",
-      "name": "Capac 12 Rame Fiert",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 5,
-      "categoryId": 1,
-      "image": "/images/Capac_12_rame_Nefiert_1.png",
-      "image1": "/images/Capac_12_rame_Nefiert.png",
-      "name": "Capac 12 Rame Nefiert",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 6,
-      "categoryId": 1,
-      "image": "/images/Corp_10_rame__fiert_1.png",
-      "image1": "/images/Corp_10_rame__fiert.png",
-      "name": "Corp 10 Rame Fiert",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 7,
-      "categoryId": 1,
-      "image": "/images/Corp_10_rame__nefiert_1.png",
-      "image1": "/images/Corp_10_rame__nefiert.png",
-      "name": "Corp 10 Rame Nefiert",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 8,
-      "categoryId": 1,
-      "image": "/images/Fund_10_rame.png",
-      "image1": "/images/Fund_10_rame1.png",
-      "name": "Fund 10 Rame",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 9,
-      "categoryId": 1,
-      "image": "/images/Fund_12_rame__fiert_1.png",
-      "image1": "/images/Fund_12_rame__fiert.png",
-      "name": "Fund 12 Rame Fiert",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 10,
-      "categoryId": 2,
-      "image": "/images/Fund_12_rame_nefiert_.png",
-      "name": "Fund 12 Rame Nefiert",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 11,
-      "categoryId": 2,
-      "image": "/images/Inel_10rame.png",
-      "image1": "/images/Inel_10rame1.png",
-      "name": "Inel 10 Rame",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 12,
-      "categoryId": 2,
-      "image": "/images/Rama_300_cu_ceara.png",
-      "image1": "/images/Rama_300_cu_ceara1.png",
-      "name": "Rama 300 cu ceara",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-      "id": 13,
-      "categoryId": 2,
-      "image": "/images/Sirop_Invertit-Dulcofruct.png",
-      "name": "Sirop Invertit-Dulcofruct",
-      "pret1": "NoN",
-      "description": "description"
-    },
-    {
-        "id": 14,
-        "categoryId": 2,
-        "image": "/images/Sirop_Invertit-Dulcofruct.png",
-        "name": "Fagure",
-        "pret1": "NoN",
-        "description": "description"
-      }
+  {
+    "id": 1,
+    "categoryId": 1,
+    "image": "/images/Capac_10_rame.png",
+    "name": "Capac 10 Rame din Zinc, Termo-Izolat",
+    "pret1": "290 Lei"
+  },
+  {
+    "id": 2,
+    "categoryId": 1,
+    "image": "/images/Inel_10rame.png",
+    "image1": "/images/Inel_10rame1.png",
+    "name": "Inel 10 Rame (Capac-Inferior)",
+    "pret1": "100 Lei"
+  },
+  {
+    "id": 3,
+    "categoryId": 1,
+    "image1": "/images/Corp_10_rame__nefiert_1.png",
+    "image": "/images/Corp_10_rame__nefiert.png",
+    "name": "Corp 10 Rame 145mm",
+    "pret1": "240 Lei",
+    "reducere": "215.99 Lei"
+  },
+  {
+    "id": 4,
+    "categoryId": 1,
+    "image1": "/images/Corp_10_rame__nefiert_1.png",
+    "image": "/images/Corp_10_rame__nefiert.png",
+    "name": "Corp 10 Rame 230mm",
+    "pret1": "340 Lei",
+    "reducere": "305.99 Lei"
+  },
+  {
+    "id": 5,
+    "categoryId": 1,
+    "image1": "/images/Corp_10_rame__nefiert_1.png",
+    "image": "/images/Corp_10_rame__nefiert.png",
+    "name": "Corp 10 Rame 300mm",
+    "pret1": "440 Lei",
+    "reducere": "395.99 Lei"
+  },
+  {
+    "id": 6,
+    "categoryId": 1,
+    "image1": "/images/Fund_10_rame.png",
+    "image": "/images/Fund_10_rame1.png",
+    "name": "Fund 10 Rame",
+    "opt1": "Plasă Inox",
+    "opt2": "Plasă Zinc",
+    "opt3": "Lemn Total",
+    "pret1": "290 Lei",
+    "pret2": "190 Lei",
+    "pret3": "180 Lei"
+  },
+  {
+    "id": 7,
+    "categoryId": 1,
+    "image1": "/images/Capac_12_rame_Nefiert.png",
+    "name": "Capac 12 Rame",
+    "opt1": "Zinc, Termo-Izolat",
+    "opt2": "Aluminiu, Termo-Izolat",
+    "opt3": "Aluminiu, Neizolat",
+    "pret1": "320 Lei",
+    "pret2": "210 Lei",
+    "pret3": "165 Lei"
+  },
+  {
+    "id": 8,
+    "categoryId": 1,
+    "image": "/images/Caldare_32l.png",
+    "image1": "/images/Caldare_32l.png",
+    "name": "Inel 12 Rame (Capac-Inferior)",
+    "pret1": "110 Lei"
+  },
+  {
+    "id": 9,
+    "categoryId": 1,
+    "image1": "/images/Corp_12_rame__nefiert_1.png",
+    "image": "/images/Corp_12_rame__nefiert.png",
+    "name": "Corp 12 Rame 145mm",
+    "pret1": "265 Lei",
+    "reducere": "238.99 Lei"
+  },
+  {
+    "id": 10,
+    "categoryId": 1,
+    "image1": "/images/Corp_12_rame__nefiert_1.png",
+    "image": "/images/Corp_12_rame__nefiert.png",
+    "name": "Corp 12 Rame 230mm",
+    "pret1": "375 Lei",
+    "reducere": "337.99 Lei"
+  },
+  {
+    "id": 11,
+    "categoryId": 1,
+    "image1": "/images/Corp_12_rame__nefiert_1.png",
+    "image": "/images/Corp_12_rame__nefiert.png",
+    "name": "Corp 12 Rame 300mm",
+    "pret1": "485 Lei",
+    "reducere": "436.99 Lei"
+  },
+  {
+    "id": 12,
+    "categoryId": 1,
+    "image1": "/images/Fund_12_rame.png",
+    "image": "/images/Fund_12_rame1.png",
+    "name": "Fund 12 Rame",
+    "opt1": "Plasă Inox",
+    "opt2": "Plasă Zinc",
+    "opt3": "Lemn Total",
+    "pret1": "320 Lei",
+    "pret2": "210 Lei",
+    "pret3": "200 Lei"
+  },
+  {
+    "id": 13,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Căldare 32L",
+    "pret1": "89 Lei"
+  },
+  {
+    "id": 14,
+    "categoryId": 2,
+    "image": "/images/Sirop_Invertit-Dulcofruct.png",
+    "name": "Sirop Invertit-Dulcofruct",
+    "pret1": "22 Lei/KG până la 1 cub"
+  },
+  {
+    "id": 15,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Fagure",
+    "pret1": "200 Lei"
+  },
+  {
+    "id": 16,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Asamblată din Tei 300mm",
+    "pret1": "17 Lei"
+  },
+  {
+    "id": 17,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Asamblată din Tei 230mm",
+    "pret1": "16 Lei"
+  },
+  {
+    "id": 18,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Asamblată din Tei 145mm",
+    "pret1": "11.5 Lei"
+  },
+  {
+    "id": 19,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Asamblată din Pin 300mm",
+    "pret1": "16 Lei"
+  },
+  {
+    "id": 20,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Asamblată din Pin 230mm",
+    "pret1": "15 Lei"
+  },
+  {
+    "id": 21,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Asamblată din Pin 145mm",
+    "pret1": "11 Lei"
+  },
+  {
+    "id": 22,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Dezasamblată din Tei 300mm",
+    "pret1": "10 Lei"
+  },
+  {
+    "id": 23,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Dezasamblată din Tei 230mm",
+    "pret1": "9 Lei"
+  },
+  {
+    "id": 24,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Dezasamblată din Tei 145mm",
+    "pret1": "8 Lei"
+  },
+  {
+    "id": 25,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Dezasamblată din Pin 300mm",
+    "pret1": "8.5 Lei"
+  },
+  {
+    "id": 26,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Dezasamblată din Pin 230mm",
+    "pret1": "8 Lei"
+  },
+  {
+    "id": 27,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "name": "Ramă Dezasamblată din Pin 145mm",
+    "pret1": "7 Lei"
+  }
 ]
