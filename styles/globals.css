@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Varela+Round&display=swap');
-@import url('https://db.onlinewebfonts.com/c/f4d849075c9b4c0047fc56a828879854?family=Recoleta+Bold');
-@import url('https://db.onlinewebfonts.com/c/a4ee49e2dbebfcf6134f5eaf64797335?family=Point+Soft+DEMO+Semi+Bold');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Varela+Round&display=swap");
+@import url("https://db.onlinewebfonts.com/c/f4d849075c9b4c0047fc56a828879854?family=Recoleta+Bold");
+@import url("https://db.onlinewebfonts.com/c/a4ee49e2dbebfcf6134f5eaf64797335?family=Point+Soft+DEMO+Semi+Bold");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -31,7 +30,6 @@ body {
 
 .arrow {
   transform: rotate(-90deg);
-
 }
 
 .arrow span {
@@ -71,17 +69,17 @@ body {
 ::-webkit-scrollbar-track {
   border-radius: 5px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
   width: 9px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(304deg, #fd0, #fbb034, #fd0);
 }
 
@@ -137,7 +135,6 @@ body {
   opacity: 1;
 }
 
-
 .tooltip {
   top: -10px; /* Adjust as needed */
   opacity: 0;
@@ -150,7 +147,7 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  background-color: #39579F;
+  background-color: #39579f;
 }
 
 .icon:hover .tooltip_i {
@@ -158,10 +155,47 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);;
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 input::placeholder,
-        textarea::placeholder {
-          color: black; /* Change to your desired color */
-        }
+textarea::placeholder {
+  color: black; /* Change to your desired color */
+}
+
+.anim {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 17px;
+  z-index: 1;
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.anim::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.anim:hover {
+  color: white;
+}
+
+.anim:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.anim:hover::before {
+  top: -30px;
+  left: -30px;
+}

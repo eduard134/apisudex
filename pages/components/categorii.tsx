@@ -11,9 +11,9 @@ const Categorii = () => {
       <div className="flex justify-center flex-wrap gap-6">
         {categoriesData.map((category) => (
           <Link
-            href={`/products?id=${category.id}`}
+          href={`/products?categoryId=${category.id}`}
             key={category.id}
-            className="mt-8 mb-8 md:mb-0 md:mr-5 flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[30vh] md:w-[12.5%] bg-gradient-to-br via-orange-400 from-yellow-500 
+            className="mt-8 mb-8 md:mb-0 md:mr-5 flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-gradient-to-br via-orange-400 from-yellow-500 
         to-yellow-500 transition-shadow-transform duration-150 ease-linear hover:shadow-xl hover:scale-105 font-varela"
           >
             <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">

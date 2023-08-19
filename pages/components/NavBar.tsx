@@ -24,7 +24,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link
               href="/"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
+              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
             >
               Acasă
             </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link
               href="/shop"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
+              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
             >
               Shop
             </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link
               href="/about"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
+              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
             >
               Despre Noi
             </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <li className="p-4 mr-3">
             <Link
               href="/contacte"
-              className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-100"
+              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
             >
               Contacte
             </Link>
