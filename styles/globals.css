@@ -136,14 +136,16 @@ body {
 }
 
 .tooltip {
-  top: -10px; /* Adjust as needed */
+  top: -10px;
+  /* Adjust as needed */
   opacity: 0;
   visibility: hidden;
   /* ... other tooltip styles ... */
 }
 
 .icon:hover .tooltip_f {
-  top: -35px; /* Adjust as needed */
+  top: -35px;
+  /* Adjust as needed */
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -151,7 +153,8 @@ body {
 }
 
 .icon:hover .tooltip_i {
-  top: -35px; /* Adjust as needed */
+  top: -35px;
+  /* Adjust as needed */
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -160,7 +163,8 @@ body {
 
 input::placeholder,
 textarea::placeholder {
-  color: black; /* Change to your desired color */
+  color: black;
+  /* Change to your desired color */
 }
 
 .anim {
@@ -171,7 +175,7 @@ textarea::placeholder {
   font-size: 17px;
   z-index: 1;
   border: 2px solid var(--color);
-  border-radius: 6px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -179,10 +183,10 @@ textarea::placeholder {
   position: absolute;
   content: "";
   background: var(--color);
-  width: 150px;
-  height: 200px;
+  width: 210px;
+  height: 210px;
   z-index: -1;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .anim:hover {

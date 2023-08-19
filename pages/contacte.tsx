@@ -2,6 +2,7 @@ import React from "react";
 import facebook from "../pages/images/facebook1.png";
 import instagram from "../pages/images/instagram1.png";
 import Image from "next/image";
+import Footer from "./components/Footer";
 
 const ComponentName = () => {
   return (
@@ -77,6 +78,7 @@ const ComponentName = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

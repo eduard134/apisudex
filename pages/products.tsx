@@ -19,7 +19,7 @@ interface Product {
   pret2?: string;
   pret3?: string;
   reducere?: string;
-  descriere: string
+  descriere: string;
 }
 
 const ProductsComponent = () => {
@@ -30,35 +30,43 @@ const ProductsComponent = () => {
     ? productsData.filter((product) => product.categoryId === +categoryId)
     : productsData;
 
-    const categoryName = categoryId
+  const categoryName = categoryId
     ? categoriesData.find((category) => category.id === +categoryId)?.denumire
     : "All Products";
   return (
     <>
       <p className="text-center text-4xl font-recoleta">{categoryName}</p>
       <div className="flex flex-wrap justify-center mt-10 gap-8">
-       {filteredProducts.map((product: Product) => (
-        <Link
-          href={`/product?id=${product.id}`}
-          key={product.id}
-          className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-slate-100"
-        >
-          <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
-            <Image
-              src={product.image || "/default-image.jpg"}
-              alt={product.name}
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-varela">
-            {product.pret1}
-          </div>
-          <div className="font-medium text-slate-600 text-sm md:text-base font-varela text-center">
-            {product.name}
-          </div>
-        </Link>
-      ))}</div>
+        {filteredProducts.map((product: Product) => (
+          <Link
+            href={`/product?id=${product.id}`}
+            key={product.id}
+            className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-slate-100"
+          >
+            <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
+              <Image
+                src={product.image || "/default-image.jpg"}
+                alt={product.name}
+                width={150}
+                height={150}
+              />
+            </div>
+            <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-varela">
+              {product.reducere ? (
+                <div className="flex flex-col items-center">
+                  <p className="line-through text-gray-400">{product.pret1}</p>
+                  <p>{product.reducere}</p>
+                </div>
+              ) : (
+                product.pret1
+              )}
+            </div>
+            <div className="font-medium text-slate-600 text-sm md:text-base font-varela text-center">
+              {product.name}
+            </div>
+          </Link>
+        ))}
+      </div>
       <Footer />
     </>
   );

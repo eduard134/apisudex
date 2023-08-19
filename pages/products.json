@@ -18,7 +18,7 @@
   {
     "id": 3,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/corp_10r_145.png",
     "name": "Corp 10 Rame 145mm",
     "pret1": "240 Lei",
     "reducere": "215.99 Lei",
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/corp_10r_230.png",
     "name": "Corp 10 Rame 230mm",
     "pret1": "340 Lei",
     "reducere": "305.99 Lei",
@@ -45,7 +45,7 @@
   {
     "id": 6,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/fund_10r.png",
     "name": "Fund 10 Rame",
     "opt1": "Plasă Inox",
     "opt2": "Plasă Zinc",
@@ -58,7 +58,7 @@
   {
     "id": 7,
     "categoryId": 1,
-    "image":"/images/Capac_12_rame_Nefiert_1.png",
+    "image": "/images/Capac_12_rame_Nefiert_1.png",
     "name": "Capac 12 Rame",
     "opt1": "Zinc, Termo-Izolat",
     "opt2": "Aluminiu, Termo-Izolat",
@@ -71,7 +71,7 @@
   {
     "id": 8,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/Inel_10rame.png",
     "name": "Inel 12 Rame (Capac-Inferior)",
     "pret1": "110 Lei",
     "descriere": "Inel pentru stup cu 12 rame, potrivit pentru capacul inferior."
@@ -79,7 +79,7 @@
   {
     "id": 9,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/corp_10r_145.png",
     "name": "Corp 12 Rame 145mm",
     "pret1": "265 Lei",
     "reducere": "238.99 Lei",
@@ -88,7 +88,7 @@
   {
     "id": 10,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/corp_10r_230.png",
     "name": "Corp 12 Rame 230mm",
     "pret1": "375 Lei",
     "reducere": "337.99 Lei",
@@ -130,7 +130,7 @@
     "image": "/images/Sirop_Invertit-Dulcofruct.png",
     "name": "Sirop Invertit-Dulcofruct",
     "pret1": "22 Lei/KG",
-    "descriere": "Sirop invertit pentru hrănirea albinelor."
+    "descriere": "Sirop invertit pentru hrănirea albinelor. 22 Lei/KG până la un cub."
   },
   {
     "id": 15,
@@ -143,7 +143,7 @@
   {
     "id": 16,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rametei300.png",
     "name": "Ramă Asamblată din Tei 300mm",
     "pret1": "17 Lei",
     "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm."
@@ -151,7 +151,7 @@
   {
     "id": 17,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rametei230.png",
     "name": "Ramă Asamblată din Tei 230mm",
     "pret1": "16 Lei",
     "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm."
@@ -159,7 +159,7 @@
   {
     "id": 18,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rametei145.png",
     "name": "Ramă Asamblată din Tei 145mm",
     "pret1": "11.5 Lei",
     "descriere": "Ramă asamblată din lemn de tei, înălțime: 145mm."
@@ -167,7 +167,7 @@
   {
     "id": 19,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rametei300.png",
     "name": "Ramă Asamblată din Pin 300mm",
     "pret1": "16 Lei",
     "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm."
@@ -175,7 +175,7 @@
   {
     "id": 20,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rametei230.png",
     "name": "Ramă Asamblată din Pin 230mm",
     "pret1": "15 Lei",
     "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm."
@@ -183,7 +183,7 @@
   {
     "id": 21,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rametei145.png",
     "name": "Ramă Asamblată din Pin 145mm",
     "pret1": "11 Lei",
     "descriere": "Ramă asamblată din lemn de pin, înălțime: 145mm."
@@ -191,7 +191,7 @@
   {
     "id": 22,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rama300mm_Ne.png",
     "name": "Ramă Dezasamblată din Tei 300mm",
     "pret1": "10 Lei",
     "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm."
@@ -199,7 +199,7 @@
   {
     "id": 23,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rama230mm_Ne.png",
     "name": "Ramă Dezasamblată din Tei 230mm",
     "pret1": "9 Lei",
     "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm."
@@ -207,7 +207,7 @@
   {
     "id": 24,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rama145mm_Ne.png",
     "name": "Ramă Dezasamblată din Tei 145mm",
     "pret1": "8 Lei",
     "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 145mm."
@@ -215,7 +215,7 @@
   {
     "id": 25,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rama300mm_Ne.png",
     "name": "Ramă Dezasamblată din Pin 300mm",
     "pret1": "8.5 Lei",
     "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm."
@@ -223,7 +223,7 @@
   {
     "id": 26,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rama230mm_Ne.png",
     "name": "Ramă Dezasamblată din Pin 230mm",
     "pret1": "8 Lei",
     "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm."
@@ -231,7 +231,7 @@
   {
     "id": 27,
     "categoryId": 2,
-    "image": "/images/sale.png",
+    "image": "/images/rama145mm_Ne.png",
     "name": "Ramă Dezasamblată din Pin 145mm",
     "pret1": "7 Lei",
     "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 145mm."
@@ -271,7 +271,7 @@
   {
     "id": 32,
     "categoryId": 1,
-    "image": "/images/sale.png",
+    "image": "/images/stup_orizontal.png",
     "name": "Stup Orizontal 22 Rame",
     "pret1": "1200 Lei",
     "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine."
