@@ -7,12 +7,19 @@ import Image from "next/image";
 interface Product {
   id: number;
   categoryId: number;
-  image: string;
+  image?: string;
+  image1?: string;
   name: string;
+  opt1?: string;
+  opt2?: string;
+  opt3?: string;
   pret1: string;
+  pret2?: string;
+  pret3?: string;
+  reducere?: string;
 }
 
-const products = () => {
+const ProductsComponent = () => {
   return (
     <>
       {productsData.map((product: Product) => (
@@ -23,7 +30,7 @@ const products = () => {
         >
           <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
             <Image
-              src={product.image}
+              src={product.image || "/default-image.jpg"}
               alt={product.name}
               width={150}
               height={150}
@@ -41,4 +48,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default ProductsComponent;
