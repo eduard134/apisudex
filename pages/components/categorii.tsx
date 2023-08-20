@@ -8,7 +8,7 @@ const Categorii = () => {
     <div className="mt-10 mb-20 text-center">
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mb-8" />
       <h2 className="mb-6 text-4xl font-bold font-recoleta">Categorii:</h2>
-      <div className="flex justify-center flex-wrap gap-6">
+      <div className="flex justify-center flex-wrap gap-6 ">
         {categoriesData.map((category) => (
           <Link
           href={`/products?categoryId=${category.id}`}

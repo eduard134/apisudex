@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Borcan from "./components/parallax_borcan";
 import drop from "./images/drop.png";
-import bee3 from "./images/bee3.png";
-import bee4 from "./images/bee4.png";
-import bee5 from "./images/bee5.png";
 import productsData from "./products.json";
 import Footer from "./components/Footer";
 
@@ -34,12 +30,11 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 mt-10 md:mt-20">
-        <div className="md:items-center md:mr-[22%] text-center md:text-left">
+      <div className="flex flex-col mt-20 items-center text-center">
           <div className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 font-recoleta bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple ">
             Explorând <br /> Universul Apicol
           </div>
-          <div className="text-[#413f4a] text-lg md:text-base py-3 font-medium mb-6 font-varela ">
+          <div className="text-[#413f4a] text-lg md:text-base  font-medium mb-6 font-varela ">
             Bine ați venit la ApiSudex, locul unde pasiunea noastră{" "}
             <br className="hidden md:block" /> pentru albine și natură se
             întâlnește cu inovația.
@@ -51,17 +46,15 @@ export default function Home() {
             Produse
             <Image src={drop} alt="" className="ml-2 w-4 md:w-5 " />
           </button>
-        </div>
-        <Borcan />
       </div>
-      <div className="flex flex-col md:flex-row justify-center mt-10 md:mt-40 bg-dark_purple p-4 md:p-10 items-center">
+      <div className="flex flex-col md:flex-row mt-10 md:mt-20 bg-dark_purple p-4 md:p-10 items-center">
         {productsData.slice(0, 4).map((product: Product) => (
           <Link
             href={`/product?id=${product.id}`}
             key={product.id}
-            className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-slate-100"
+            className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col items-center rounded-md p-2 md:p-5  md:w-[15%] md:h-80 bg-slate-100  hover:scale-105 transition-transform  duration-800 ease-in hover:bg-opacity-90"
           >
-            <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
+            <div className="h-[80%] w-full mb-2 md:mb-2 flex justify-center items-center">
               <Image
                 src={product.image || "/default-image.jpg"}
                 alt={product.name}
