@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import insta from "../images/instagram.png";
 import facebook from "../images/facebook.png";
+import viber from "../images/viber1.png";
+import whatsapp from "../images/whatsapp1.png";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +28,7 @@ const Footer = () => {
     <>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mt-10" />
       <div className="bottom-0 flex flex-col sm:flex-row justify-between text-[#2b2c3d] p-5 sm:p-10 items-center">
-        <div className="block sm:ml-10">
+        <div className="flex justify-center items-center flex-col sm:ml-10">
           <h1 className="mb-4 flex justify-center text-2xl font-semibold uppercase md:justify-start font-recoleta">
             SOCIAL
           </h1>
@@ -43,6 +45,24 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src={facebook}
+                alt="facebook"
+                width={30}
+                height={30}
+                className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
+              />
+            </Link>
+            <Link href="/">
+              <Image
+                src={viber}
+                alt="facebook"
+                width={30}
+                height={30}
+                className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
+              />
+            </Link>
+            <Link href="/">
+              <Image
+                src={whatsapp}
                 alt="facebook"
                 width={30}
                 height={30}
