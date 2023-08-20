@@ -3,9 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const router = useRouter();
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -21,37 +24,49 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="hidden sm:flex">
-          <li className="p-4">
-            <Link
-              href="/"
-              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
+          <li className="p-4 semi">
+            <div
+              className={
+                router.pathname === "/"
+                  ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                  : ""
+              }
             >
-              Acasă
-            </Link>
+              <Link href="/">Acasă</Link>
+            </div>
           </li>
-          <li className="p-4">
-            <Link
-              href="/shop"
-              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
+          <li className="p-4 semi">
+            <div
+              className={
+                router.pathname === "/shop"
+                  ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                  : ""
+              }
             >
-              Shop
-            </Link>
+              <Link href="/shop">Shop</Link>
+            </div>
           </li>
-          <li className="p-4">
-            <Link
-              href="/about"
-              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
+          <li className="p-4 semi">
+            <div
+              className={
+                router.pathname === "/about"
+                  ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                  : ""
+              }
             >
-              Despre Noi
-            </Link>
+              <Link href="/about">Despre Noi</Link>
+            </div>
           </li>
-          <li className="p-4 mr-3">
-            <Link
-              href="/contacte"
-              className="hover:border-b-[2.5px] rounded-md  hover:border-yellow-500 hover:ease duration-100"
+          <li className="p-4 mr-3 semi">
+            <div
+              className={
+                router.pathname === "/contacte"
+                  ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                  : ""
+              }
             >
-              Contacte
-            </Link>
+              <Link href="/contacte">Contacte</Link>
+            </div>
           </li>
         </ul>
 

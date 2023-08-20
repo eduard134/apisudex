@@ -6,9 +6,14 @@ import insta from "../images/instagram.png";
 import facebook from "../images/facebook.png";
 import viber from "../images/viber1.png";
 import whatsapp from "../images/whatsapp1.png";
+import insta_hover from "../images/instagram_hover.png";
+import face_hover from "../images/facebook_hover.png";
+import viber_hover from "../images/viber1_hover.png";
+import whatsapp_hover from "../images/whatsapp1_hover.png";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [hoverStates, setHoverStates] = useState([false, false, false, false]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,6 +29,12 @@ const Footer = () => {
     };
   }, []);
 
+  const handleIconHover = (index: number, isHovered: boolean) => {
+    const newHoverStates = [...hoverStates];
+    newHoverStates[index] = isHovered;
+    setHoverStates(newHoverStates);
+  };
+
   return (
     <>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mt-10" />
@@ -32,41 +43,49 @@ const Footer = () => {
           <h1 className="mb-4 flex justify-center text-2xl font-semibold uppercase md:justify-start font-recoleta">
             SOCIAL
           </h1>
-          <div className="flex gap-2 ml-2">
+          <div className="flex gap-4 ml-2">
             <Link href="/">
               <Image
-                src={insta}
+                src={hoverStates[0] ? insta_hover : insta}
                 alt="instagram"
                 width={30}
                 height={30}
-                className="mb-2 filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
+                className="mb-2 transform hover:scale-110 transition-all duration-150 linear"
+                onMouseEnter={() => handleIconHover(0, true)}
+                onMouseLeave={() => handleIconHover(0, false)}
               />
             </Link>
             <Link href="/">
               <Image
-                src={facebook}
+                src={hoverStates[1] ? face_hover : facebook}
                 alt="facebook"
                 width={30}
                 height={30}
-                className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
+                className="filter transform hover:scale-110 transition-all duration-150 linear"
+                onMouseEnter={() => handleIconHover(1, true)}
+                onMouseLeave={() => handleIconHover(1, false)}
               />
             </Link>
             <Link href="https://msng.link/o?37376723462=vi">
               <Image
-                src={viber}
+                src={hoverStates[2] ? viber_hover : viber}
                 alt="facebook"
                 width={30}
                 height={30}
-                className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
+                className="filter transform hover:scale-110 transition-all duration-150 linear"
+                onMouseEnter={() => handleIconHover(2, true)}
+                onMouseLeave={() => handleIconHover(2, false)}
               />
             </Link>
             <Link href="https://msng.link/o?37376723462=wa">
               <Image
-                src={whatsapp}
+                src={hoverStates[3] ? whatsapp_hover : whatsapp}
                 alt="facebook"
                 width={30}
                 height={30}
-                className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
+                className="filter transform hover:scale-110 transition-all duration-150 linear"
+                onMouseEnter={() => handleIconHover(3, true)}
+                onMouseLeave={() => handleIconHover(3, false)}
               />
             </Link>
           </div>
