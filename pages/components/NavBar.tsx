@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="left-0 top-0 w-full z-10 mt-5">
       <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
         <Link href="/" className="flex items-center sm:p-4">
-          <Image src="/logo.png" alt="ApiSudex" width={40} height={40} />
+          <Image src="/logo.png" alt="ApiSudex" width={120} height={100} />
           <p className="bg-cover bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 mt-2 font-black text-2xl">
             {" "}
             ApiSudex
