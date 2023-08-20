@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import facebook from "../pages/images/facebook1.png";
 import instagram from "../pages/images/instagram1.png";
 import viber from "../pages/images/viber.png";
 import whatsapp from "../pages/images/whatsapp.png";
 import Image from "next/image";
 import Footer from "./components/Footer";
+import EmailForm from "./components/EmailForm";
 
 const ComponentName = () => {
   return (
@@ -53,42 +54,7 @@ const ComponentName = () => {
           </div>
         </div>
         <div className="right font-varela w-full">
-          <div className="px-12 flex-row w-full">
-            <p className="mb-2">Nume:</p>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Scrie acum..."
-              required
-              className="py-2 px-6 border-solid border-2 border-black rounded-md w-full"
-            />
-            <p className="mb-2 mt-6">Email:</p>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Scrie adresa..."
-              required
-              className="py-2 px-6 border-solid border-2 border-black rounded-md w-full"
-            />
-            <p className="mb-2 mt-6">Mesaj:</p>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Scrie un mesaj..."
-              required
-              className="py-2 px-6 border-solid border-2 border-black rounded-md w-full h-[15vh]"
-            />
-            <div>
-              <button
-                type="submit"
-                className="py-2 px-6 border-solid border-2 border-black rounded-md w-full mt-4 bg-gradient-to-br from-orange-500 to-yellow-500 transition-shadow-transform duration-150 ease-linear hover:shadow-lg hover:scale-105"
-              >
-                Trimite
-              </button>
-            </div>
-          </div>
+          <EmailForm />
         </div>
       </div>
       <Footer />
