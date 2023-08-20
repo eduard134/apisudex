@@ -51,7 +51,7 @@ const Footer = () => {
                 className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
               />
             </Link>
-            <Link href="/">
+            <Link href="https://msng.link/o?37376723462=vi">
               <Image
                 src={viber}
                 alt="facebook"
@@ -60,7 +60,7 @@ const Footer = () => {
                 className="filter hover:invert-[100%] sepia-0 saturate-0 hue-rotate-[292deg] brightness-[102%] contrast-[105%] hover:invert-[55%] hover:saturate-[5963%] hover:hue-rotate-[179deg] hover:brightness-[92%] hover:contrast-[73%] transform hover:scale-110 transition-all duration-150 linear"
               />
             </Link>
-            <Link href="/">
+            <Link href="https://msng.link/o?37376723462=wa">
               <Image
                 src={whatsapp}
                 alt="facebook"
