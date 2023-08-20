@@ -36,12 +36,12 @@
       return (
         <>
           <p className="text-center mt-10 text-4xl font-recoleta">{categoryName}</p>
-          <div className="flex flex-wrap justify-center mt-10 gap-8">
+          <div className="flex flex-wrap justify-center mt-10 gap-8 ">
             {filteredProducts.map((product: Product) => (
               <Link
                 href={`/product?id=${product.id}`}
                 key={product.id}
-                className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-slate-100 hover:border hover:border-black"
+                className=" mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-gradient-to-br from-yellow-300 to-yellow-500 hover:bg-gradient-to-br hover:from-yellow-400 hover:to-yellow-600 shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 product-box"
               >
                 <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
                   <Image
@@ -51,10 +51,10 @@
                     height={150}
                   />
                 </div>
-                <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-varela">
+                <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-varela ">
                   {product.reducere ? (
                     <div className="flex flex-col items-center">
-                      <p className="line-through text-gray-400">{product.pret1}</p>
+                      <p className="line-through text-[#f2f2f2] ">{product.pret1}</p>
                       <p>{product.reducere}</p>
                     </div>
                   ) : (
