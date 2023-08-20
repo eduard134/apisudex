@@ -64,7 +64,7 @@ export default function Product() {
             </div>
             <div
               className="bg-gradient-to-br via-orange-400 from-yellow-500 
-            to-yellow-500 p-10 h-full w-[25%] rounded-xl shadow-lg"
+            to-yellow-500 p-10 h-full w-[50%] rounded-xl shadow-lg"
             >
               <h1 className="text-2xl font-bold font-point font-extrabold mb-4 text-white">
                 {product.name}

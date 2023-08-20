@@ -209,8 +209,8 @@ textarea::placeholder {
   position: absolute;
   content: "";
   background: var(--color);
-  width: 210px;
-  height: 210px;
+  width: 250px;
+  height: 220px;
   z-index: -1;
   border-radius: 40%;
 }

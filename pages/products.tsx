@@ -41,7 +41,7 @@
               <Link
                 href={`/product?id=${product.id}`}
                 key={product.id}
-                className=" mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-gradient-to-br from-yellow-300 to-yellow-500 hover:bg-gradient-to-br hover:from-yellow-400 hover:to-yellow-600 shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 product-box"
+                className=" mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-gradient-to-br from-yellow-300 to-yellow-500 hover:bg-gradient-to-br hover:from-yellow-400 hover:to-yellow-200 shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 product-box"
               >
                 <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
                   <Image
