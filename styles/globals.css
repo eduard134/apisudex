@@ -161,6 +161,24 @@ body {
   background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
+.icon:hover .tooltip_v {
+  top: -35px;
+  /* Adjust as needed */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  background-color: #6A3DA5;
+}
+
+.icon:hover .tooltip_w {
+  top: -35px;
+  /* Adjust as needed */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  background-color: #29A61A;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: black;

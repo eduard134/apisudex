@@ -136,7 +136,7 @@
     "id": 15,
     "categoryId": 2,
     "image": "/images/fagure.png",
-    "name": "Fagure",
+    "name": "Fagure natural",
     "pret1": "200 Lei",
     "descriere": "Fagure pentru stup."
   },
@@ -239,7 +239,7 @@
   {
     "id": 28,
     "categoryId": 3,
-    "image": "/images/sale.png",
+    "image": "/images/set_stup.png",
     "name": "Set Stup",
     "pret1": "1400 Lei",
     "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat"
@@ -247,7 +247,7 @@
   {
     "id": 29,
     "categoryId": 3,
-    "image": "/images/sale.png",
+    "image": "/images/spec_off.png",
     "name": "Impregnare în Ulei Vegetal",
     "pret1": "1450 Lei",
     "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat + Impregnare în Ulei Vegetal"
@@ -255,7 +255,7 @@
   {
     "id": 30,
     "categoryId": 3,
-    "image": "/images/sale.png",
+    "image": "/images/special_offer.png",
     "name": "Impregnare în Parafină",
     "pret1": "1500 Lei",
     "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat + Impregnare în Parafină"
@@ -263,7 +263,7 @@
   {
     "id": 31,
     "categoryId": 3,
-    "image": "/images/sale.png",
+    "image": "/images/bonus.png",
     "name": "Stup + Căldare Cadou",
     "pret1": "1400 Lei",
     "descriere": "Un pachet special care include un stup și o căldare ca bonus."
@@ -275,5 +275,13 @@
     "name": "Stup Orizontal 22 Rame",
     "pret1": "1200 Lei",
     "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine."
+  },
+  {
+    "id": 33,
+    "categoryId": 3,
+    "image": "/images/rama.png",
+    "name": "Stup + Ramă",
+    "pret1": "1412 Lei",
+    "descriere": "În set cu stupul comandat, rame ÎNSÂRMATE de mărime 145 la doar 12 lei, iar rama de mărime 300 la doar 15 lei!"
   }
 ]

@@ -1,6 +1,8 @@
 import React from "react";
 import facebook from "../pages/images/facebook1.png";
 import instagram from "../pages/images/instagram1.png";
+import viber from "../pages/images/viber.png";
+import whatsapp from "../pages/images/whatsapp.png";
 import Image from "next/image";
 import Footer from "./components/Footer";
 
@@ -34,6 +36,18 @@ const ComponentName = () => {
                   Instagram
                 </span>
                 <Image src={instagram} alt="" className="" />
+              </li>
+              <li className="icon instagram relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out     ">
+                <span className="tooltip_v absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
+                  Viber
+                </span>
+                <Image src={viber} alt="" className="" />
+              </li>
+              <li className="icon instagram relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out     ">
+                <span className="tooltip_w absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
+                  WhatsApp
+                </span>
+                <Image src={whatsapp} alt="" className="" />
               </li>
             </ul>
           </div>

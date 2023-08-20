@@ -131,6 +131,9 @@ export default function Product() {
                   {selectedPrice}
                 </p>
               </p>
+              <p className="text-sm font-varela mt-3 text-white">
+                Comandă acum la: 076 723 462
+              </p>
             </div>
           </div>
         </>
