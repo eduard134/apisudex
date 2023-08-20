@@ -19,7 +19,7 @@ export default function Shop() {
         spaceBetween={30}
         effect="fade"
         autoplay={{
-          delay: 4000,
+          delay: 400000,
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay, Pagination]}
@@ -70,10 +70,10 @@ export default function Shop() {
               className="block "
             />
             <div className="text-white absolute top-4 right-8 text-right font-recoleta drop-shadow-2xl fade-in">
-              <h1 className="text-[55px] text-white font-bold leading-sm">
+              <h1 className="text-[40px] text-[#A15E00] font-bold leading-sm">
                 Calitatea este fundamentul{" "}
               </h1>
-              <span className="text-[22px] text-[#2b2c3d]">
+              <span className="text-[22px] text-white">
                 {" "}
                 pe care ne construim relațiile <br /> de lungă durată cu
                 clienții noștri
