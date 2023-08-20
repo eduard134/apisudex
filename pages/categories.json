@@ -2,11 +2,16 @@
     {
       "id": 1,
       "denumire": "Stupuri",
-      "img": ".png"
+      "img": "/images/stup_categ.png"
     },
     {
       "id": 2,
       "denumire": "Accesorii/Inventar",
-      "img": "cookies.png"
+      "img": "/images/acces.png"
+    },
+    {
+      "id": 3,
+      "denumire": "Bonusuri",
+      "img": "/images/sale.png"
     }
   ]
