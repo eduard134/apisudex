@@ -41,7 +41,7 @@
               <Link
                 href={`/product?id=${product.id}`}
                 key={product.id}
-                className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-slate-100 but center"
+                className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] md:w-[15%] bg-slate-100 hover:border hover:border-black"
               >
                 <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
                   <Image
