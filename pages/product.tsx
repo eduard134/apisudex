@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import productsData from "./products.json";
 import Footer from "./components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Product {
   id: number;
@@ -29,12 +29,12 @@ export default function Product() {
   );
 
   const [selectedOption, setSelectedOption] = useState<string | undefined>(
-    product?.opt1 // Set initial selected option
+    product?.opt1 || product?.opt2 || product?.opt3
   );
 
   const selectedPrice = (() => {
     if (selectedOption === product?.opt1) {
-      return product?.reducere || product?.pret1; // Use discounted price if available
+      return product?.reducere || product?.pret1;
     }
     if (selectedOption === product?.opt2) {
       return product?.pret2;
@@ -49,12 +49,16 @@ export default function Product() {
     setSelectedOption(option);
   };
 
+  useEffect(() => {
+    setSelectedOption(product?.opt1 || product?.opt2 || product?.opt3);
+  }, [product]);
+
   return (
     <div>
       {product ? (
         <>
-          <div className="flex justify-center justify-evenly mt-20 mb-20 relative ">
-            <div className="w-80 h-80 relative mb-4">
+         <div className="flex justify-center justify-evenly mt-20 mb-20 relative">
+            <div className="w-96 h-80 relative overflow-hidden mb-6  ">
               <Image
                 src={product.image || "/default-image.jpg"}
                 alt={product.name}
@@ -62,24 +66,24 @@ export default function Product() {
                 objectFit="cover"
               />
             </div>
+
             <div
-              className="bg-gradient-to-br via-orange-400 from-yellow-500 
-            to-yellow-500 p-10 h-full w-[50%] rounded-xl shadow-lg"
+              className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-6 rounded-xl shadow-lg h-full w-[50%]"
             >
-              <h1 className="text-2xl font-bold font-point font-extrabold mb-4 text-white">
+              <h1 className="text-3xl font-bold text-white mb-4">
                 {product.name}
               </h1>
-              <div className="flex gap-2 leading-5">
+              <div className="flex gap-3 font-varela ">
                 {product.opt1 && (
                   <button
                     onClick={() =>
                       product.opt1 && handleOptionChange(product.opt1)
                     }
-                    className={`${
+                    className={`anim w-full py-1 ${
                       selectedOption === product.opt1
-                        ? "bg-[#0077ff] text-white"
-                        : "bg-white text-black"
-                    } py-2 px-3 rounded-md anim`}
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
                   >
                     {product.opt1}
                   </button>
@@ -89,11 +93,11 @@ export default function Product() {
                     onClick={() =>
                       product.opt2 && handleOptionChange(product.opt2)
                     }
-                    className={`${
+                    className={`anim w-full py-1 ${
                       selectedOption === product.opt2
-                        ? "bg-[#0077ff] text-white"
-                        : "bg-white text-black"
-                    } py-2 px-3 rounded-md anim`}
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
                   >
                     {product.opt2}
                   </button>
@@ -103,37 +107,39 @@ export default function Product() {
                     onClick={() =>
                       product.opt3 && handleOptionChange(product.opt3)
                     }
-                    className={`${
+                    className={`anim w-full py-1 ${
                       selectedOption === product.opt3
-                        ? "bg-[#0077ff] text-white"
-                        : "bg-white text-black"
-                    } py-2 px-3 rounded-md anim`}
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
                   >
                     {product.opt3}
                   </button>
                 )}
               </div>
-              <p className="text-sm font-varela leading-4 text-white mt-8">
-                <p className="font-semibold">Descriere: </p>
-                {product.descriere}
-              </p>
-              <div className="float-right mt-2">
-                {product.reducere && (
-                  <p className="text-md line-through text-gray-300">
-                    {product.pret1}
-                  </p>
-                )}
-              </div>
-              <p className="text-md font-varela mt-8 text-white flex leading-4 justify-between">
-                <p className="leading-4">Total </p>
-
-                <p className=" text-lg font-semibold leading-4">
-                  {selectedPrice}
+              <div className="bg-yellow-50 mt-6 shadow-md p-6 rounded-lg text-gray-800">
+                <p className="text-sm font-semibold text-yellow-500 mb-2">
+                  Descriere:
                 </p>
-              </p>
-              <p className="text-sm font-varela mt-3 text-white">
-                Comandă acum la: 076 723 462
-              </p>
+                <p className="text-sm font-varela mb-6">{product.descriere}</p>
+                <div className="flex items-center justify-end mb-1">
+                  {product.reducere && (
+                    <p className="text-base line-through text-gray-400">
+                      {product.pret1}
+                    </p>
+                  )}
+                </div>
+                <p className="flex justify-between text-lg font-semibold text-yellow-500 mb-2">
+                  Total{" "}
+                  <span className="text-xl font-varela">{selectedPrice}</span>
+                </p>
+                <p className="text-md flex justify-between  text-yellow-500">
+                  Comandă acum la
+                  <span className="font-semibold text-sm font-varela">
+                    076 723 462
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </>

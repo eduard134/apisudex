@@ -24,7 +24,7 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="hidden sm:flex">
-          <li className="p-4 semi">
+          <li className="p-4">
             <div
               className={
                 router.pathname === "/"
@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link href="/">Acasă</Link>
             </div>
           </li>
-          <li className="p-4 semi">
+          <li className="p-4">
             <div
               className={
                 router.pathname === "/shop"
@@ -46,7 +46,7 @@ const Navbar = () => {
               <Link href="/shop">Shop</Link>
             </div>
           </li>
-          <li className="p-4 semi">
+          <li className="p-4">
             <div
               className={
                 router.pathname === "/about"
@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link href="/about">Despre Noi</Link>
             </div>
           </li>
-          <li className="p-4 mr-3 semi">
+          <li className="p-4 mr-3">
             <div
               className={
                 router.pathname === "/contacte"
@@ -83,49 +83,49 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link
-                href="/"
-                className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+            <li className="p-4 text-3xl">
+              <div
+                className={
+                  router.pathname === "/"
+                    ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                    : ""
+                }
               >
-                Acasă
-              </Link>
+                <Link href="/">Acasă</Link>
+              </div>
             </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link
-                href="/shop"
-                className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+            <li className="p-4 text-3xl">
+              <div
+                className={
+                  router.pathname === "/shop"
+                    ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                    : ""
+                }
               >
-                Shop
-              </Link>
+                <Link href="/shop">Shop</Link>
+              </div>
             </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link
-                href="/about"
-                className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+            <li className="p-4 text-3xl">
+              <div
+                className={
+                  router.pathname === "/about"
+                    ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                    : ""
+                }
               >
-                Despre Noi
-              </Link>
+                <Link href="/about">Despre Noi</Link>
+              </div>
             </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link
-                href="/contacte"
-                className="hover:border-b-[3px] rounded-lg  hover:border-yellow-500 hover:ease duration-150"
+            <li className="p-4 text-3xl">
+              <div
+                className={
+                  router.pathname === "/contacte"
+                    ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-yellow-400 px-2 rounded-md"
+                    : ""
+                }
               >
-                Contacte
-              </Link>
+                <Link href="/contacte">Contacte</Link>
+              </div>
             </li>
           </ul>
         </div>
