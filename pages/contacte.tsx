@@ -33,12 +33,14 @@ const ComponentName = () => {
                 </span>
                 <Image src={facebook} alt="" className="" />
               </li>
+              <Link href="https://www.instagram.com/apisudex.md/">
               <li className="icon instagram relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out     ">
                 <span className="tooltip_i absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
                   Instagram
                 </span>
                 <Image src={instagram} alt="" className="" />
               </li>
+              </Link>
               <Link href="https://msng.link/o?37376723462=vi">
                 <li className="icon instagram relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out     ">
                   <span className="tooltip_v absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
