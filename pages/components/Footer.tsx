@@ -91,28 +91,28 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-start font-semibold uppercase font-recoleta">
+          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-recoleta">
             Menu
           </h1>
-          <div className="relative font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
               Acasă
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
               Shop
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
               Despre Noi
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela ">
+          <div className="relative text-center lg:text-start font-varela ">
             <Link href="/contacte" className="hover:text-yellow-400 group">
               Contacte
               <div className="hover-circle bg-yello"></div>
@@ -138,7 +138,7 @@ const Footer = () => {
               Tretiacova 129, Comrat, Moldova
             </p>
             {/* mail */}
-            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-start sm:justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -151,7 +151,7 @@ const Footer = () => {
               apisudex@gmail.com
             </p>
             {/* tel */}
-            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-start sm:justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

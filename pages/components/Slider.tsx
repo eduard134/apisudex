@@ -19,7 +19,7 @@ export default function Shop() {
         spaceBetween={30}
         effect="fade"
         autoplay={{
-          delay: 400000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay, Pagination]}

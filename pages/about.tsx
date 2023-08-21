@@ -25,8 +25,8 @@ const about = () => {
           soluții personalizate pentru <br /> creșterea și dezvoltarea
           afacerilor apicole prospere.
         </p>
-        <div className="w-[80%] lg:flex justify-center items-center mt-10 block">
-          <div className="mb-4 h-[80%]  ">
+        <div className="w-[80%] lg:flex justify-center items-center mt-4 lg:mt-10 block">
+          <div className="mb-4 lg:mb-4 h-[80%]  ">
             <Image src={beeing} alt="" className="rounded-xl" />
           </div>
           <div className="px-8">
@@ -62,10 +62,10 @@ const about = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-4xl font-recoleta mt-14">
+        <p className="text-center text-4xl font-recoleta mt-32 sm:mt-14">
           De ce să ne alegeți
         </p>
-        <div className="lg:flex lg:flex-wrap block justify-center font-varela mt-10">
+        <div className="lg:flex lg:flex-wrap block justify-center font-varela mt-2 sm:mt-10">
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] m-2 mt-10 rounded-xl p-4">
             <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={quality} alt="" />
