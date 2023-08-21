@@ -25,7 +25,7 @@ export default function Shop() {
         modules={[EffectFade, Autoplay, Pagination]}
         className="w-full h-full"
       >
-        <SwiperSlide className="bg-center bg-cover">
+        <SwiperSlide className="bg-center bg-cover ">
           <div className="w-full h-full relative">
             <Image
               src={beebanner}

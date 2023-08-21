@@ -38,13 +38,13 @@ const Footer = () => {
   return (
     <>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mt-10" />
-      <div className="bottom-0 flex flex-col sm:flex-row justify-between text-[#2b2c3d] p-5 sm:p-10 items-center">
+      <div className="bottom-0 flex flex-col sm:flex-row justify-between text-[#2b2c3d] sm:py-6 py-5 lg:p-10 items-center">
         <div className="flex justify-center items-center flex-col sm:ml-10">
-          <h1 className="mb-4 flex justify-center text-2xl font-semibold uppercase md:justify-start font-recoleta">
+          <h1 className="mb-4 flex justify-center text-2xl sm:text-xl lg:text-2xl font-semibold uppercase md:justify-start font-recoleta">
             SOCIAL
           </h1>
           <div className="flex gap-4 ml-2">
-            <Link href="/">
+            <Link href="https://www.instagram.com/apisudex.md/">
               <Image
                 src={hoverStates[0] ? insta_hover : insta}
                 alt="instagram"
@@ -90,23 +90,23 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={isMobile ? "mt-5 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h1 className="mb-4 flex justify-center text-2xl font-semibold uppercase md:justify-start font-recoleta">
+        <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
+          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-start font-semibold uppercase font-recoleta">
             Menu
           </h1>
-          <div className="relative font-varela mb-2 sm:mb-3">
+          <div className="relative font-varela mb-1 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
               Acasă
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela mb-2 sm:mb-3">
+          <div className="relative font-varela mb-1 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
               Shop
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela mb-2 sm:mb-3">
+          <div className="relative font-varela mb-1 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
               Despre Noi
               <div className="hover-circle bg-yello"></div>
@@ -119,14 +119,13 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={isMobile ? "mt-5 sm:mt-0" : "mt-0 sm:ml-10"}>
-          {/* contact title */}
-          <h6 className="mb-4 flex justify-center text-2xl font-semibold uppercase md:justify-start font-recoleta">
+        <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
+          <h6 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-recoleta">
             Contact
           </h6>
           <div className="mr-10">
             {/* adress */}
-            <p className="mb-4 flex items-center justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -139,7 +138,7 @@ const Footer = () => {
               Tretiacova 129, Comrat, Moldova
             </p>
             {/* mail */}
-            <p className="mb-4 flex items-center justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-start sm:justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -152,7 +151,7 @@ const Footer = () => {
               apisudex@gmail.com
             </p>
             {/* tel */}
-            <p className="mb-4 flex items-center justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-start sm:justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -171,14 +170,14 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 " />
-      <div className=" p-6 text-center  flex justify-between">
+      <div className="p-6 text-center flex-col flex sm:flex-row sm:justify-between">
         <p className="font-semibold ml-2 text-gray-500 font-varela">
           © 2023 ApiSudex eCommerce Group, All Rights Reserved
         </p>
-        <Link href="/" className="flex items-center sm:p-0">
-          <Image src="/logo.png" alt="ApiSudex" width={30} height={30} />
+        <Link href="/" className="flex items-center justify-center mt-3 sm:mt-0 sm:p-0">
+          <Image src="/logo.png" alt="ApiSudex" width={25} height={30} />
           <p className="bg-cover bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 font-varela">
-            ApiSudex
+           <span className="ml-2"> ApiSudex</span>
           </p>
         </Link>
       </div>
