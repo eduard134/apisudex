@@ -57,7 +57,7 @@ export default function Product() {
     <div>
       {product ? (
         <>
-         <div className="flex justify-center justify-evenly mt-20 mb-20 relative">
+          <div className="flex lg:flex-row flex-col justify-center items-center justify- mt-20 mb-20 relative">
             <div className="w-96 h-80 relative overflow-hidden mb-6  ">
               <Image
                 src={product.image || "/default-image.jpg"}
@@ -67,9 +67,7 @@ export default function Product() {
               />
             </div>
 
-            <div
-              className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-6 rounded-xl shadow-lg h-full w-[50%]"
-            >
+            <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
               <h1 className="text-3xl font-bold text-white mb-4">
                 {product.name}
               </h1>
