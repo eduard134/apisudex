@@ -23,7 +23,7 @@ export default function Shop() {
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay, Pagination]}
-        className="w-full h-full"
+        className=" sm:w-full sm:h-full"
       >
         <SwiperSlide className="bg-center bg-cover ">
           <div className="w-full h-full relative">
@@ -33,11 +33,11 @@ export default function Shop() {
               layout="responsive"
               className="block  "
             />
-            <div className="text-white absolute top-1/2 left-1/2 transform translate-x-1/4 font-recoleta drop-shadow-2xl fade-in">
-              <h1 className="text-[100px] text-[#EEEEEE] font-bold leading-snug">
+            <div className="text-white absolute top-[60%] sm:top-1/2 left-1/2 transform translate-x-1/4 font-recoleta drop-shadow-2xl fade-in">
+              <h1 className=" text-xl sm:text-[100px] text-[#EEEEEE] font-bold leading-none sm:leading-snug">
                 ApiSudex
               </h1>
-              <span className="text-[20px] text-[#ffda05] leading-6">
+              <span className="text-[10px] sm:text-[20px] text-[#ffda05] sm:leading-6">
                 Un producător de încredere <br /> pentru inventar apicol
               </span>
             </div>
