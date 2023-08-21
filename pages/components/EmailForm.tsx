@@ -32,7 +32,7 @@ const EmailForm = () => {
 
   return (
     <>
-      <div className="px-12 flex-row w-full">
+      <div className="lg:px-12 px-6 flex-row w-full lg:mt-0 mt-8">
         <p className="mb-2">Nume:</p>
         <input
           type="text"
