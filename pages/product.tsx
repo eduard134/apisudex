@@ -58,7 +58,7 @@ export default function Product() {
       {product ? (
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center justify- mt-20 mb-20 relative">
-            <div className="w-96 h-80 relative overflow-hidden mb-6  ">
+            <div className="w-96 h-80 mr-10 relative overflow-hidden mb-6  ">
               <Image
                 src={product.image || "/default-image.jpg"}
                 alt={product.name}

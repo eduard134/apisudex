@@ -55,7 +55,7 @@ const Footer = () => {
                 onMouseLeave={() => handleIconHover(0, false)}
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.facebook.com/profile.php?id=61550100853168&mibextid=ZbWKwL">
               <Image
                 src={hoverStates[1] ? face_hover : facebook}
                 alt="facebook"
@@ -69,7 +69,7 @@ const Footer = () => {
             <Link href="https://msng.link/o?37376723462=vi">
               <Image
                 src={hoverStates[2] ? viber_hover : viber}
-                alt="facebook"
+                alt="viber"
                 width={30}
                 height={30}
                 className="filter transform hover:scale-110 transition-all duration-150 linear"
@@ -91,28 +91,28 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-start font-semibold uppercase font-recoleta">
+          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-recoleta">
             Menu
           </h1>
-          <div className="relative font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
               Acasă
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
               Shop
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
               Despre Noi
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative font-varela ">
+          <div className="relative text-center lg:text-start font-varela ">
             <Link href="/contacte" className="hover:text-yellow-400 group">
               Contacte
               <div className="hover-circle bg-yello"></div>
@@ -138,7 +138,7 @@ const Footer = () => {
               Tretiacova 129, Comrat, Moldova
             </p>
             {/* mail */}
-            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-start sm:justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -151,7 +151,7 @@ const Footer = () => {
               apisudex@gmail.com
             </p>
             {/* tel */}
-            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-start sm:justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-center md:justify-start font-varela">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -175,10 +175,7 @@ const Footer = () => {
           © 2023 ApiSudex eCommerce Group, All Rights Reserved
         </p>
         <Link href="/" className="flex items-center justify-center mt-3 sm:mt-0 sm:p-0">
-          <Image src="/logo.png" alt="ApiSudex" width={25} height={30} />
-          <p className="bg-cover bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 font-varela">
-           <span className="ml-2"> ApiSudex</span>
-          </p>
+          <Image src="/logo.png" alt="ApiSudex" width={40} height={70} />
         </Link>
       </div>
     </>

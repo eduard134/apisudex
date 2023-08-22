@@ -19,11 +19,11 @@ export default function Shop() {
         spaceBetween={30}
         effect="fade"
         autoplay={{
-          delay: 400000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay, Pagination]}
-        className=" sm:w-full sm:h-full"
+        className=" relative invisible sm:visible sm:w-full sm:h-full"
       >
         <SwiperSlide className="bg-center bg-cover ">
           <div className="w-full h-full relative">

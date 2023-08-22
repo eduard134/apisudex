@@ -25,12 +25,14 @@ const ComponentName = () => {
           </div>
           <div className="mt-12">
             <ul className="wrapper flex items-center justify-center h-12 w-full">
-              <li className="icon relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out">
-                <span className="tooltip_f absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
-                  Facebook
-                </span>
-                <Image src={facebook} alt="" className="" />
-              </li>
+              <Link href='https://www.facebook.com/profile.php?id=61550100853168&mibextid=ZbWKwL'>
+                <li className="icon relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out">
+                  <span className="tooltip_f absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
+                    Facebook
+                  </span>
+                  <Image src={facebook} alt="" className="" />
+                </li>
+              </Link>
               <Link href="https://www.instagram.com/apisudex.md/">
                 <li className="icon instagram relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out     ">
                   <span className="tooltip_i absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
