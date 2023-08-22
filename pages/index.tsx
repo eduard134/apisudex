@@ -44,7 +44,7 @@ export default function Home() {
           onClick={handleClick}
         >
           Produse
-          <Image src={drop} alt="" className="ml-2 w-4 md:w-5 " />
+          <Image src={drop} alt="" className="ml-2 w-4 md:w-5" />
         </button>
       </div>
       <div className="flex flex-col sm:flex-row mt-5 sm:mt-20 bg-dark_purple p-4 sm:p-5 items-center">
