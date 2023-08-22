@@ -29,7 +29,22 @@
         "Desc_about3": "Experiența noastră solidă de 14 ani în apicultură ne motivează să vă prezentăm cu pasiune compania noastră, ApiSudex, specializată în producția de stupi. Ne concentrăm pe asigurarea calității materiilor prime și acordăm o atenție riguroasă fiecărui pas al procesului de prelucrare, reprezentând astfel fundamentul activității noastre. Pe parcursul acestor ani, am construit o echipă de profesioniști dedicați, care acordă o importanță deosebită atât calității materiilor prime, cât și procesului meticulos de prelucrare.",
         "Desc_about4": "Fiecare client reprezintă o prioritate pentru noi. Ne străduim să răspundem cu precizie cerințelor individuale, transformându-le în soluții personalizate. Principiul fundamental care ne ghidează eforturile este 'FIECARE STUP ESTE SPECIAL, PENTRU CĂ FIECARE ALBINĂ ESTE SPECIALĂ', subliniind astfel importanța unică a fiecărui element din acest ecosistem.",
         "Btn_about": "Contactați-ne",
-        "why": "De ce să ne alegeți"
+        "why": "De ce să ne alegeți",
+        "title_about1": "Experiență și Cunoștințe Profunde în Apicultură",
+        "data_about1": "Avem o echipă de experți cu o vastă experiență în apicultură. Suntem capabili să oferim sfaturi personalizate și soluții adaptate pentru a vă ajuta să atingeți succesul în apicultură.",
+        "title_about2": "Produse de Calitate Superioară",
+        "data_about2": "Suntem mândri să oferim produse de cea mai înaltă calitate. Fie că este vorba de stupi, echipamente de colectare a mierii sau alte accesorii, toate articolele noastre sunt fabricate cu atenție la detalii și din materiale durabile.",
+        "title_about3": "Varietatea și Inovarea Produselor",
+        "data_about3": "Înțelegem că apicultura poate varia în funcție de regiune și de nevoile individuale ale apicultorilor. De aceea, oferim o gamă largă de produse, de la stupi convenționali la tehnologii inovatoare pentru monitorizarea stupilor și colectarea mierii.",
+        "title_about4": "Relație de Încredere cu Clientul",
+        "data_about4": "Ne străduim să construim relații solide și de încredere cu clienții noștri. Asigurăm comunicare transparentă, răspuns rapid la întrebări și ne preocupăm de satisfacția dumneavoastră în fiecare etapă a colaborării noastre.",
+        "Nume": "Nume:",
+        "Placeholder_nume": "Scrie acum...",
+        "Email": "Email:",
+        "Placeholder_email": "Scrie adresa...",
+        "Mesaj": "Mesaj:",
+        "Placeholder_mesaj": "Scrie un mesaj...",
+        "Btn_contact": "Trimite"
     },
     "ru": {
         "Nav1": "Главное",
@@ -61,6 +76,21 @@
         "Desc_about3": "Наш солидный 14-летний опыт в пчеловодстве побуждает нас с энтузиазмом представить нашу компанию ApiSudex, специализирующуюся на производстве ульев. Мы уделяем особое внимание обеспечению качества сырья и уделяем пристальное внимание каждому этапу процесса переработки, что составляет основу нашего бизнеса. За эти годы мы создали команду преданных своему делу профессионалов, которые придают большое значение как качеству сырья, так и тщательному процессу обработки.",
         "Desc_about4": "Каждый клиент является для нас приоритетом. Мы пытаемся точно реагировать на индивидуальные требования, превращая их в индивидуальные решения. принцип Основополагающим принципом, которым мы руководствуемся в наших усилиях, является «КАЖДЫЙ УЛЕЙ ЯВЛЯЕТСЯ ОСОБЕННЫЙ, ПОТОМУ ЧТО КАЖДАЯ ПЧЕЛА ОСОБЕННА», подчеркивая отсюда уникальное значение каждого элемента в этой экосистеме.",
         "Btn_about": "Свяжитесь с нами",
-        "why": "Почему стоит выбрать нас"
+        "why": "Почему стоит выбрать нас",
+        "title_about1": "Опыт и глубокие знания в пчеловодстве",
+        "data_about1": "У нас есть команда специалистов с большим опытом работы в пчеловодстве. Мы можем предоставить индивидуальные консультации и решения специально разработанные, чтобы помочь вам добиться успеха в пчеловодстве.",
+        "title_about2": "Продукция высшего качества",
+        "data_about2": "Мы гордимся тем, что предлагаем продукцию высочайшего качества. Может быть речь идет об ульях, оборудовании для сбора меда и т. д. аксессуары, все наши товары тщательно изготовлены на детали и прочные материалы.",
+        "title_about3": "Разнообразие продукции и инновации",
+        "data_about3": "Мы понимаем, что пчеловодство может различаться в зависимости от региона и страны. индивидуальные потребности пчеловодов. Вот почему мы предлагаем ассортимент широкий ассортимент продукции: от обычных ульев до технологий инновационный для мониторинга ульев и сбора меда.",
+        "title_about4": "Доверительные отношения с клиентом",
+        "data_about4": "Мы стремимся построить прочные и доверительные отношения с Наши клиенты. Мы обеспечиваем прозрачное общение, быстрый ответ на вопросы, и мы заботимся о вашем удовлетворении на каждом этапе нашего сотрудничества.",
+        "Nume": "Имя:",
+        "Placeholder_nume": "Пишите сейчас...",
+        "Email": "Электронная почта:",
+        "Placeholder_email": "Пиши адрес...",
+        "Mesaj": "Сообщение:",
+        "Placeholder_mesaj": "Напиши сообщение...",
+        "Btn_contact": "Отправлять"
     }
 }

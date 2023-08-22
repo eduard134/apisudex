@@ -8,11 +8,15 @@ import Footer from "./components/Footer";
 import EmailForm from "./components/EmailForm";
 import Link from "next/link";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
+import { useLanguage } from "./components/LanguageContext";
+
 
 const ComponentName = () => {
+  const { language } = useLanguage();
+  const content = getTranslatedContent(language);
   return (
     <>
-      <p className="font-recoleta text-4xl text-center">Contactați-ne</p>
+      <p className="font-recoleta text-4xl text-center">{content.Btn_about}</p>
       <div className="lg:flex block lg:p-16 p-8">
         <div className="left lg:w-[80%] w-full">
           <div className="map w-full h-[80%]">

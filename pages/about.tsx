@@ -56,12 +56,10 @@ const about = () => {
               <Image src={quality} alt="" />
             </div>
             <div className="mt-4 text-lg font-semibold">
-              Experiență și Cunoștințe Profunde în Apicultură
+              {content.title_about1}
             </div>
             <div className="mt-4 text-[#475569]">
-              Avem o echipă de experți cu o vastă experiență în apicultură.
-              Suntem capabili să oferim sfaturi personalizate și soluții
-              adaptate pentru a vă ajuta să atingeți succesul în apicultură.
+              {content.data_about1}
             </div>
           </div>
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] m-2 mt-10 rounded-xl p-4">
@@ -69,13 +67,10 @@ const about = () => {
               <Image src={high_quality} alt="" />
             </div>
             <div className="mt-4 text-lg font-semibold">
-              Produse de Calitate Superioară
+              {content.title_about2}
             </div>
             <div className="mt-4 text-[#475569]">
-              Suntem mândri să oferim produse de cea mai înaltă calitate. Fie că
-              este vorba de stupi, echipamente de colectare a mierii sau alte
-              accesorii, toate articolele noastre sunt fabricate cu atenție la
-              detalii și din materiale durabile.{" "}
+              {content.data_about2}
             </div>
           </div>
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] mx-2 mt-10 rounded-xl p-4">
@@ -83,13 +78,10 @@ const about = () => {
               <Image src={innovation} alt="" />
             </div>
             <div className="mt-4 text-lg font-semibold">
-              Varietatea și Inovarea Produselor
+              {content.title_about3}
             </div>
             <div className="mt-4 text-[#475569]">
-              Înțelegem că apicultura poate varia în funcție de regiune și de
-              nevoile individuale ale apicultorilor. De aceea, oferim o gamă
-              largă de produse, de la stupi convenționali la tehnologii
-              inovatoare pentru monitorizarea stupilor și colectarea mierii.
+              {content.data_about3}
             </div>
           </div>
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] mx-2 mt-10 rounded-xl p-4">
@@ -97,13 +89,10 @@ const about = () => {
               <Image src={relation} alt="" />
             </div>
             <div className="mt-4 text-lg font-semibold">
-              Relație de Încredere cu Clientul
+              {content.title_about4}
             </div>
             <div className="mt-4 text-[#475569]">
-              Ne străduim să construim relații solide și de încredere cu
-              clienții noștri. Asigurăm comunicare transparentă, răspuns rapid
-              la întrebări și ne preocupăm de satisfacția dumneavoastră în
-              fiecare etapă a colaborării noastre.
+              {content.data_about4}
             </div>
           </div>
         </div>
