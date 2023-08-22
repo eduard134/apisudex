@@ -17,10 +17,7 @@ const Navbar = () => {
     <div className="left-0 top-0 w-full z-10 mt-5">
       <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
         <Link href="/" className="flex items-center justify-center sm:p-4">
-          <Image src="/logo.png" alt="ApiSudex" width={40} height={50} />
-          <p className="text-center bg-cover bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 mt-2 font-black text-2xl">
-            <span className="ml-3">ApiSudex</span>
-          </p>
+          <Image src="/logo.png" alt="ApiSudex" width={70} height={70} />
         </Link>
 
         <ul className="hidden sm:flex">
@@ -81,6 +78,7 @@ const Navbar = () => {
               ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white z-10 text-center ease-in duration-300"
               : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white z-10 text-center ease-in duration-300"
           }
+          onClick={() => setNav(false)}
         >
           <ul>
             <li className="p-4 text-3xl">

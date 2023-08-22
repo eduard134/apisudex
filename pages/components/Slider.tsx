@@ -23,7 +23,7 @@ export default function Shop() {
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Autoplay, Pagination]}
-        className=" sm:w-full sm:h-full"
+        className=" relative invisible sm:visible sm:w-full sm:h-full"
       >
         <SwiperSlide className="bg-center bg-cover ">
           <div className="w-full h-full relative">

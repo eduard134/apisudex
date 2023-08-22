@@ -55,7 +55,7 @@ const Footer = () => {
                 onMouseLeave={() => handleIconHover(0, false)}
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.facebook.com/profile.php?id=61550100853168&mibextid=ZbWKwL">
               <Image
                 src={hoverStates[1] ? face_hover : facebook}
                 alt="facebook"
@@ -69,7 +69,7 @@ const Footer = () => {
             <Link href="https://msng.link/o?37376723462=vi">
               <Image
                 src={hoverStates[2] ? viber_hover : viber}
-                alt="facebook"
+                alt="viber"
                 width={30}
                 height={30}
                 className="filter transform hover:scale-110 transition-all duration-150 linear"
@@ -175,10 +175,7 @@ const Footer = () => {
           © 2023 ApiSudex eCommerce Group, All Rights Reserved
         </p>
         <Link href="/" className="flex items-center justify-center mt-3 sm:mt-0 sm:p-0">
-          <Image src="/logo.png" alt="ApiSudex" width={25} height={30} />
-          <p className="bg-cover bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 font-varela">
-           <span className="ml-2"> ApiSudex</span>
-          </p>
+          <Image src="/logo.png" alt="ApiSudex" width={40} height={70} />
         </Link>
       </div>
     </>
