@@ -7,6 +7,7 @@ import Image from "next/image";
 import Footer from "./components/Footer";
 import EmailForm from "./components/EmailForm";
 import Link from "next/link";
+import { getTranslatedContent } from "./components/TranslateRoToRu";
 
 const ComponentName = () => {
   return (

@@ -10,6 +10,8 @@ import insta_hover from "../images/instagram_hover.png";
 import face_hover from "../images/facebook_hover.png";
 import viber_hover from "../images/viber1_hover.png";
 import whatsapp_hover from "../images/whatsapp1_hover.png";
+import { useLanguage } from "./LanguageContext";
+import { getTranslatedContent } from "./TranslateRoToRu";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -35,13 +37,16 @@ const Footer = () => {
     setHoverStates(newHoverStates);
   };
 
+  const { language } = useLanguage();
+  const content = getTranslatedContent(language);
+
   return (
     <>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mt-10" />
       <div className="bottom-0 flex flex-col sm:flex-row justify-between text-[#2b2c3d] sm:py-6 py-5 lg:p-10 items-center">
         <div className="flex justify-center items-center flex-col sm:ml-10">
           <h1 className="mb-4 flex justify-center text-2xl sm:text-xl lg:text-2xl font-semibold uppercase md:justify-start font-recoleta">
-            SOCIAL
+            {content.Social}
           </h1>
           <div className="flex gap-4 ml-2">
             <Link href="https://www.instagram.com/apisudex.md/">
@@ -92,36 +97,36 @@ const Footer = () => {
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
           <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-recoleta">
-            Menu
+            {content.Menu}
           </h1>
           <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
-              Acasă
+              {content.Nav1}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
           <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
-              Shop
+              {content.Nav2}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
           <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
-              Despre Noi
+              {content.Nav3}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
           <div className="relative text-center lg:text-start font-varela ">
             <Link href="/contacte" className="hover:text-yellow-400 group">
-              Contacte
+              {content.Nav4}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
           <h6 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-recoleta">
-            Contact
+            {content.Contact}
           </h6>
           <div className="mr-10">
             {/* adress */}
@@ -172,9 +177,12 @@ const Footer = () => {
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 " />
       <div className="p-6 text-center flex-col flex sm:flex-row sm:justify-between">
         <p className="font-semibold ml-2 text-gray-500 font-varela">
-          © 2023 ApiSudex eCommerce Group, All Rights Reserved
+          {content.Copyright}
         </p>
-        <Link href="/" className="flex items-center justify-center mt-3 sm:mt-0 sm:p-0">
+        <Link
+          href="/"
+          className="flex items-center justify-center mt-3 sm:mt-0 sm:p-0"
+        >
           <Image src="/logo.png" alt="ApiSudex" width={40} height={70} />
         </Link>
       </div>

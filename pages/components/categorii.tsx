@@ -2,12 +2,18 @@ import React from "react";
 import categoriesData from "../categories.json";
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "./LanguageContext";
+import { getTranslatedContent } from "./TranslateRoToRu";
 
 const Categorii = () => {
+  const { language } = useLanguage();
+  const content = getTranslatedContent(language);
   return (
     <div className="mt-[-15vh] sm:mt-10 mb-20 text-center">
       <hr className="sm:bg-yellow-500 sm:h-[3px] sm:mr-6 sm:ml-8 sm:mb-8 invisible" />
-      <h2 className="sm:mb-6 mb-3 text-4xl font-bold font-recoleta">Categorii:</h2>
+      <h2 className="sm:mb-6 mb-3 text-4xl font-bold font-recoleta">
+        {content.Categorii}
+      </h2>
       <div className="flex flex-col sm:flex-row justify-center flex-wrap gap-6 ">
         {categoriesData.map((category) => (
           <Link

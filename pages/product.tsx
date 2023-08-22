@@ -3,6 +3,7 @@ import Image from "next/image";
 import productsData from "./products.json";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
+import { getTranslatedContent } from "./components/TranslateRoToRu";
 
 interface Product {
   id: number;

@@ -4,6 +4,8 @@ import Image from "next/image";
 import beebanner from "../images/bee banner.jpg";
 import beebanner1 from "../images/bee banner1.jpg";
 import beebanner2 from "../images/bee banner2.jpg";
+import { useLanguage } from "./LanguageContext";
+import { getTranslatedContent } from "./TranslateRoToRu";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -13,6 +15,9 @@ import "swiper/css/pagination";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
 export default function Shop() {
+  const { language } = useLanguage();
+  const content = getTranslatedContent(language);
+
   return (
     <div className="h-1/2 mt-5">
       <Swiper
@@ -38,7 +43,7 @@ export default function Shop() {
                 ApiSudex
               </h1>
               <span className="text-[10px] sm:text-[20px] text-[#ffda05] sm:leading-6">
-                Un producător de încredere <br /> pentru inventar apicol
+                {content.Slide0} <br /> {content.Slide1}
               </span>
             </div>
           </div>
@@ -53,10 +58,10 @@ export default function Shop() {
             />
             <div className="text-white absolute top-1/4 float-left ml-5  font-recoleta drop-shadow-2xl fade-in">
               <h1 className="text-[60px] text-[#ffae00] font-bold leading-sm">
-                Descoperă acum{" "}
+                {content.Slide2}{" "}
               </h1>
               <span className="text-[22px] text-[#ffffff]">
-                bonusurile și ofertele speciale!
+                {content.Slide3}
               </span>
             </div>
           </div>
@@ -71,12 +76,11 @@ export default function Shop() {
             />
             <div className="text-white absolute top-4 right-8 text-right font-recoleta drop-shadow-2xl fade-in">
               <h1 className="text-[40px] text-[#A15E00] font-bold leading-sm">
-                Calitatea este fundamentul{" "}
+                {content.Slide4}{" "}
               </h1>
               <span className="text-[22px] text-white">
                 {" "}
-                pe care ne construim relațiile <br /> de lungă durată cu
-                clienții noștri
+                {content.Slide4} <br /> {content.Slide6}
               </span>
             </div>
           </div>
