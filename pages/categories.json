@@ -1,17 +1,38 @@
 [
-    {
-      "id": 1,
-      "denumire": "Stupuri",
-      "img": "/images/stup_categ.png"
-    },
-    {
-      "id": 2,
-      "denumire": "Accesorii/Inventar",
-      "img": "/images/acces.png"
-    },
-    {
-      "id": 3,
-      "denumire": "Bonusuri",
-      "img": "/images/sale.png"
+  {
+    "id": 1,
+    "img": "/images/stup_categ.png",
+    "translations": {
+      "ro": {
+        "denumire": "Stupuri"
+      },
+      "ru": {
+        "denumire": "Ульи"
+      }
     }
-  ]
+  },
+  {
+    "id": 2,
+    "img": "/images/acces.png",
+    "translations": {
+      "ro": {
+        "denumire": "Accesorii/Inventar"
+      },
+      "ru": {
+        "denumire": "Аксессуары/Инвентарь"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "img": "/images/sale.png",
+    "translations": {
+      "ro": {
+        "denumire": "Bonusuri"
+      },
+      "ru": {
+        "denumire": "Бонусы"
+      }
+    }
+  }
+]

@@ -1,49 +1,110 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useRouter } from "next/router";
 import Image from "next/image";
 import productsData from "./products.json";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
-import { getTranslatedContent } from "./components/TranslateRoToRu";
+import { useLanguage } from "./components/LanguageContext";
 
 interface Product {
   id: number;
   categoryId: number;
   image?: string;
-  image1?: string;
-  name: string;
-  opt1?: string;
-  opt2?: string;
-  opt3?: string;
-  pret1: string;
-  pret2?: string;
-  pret3?: string;
-  reducere?: string;
-  descriere: string;
+  translations: {
+    ro: {
+      name: string;
+      pret1: string;
+      descriere: string;
+      reducere?: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret2?: string;
+      pret3?: string;
+    };
+    ru: {
+      name: string;
+      pret1: string;
+      descriere: string;
+      reducere?: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret2?: string;
+      pret3?: string;
+    };
+  };
 }
 
-export default function Product() {
+interface CategoryTranslations {
+  ro: {
+    name: string;
+    pret1: string;
+    descriere: string;
+    reducere?: string;
+    opt1?: string;
+    opt2?: string;
+    opt3?: string;
+    pret2?: string;
+    pret3?: string;
+  };
+  ru: {
+    name: string;
+    pret1: string;
+    descriere: string;
+    reducere?: string;
+    opt1?: string;
+    opt2?: string;
+    opt3?: string;
+    pret2?: string;
+    pret3?: string;
+  };
+}
+
+interface ProductProps {
+  selectedOption: string; // Add a proper type here based on your needs
+}
+
+export default function Product({ selectedOption }: ProductProps) {
   const router = useRouter();
   const { id: productId } = router.query;
+  const { language } = useLanguage();
 
   const product: Product | undefined = productsData.find(
     (p) => p.id === parseInt(productId as string)
   );
 
-  const [selectedOption, setSelectedOption] = useState<string | undefined>(
-    product?.opt1 || product?.opt2 || product?.opt3
+  const [selectOption, setSelectedOption] = useState<string>(
+    product?.translations[language as keyof CategoryTranslations]?.opt1 ||
+      product?.translations[language as keyof CategoryTranslations]?.opt2 ||
+      product?.translations[language as keyof CategoryTranslations]?.opt3 ||
+      ""
   );
 
   const selectedPrice = (() => {
-    if (selectedOption === product?.opt1) {
-      return product?.reducere || product?.pret1;
+    if (selectedOption === "opt1") {
+      return (
+        product?.translations[language as keyof CategoryTranslations]
+          ?.reducere ||
+        product?.translations[language as keyof CategoryTranslations]?.pret1 ||
+        ""
+      );
     }
-    if (selectedOption === product?.opt2) {
-      return product?.pret2;
+    if (selectedOption === "opt2") {
+      return (
+        product?.translations[language as keyof CategoryTranslations]?.pret2 ||
+        ""
+      );
     }
-    if (selectedOption === product?.opt3) {
-      return product?.pret3;
+    if (selectedOption === "opt3") {
+      return (
+        product?.translations[language as keyof CategoryTranslations]?.pret3 ||
+        ""
+      );
     }
-    return product?.pret1;
+    return (
+      product?.translations[language as keyof CategoryTranslations]?.pret1 || ""
+    );
   })();
 
   const handleOptionChange = (option: string) => {
@@ -51,7 +112,12 @@ export default function Product() {
   };
 
   useEffect(() => {
-    setSelectedOption(product?.opt1 || product?.opt2 || product?.opt3);
+    setSelectedOption(
+      product?.translations[language as keyof CategoryTranslations]?.opt1 ||
+        product?.translations[language as keyof CategoryTranslations]?.opt2 ||
+        product?.translations[language as keyof CategoryTranslations]?.opt3 ||
+        ""
+    );
   }, [product]);
 
   return (
@@ -62,7 +128,10 @@ export default function Product() {
             <div className="w-96 h-80 mr-10 relative overflow-hidden mb-6  ">
               <Image
                 src={product.image || "/default-image.jpg"}
-                alt={product.name}
+                alt={
+                  product?.translations[language as keyof CategoryTranslations]
+                    .name
+                }
                 layout="fill"
                 objectFit="cover"
               />
@@ -70,49 +139,90 @@ export default function Product() {
 
             <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
               <h1 className="text-3xl font-bold text-white mb-4">
-                {product.name}
+                {
+                  product?.translations[language as keyof CategoryTranslations]
+                    .name
+                }
               </h1>
               <div className="flex gap-3 font-varela ">
-                {product.opt1 && (
+                {product?.translations[language as keyof CategoryTranslations]
+                  .opt1 && (
                   <button
-                    onClick={() =>
-                      product.opt1 && handleOptionChange(product.opt1)
-                    }
+                    onClick={() => {
+                      const selectedOpt1 =
+                        product.translations[
+                          language as keyof CategoryTranslations
+                        ].opt1;
+                      selectedOpt1 && handleOptionChange(selectedOpt1);
+                    }}
                     className={`anim w-full py-1 ${
-                      selectedOption === product.opt1
+                      selectedOption ===
+                      product?.translations[
+                        language as keyof CategoryTranslations
+                      ].opt1
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
                   >
-                    {product.opt1}
+                    {
+                      product?.translations[
+                        language as keyof CategoryTranslations
+                      ].opt1
+                    }
                   </button>
                 )}
-                {product.opt2 && (
+
+                {product?.translations[language as keyof CategoryTranslations]
+                  .opt2 && (
                   <button
-                    onClick={() =>
-                      product.opt2 && handleOptionChange(product.opt2)
-                    }
+                    onClick={() => {
+                      const selectedOpt2 =
+                        product.translations[
+                          language as keyof CategoryTranslations
+                        ].opt2;
+                      selectedOpt2 && handleOptionChange(selectedOpt2);
+                    }}
                     className={`anim w-full py-1 ${
-                      selectedOption === product.opt2
+                      selectedOption ===
+                      product?.translations[
+                        language as keyof CategoryTranslations
+                      ].opt2
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
                   >
-                    {product.opt2}
+                    {
+                      product?.translations[
+                        language as keyof CategoryTranslations
+                      ].opt2
+                    }
                   </button>
                 )}
-                {product.opt3 && (
+
+                {product?.translations[language as keyof CategoryTranslations]
+                  .opt3 && (
                   <button
-                    onClick={() =>
-                      product.opt3 && handleOptionChange(product.opt3)
-                    }
+                    onClick={() => {
+                      const selectedOpt3 =
+                        product.translations[
+                          language as keyof CategoryTranslations
+                        ].opt3;
+                      selectedOpt3 && handleOptionChange(selectedOpt3);
+                    }}
                     className={`anim w-full py-1 ${
-                      selectedOption === product.opt3
+                      selectedOption ===
+                      product?.translations[
+                        language as keyof CategoryTranslations
+                      ].opt3
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
                   >
-                    {product.opt3}
+                    {
+                      product?.translations[
+                        language as keyof CategoryTranslations
+                      ].opt3
+                    }
                   </button>
                 )}
               </div>
@@ -120,11 +230,22 @@ export default function Product() {
                 <p className="text-sm font-semibold text-yellow-500 mb-2">
                   Descriere:
                 </p>
-                <p className="text-sm font-varela mb-6">{product.descriere}</p>
+                <p className="text-sm font-varela mb-6">
+                  {
+                    product?.translations[
+                      language as keyof CategoryTranslations
+                    ].descriere
+                  }
+                </p>
                 <div className="flex items-center justify-end mb-1">
-                  {product.reducere && (
+                  {product?.translations[language as keyof CategoryTranslations]
+                    .reducere && (
                     <p className="text-base line-through text-gray-400">
-                      {product.pret1}
+                      {
+                        product?.translations[
+                          language as keyof CategoryTranslations
+                        ].pret1
+                      }
                     </p>
                   )}
                 </div>

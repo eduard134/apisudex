@@ -1,96 +1,703 @@
 {
-    "ro": {
-        "Nav1": "Acasă",
-        "Nav2": "Shop",
-        "Nav3": "Despre Noi",
-        "Nav4": "Contacte",
-        "Title1": "Explorează",
-        "Title2": " Universul Apicol",
-        "Description1": "Bine ați venit la ApiSudex, locul unde pasiunea noastră",
-        "Description2": " pentru albine și natură se întâlnește cu inovația.",
-        "btn_prod": "Produse",
-        "Prod_pop1": "Produsele",
-        "Prod_pop2": " Noastre",
-        "Prod_pop3": " Populare",
-        "Social": "SOCIAL",
-        "Menu": "MENU",
-        "Contact": "Contact",
-        "Copyright": "© 2023 ApiSudex eCommerce Group, All Rights Reserved",
-        "Slide0": "Un producător de încredere",
-        "Slide1": "pentru inventar apicol",
-        "Slide2": "Descoperă acum",
-        "Slide3": "bonusurile și ofertele speciale!",
-        "Slide4": "Calitatea este fundamentul",
-        "Slide5": "pe care ne construim relațiile",
-        "Slide6": " de lungă durată cu clienții noștri",
-        "Categorii": "Categorii:",
-        "Desc_about1": "Ca Furnizor de Soluții pentru Apicultură, suntem dedicați creării de soluții personalizate pentru",
-        "Desc_about2": "creșterea și dezvoltarea afacerilor apicole prospere.",
-        "Desc_about3": "Experiența noastră solidă de 14 ani în apicultură ne motivează să vă prezentăm cu pasiune compania noastră, ApiSudex, specializată în producția de stupi. Ne concentrăm pe asigurarea calității materiilor prime și acordăm o atenție riguroasă fiecărui pas al procesului de prelucrare, reprezentând astfel fundamentul activității noastre. Pe parcursul acestor ani, am construit o echipă de profesioniști dedicați, care acordă o importanță deosebită atât calității materiilor prime, cât și procesului meticulos de prelucrare.",
-        "Desc_about4": "Fiecare client reprezintă o prioritate pentru noi. Ne străduim să răspundem cu precizie cerințelor individuale, transformându-le în soluții personalizate. Principiul fundamental care ne ghidează eforturile este 'FIECARE STUP ESTE SPECIAL, PENTRU CĂ FIECARE ALBINĂ ESTE SPECIALĂ', subliniind astfel importanța unică a fiecărui element din acest ecosistem.",
-        "Btn_about": "Contactați-ne",
-        "why": "De ce să ne alegeți",
-        "title_about1": "Experiență și Cunoștințe Profunde în Apicultură",
-        "data_about1": "Avem o echipă de experți cu o vastă experiență în apicultură. Suntem capabili să oferim sfaturi personalizate și soluții adaptate pentru a vă ajuta să atingeți succesul în apicultură.",
-        "title_about2": "Produse de Calitate Superioară",
-        "data_about2": "Suntem mândri să oferim produse de cea mai înaltă calitate. Fie că este vorba de stupi, echipamente de colectare a mierii sau alte accesorii, toate articolele noastre sunt fabricate cu atenție la detalii și din materiale durabile.",
-        "title_about3": "Varietatea și Inovarea Produselor",
-        "data_about3": "Înțelegem că apicultura poate varia în funcție de regiune și de nevoile individuale ale apicultorilor. De aceea, oferim o gamă largă de produse, de la stupi convenționali la tehnologii inovatoare pentru monitorizarea stupilor și colectarea mierii.",
-        "title_about4": "Relație de Încredere cu Clientul",
-        "data_about4": "Ne străduim să construim relații solide și de încredere cu clienții noștri. Asigurăm comunicare transparentă, răspuns rapid la întrebări și ne preocupăm de satisfacția dumneavoastră în fiecare etapă a colaborării noastre.",
-        "Nume": "Nume:",
-        "Placeholder_nume": "Scrie acum...",
-        "Email": "Email:",
-        "Placeholder_email": "Scrie adresa...",
-        "Mesaj": "Mesaj:",
-        "Placeholder_mesaj": "Scrie un mesaj...",
-        "Btn_contact": "Trimite"
+    "data": {
+        "ro": {
+            "Nav1": "Acasă",
+            "Nav2": "Shop",
+            "Nav3": "Despre Noi",
+            "Nav4": "Contacte",
+            "Title1": "Explorează",
+            "Title2": " Universul Apicol",
+            "Description1": "Bine ați venit la ApiSudex, locul unde pasiunea noastră",
+            "Description2": " pentru albine și natură se întâlnește cu inovația.",
+            "btn_prod": "Produse",
+            "Prod_pop1": "Produsele",
+            "Prod_pop2": " Noastre",
+            "Prod_pop3": " Populare",
+            "Social": "SOCIAL",
+            "Menu": "MENU",
+            "Contact": "Contact",
+            "Copyright": "© 2023 ApiSudex eCommerce Group, All Rights Reserved",
+            "Slide0": "Un producător de încredere",
+            "Slide1": "pentru inventar apicol",
+            "Slide2": "Descoperă acum",
+            "Slide3": "bonusurile și ofertele speciale!",
+            "Slide4": "Calitatea este fundamentul",
+            "Slide5": "pe care ne construim relațiile",
+            "Slide6": " de lungă durată cu clienții noștri",
+            "Categorii": "Categorii:",
+            "Desc_about1": "Ca Furnizor de Soluții pentru Apicultură, suntem dedicați creării de soluții personalizate pentru",
+            "Desc_about2": "creșterea și dezvoltarea afacerilor apicole prospere.",
+            "Desc_about3": "Experiența noastră solidă de 14 ani în apicultură ne motivează să vă prezentăm cu pasiune compania noastră, ApiSudex, specializată în producția de stupi. Ne concentrăm pe asigurarea calității materiilor prime și acordăm o atenție riguroasă fiecărui pas al procesului de prelucrare, reprezentând astfel fundamentul activității noastre. Pe parcursul acestor ani, am construit o echipă de profesioniști dedicați, care acordă o importanță deosebită atât calității materiilor prime, cât și procesului meticulos de prelucrare.",
+            "Desc_about4": "Fiecare client reprezintă o prioritate pentru noi. Ne străduim să răspundem cu precizie cerințelor individuale, transformându-le în soluții personalizate. Principiul fundamental care ne ghidează eforturile este 'FIECARE STUP ESTE SPECIAL, PENTRU CĂ FIECARE ALBINĂ ESTE SPECIALĂ', subliniind astfel importanța unică a fiecărui element din acest ecosistem.",
+            "Btn_about": "Contactați-ne",
+            "why": "De ce să ne alegeți",
+            "title_about1": "Experiență și Cunoștințe Profunde în Apicultură",
+            "data_about1": "Avem o echipă de experți cu o vastă experiență în apicultură. Suntem capabili să oferim sfaturi personalizate și soluții adaptate pentru a vă ajuta să atingeți succesul în apicultură.",
+            "title_about2": "Produse de Calitate Superioară",
+            "data_about2": "Suntem mândri să oferim produse de cea mai înaltă calitate. Fie că este vorba de stupi, echipamente de colectare a mierii sau alte accesorii, toate articolele noastre sunt fabricate cu atenție la detalii și din materiale durabile.",
+            "title_about3": "Varietatea și Inovarea Produselor",
+            "data_about3": "Înțelegem că apicultura poate varia în funcție de regiune și de nevoile individuale ale apicultorilor. De aceea, oferim o gamă largă de produse, de la stupi convenționali la tehnologii inovatoare pentru monitorizarea stupilor și colectarea mierii.",
+            "title_about4": "Relație de Încredere cu Clientul",
+            "data_about4": "Ne străduim să construim relații solide și de încredere cu clienții noștri. Asigurăm comunicare transparentă, răspuns rapid la întrebări și ne preocupăm de satisfacția dumneavoastră în fiecare etapă a colaborării noastre.",
+            "Nume": "Nume:",
+            "Placeholder_nume": "Scrie acum...",
+            "Email": "Email:",
+            "Placeholder_email": "Scrie adresa...",
+            "Mesaj": "Mesaj:",
+            "Placeholder_mesaj": "Scrie un mesaj...",
+            "Btn_contact": "Trimite"
+        },
+        "ru": {
+            "Nav1": "Главное",
+            "Nav2": "Магазин",
+            "Nav3": "О нас",
+            "Nav4": "Контакты",
+            "Title1": "Исследуйте",
+            "Title2": " Вселенную Пчел",
+            "Description1": "Добро пожаловать в ApiSudex, где наша страсть",
+            "Description2": " к пчелам и природе сочетается с инновациями.",
+            "btn_prod": "Продукты",
+            "Prod_pop1": "Наши",
+            "Prod_pop2": " Популярные",
+            "Prod_pop3": " Продукты",
+            "Social": "СОЦИАЛЬНОЕ",
+            "Menu": "МЕНЮ",
+            "Contact": "Контакт",
+            "Copyright": "© 2023 Группа электронной коммерции ApiSudex, все права защищены",
+            "Slide0": "Надежный производитель",
+            "Slide1": "для инвентаря пчел",
+            "Slide2": "Узнайте о бонусах",
+            "Slide3": "и специальных предложениях прямо сейчас!",
+            "Slide4": "Качество – это основа",
+            "Slide5": "на которой мы строим долгосрочные",
+            "Slide6": " отношения с нашими клиентами.",
+            "Categorii": "Категории:",
+            "Desc_about1": "Как поставщик решений для пчеловодства, мы стремимся создавать индивидуальные решения для",
+            "Desc_about2": "роста и развития процветающего пчеловодческого бизнеса.",
+            "Desc_about3": "Наш солидный 14-летний опыт в пчеловодстве побуждает нас с энтузиазмом представить нашу компанию ApiSudex, специализирующуюся на производстве ульев. Мы уделяем особое внимание обеспечению качества сырья и уделяем пристальное внимание каждому этапу процесса переработки, что составляет основу нашего бизнеса. За эти годы мы создали команду преданных своему делу профессионалов, которые придают большое значение как качеству сырья, так и тщательному процессу обработки.",
+            "Desc_about4": "Каждый клиент является для нас приоритетом. Мы пытаемся точно реагировать на индивидуальные требования, превращая их в индивидуальные решения. принцип Основополагающим принципом, которым мы руководствуемся в наших усилиях, является «КАЖДЫЙ УЛЕЙ ЯВЛЯЕТСЯ ОСОБЕННЫЙ, ПОТОМУ ЧТО КАЖДАЯ ПЧЕЛА ОСОБЕННА», подчеркивая отсюда уникальное значение каждого элемента в этой экосистеме.",
+            "Btn_about": "Свяжитесь с нами",
+            "why": "Почему стоит выбрать нас",
+            "title_about1": "Опыт и глубокие знания в пчеловодстве",
+            "data_about1": "У нас есть команда специалистов с большим опытом работы в пчеловодстве. Мы можем предоставить индивидуальные консультации и решения специально разработанные, чтобы помочь вам добиться успеха в пчеловодстве.",
+            "title_about2": "Продукция высшего качества",
+            "data_about2": "Мы гордимся тем, что предлагаем продукцию высочайшего качества. Может быть речь идет об ульях, оборудовании для сбора меда и т. д. аксессуары, все наши товары тщательно изготовлены на детали и прочные материалы.",
+            "title_about3": "Разнообразие продукции и инновации",
+            "data_about3": "Мы понимаем, что пчеловодство может различаться в зависимости от региона и страны. индивидуальные потребности пчеловодов. Вот почему мы предлагаем ассортимент широкий ассортимент продукции: от обычных ульев до технологий инновационный для мониторинга ульев и сбора меда.",
+            "title_about4": "Доверительные отношения с клиентом",
+            "data_about4": "Мы стремимся построить прочные и доверительные отношения с Наши клиенты. Мы обеспечиваем прозрачное общение, быстрый ответ на вопросы, и мы заботимся о вашем удовлетворении на каждом этапе нашего сотрудничества.",
+            "Nume": "Имя:",
+            "Placeholder_nume": "Пишите сейчас...",
+            "Email": "Электронная почта:",
+            "Placeholder_email": "Пиши адрес...",
+            "Mesaj": "Сообщение:",
+            "Placeholder_mesaj": "Напиши сообщение...",
+            "Btn_contact": "Отправлять"
+        }
     },
-    "ru": {
-        "Nav1": "Главное",
-        "Nav2": "Магазин",
-        "Nav3": "О нас",
-        "Nav4": "Контакты",
-        "Title1": "Исследуйте",
-        "Title2": " Вселенную Пчел",
-        "Description1": "Добро пожаловать в ApiSudex, где наша страсть",
-        "Description2": " к пчелам и природе сочетается с инновациями.",
-        "btn_prod": "Продукты",
-        "Prod_pop1": "Наши",
-        "Prod_pop2": " Популярные",
-        "Prod_pop3": " Продукты",
-        "Social": "СОЦИАЛЬНОЕ",
-        "Menu": "МЕНЮ",
-        "Contact": "Контакт",
-        "Copyright": "© 2023 Группа электронной коммерции ApiSudex, все права защищены",
-        "Slide0": "Надежный производитель",
-        "Slide1": "для инвентаря пчел",
-        "Slide2": "Узнайте о бонусах",
-        "Slide3": "и специальных предложениях прямо сейчас!",
-        "Slide4": "Качество – это основа",
-        "Slide5": "на которой мы строим долгосрочные",
-        "Slide6": " отношения с нашими клиентами.",
-        "Categorii": "Категории:",
-        "Desc_about1": "Как поставщик решений для пчеловодства, мы стремимся создавать индивидуальные решения для",
-        "Desc_about2": "роста и развития процветающего пчеловодческого бизнеса.",
-        "Desc_about3": "Наш солидный 14-летний опыт в пчеловодстве побуждает нас с энтузиазмом представить нашу компанию ApiSudex, специализирующуюся на производстве ульев. Мы уделяем особое внимание обеспечению качества сырья и уделяем пристальное внимание каждому этапу процесса переработки, что составляет основу нашего бизнеса. За эти годы мы создали команду преданных своему делу профессионалов, которые придают большое значение как качеству сырья, так и тщательному процессу обработки.",
-        "Desc_about4": "Каждый клиент является для нас приоритетом. Мы пытаемся точно реагировать на индивидуальные требования, превращая их в индивидуальные решения. принцип Основополагающим принципом, которым мы руководствуемся в наших усилиях, является «КАЖДЫЙ УЛЕЙ ЯВЛЯЕТСЯ ОСОБЕННЫЙ, ПОТОМУ ЧТО КАЖДАЯ ПЧЕЛА ОСОБЕННА», подчеркивая отсюда уникальное значение каждого элемента в этой экосистеме.",
-        "Btn_about": "Свяжитесь с нами",
-        "why": "Почему стоит выбрать нас",
-        "title_about1": "Опыт и глубокие знания в пчеловодстве",
-        "data_about1": "У нас есть команда специалистов с большим опытом работы в пчеловодстве. Мы можем предоставить индивидуальные консультации и решения специально разработанные, чтобы помочь вам добиться успеха в пчеловодстве.",
-        "title_about2": "Продукция высшего качества",
-        "data_about2": "Мы гордимся тем, что предлагаем продукцию высочайшего качества. Может быть речь идет об ульях, оборудовании для сбора меда и т. д. аксессуары, все наши товары тщательно изготовлены на детали и прочные материалы.",
-        "title_about3": "Разнообразие продукции и инновации",
-        "data_about3": "Мы понимаем, что пчеловодство может различаться в зависимости от региона и страны. индивидуальные потребности пчеловодов. Вот почему мы предлагаем ассортимент широкий ассортимент продукции: от обычных ульев до технологий инновационный для мониторинга ульев и сбора меда.",
-        "title_about4": "Доверительные отношения с клиентом",
-        "data_about4": "Мы стремимся построить прочные и доверительные отношения с Наши клиенты. Мы обеспечиваем прозрачное общение, быстрый ответ на вопросы, и мы заботимся о вашем удовлетворении на каждом этапе нашего сотрудничества.",
-        "Nume": "Имя:",
-        "Placeholder_nume": "Пишите сейчас...",
-        "Email": "Электронная почта:",
-        "Placeholder_email": "Пиши адрес...",
-        "Mesaj": "Сообщение:",
-        "Placeholder_mesaj": "Напиши сообщение...",
-        "Btn_contact": "Отправлять"
-    }
+    "products": [
+        {
+            "id": 1,
+            "categoryId": 1,
+            "image": "/images/Capac_10_rame.png",
+            "translations": {
+                "ro": {
+                    "name": "Capac 10 Rame din Zinc, Termo-Izolat",
+                    "pret1": "290 Lei",
+                    "descriere": "Capac pentru stup cu 10 rame din zinc, cu izolație termică."
+                },
+                "ru": {
+                    "name": "Крышка 10 цинковых рамок с термоизоляцией",
+                    "pret1": "290 Лей",
+                    "descriere": "Крышка улья с 10 цинковыми рамками, с теплоизоляцией."
+                }
+            }
+        },
+        {
+            "id": 2,
+            "categoryId": 1,
+            "image": "/images/Inel_10rame.png",
+            "translations": {
+                "ro": {
+                    "name": "Inel 10 Rame (Capac-Inferior)",
+                    "pret1": "100 Lei",
+                    "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior."
+                },
+                "ru": {
+                    "name": "Кольцо 10 рамок (крышка-нижняя)",
+                    "pret1": "100 Лей",
+                    "descriere": "Улей-кольцо на 10 рамок, подходит для нижней крышки."
+                }
+            }
+        },
+        {
+            "id": 3,
+            "categoryId": 1,
+            "image": "/images/corp_10r_145.png",
+            "translations": {
+                "ro": {
+                    "name": "Corp 10 Rame 145mm",
+                    "pret1": "240 Lei",
+                    "reducere": "215.99 Lei",
+                    "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm."
+                },
+                "ru": {
+                    "name": "Кузов 10 рам 145 мм",
+                    "pret1": "240 Лей",
+                    "reducere": "215.99 Лей",
+                    "descriere": "Корпус улья на 10 рамок, высотой 145мм."
+                }
+            }
+        },
+        {
+            "id": 4,
+            "categoryId": 1,
+            "image": "/images/corp_10r_230.png",
+            "translations": {
+                "ro": {
+                    "name": "Corp 10 Rame 230mm",
+                    "pret1": "340 Lei",
+                    "reducere": "305.99 Lei",
+                    "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm."
+                },
+                "ru": {
+                    "name": "Кузов 10 рам 230мм",
+                    "pret1": "340 Лей",
+                    "reducere": "305.99 Лей",
+                    "descriere": "Корпус улья на 10 рамок высотой 230мм."
+                }
+            }
+        },
+        {
+            "id": 5,
+            "categoryId": 1,
+            "image": "/images/Corp_10_rame__nefiert.png",
+            "translations": {
+                "ro": {
+                    "name": "Corp 10 Rame 300mm",
+                    "pret1": "440 Lei",
+                    "reducere": "395.99 Lei",
+                    "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 300mm."
+                },
+                "ru": {
+                    "name": "Кузов 10 рам 300 мм",
+                    "pret1": "440 Лей",
+                    "reducere": "395.99 Лей",
+                    "descriere": "Корпус улья на 10 рамок высотой 300мм."
+                }
+            }
+        },
+        {
+            "id": 6,
+            "categoryId": 1,
+            "image": "/images/fund_10r.png",
+            "translations": {
+                "ro": {
+                    "name": "Fund 10 Rame",
+                    "opt1": "Plasă Inox",
+                    "opt2": "Plasă Zinc",
+                    "opt3": "Lemn Total",
+                    "pret1": "290 Lei",
+                    "pret2": "190 Lei",
+                    "pret3": "180 Lei",
+                    "descriere": "Fund pentru stup cu 10 rame, disponibil în variantele: plasă inox, plasă zinc și lemn total."
+                },
+                "ru": {
+                    "name": "Нижние 10 кадров",
+                    "opt1": "Сетка нержавеющей стали",
+                    "opt2": "Цинковая сетка",
+                    "opt3": "Всего древесины",
+                    "pret1": "290 Лей",
+                    "pret2": "190 Лей",
+                    "pret3": "180 Лей",
+                    "descriere": "Дно улья с 10 рамками, доступно в следующих вариантах: сетка из нержавеющей стали, цинковая сетка и массив дерева."
+                }
+            }
+        },
+        {
+            "id": 7,
+            "categoryId": 1,
+            "image": "/images/Capac_12_rame_Nefiert_1.png",
+            "translations": {
+                "ro": {
+                    "name": "Capac 12 Rame",
+                    "opt1": "Zinc, Termo-Izolat",
+                    "opt2": "Aluminiu, Termo-Izolat",
+                    "opt3": "Aluminiu, Neizolat",
+                    "pret1": "320 Lei",
+                    "pret2": "210 Lei",
+                    "pret3": "165 Lei",
+                    "descriere": "Capac pentru stup cu 12 rame, disponibil în variantele: zinc termo-izolat, aluminiu termo-izolat și aluminiu neizolat."
+                },
+                "ru": {
+                    "name": "Обложка 12 кадров",
+                    "opt1": "Цинк, с теплоизоляцией",
+                    "opt2": "Алюминий, с термоизоляцией",
+                    "opt3": "Алюминий, Неизолированный",
+                    "pret1": "320 Лей",
+                    "pret2": "210 Лей",
+                    "pret3": "165 Лей",
+                    "descriere": "Крышка улья с 12 рамками, доступна из: термоизолированного цинка, термоизолированного алюминия и неизолированного алюминия."
+                }
+            }
+        },
+        {
+            "id": 8,
+            "categoryId": 1,
+            "image": "/images/Inel_10rame.png",
+            "translations": {
+                "ro": {
+                    "name": "Inel 12 Rame (Capac-Inferior)",
+                    "pret1": "110 Lei",
+                    "descriere": "Inel pentru stup cu 12 rame, potrivit pentru capacul inferior."
+                },
+                "ru": {
+                    "name": "Кольцо 12 Рамок (Крышка-Нижняя)",
+                    "pret1": "110 Лей",
+                    "descriere": "Улей кольцевой на 12 рамок, подходит для нижней крышки."
+                }
+            }
+        },
+        {
+            "id": 9,
+            "categoryId": 1,
+            "image": "/images/corp_10r_145.png",
+            "translations": {
+                "ro": {
+                    "name": "Corp 12 Rame 145mm",
+                    "pret1": "265 Lei",
+                    "reducere": "238.99 Lei",
+                    "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 145mm."
+                },
+                "ru": {
+                    "name": "Кузов 12 рам 145 мм",
+                    "pret1": "265 Лей",
+                    "reducere": "238.99 Лей",
+                    "descriere": "Корпус улья на 12 рамок, высотой 145мм."
+                }
+            }
+        },
+        {
+            "id": 10,
+            "categoryId": 1,
+            "image": "/images/corp_10r_230.png",
+            "translations": {
+                "ro": {
+                    "name": "Corp 12 Rame 230mm",
+                    "pret1": "375 Lei",
+                    "reducere": "337.99 Lei",
+                    "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 230mm."
+                },
+                "ru": {
+                    "name": "Кузов 12 рам 230мм",
+                    "pret1": "375 Лей",
+                    "reducere": "337.99 Лей",
+                    "descriere": "Корпус для улья на 12 рамок высотой 230 мм."
+                }
+            }
+        },
+        {
+            "id": 11,
+            "categoryId": 1,
+            "image": "/images/12-rame-corp1.png",
+            "translations": {
+                "ro": {
+                    "name": "Corp 12 Rame 300mm",
+                    "pret1": "485 Lei",
+                    "reducere": "436.99 Lei",
+                    "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 300mm."
+                },
+                "ru": {
+                    "name": "Кузов 12 рам 300мм",
+                    "pret1": "485 Лей",
+                    "reducere": "436.99 Лей",
+                    "descriere": "Корпус улья на 12 рамок, высотой 300мм."
+                }
+            }
+        },
+        {
+            "id": 12,
+            "categoryId": 1,
+            "image": "/images/Fund_12_rame__fiert_1.png",
+            "translations": {
+                "ro": {
+                    "name": "Fund 12 Rame",
+                    "opt1": "Plasă Inox",
+                    "opt2": "Plasă Zinc",
+                    "opt3": "Lemn Total",
+                    "pret1": "320 Lei",
+                    "pret2": "210 Lei",
+                    "pret3": "200 Lei",
+                    "descriere": "Fund pentru stup cu 12 rame, disponibil în variantele: plasă inox, plasă zinc și lemn total."
+                },
+                "ru": {
+                    "name": "Нижние 12 кадров",
+                    "opt1": "Сетка нержавеющей стали",
+                    "opt2": "Цинковая сетка",
+                    "opt3": "Всего древесины",
+                    "pret1": "320 Лей",
+                    "pret2": "210 Лей",
+                    "pret3": "200 Лей",
+                    "descriere": "Дно улья с 12 рамками, доступно в следующих вариантах: сетка из нержавеющей стали, цинковая сетка и массив дерева."
+                }
+            }
+        },
+        {
+            "id": 13,
+            "categoryId": 2,
+            "image": "/images/Caldare_32l.png",
+            "translations": {
+                "ro": {
+                    "name": "Căldare 32L",
+                    "pret1": "89 Lei",
+                    "descriere": "Căldare de 32 de litri."
+                },
+                "ru": {
+                    "name": "Ведро 32Л",
+                    "pret1": "89 Лей",
+                    "descriere": "Ведро 32 литра"
+                }
+            }
+        },
+        {
+            "id": 14,
+            "categoryId": 2,
+            "image": "/images/Sirop_Invertit-Dulcofruct.png",
+            "translations": {
+                "ro": {
+                    "name": "Sirop Invertit-Dulcofruct",
+                    "pret1": "22 Lei/KG",
+                    "descriere": "Sirop invertit pentru hrănirea albinelor. 22 Lei/KG până la un cub."
+                },
+                "ru": {
+                    "name": "Инвертированный сироп Дулькофрукт",
+                    "pret1": "22 Лей/КГ",
+                    "descriere": "Инвертный сироп для подкормки пчел. 22 Лей/кг до одного куба."
+                }
+            }
+        },
+        {
+            "id": 15,
+            "categoryId": 2,
+            "image": "/images/fagure.png",
+            "translations": {
+                "ro": {
+                    "name": "Fagure natural",
+                    "pret1": "200 Lei",
+                    "descriere": "Fagure pentru stup."
+                },
+                "ru": {
+                    "name": "Натуральные соты",
+                    "pret1": "200 Лей",
+                    "descriere": "Соты для улья."
+                }
+            }
+        },
+        {
+            "id": 16,
+            "categoryId": 2,
+            "image": "/images/rametei300.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Asamblată din Tei 300mm",
+                    "pret1": "17 Lei",
+                    "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm."
+                },
+                "ru": {
+                    "name": "Каркас из лип 300мм в сборе.",
+                    "pret1": "17 Лей",
+                    "descriere": "Каркас из липы в сборе, высота: 300мм."
+                }
+            }
+        },
+        {
+            "id": 17,
+            "categoryId": 2,
+            "image": "/images/rametei230.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Asamblată din Tei 230mm",
+                    "pret1": "16 Lei",
+                    "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm."
+                },
+                "ru": {
+                    "name": "Каркас из лип 230мм в сборе.",
+                    "pret1": "16 Лей",
+                    "descriere": "Каркас из липы в собранном виде, высота: 230мм."
+                }
+            }
+        },
+        {
+            "id": 18,
+            "categoryId": 2,
+            "image": "/images/rametei145.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Asamblată din Tei 145mm",
+                    "pret1": "11.5 Lei",
+                    "descriere": "Ramă asamblată din lemn de tei, înălțime: 145mm."
+                },
+                "ru": {
+                    "name": "Каркас из лип 145мм в сборе.",
+                    "pret1": "11.5 Лей",
+                    "descriere": "Рама из липы в собранном виде, высота: 145 мм."
+                }
+            }
+        },
+        {
+            "id": 19,
+            "categoryId": 2,
+            "image": "/images/rametei300.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Asamblată din Pin 300mm",
+                    "pret1": "16 Lei",
+                    "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm."
+                },
+                "ru": {
+                    "name": "Каркас сосновый 300мм в сборе",
+                    "pret1": "16 Лей",
+                    "descriere": "Собранный каркас из соснового дерева, высота: 300 мм."
+                }
+            }
+        },
+        {
+            "id": 20,
+            "categoryId": 2,
+            "image": "/images/rametei230.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Asamblată din Pin 230mm",
+                    "pret1": "15 Lei",
+                    "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm."
+                },
+                "ru": {
+                    "name": "Каркас сосновый 230мм в сборе",
+                    "pret1": "15 Лей",
+                    "descriere": "Собранный каркас из соснового дерева, высота: 230 мм."
+                }
+            }
+        },
+        {
+            "id": 21,
+            "categoryId": 2,
+            "image": "/images/rametei145.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Asamblată din Pin 145mm",
+                    "pret1": "11 Lei",
+                    "descriere": "Ramă asamblată din lemn de pin, înălțime: 145mm."
+                },
+                "ru": {
+                    "name": "Сосновый каркас 145 мм в сборе",
+                    "pret1": "11 Лей",
+                    "descriere": "Собранный каркас из соснового дерева, высота: 145 мм."
+                }
+            }
+        },
+        {
+            "id": 22,
+            "categoryId": 2,
+            "image": "/images/rama300mm_Ne.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Dezasamblată din Tei 300mm",
+                    "pret1": "10 Lei",
+                    "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm."
+                },
+                "ru": {
+                    "name": "Рама из лип 300мм в разобранном виде",
+                    "pret1": "10 Лей",
+                    "descriere": "Липовый каркас в разобранном виде, высота: 300мм."
+                }
+            }
+        },
+        {
+            "id": 23,
+            "categoryId": 2,
+            "image": "/images/rama230mm_Ne.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Dezasamblată din Tei 230mm",
+                    "pret1": "9 Lei",
+                    "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm."
+                },
+                "ru": {
+                    "name": "Рама из лип 230 мм в разобранном виде",
+                    "pret1": "9 Лей",
+                    "descriere": "Липовый каркас в разобранном виде, высота: 230мм."
+                }
+            }
+        },
+        {
+            "id": 24,
+            "categoryId": 2,
+            "image": "/images/rama145mm_Ne.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Dezasamblată din Tei 145mm",
+                    "pret1": "8 Lei",
+                    "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 145mm."
+                },
+                "ru": {
+                    "name": "Рама из лип 145 мм в разобранном виде",
+                    "pret1": "8 Лей",
+                    "descriere": "Липовый каркас в разобранном виде, высота: 145мм."
+                }
+            }
+        },
+        {
+            "id": 25,
+            "categoryId": 2,
+            "image": "/images/rama300mm_Ne.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Dezasamblată din Pin 300mm",
+                    "pret1": "8.5 Lei",
+                    "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm."
+                },
+                "ru": {
+                    "name": "Разобранная сосновая рама 300 мм",
+                    "pret1": "8.5 Лей",
+                    "descriere": "Каркас из соснового дерева в разобранном виде, высота: 300 мм."
+                }
+            }
+        },
+        {
+            "id": 26,
+            "categoryId": 2,
+            "image": "/images/rama230mm_Ne.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Dezasamblată din Pin 230mm",
+                    "pret1": "8 Lei",
+                    "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm."
+                },
+                "ru": {
+                    "name": "Каркас из сосны 230 мм в разобранном виде.",
+                    "pret1": "8 Лей",
+                    "descriere": "Каркас из соснового дерева в разобранном виде, высота: 230 мм."
+                }
+            }
+        },
+        {
+            "id": 27,
+            "categoryId": 2,
+            "image": "/images/rama145mm_Ne.png",
+            "translations": {
+                "ro": {
+                    "name": "Ramă Dezasamblată din Pin 145mm",
+                    "pret1": "7 Lei",
+                    "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 145mm."
+                },
+                "ru": {
+                    "name": "Разобранная сосновая рама 145 мм.",
+                    "pret1": "7 Лей",
+                    "descriere": "Каркас из соснового дерева в разобранном виде, высота: 145 мм."
+                }
+            }
+        },
+        {
+            "id": 28,
+            "categoryId": 3,
+            "image": "/images/set_stup.png",
+            "translations": {
+                "ro": {
+                    "name": "Set Stup",
+                    "pret1": "1400 Lei",
+                    "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat"
+                },
+                "ru": {
+                    "name": "Набор ульев",
+                    "pret1": "1400 Лей",
+                    "descriere": "Дно + 2 корпуса (300 мм) + Нижняя крышка + Изолированная крышка"
+                }
+            }
+        },
+        {
+            "id": 29,
+            "categoryId": 3,
+            "image": "/images/spec_off.png",
+            "translations": {
+                "ro": {
+                    "name": "Impregnare în Ulei Vegetal",
+                    "pret1": "1450 Lei",
+                    "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat + Impregnare în Ulei Vegetal"
+                },
+                "ru": {
+                    "name": "Пропитка в растительном масле",
+                    "pret1": "1450 Лей",
+                    "descriere": "Дно + 2 корпуса (300мм) + Нижняя крышка + Утепленная крышка + Пропитка растительным маслом"
+                }
+            }
+        },
+        {
+            "id": 30,
+            "categoryId": 3,
+            "image": "/images/special_offer.png",
+            "translations": {
+                "ro": {
+                    "name": "Impregnare în Parafină",
+                    "pret1": "1500 Lei",
+                    "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat + Impregnare în Parafină"
+                },
+                "ru": {
+                    "name": "Парафиновая пропитка",
+                    "pret1": "1500 Лей",
+                    "descriere": "Дно + 2 корпуса (300мм) + Нижняя крышка + Утепленная крышка + Парафиновая пропитка"
+                }
+            }
+        },
+        {
+            "id": 31,
+            "categoryId": 3,
+            "image": "/images/bonus.png",
+            "translations": {
+                "ro": {
+                    "name": "Stup + Căldare Cadou",
+                    "pret1": "1400 Lei",
+                    "descriere": "Un pachet special care include un stup și o căldare ca bonus."
+                },
+                "ru": {
+                    "name": "Улей + Котел в подарок",
+                    "pret1": "1400 Лей",
+                    "descriere": "Специальный пакет, в который в качестве бонуса входят улей и котел."
+                }
+            }
+        },
+        {
+            "id": 32,
+            "categoryId": 1,
+            "image": "/images/stup_orizontal.png",
+            "translations": {
+                "ro": {
+                    "name": "Stup Orizontal 22 Rame",
+                    "pret1": "1200 Lei",
+                    "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine."
+                },
+                "ru": {
+                    "name": "Горизонтальный улей на 22 рамки",
+                    "pret1": "1200 Лей",
+                    "descriere": "Горизонтальный улей, рассчитанный на 22 рамки, обеспечивает достаточно места для развития пчелиной семьи."
+                }
+            }
+        },
+        {
+            "id": 33,
+            "categoryId": 3,
+            "image": "/images/rama.png",
+            "translations": {
+                "ro": {
+                    "name": "Stup + Ramă",
+                    "pret1": "1412 Lei",
+                    "descriere": "În set cu stupul comandat, rame ÎNSÂRMATE de mărime 145 la doar 12 lei, iar rama de mărime 300 la doar 15 lei!"
+                },
+                "ru": {
+                    "name": "Улей + Рамка",
+                    "pret1": "1412 Лей",
+                    "descriere": "В комплекте с заказанным ульем рамки WIRE размером 145 всего за 12 лей и рамка 300 размера всего за 15 лей!"
+                }
+            }
+        }
+    ]
 }

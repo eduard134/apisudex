@@ -2,31 +2,49 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import drop from "./images/drop.png";
-import productsData from "./products.json";
+import translateData from "./translate.json";
 import Footer from "./components/Footer";
 import { useLanguage } from "./components/LanguageContext";
-import { getTranslatedContent } from "./components/TranslateRoToRu";
+import {
+  getTranslatedContent,
+  getTranslatedArray,
+} from "./components/TranslateRoToRu";
 
 interface Product {
   id: number;
   categoryId: number;
   image?: string;
-  image1?: string;
-  name: string;
-  opt1?: string;
-  opt2?: string;
-  opt3?: string;
-  pret1: string;
-  pret2?: string;
-  pret3?: string;
-  reducere?: string;
-  descriere: string;
+  translations: {
+    ro: {
+      name: string;
+      pret1: string;
+      descriere: string;
+      reducere?: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret2?: string;
+      pret3?: string;
+    };
+    ru: {
+      name: string;
+      pret1: string;
+      descriere: string;
+      reducere?: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret2?: string;
+      pret3?: string;
+    };
+  };
 }
 
 export default function Home() {
   const router = useRouter();
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
+  const array = getTranslatedArray(language);
 
   const handleClick = () => {
     router.push("/shop");
@@ -61,7 +79,7 @@ export default function Home() {
           <br className="hidden md:block" />
           {content.Prod_pop3}
         </p>
-        {productsData.slice(0, 4).map((product: Product) => (
+        {array.slice(0, 4).map((product: any) => (
           <Link
             href={`/product?id=${product.id}`}
             key={product.id}
@@ -79,16 +97,22 @@ export default function Home() {
               {product.reducere ? (
                 <div className="flex flex-col items-center">
                   <p className="line-through text-gray-400 text-sm md:text-base">
-                    {product.pret1}
+                    {product.translations.pret1}
                   </p>
-                  <p className="text-sm md:text-base">{product.reducere}</p>
+                  <p className="text-sm md:text-base">
+                    {product.translations.reducere}
+                  </p>
                 </div>
               ) : (
-                <p className="text-sm md:text-base">{product.pret1}</p>
+                <p className="text-sm md:text-base">
+                  {product.translations.pret1}
+                </p>
               )}
             </div>
             <div className="font-medium text-slate-600 text-sm md:text-base font-varela">
-              <p className="leading-5 text-center">{product.name}</p>
+              <p className="leading-5 text-center">
+                {product.translations.name}
+              </p>
             </div>
           </Link>
         ))}

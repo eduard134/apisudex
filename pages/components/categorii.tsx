@@ -3,11 +3,15 @@ import categoriesData from "../categories.json";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "./LanguageContext";
-import { getTranslatedContent } from "./TranslateRoToRu";
+import {
+  getTranslatedContent,
+  getTranslatedCategories,
+} from "./TranslateRoToRu"; // Import the function
 
 const Categorii = () => {
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
+  const translatedCategories = getTranslatedCategories(language);
   return (
     <div className="mt-[-15vh] sm:mt-10 mb-20 text-center">
       <hr className="sm:bg-yellow-500 sm:h-[3px] sm:mr-6 sm:ml-8 sm:mb-8 invisible" />
@@ -15,7 +19,7 @@ const Categorii = () => {
         {content.Categorii}
       </h2>
       <div className="flex flex-col sm:flex-row justify-center flex-wrap gap-6 ">
-        {categoriesData.map((category) => (
+        {translatedCategories.map((category) => (
           <Link
             href={`/products?categoryId=${category.id}`}
             key={category.id}
@@ -24,14 +28,14 @@ const Categorii = () => {
           >
             <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
               <Image
-                src={category.img}
-                alt={category.denumire}
+                src={category.img || ""}
+                alt={category.translations.denumire}
                 width={150}
                 height={150}
               />
             </div>
             <span className="mt-2 text-lg font-semibold text-white">
-              {category.denumire}
+              {category.translations.denumire}
             </span>
           </Link>
         ))}
