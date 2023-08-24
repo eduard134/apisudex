@@ -9,7 +9,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
 
-export default function LanguageProvider({ children }: { children: ReactNode }) {
+export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState("ro");
 
   const contextValue = {
@@ -24,7 +24,7 @@ export default function LanguageProvider({ children }: { children: ReactNode }) 
   );
 }
 
-export function useLanguage() {
+export default function useLanguage() {
   const context = useContext(LanguageContext);
   if (context === undefined) {
     throw new Error("useLanguage must be used within a LanguageProvider");

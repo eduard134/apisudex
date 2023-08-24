@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import translateData from "../translate.json"; // Update the path as needed
 import categoriesData from "../categories.json";
 import Product from "../product";
-import { useLanguage } from "../../public/LanguageContext";
+import  useLanguage  from "../../public/LanguageContext";
 
 interface Product {
   id: number;
