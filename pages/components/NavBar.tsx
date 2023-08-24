@@ -6,6 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useLanguage } from "../../public/LanguageContext";
 import { getTranslatedContent } from "./TranslateRoToRu";
+import TranslationRoToRu from "./TranslateRoToRu";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -25,16 +26,7 @@ const Navbar = () => {
 
   return (
     <div className="left-0 top-0 w-full z-10 mt-5">
-      <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
-        <select
-          value={language}
-          onChange={(e) => {
-            handleLanguageChange(e.target.value);
-          }}
-        >
-          <option value="ro">Ro</option>
-          <option value="ru">Ru</option>
-        </select>
+      <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-semibold text-lg font-nunito ">
         <Link href="/" className="flex items-center justify-center sm:p-4">
           <Image src="/logo.png" alt="ApiSudex" width={70} height={70} />
         </Link>
@@ -83,6 +75,9 @@ const Navbar = () => {
             >
               <Link href="/contacte">{content.Nav4}</Link>
             </div>
+          </li>
+          <li className=" mr-3">
+            <TranslationRoToRu />
           </li>
         </ul>
 
@@ -143,6 +138,9 @@ const Navbar = () => {
               >
                 <Link href="/contacte">Contacte</Link>
               </div>
+            </li>
+            <li className="ml-14">
+              <TranslationRoToRu />
             </li>
           </ul>
         </div>

@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import translateData from "../translate.json"; // Update the path as needed
 import categoriesData from "../categories.json";
 import Product from "../product";
+import { useLanguage } from "./LanguageContext";
 
 interface Product {
   id: number;
@@ -63,11 +64,15 @@ export function getTranslatedCategories(language: string) {
 }
 
 function TranslationRoToRu() {
-  const [language, setLanguage] = useState("ro");
+  const { language, setLanguage } = useLanguage();
   const [content, setContent] = useState(Translation.data.ro);
   const [array, setArray] = useState(getTranslatedArray(language));
   const router = useRouter();
   const [selectedOption, setSelectedOption] = useState("");
+
+  const handleLanguageChange = (newLanguage: React.SetStateAction<string>) => {
+    setLanguage(newLanguage);
+  };
 
   useEffect(() => {
     console.log("Language changed:", language);
@@ -107,20 +112,26 @@ function TranslationRoToRu() {
   useEffect(() => {
     console.log("Language changed:", language);
   }, [language]);
-  
 
   return (
-    <div>
-      <select
-        value={language}
-        onChange={(e) => {
-          setLanguage(e.target.value);
-        }}
-      >
-        <option value="ro">Ro</option>
-        <option value="ru">Ru</option>
-      </select>
-
+    <div className="relative flex items-center mt-1">
+      <label className="language-switcher">
+        <input
+          className="toggler"
+          type="checkbox"
+          checked={language === "ru"} // Assuming language is a state variable
+          onChange={() => {
+            if (language === "ro") {
+              handleLanguageChange("ru");
+            } else {
+              handleLanguageChange("ro");
+            }
+          }}
+        />
+        <span className="slider round"></span>
+        <span className="select-fr font-semibold">RO</span>
+        <span className="select-en font-semibold">RU</span>
+      </label>
     </div>
   );
 }

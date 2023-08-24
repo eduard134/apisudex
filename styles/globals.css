@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Varela+Round&display=swap");
-@import url("https://db.onlinewebfonts.com/c/f4d849075c9b4c0047fc56a828879854?family=Recoleta+Bold");
-@import url("https://db.onlinewebfonts.com/c/a4ee49e2dbebfcf6134f5eaf64797335?family=Point+Soft+DEMO+Semi+Bold");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Vollkorn:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -173,7 +171,7 @@ textarea::placeholder {
   position: absolute;
   content: "";
   background: var(--color);
-  width: 250px;
+  width: 350px;
   height: 220px;
   z-index: -1;
   border-radius: 40%;
@@ -181,7 +179,7 @@ textarea::placeholder {
 }
 
 .anim:hover {
-  color: white;
+  color: #f0f0f0;
 }
 
 .anim:before {
@@ -192,10 +190,9 @@ textarea::placeholder {
 .anim:hover::before {
   top: -30px;
   left: -30px;
-  background: black;
+  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
   /* Change the background color on hover */
 }
-
 
 .product-box {
   position: relative;
@@ -208,6 +205,7 @@ textarea::placeholder {
   border: 2px solid transparent;
   border-radius: 10px;
   transition: border-color 0.3s, transform 0.3s;
+  overflow: hidden;
 }
 
 .product-box:hover {
@@ -218,19 +216,108 @@ textarea::placeholder {
 .product-box::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 5%;
+  width: 450px;
+  height: 600px;
+  background-size: contain;
   z-index: -1;
-  margin-top: 35px;
-  background: linear-gradient(-20deg, #ffd700 0%, rgb(245, 154, 27) 50%, transparent 50%, transparent 100%);
-  border-radius: 10px;
   transition: all 0.3s;
-  transform-origin: center center;
   transform: scaleX(0) scaleY(0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(225 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22gold%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23F59A1B%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M890.5 638.5Q881 777 753 830.5T500 884q-125 0-190-99.5t-170.5-192Q34 500 142 409t181.5-158q73.5-67 172-53.5T684 256q90 45 153 144.5t53.5 238Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M890.5 638.5Q881 777 753 830.5T500 884q-125 0-190-99.5t-170.5-192Q34 500 142 409t181.5-158q73.5-67 172-53.5T684 256q90 45 153 144.5t53.5 238Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 
 .product-box:hover::before {
   transform: scaleX(1) scaleY(1);
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  width: calc(30px * 2);
+  height: 30px;
+  -webkit-transform: translateY(40%);
+  -moz-transform: translateY(40%);
+  -ms-transform: translateY(40%);
+  -o-transform: translateY(40%);
+  transform: translateY(40%);
+
+  -webkit-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  -moz-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  -ms-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  -o-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+}
+
+.toggler {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.select-fr,
+.select-en {
+  position: absolute;
+  font-size: 15px;
+  top: 2px;
+  color: black;
+  mix-blend-mode: revert;
+}
+
+.select-fr {
+  left: 6px;
+}
+
+.select-en {
+  right: 4px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, yellow 0%, orange 50%, yellow 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+}
+
+input:checked+.slider {
+  background: linear-gradient(to bottom right, yellow 0%, orange 50%, yellow 100%);
+}
+
+input:focus+.slider {
+  box-shadow: none;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

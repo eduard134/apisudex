@@ -45,7 +45,12 @@
             "Placeholder_email": "Scrie adresa...",
             "Mesaj": "Mesaj:",
             "Placeholder_mesaj": "Scrie un mesaj...",
-            "Btn_contact": "Trimite"
+            "Btn_contact": "Trimite",
+            "Descriere": "Descriere:",
+            "Total": "Total:",
+            "Comanda": "Comandă acum la",
+            "NoN": "Produsul nu a fost găsit",
+            "NonP": "Ne pare rău, produsul pe care îl căutați nu există."
         },
         "ru": {
             "Nav1": "Главное",
@@ -92,7 +97,12 @@
             "Placeholder_email": "Пиши адрес...",
             "Mesaj": "Сообщение:",
             "Placeholder_mesaj": "Напиши сообщение...",
-            "Btn_contact": "Отправлять"
+            "Btn_contact": "Отправлять",
+            "Descriere": "Описание:",
+            "Total": "Итого:",
+            "Comanda": "Закажите сейчас на",
+            "NoN": "Товар не найден",
+            "NonP": "К сожалению, товар, который вы ищете, не существует."
         }
     },
     "products": [

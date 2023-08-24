@@ -82,7 +82,9 @@ const ProductsComponent = () => {
     : "All Products";
   return (
     <>
-      <p className="text-center mt-10 text-4xl font-recoleta">{categoryName}</p>
+      <p className="text-center mt-10 text-4xl font-volkron font-bold">
+        {categoryName}
+      </p>
       <div className="flex flex-wrap justify-center mt-10 lg:gap-8 gap-4">
         {filteredProducts.map((product: Product) => (
           <Link
@@ -101,7 +103,7 @@ const ProductsComponent = () => {
                 height={150}
               />
             </div>
-            <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-varela ">
+            <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-nunito">
               {product.translations[language as keyof CategoryTranslations]
                 ?.reducere ? (
                 <div className="flex flex-col items-center">
@@ -125,7 +127,7 @@ const ProductsComponent = () => {
                   .pret1
               )}
             </div>
-            <div className="font-medium text-slate-600 text-sm md:text-base font-varela text-center">
+            <div className="font-semibold text-slate-600 text-sm md:text-base font-nunito text-center">
               {
                 product.translations[language as keyof CategoryTranslations]
                   .name
