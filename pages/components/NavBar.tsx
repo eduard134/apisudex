@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 "use client";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,6 +7,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useLanguage } from "./LanguageContext";
 import { getTranslatedContent } from "./TranslateRoToRu";
+import TranslationRoToRu from "./TranslateRoToRu";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -84,6 +86,9 @@ const Navbar = () => {
               <Link href="/contacte">{content.Nav4}</Link>
             </div>
           </li>
+          <div className="items-center flex">
+            <TranslationRoToRu />
+          </div>
         </ul>
 
         {/* Mobile Button */}
@@ -99,7 +104,7 @@ const Navbar = () => {
           }
           onClick={() => setNav(false)}
         >
-          <ul>
+          <ul className="flex flex-col items-center">
             <li className="p-4 text-3xl">
               <div
                 className={
@@ -142,6 +147,11 @@ const Navbar = () => {
                 }
               >
                 <Link href="/contacte">Contacte</Link>
+              </div>
+            </li>
+            <li className="p-4 text-3xl flex justify-center">
+              <div>
+                <TranslationRoToRu />
               </div>
             </li>
           </ul>

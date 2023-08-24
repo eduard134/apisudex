@@ -118,13 +118,15 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  background: linear-gradient(45deg,
-      #405de6,
-      #5851db,
-      #833ab4,
-      #c13584,
-      #e1306c,
-      #fd1d1d);
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
 }
 
 .icon:hover .tooltip_v {
@@ -194,7 +196,6 @@ textarea::placeholder {
   /* Change the background color on hover */
 }
 
-
 .product-box {
   position: relative;
   display: flex;
@@ -222,7 +223,13 @@ textarea::placeholder {
   bottom: 0;
   z-index: -1;
   margin-top: 35px;
-  background: linear-gradient(-20deg, #ffd700 0%, rgb(245, 154, 27) 50%, transparent 50%, transparent 100%);
+  background: linear-gradient(
+    -20deg,
+    #ffd700 0%,
+    rgb(245, 154, 27) 50%,
+    transparent 50%,
+    transparent 100%
+  );
   border-radius: 10px;
   transition: all 0.3s;
   transform-origin: center center;
@@ -231,4 +238,91 @@ textarea::placeholder {
 
 .product-box:hover::before {
   transform: scaleX(1) scaleY(1);
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  width: calc(64px * 2);
+  height: 64px;
+  -webkit-transform: translateY(40%);
+  -moz-transform: translateY(40%);
+  -ms-transform: translateY(40%);
+  -o-transform: translateY(40%);
+  transform: translateY(40%);
+
+  -webkit-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  -moz-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  -ms-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  -o-transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+  transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
+}
+
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.select-fr,
+.select-en {
+  position: absolute;
+  font-size: 20px;
+  top: 16px;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.select-fr {
+  left: 18px;
+}
+.select-en {
+  right: 16px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, yellow 0%, orange 50%, yellow 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 64px;
+  width: 64px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(to bottom right, yellow 0%, orange 50%, yellow 100%);
+}
+
+input:focus + .slider {
+  box-shadow: none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(64px);
+  -ms-transform: translateX(64px);
+  transform: translateX(64px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 64px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

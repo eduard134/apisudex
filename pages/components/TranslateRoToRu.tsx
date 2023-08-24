@@ -110,17 +110,13 @@ function TranslationRoToRu() {
   
 
   return (
-    <div>
-      <select
-        value={language}
-        onChange={(e) => {
-          setLanguage(e.target.value);
-        }}
-      >
-        <option value="ro">Ro</option>
-        <option value="ru">Ru</option>
-      </select>
-
+    <div className="relative flex items-center mt-1 ">
+      <label className="language-switcher">
+      <input type="checkbox"/>
+              <span className="slider round"></span>
+              <span className="select-fr">FR</span>
+              <span className="select-en">EN</span>
+      </label>
     </div>
   );
 }
