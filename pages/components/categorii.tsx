@@ -2,7 +2,7 @@ import React from "react";
 import categoriesData from "../categories.json";
 import Link from "next/link";
 import Image from "next/image";
-import { useLanguage } from "../../public/LanguageContext";
+import { useLanguage } from "../../LanguageContext";
 import {
   getTranslatedContent,
   getTranslatedCategories,

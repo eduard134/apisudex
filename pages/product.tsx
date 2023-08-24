@@ -4,8 +4,8 @@
   import productsData from "./products.json";
   import Footer from "./components/Footer";
   import { useState, useEffect } from "react";
-  import { useLanguage } from "../public/LanguageContext";
-  import { getTranslatedArray } from "./components/TranslateRoToRu";
+  import { useLanguage } from "../LanguageContext";
+  import { getTranslatedContent } from "./components/TranslateRoToRu";
 
 interface Product {
   id: number;

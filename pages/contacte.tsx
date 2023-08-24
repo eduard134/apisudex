@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import EmailForm from "./components/EmailForm";
 import Link from "next/link";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
-import { useLanguage } from "../public/LanguageContext";
+import { useLanguage } from "../LanguageContext";
 
 const ComponentName = () => {
   const { language } = useLanguage();

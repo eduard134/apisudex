@@ -4,7 +4,7 @@ import Image from "next/image";
 import beebanner from "../images/bee banner.jpg";
 import beebanner1 from "../images/bee banner1.jpg";
 import beebanner2 from "../images/bee banner2.jpg";
-import { useLanguage } from "../../public/LanguageContext";
+import { useLanguage } from "../../LanguageContext";
 import { getTranslatedContent } from "./TranslateRoToRu";
 
 import "swiper/css";

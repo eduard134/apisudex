@@ -10,7 +10,7 @@ import insta_hover from "../images/instagram_hover.png";
 import face_hover from "../images/facebook_hover.png";
 import viber_hover from "../images/viber1_hover.png";
 import whatsapp_hover from "../images/whatsapp1_hover.png";
-import { useLanguage } from "../../public/LanguageContext";
+import { useLanguage } from "../../LanguageContext";
 import { getTranslatedContent } from "./TranslateRoToRu";
 
 const Footer = () => {
