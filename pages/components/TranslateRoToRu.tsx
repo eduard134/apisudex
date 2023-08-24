@@ -1,31 +1,18 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from "react";
-import Translation from "../translate.json";
+// pages/index.js
 
-function TranslationRoToRu() {
-  const [language, setLanguage] = useState("ro");
-  const [content, setContent] = useState({});
+import React from 'react';
 
-  useEffect(() => {
-    if (language == "ro") {
-      setContent(Translation.ro);
-    } else if (language == "ru") {
-      setContent(Translation.ru);
-    }
-  });
-
+const HomePage = () => {
   return (
-    <div>
-      <select
-        value={language}
-        onChange={(e) => {
-          setLanguage(e.target.value);
-        }}
-      >
-        <option>Ro</option>
-        <option>Ru</option>
-      </select>
+    <div className="relative flex items-center mt-1 ">
+      <label className="language-switcher">
+      <input type="checkbox"/>
+              <span className="slider round"></span>
+              <span className="select-fr">FR</span>
+              <span className="select-en">EN</span>
+      </label>
     </div>
   );
-}
-export default TranslationRoToRu;
+};
+
+export default HomePage;

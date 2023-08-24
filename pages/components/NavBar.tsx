@@ -17,7 +17,6 @@ const Navbar = () => {
   return (
     <div className="left-0 top-0 w-full z-10 mt-5">
       <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
-        <TranslateRoToRu />
         <Link href="/" className="flex items-center justify-center sm:p-4">
           <Image src="/logo.png" alt="ApiSudex" width={70} height={70} />
         </Link>
@@ -67,6 +66,9 @@ const Navbar = () => {
               <Link href="/contacte">Contacte</Link>
             </div>
           </li>
+          <div className="items-center flex">
+            <TranslateRoToRu />
+          </div>
         </ul>
 
         {/* Mobile Button */}
@@ -82,7 +84,7 @@ const Navbar = () => {
           }
           onClick={() => setNav(false)}
         >
-          <ul>
+          <ul className="flex flex-col items-center">
             <li className="p-4 text-3xl">
               <div
                 className={
@@ -125,6 +127,11 @@ const Navbar = () => {
                 }
               >
                 <Link href="/contacte">Contacte</Link>
+              </div>
+            </li>
+            <li className="p-4 text-3xl flex justify-center">
+              <div>
+                <TranslateRoToRu />
               </div>
             </li>
           </ul>
