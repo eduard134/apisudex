@@ -2,27 +2,50 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import drop from "./images/drop.png";
-import productsData from "./products.json";
+import translateData from "./translate.json";
 import Footer from "./components/Footer";
+import { useLanguage } from "./components/LanguageContext";
+import {
+  getTranslatedContent,
+  getTranslatedArray,
+} from "./components/TranslateRoToRu";
 
 interface Product {
   id: number;
   categoryId: number;
   image?: string;
-  image1?: string;
-  name: string;
-  opt1?: string;
-  opt2?: string;
-  opt3?: string;
-  pret1: string;
-  pret2?: string;
-  pret3?: string;
-  reducere?: string;
-  descriere: string;
+  translations: {
+    ro: {
+      name: string;
+      pret1: string;
+      descriere: string;
+      reducere?: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret2?: string;
+      pret3?: string;
+    };
+    ru: {
+      name: string;
+      pret1: string;
+      descriere: string;
+      reducere?: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret2?: string;
+      pret3?: string;
+    };
+  };
 }
+
 
 export default function Home() {
   const router = useRouter();
+  const { language } = useLanguage();
+  const content = getTranslatedContent(language);
+  const array = getTranslatedArray(language);
 
   const handleClick = () => {
     router.push("/shop");
@@ -32,27 +55,32 @@ export default function Home() {
     <>
       <div className="flex flex-col mt-12 px-2 sm:mt-20 items-center text-center">
         <div className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 font-recoleta bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple ">
-          Explorează <br /> Universul Apicol
+          {content.Title1}
+          <br className="hidden md:block" />
+          {content.Title2}
         </div>
         <div className="text-[#413f4a] text-lg md:text-base  font-medium mb-6 font-varela ">
-          Bine ați venit la ApiSudex, locul unde pasiunea noastră{" "}
-          <br className="hidden md:block" /> pentru albine și natură se
-          întâlnește cu inovația.
+          {content.Description1}
+          <br className="hidden md:block" />
+          {content.Description2}
         </div>
         <button
           className="text-white font-medium invisible sm:visible text-xs md:text-sm flex items-center w-fit bg-[#1c1e2b] px-5 md:px-4 py-2 md:py-2 rounded-[50px] relative font-varela leading-tight"
           onClick={handleClick}
         >
-          Produse
+          {content.btn_prod}
           <Image src={drop} alt="" className="ml-2 w-4 md:w-5" />
         </button>
       </div>
       <div className="flex flex-col sm:flex-row mt-5 sm:mt-20 bg-dark_purple p-4 sm:p-5 items-center">
         <p className="text-center text-3xl md:text-4xl lg:text-6xl font-bold sm:leading-loose mb-5 sm:mb-0 mt-5 md:mt-0 bg-cover bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 font-recoleta">
-          Produsele <br className="hidden md:block " /> Noastre <br />
-          Populare
+          {content.Prod_pop1}
+          <br className="hidden md:block" />
+          {content.Prod_pop2}
+          <br className="hidden md:block" />
+          {content.Prod_pop3}
         </p>
-        {productsData.slice(0, 4).map((product: Product) => (
+        {array.slice(0, 4).map((product: any) => (
           <Link
             href={`/product?id=${product.id}`}
             key={product.id}
@@ -67,19 +95,25 @@ export default function Home() {
               />
             </div>
             <div className="font-bold text-base md:text-lg text-slate-600 mb-2 md:mb-3 font-varela">
-              {product.reducere ? (
+              {product.translations.reducere ? (
                 <div className="flex flex-col items-center">
                   <p className="line-through text-gray-400 text-sm md:text-base">
-                    {product.pret1}
+                    {product.translations.pret1}
                   </p>
-                  <p className="text-sm md:text-base">{product.reducere}</p>
+                  <p className="text-sm md:text-base">
+                    {product.translations.reducere}
+                  </p>
                 </div>
               ) : (
-                <p className="text-sm md:text-base">{product.pret1}</p>
+                <p className="text-sm md:text-base">
+                  {product.translations.pret1}
+                </p>
               )}
             </div>
             <div className="font-medium text-slate-600 text-sm md:text-base font-varela">
-              <p className="leading-5 text-center">{product.name}</p>
+              <p className="leading-5 text-center">
+                {product.translations.name}
+              </p>
             </div>
           </Link>
         ))}

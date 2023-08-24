@@ -1,10 +1,13 @@
+/* eslint-disable react/jsx-no-undef */
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
-import TranslateRoToRu from "./TranslateRoToRu";
+import { useLanguage } from "./LanguageContext";
+import { getTranslatedContent } from "./TranslateRoToRu";
+import TranslationRoToRu from "./TranslateRoToRu";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,9 +17,26 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const { language, setLanguage } = useLanguage();
+
+  const handleLanguageChange = (newLanguage: React.SetStateAction<string>) => {
+    setLanguage(newLanguage);
+  };
+
+  const content = getTranslatedContent(language);
+
   return (
     <div className="left-0 top-0 w-full z-10 mt-5">
       <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
+        <select
+          value={language}
+          onChange={(e) => {
+            handleLanguageChange(e.target.value);
+          }}
+        >
+          <option value="ro">Ro</option>
+          <option value="ru">Ru</option>
+        </select>
         <Link href="/" className="flex items-center justify-center sm:p-4">
           <Image src="/logo.png" alt="ApiSudex" width={70} height={70} />
         </Link>
@@ -30,7 +50,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <Link href="/">Acasă</Link>
+              <Link href="/">{content.Nav1}</Link>
             </div>
           </li>
           <li className="p-4">
@@ -41,7 +61,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <Link href="/shop">Shop</Link>
+              <Link href="/shop">{content.Nav2}</Link>
             </div>
           </li>
           <li className="p-4">
@@ -52,7 +72,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <Link href="/about">Despre Noi</Link>
+              <Link href="/about">{content.Nav3}</Link>
             </div>
           </li>
           <li className="p-4 mr-3">
@@ -63,11 +83,11 @@ const Navbar = () => {
                   : ""
               }
             >
-              <Link href="/contacte">Contacte</Link>
+              <Link href="/contacte">{content.Nav4}</Link>
             </div>
           </li>
           <div className="items-center flex">
-            <TranslateRoToRu />
+            <TranslationRoToRu />
           </div>
         </ul>
 
@@ -131,7 +151,7 @@ const Navbar = () => {
             </li>
             <li className="p-4 text-3xl flex justify-center">
               <div>
-                <TranslateRoToRu />
+                <TranslationRoToRu />
               </div>
             </li>
           </ul>
