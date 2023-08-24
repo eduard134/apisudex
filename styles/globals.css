@@ -179,7 +179,7 @@ textarea::placeholder {
 }
 
 .anim:hover {
-  color: white;
+  color: #f0f0f0;
 }
 
 .anim:before {
@@ -190,7 +190,7 @@ textarea::placeholder {
 .anim:hover::before {
   top: -30px;
   left: -30px;
-  background: black;
+  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
   /* Change the background color on hover */
 }
 
@@ -205,6 +205,7 @@ textarea::placeholder {
   border: 2px solid transparent;
   border-radius: 10px;
   transition: border-color 0.3s, transform 0.3s;
+  overflow: hidden;
 }
 
 .product-box:hover {
@@ -215,21 +216,16 @@ textarea::placeholder {
 .product-box::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 5%;
+  width: 450px;
+  height: 600px;
+  background-size: contain;
   z-index: -1;
-  margin-top: 35px;
-  background: linear-gradient(-20deg,
-      #ffd700 0%,
-      rgb(245, 154, 27) 50%,
-      transparent 50%,
-      transparent 100%);
-  border-radius: 10px;
   transition: all 0.3s;
-  transform-origin: center center;
   transform: scaleX(0) scaleY(0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(225 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22gold%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23F59A1B%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M890.5 638.5Q881 777 753 830.5T500 884q-125 0-190-99.5t-170.5-192Q34 500 142 409t181.5-158q73.5-67 172-53.5T684 256q90 45 153 144.5t53.5 238Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M890.5 638.5Q881 777 753 830.5T500 884q-125 0-190-99.5t-170.5-192Q34 500 142 409t181.5-158q73.5-67 172-53.5T684 256q90 45 153 144.5t53.5 238Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 
 .product-box:hover::before {
@@ -254,7 +250,7 @@ textarea::placeholder {
   transition: transform 0.17s cubic-bezier(0.26, 0.48, 0.08, 0.9);
 }
 
-input {
+.toggler {
   opacity: 0;
   width: 0;
   height: 0;

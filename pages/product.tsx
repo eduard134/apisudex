@@ -81,7 +81,7 @@ export default function Product() {
       {translatedProduct ? (
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
-            <div className="w-96  h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
+            <div className="w-96 h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
               <Image
                 src={translatedProduct.image || "/default-image.jpg"}
                 alt={translatedProduct.translations.name}

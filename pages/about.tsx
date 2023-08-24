@@ -54,7 +54,7 @@ const about = () => {
         </p>
         <div className="lg:flex lg:flex-wrap block justify-center font-nunito mt-2 sm:mt-10">
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] m-2 mt-10 rounded-xl p-4">
-            <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
+            <div className="lg:w-[3%] w-[15%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={quality} alt="" />
             </div>
             <div className="mt-4 text-xl font-bold">{content.title_about1}</div>
@@ -63,7 +63,7 @@ const about = () => {
             </div>
           </div>
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] m-2 mt-10 rounded-xl p-4">
-            <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
+            <div className="lg:w-[3%] w-[15%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={high_quality} alt="" />
             </div>
             <div className="mt-4 text-xl font-bold">{content.title_about2}</div>
@@ -72,7 +72,7 @@ const about = () => {
             </div>
           </div>
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] mx-2 mt-10 rounded-xl p-4">
-            <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
+            <div className="lg:w-[3%] w-[15%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={innovation} alt="" />
             </div>
             <div className="mt-4 text-xl font-bold">{content.title_about3}</div>
@@ -81,7 +81,7 @@ const about = () => {
             </div>
           </div>
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] mx-2 mt-10 rounded-xl p-4">
-            <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
+            <div className="lg:w-[3%] w-[15%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={relation} alt="" />
             </div>
             <div className="mt-4 text-xl font-bold">{content.title_about4}</div>

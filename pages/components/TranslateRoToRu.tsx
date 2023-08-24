@@ -117,6 +117,7 @@ function TranslationRoToRu() {
     <div className="relative flex items-center mt-1">
       <label className="language-switcher">
         <input
+          className="toggler"
           type="checkbox"
           checked={language === "ru"} // Assuming language is a state variable
           onChange={() => {

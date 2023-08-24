@@ -79,6 +79,7 @@ export default function Home() {
           <br className="hidden md:block" />
           {content.Prod_pop3}
         </p>
+
         {array.slice(0, 4).map((product: any) => (
           <Link
             href={`/product?id=${product.id}`}
