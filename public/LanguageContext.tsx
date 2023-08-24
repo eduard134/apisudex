@@ -9,7 +9,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
+export default function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState("ro");
 
   const contextValue = {
