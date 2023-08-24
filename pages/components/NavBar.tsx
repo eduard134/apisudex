@@ -139,6 +139,9 @@ const Navbar = () => {
                 <Link href="/contacte">Contacte</Link>
               </div>
             </li>
+            <li className="ml-14">
+              <TranslationRoToRu />
+            </li>
           </ul>
         </div>
       </div>

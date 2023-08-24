@@ -32,7 +32,7 @@ const EmailForm = () => {
       });
   };
 
-    const { language } = useLanguage();
+  const { language } = useLanguage();
   const content = getTranslatedContent(language);
 
   return (
