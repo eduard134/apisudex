@@ -118,15 +118,13 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
+  background: linear-gradient(45deg,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d);
 }
 
 .icon:hover .tooltip_v {
@@ -223,13 +221,11 @@ textarea::placeholder {
   bottom: 0;
   z-index: -1;
   margin-top: 35px;
-  background: linear-gradient(
-    -20deg,
-    #ffd700 0%,
-    rgb(245, 154, 27) 50%,
-    transparent 50%,
-    transparent 100%
-  );
+  background: linear-gradient(-20deg,
+      #ffd700 0%,
+      rgb(245, 154, 27) 50%,
+      transparent 50%,
+      transparent 100%);
   border-radius: 10px;
   transition: all 0.3s;
   transform-origin: center center;
@@ -243,8 +239,8 @@ textarea::placeholder {
 .language-switcher {
   position: relative;
   display: inline-block;
-  width: calc(64px * 2);
-  height: 64px;
+  width: calc(30px * 2);
+  height: 30px;
   -webkit-transform: translateY(40%);
   -moz-transform: translateY(40%);
   -ms-transform: translateY(40%);
@@ -267,16 +263,18 @@ input {
 .select-fr,
 .select-en {
   position: absolute;
-  font-size: 20px;
-  top: 16px;
+  font-size: 15px;
+  top: 2px;
   color: #fff;
   mix-blend-mode: difference;
 }
+
 .select-fr {
-  left: 18px;
+  left: 7px;
 }
+
 .select-en {
-  right: 16px;
+  right: 5px;
 }
 
 /* The slider */
@@ -295,32 +293,33 @@ input {
 .slider:before {
   position: absolute;
   content: "";
-  height: 64px;
-  width: 64px;
+  height: 30px;
+  width: 30px;
   left: 0;
   bottom: 0;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background: linear-gradient(to bottom right, yellow 0%, orange 50%, yellow 100%);
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: none;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(64px);
-  -ms-transform: translateX(64px);
-  transform: translateX(64px);
+input:checked+.slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 64px;
+  border-radius: 30px;
 }
 
 .slider.round:before {

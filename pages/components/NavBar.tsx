@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
 "use client";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,15 +27,6 @@ const Navbar = () => {
   return (
     <div className="left-0 top-0 w-full z-10 mt-5">
       <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-semibold text-lg font-nunito ">
-        <select
-          value={language}
-          onChange={(e) => {
-            handleLanguageChange(e.target.value);
-          }}
-        >
-          <option value="ro">Ro</option>
-          <option value="ru">Ru</option>
-        </select>
         <Link href="/" className="flex items-center justify-center sm:p-4">
           <Image src="/logo.png" alt="ApiSudex" width={70} height={70} />
         </Link>
@@ -86,9 +76,9 @@ const Navbar = () => {
               <Link href="/contacte">{content.Nav4}</Link>
             </div>
           </li>
-          <div className="items-center flex">
+          <li className=" mr-3">
             <TranslationRoToRu />
-          </div>
+          </li>
         </ul>
 
         {/* Mobile Button */}
@@ -104,7 +94,7 @@ const Navbar = () => {
           }
           onClick={() => setNav(false)}
         >
-          <ul className="flex flex-col items-center">
+          <ul>
             <li className="p-4 text-3xl">
               <div
                 className={
@@ -147,11 +137,6 @@ const Navbar = () => {
                 }
               >
                 <Link href="/contacte">Contacte</Link>
-              </div>
-            </li>
-            <li className="p-4 text-3xl flex justify-center">
-              <div>
-                <TranslationRoToRu />
               </div>
             </li>
           </ul>
