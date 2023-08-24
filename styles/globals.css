@@ -171,7 +171,7 @@ textarea::placeholder {
   position: absolute;
   content: "";
   background: var(--color);
-  width: 250px;
+  width: 350px;
   height: 220px;
   z-index: -1;
   border-radius: 40%;
@@ -265,16 +265,16 @@ input {
   position: absolute;
   font-size: 15px;
   top: 2px;
-  color: #fff;
-  mix-blend-mode: difference;
+  color: black;
+  mix-blend-mode: revert;
 }
 
 .select-fr {
-  left: 7px;
+  left: 6px;
 }
 
 .select-en {
-  right: 5px;
+  right: 4px;
 }
 
 /* The slider */
@@ -297,10 +297,10 @@ input {
   width: 30px;
   left: 0;
   bottom: 0;
-  background-color: white;
+  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  
+
 }
 
 input:checked+.slider {

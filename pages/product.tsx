@@ -91,10 +91,10 @@ export default function Product() {
             </div>
 
             <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-4 sm:p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
-              <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito">
+              <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito text-center sm:text-start">
                 {translatedProduct.translations.name}
               </h1>
-              <div className="flex gap-3 font-nunito font-medium">
+              <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-semibold">
                 {translatedProduct.translations.opt1 && (
                   <button
                     onClick={() => {

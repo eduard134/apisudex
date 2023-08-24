@@ -128,8 +128,8 @@ function TranslationRoToRu() {
           }}
         />
         <span className="slider round"></span>
-        <span className="select-fr">RO</span>
-        <span className="select-en">RU</span>
+        <span className="select-fr font-semibold">RO</span>
+        <span className="select-en font-semibold">RU</span>
       </label>
     </div>
   );
