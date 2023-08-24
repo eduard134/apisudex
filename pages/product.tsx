@@ -4,7 +4,7 @@
   import productsData from "./products.json";
   import Footer from "./components/Footer";
   import { useState, useEffect } from "react";
-  import { useLanguage } from "./components/LanguageContext";
+  import { useLanguage } from "../public/LanguageContext";
   import { getTranslatedArray } from "./components/TranslateRoToRu";
 
   interface Product {

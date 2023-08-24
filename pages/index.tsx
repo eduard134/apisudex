@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import drop from "./images/drop.png";
 import translateData from "./translate.json";
 import Footer from "./components/Footer";
-import { useLanguage } from "./components/LanguageContext";
+import { useLanguage } from "../public/LanguageContext";
 import {
   getTranslatedContent,
   getTranslatedArray,
