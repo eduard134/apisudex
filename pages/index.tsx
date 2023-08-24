@@ -40,6 +40,7 @@ interface Product {
   };
 }
 
+
 export default function Home() {
   const router = useRouter();
   const { language } = useLanguage();
@@ -94,7 +95,7 @@ export default function Home() {
               />
             </div>
             <div className="font-bold text-base md:text-lg text-slate-600 mb-2 md:mb-3 font-varela">
-              {product.reducere ? (
+              {product.translations.reducere ? (
                 <div className="flex flex-col items-center">
                   <p className="line-through text-gray-400 text-sm md:text-base">
                     {product.translations.pret1}

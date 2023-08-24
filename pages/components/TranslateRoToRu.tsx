@@ -100,6 +100,15 @@ function TranslationRoToRu() {
     };
   }, [array, router.events]);
 
+  useEffect(() => {
+    console.log("Selected Option:", selectedOption);
+  }, [selectedOption]);
+
+  useEffect(() => {
+    console.log("Language changed:", language);
+  }, [language]);
+  
+
   return (
     <div>
       <select
@@ -112,9 +121,6 @@ function TranslationRoToRu() {
         <option value="ru">Ru</option>
       </select>
 
-      <Product
-        selectedOption={selectedOption} // Pass the selected option as a prop
-      />
     </div>
   );
 }
