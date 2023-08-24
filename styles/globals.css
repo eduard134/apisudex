@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Varela+Round&display=swap");
-@import url("https://db.onlinewebfonts.com/c/f4d849075c9b4c0047fc56a828879854?family=Recoleta+Bold");
-@import url("https://db.onlinewebfonts.com/c/a4ee49e2dbebfcf6134f5eaf64797335?family=Point+Soft+DEMO+Semi+Bold");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Vollkorn:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

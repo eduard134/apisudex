@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className="left-0 top-0 w-full z-10 mt-5">
-      <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-medium text-lg font-varela">
+      <div className="max-w-[1240px] m-auto sm:mt-4  sm:w-full flex justify-between items-center sm:p-0 p-5 text-dark_purple font-semibold text-lg font-nunito ">
         <select
           value={language}
           onChange={(e) => {

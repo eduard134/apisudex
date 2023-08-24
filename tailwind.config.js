@@ -11,10 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'varela': ['Varela Round', 'sans-serif'],
-        'recoleta': ['Recoleta Bold', 'sans-serif'],
-        'point': ["Point Soft DEMO Semi Bold"],
-
+        'nunito': ['Nunito', "sans-serif"],
+        'volkron': ['Vollkorn', "serif"]
       },
       colors: {
         'yello': '#ffbb00',

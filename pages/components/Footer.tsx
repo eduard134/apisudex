@@ -45,7 +45,7 @@ const Footer = () => {
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 mt-10" />
       <div className="bottom-0 flex flex-col sm:flex-row justify-between text-[#2b2c3d] sm:py-6 py-5 lg:p-10 items-center">
         <div className="flex justify-center items-center flex-col sm:ml-10">
-          <h1 className="mb-4 flex justify-center text-2xl sm:text-xl lg:text-2xl font-semibold uppercase md:justify-start font-recoleta">
+          <h1 className="mb-4 flex justify-center text-2xl sm:text-xl lg:text-2xl font-semibold uppercase md:justify-start font-volkron">
             {content.Social}
           </h1>
           <div className="flex gap-4 ml-2">
@@ -96,28 +96,28 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-recoleta">
+          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-volkron">
             {content.Menu}
           </h1>
-          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
               {content.Nav1}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
               {content.Nav2}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-varela mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
               {content.Nav3}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-varela ">
+          <div className="relative text-center lg:text-start font-nunito font-semibold ">
             <Link href="/contacte" className="hover:text-yellow-400 group">
               {content.Nav4}
               <div className="hover-circle bg-yello"></div>
@@ -125,12 +125,12 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h6 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-recoleta">
+          <h6 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-volkron">
             {content.Contact}
           </h6>
           <div className="mr-10">
             {/* adress */}
-            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-nunito font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -143,7 +143,7 @@ const Footer = () => {
               Tretiacova 129, Comrat, Moldova
             </p>
             {/* mail */}
-            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-nunito font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -156,7 +156,7 @@ const Footer = () => {
               apisudex@gmail.com
             </p>
             {/* tel */}
-            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-center md:justify-start font-varela">
+            <p className="mb-2 sm:mb-4 flex ml-2 sm:ml-0 items-center justify-center md:justify-start font-nunito font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -176,7 +176,7 @@ const Footer = () => {
       </div>
       <hr className="bg-yellow-500 h-[3px] mr-6 ml-8 " />
       <div className="p-6 text-center flex-col flex sm:flex-row sm:justify-between">
-        <p className="font-semibold ml-2 text-gray-500 font-varela">
+        <p className="font-semibold ml-2 text-gray-500 font-nunito">
           {content.Copyright}
         </p>
         <Link

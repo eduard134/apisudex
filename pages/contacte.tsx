@@ -10,13 +10,14 @@ import Link from "next/link";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
 import { useLanguage } from "./components/LanguageContext";
 
-
 const ComponentName = () => {
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
   return (
     <>
-      <p className="font-recoleta text-4xl text-center">{content.Btn_about}</p>
+      <p className="font-volkron font-bold text-4xl text-center">
+        {content.Btn_about}
+      </p>
       <div className="lg:flex block lg:p-16 p-8">
         <div className="left lg:w-[80%] w-full">
           <div className="map w-full h-[80%]">
@@ -30,7 +31,7 @@ const ComponentName = () => {
           </div>
           <div className="mt-12">
             <ul className="wrapper flex items-center justify-center h-12 w-full">
-              <Link href='https://www.facebook.com/profile.php?id=61550100853168&mibextid=ZbWKwL'>
+              <Link href="https://www.facebook.com/profile.php?id=61550100853168&mibextid=ZbWKwL">
                 <li className="icon relative bg-white rounded-full m-2 w-12 h-12 text-center text-xl flex justify-center items-center flex-col shadow-md cursor-pointer transition-all duration-200 ease-in-out">
                   <span className="tooltip_f absolute -top-10 text-sm bg-white text-white font-varela px-2 py-1 rounded-md shadow-md opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
                     Facebook
@@ -65,7 +66,7 @@ const ComponentName = () => {
             </ul>
           </div>
         </div>
-        <div className="right font-varela w-full">
+        <div className="right font-nunito font-semibold w-full">
           <EmailForm />
         </div>
       </div>

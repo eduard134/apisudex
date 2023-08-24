@@ -24,8 +24,10 @@ const about = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <p className="text-center text-4xl font-recoleta">{content.Nav3}</p>
-        <p className="text-center text-md font-varela mt-6 leading-5 lg:px-0 px-4">
+        <p className="text-center text-4xl font-volkron font-bold">
+          {content.Nav3}
+        </p>
+        <p className="text-center text-md font-nunito font-semibold mt-6 leading-5 lg:px-0 px-4">
           {content.Desc_about1} <br /> {content.Desc_about2}
         </p>
         <div className="w-[80%] lg:flex justify-center items-center mt-4 lg:mt-10 block">
@@ -33,32 +35,30 @@ const about = () => {
             <Image src={beeing} alt="" className="rounded-xl" />
           </div>
           <div className="px-8">
-            <div className="font-varela lg:w-[70%] w-[full] lg:text-start text-center">
+            <div className="font-nunito font-semibold lg:w-[70%] w-[full] lg:text-start text-center">
               <p className="mb-4">{content.Desc_about3}</p>{" "}
               <p>{content.Desc_about4}</p>
             </div>
             <div className="flex justify-center lg:block">
               <button
                 onClick={handleContactClick}
-                className="font-varela hover:bg-gradient-to-br hover:from-yellow-500 hover:via-orange-500 hover:to-yellow-500 text-black border-2 border-orange-500 rounded-lg transition duration-300 hover:shadow-md hover:text-white mt-6"
+                className="font-nunito font-semibold hover:bg-gradient-to-br hover:from-yellow-500 hover:via-orange-500 hover:to-yellow-500 text-black border-2 border-orange-500 rounded-lg transition duration-300 hover:shadow-md hover:text-white mt-6"
               >
                 <p className="px-5 py-3">{content.Btn_about}</p>
               </button>
             </div>
           </div>
         </div>
-        <p className="text-center text-4xl font-recoleta mt-32 sm:mt-14">
+        <p className="text-center text-4xl font-volkron font-semibold mt-32 sm:mt-14">
           {content.why}
         </p>
-        <div className="lg:flex lg:flex-wrap block justify-center font-varela mt-2 sm:mt-10">
+        <div className="lg:flex lg:flex-wrap block justify-center font-nunito mt-2 sm:mt-10">
           <div className="bg-[#F9E9B8] lg:w-[34%] h-[full] m-2 mt-10 rounded-xl p-4">
             <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={quality} alt="" />
             </div>
-            <div className="mt-4 text-lg font-semibold">
-              {content.title_about1}
-            </div>
-            <div className="mt-4 text-[#475569]">
+            <div className="mt-4 text-xl font-bold">{content.title_about1}</div>
+            <div className="mt-4 text-[#475569] font-semibold">
               {content.data_about1}
             </div>
           </div>
@@ -66,10 +66,8 @@ const about = () => {
             <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={high_quality} alt="" />
             </div>
-            <div className="mt-4 text-lg font-semibold">
-              {content.title_about2}
-            </div>
-            <div className="mt-4 text-[#475569]">
+            <div className="mt-4 text-xl font-bold">{content.title_about2}</div>
+            <div className="mt-4 text-[#475569] font-semibold">
               {content.data_about2}
             </div>
           </div>
@@ -77,10 +75,8 @@ const about = () => {
             <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={innovation} alt="" />
             </div>
-            <div className="mt-4 text-lg font-semibold">
-              {content.title_about3}
-            </div>
-            <div className="mt-4 text-[#475569]">
+            <div className="mt-4 text-xl font-bold">{content.title_about3}</div>
+            <div className="mt-4 text-[#475569] font-semibold">
               {content.data_about3}
             </div>
           </div>
@@ -88,10 +84,8 @@ const about = () => {
             <div className="lg:w-[3%] w-[17.5%] sm:w-[7.5%] absolute -mt-12 bg-yellow-400 p-3 rounded-xl ml-2">
               <Image src={relation} alt="" />
             </div>
-            <div className="mt-4 text-lg font-semibold">
-              {content.title_about4}
-            </div>
-            <div className="mt-4 text-[#475569]">
+            <div className="mt-4 text-xl font-bold">{content.title_about4}</div>
+            <div className="mt-4 text-[#475569] font-semibold">
               {content.data_about4}
             </div>
           </div>
