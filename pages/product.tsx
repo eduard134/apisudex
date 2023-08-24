@@ -80,8 +80,8 @@ export default function Product() {
     <div>
       {translatedProduct ? (
         <>
-          <div className="flex lg:flex-row flex-col justify-center items-center justify- mt-20 mb-20 relative">
-            <div className="w-96 h-80 lg-mr-10 relative overflow-hidden mb-6 mr-0">
+          <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
+            <div className="w-96  h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
               <Image
                 src={translatedProduct.image || "/default-image.jpg"}
                 alt={translatedProduct.translations.name}
@@ -90,11 +90,11 @@ export default function Product() {
               />
             </div>
 
-            <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
+            <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-4 sm:p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
               <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito">
                 {translatedProduct.translations.name}
               </h1>
-              <div className="flex gap-3 font-nunito font-semibold">
+              <div className="flex gap-3 font-nunito font-medium">
                 {translatedProduct.translations.opt1 && (
                   <button
                     onClick={() => {
