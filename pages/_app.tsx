@@ -11,7 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <Head>
           <title>ApiSudex</title>
           <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-          <meta name="description" content="" />
+          <meta
+            name="description"
+            content="Descoperă universul fascinant al apiculturii cu Apisudex - destinația ta principală pentru cunoaștere și echipamente apicole. Explorează o gamă diversificată de informații despre apicultură, tehnici de îngrijire a stupilor și colectare a mierii, împărtășite de experți în domeniu. Găsește cele mai inovatoare și eficiente soluții pentru gestionarea stupilor și producția de miere de calitate. Oferim o varietate de stupi și rame de cea mai bună calitate, adaptate nevoilor fiecărui apicultor, de la cei începători până la cei avansați. "
+          />
           <meta
             name="keywords"
             content="Descoperă secretele fascinante ale lumii apiculturii și producției de miere,
