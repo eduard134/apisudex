@@ -1,14 +1,11 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
-import productsData from "./products.json";
-import Footer from "./components/Footer";
-import { useState, useEffect } from "react";
-import {
-  getTranslatedArray,
-  getTranslatedContent,
-} from "./components/TranslateRoToRu";
-import { useLanguage } from "./components/LanguageContext";
-import { useMemo } from "react";
+  /* eslint-disable react-hooks/exhaustive-deps */
+  import { useRouter } from "next/router";
+  import Image from "next/image";
+  import productsData from "./products.json";
+  import Footer from "./components/Footer";
+  import { useState, useMemo } from "react";
+  import useLanguage from "../public/LanguageContext";
+  import { getTranslatedContent } from "./components/TranslateRoToRu";
 
 interface Product {
   id: number;
