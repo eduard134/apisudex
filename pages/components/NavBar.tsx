@@ -103,7 +103,7 @@ const Navbar = () => {
                     : ""
                 }
               >
-                <Link href="/">Acasă</Link>
+                <Link href="/">{content.Nav1}</Link>
               </div>
             </li>
             <li className="p-4 text-3xl">
@@ -114,7 +114,7 @@ const Navbar = () => {
                     : ""
                 }
               >
-                <Link href="/shop">Shop</Link>
+                <Link href="/shop">{content.Nav2}</Link>
               </div>
             </li>
             <li className="p-4 text-3xl">
@@ -125,7 +125,7 @@ const Navbar = () => {
                     : ""
                 }
               >
-                <Link href="/about">Despre Noi</Link>
+                <Link href="/about">{content.Nav3}</Link>
               </div>
             </li>
             <li className="p-4 text-3xl">
@@ -136,7 +136,7 @@ const Navbar = () => {
                     : ""
                 }
               >
-                <Link href="/contacte">Contacte</Link>
+                <Link href="/contacte">{content.Nav4}</Link>
               </div>
             </li>
             <li className="ml-14">
