@@ -125,9 +125,9 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h6 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-volkron">
+          <p className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-volkron">
             {content.Contact}
-          </h6>
+          </p>
           <div className="mr-10">
             {/* adress */}
             <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-nunito font-semibold">
