@@ -96,22 +96,22 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-volkron">
+          <h1 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-volkron">
             {content.Menu}
           </h1>
-          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-2 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
               {content.Nav1}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-2 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
               {content.Nav2}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-2 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
               {content.Nav3}
               <div className="hover-circle bg-yello"></div>
