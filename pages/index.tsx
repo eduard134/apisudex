@@ -92,6 +92,7 @@ export default function Home() {
                 alt={product.translations.name}
                 width={150}
                 height={150}
+                decoding="sync"
               />
             </div>
             <div className="font-bold text-base md:text-lg text-slate-600 mb-2 md:mb-3 font-nunito">
