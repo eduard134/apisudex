@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import NavBar from "./components/NavBar";
 import Head from "next/head";
 import { LanguageProvider } from "../public/LanguageContext";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -522,6 +523,7 @@ Miere ca ingredient în rețete culinare,
 
         <NavBar />
         <Component {...pageProps} />
+        <Analytics />
       </LanguageProvider>
     </>
   );
