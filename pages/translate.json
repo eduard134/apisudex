@@ -508,7 +508,7 @@
         {
             "id": 22,
             "categoryId": 2,
-            "image": "/images/rama300mm_Ne.png",
+            "image": "/images/rama300mm_ne.png",
             "translations": {
                 "ro": {
                     "name": "Ramă Dezasamblată din Tei 300mm",
@@ -525,7 +525,7 @@
         {
             "id": 23,
             "categoryId": 2,
-            "image": "/images/rama230mm_Ne.png",
+            "image": "/images/rama230mm_ne.png",
             "translations": {
                 "ro": {
                     "name": "Ramă Dezasamblată din Tei 230mm",
@@ -542,7 +542,7 @@
         {
             "id": 24,
             "categoryId": 2,
-            "image": "/images/rama145mm_Ne.png",
+            "image": "/images/rama145mm_ne.png",
             "translations": {
                 "ro": {
                     "name": "Ramă Dezasamblată din Tei 145mm",
@@ -559,7 +559,7 @@
         {
             "id": 25,
             "categoryId": 2,
-            "image": "/images/rama300mm_Ne.png",
+            "image": "/images/rama300mm_ne.png",
             "translations": {
                 "ro": {
                     "name": "Ramă Dezasamblată din Pin 300mm",
@@ -576,7 +576,7 @@
         {
             "id": 26,
             "categoryId": 2,
-            "image": "/images/rama230mm_Ne.png",
+            "image": "/images/rama230mm_ne.png",
             "translations": {
                 "ro": {
                     "name": "Ramă Dezasamblată din Pin 230mm",
@@ -593,7 +593,7 @@
         {
             "id": 27,
             "categoryId": 2,
-            "image": "/images/rama145mm_Ne.png",
+            "image": "/images/rama145mm_ne.png",
             "translations": {
                 "ro": {
                     "name": "Ramă Dezasamblată din Pin 145mm",

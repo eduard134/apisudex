@@ -10,7 +10,7 @@ import innovation from "./images/innovation.png";
 import quality from "./images/quality.png";
 import Footer from "./components/Footer";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
-import { useLanguage } from "./components/LanguageContext";
+import useLanguage from "../public/LanguageContext";
 
 const about = () => {
   const router = useRouter();

@@ -10,7 +10,7 @@ import insta_hover from "../images/instagram_hover.png";
 import face_hover from "../images/facebook_hover.png";
 import viber_hover from "../images/viber1_hover.png";
 import whatsapp_hover from "../images/whatsapp1_hover.png";
-import { useLanguage } from "./LanguageContext";
+import useLanguage from "../../public/LanguageContext";
 import { getTranslatedContent } from "./TranslateRoToRu";
 
 const Footer = () => {
@@ -96,22 +96,22 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h1 className="mb-3 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-volkron">
+          <h1 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase font-volkron">
             {content.Menu}
           </h1>
-          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-3 sm:mb-3">
             <Link href="/" className="hover:text-yellow-400 group">
               {content.Nav1}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-3 sm:mb-3">
             <Link href="/shop" className="hover:text-yellow-400 group">
               {content.Nav2}
               <div className="hover-circle bg-yello"></div>
             </Link>
           </div>
-          <div className="relative text-center lg:text-start font-nunito font-semibold mb-1 sm:mb-3">
+          <div className="relative text-center lg:text-start font-nunito font-semibold mb-3 sm:mb-3">
             <Link href="/about" className="hover:text-yellow-400 group">
               {content.Nav3}
               <div className="hover-circle bg-yello"></div>
@@ -125,9 +125,9 @@ const Footer = () => {
           </div>
         </div>
         <div className={isMobile ? "mt-10 sm:mt-0" : "mt-0 sm:ml-10"}>
-          <h6 className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-volkron">
+          <p className="mb-4 text-2xl sm:text-xl lg:text-2xl flex justify-center font-semibold uppercase md:justify-start font-volkron">
             {content.Contact}
-          </h6>
+          </p>
           <div className="mr-10">
             {/* adress */}
             <p className="mb-2 sm:mb-4 ml-2 sm:ml-0 flex items-center justify-center md:justify-start font-nunito font-semibold">

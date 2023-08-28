@@ -5,7 +5,7 @@ import Script from "next/script"; // Import the Script component
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="ro">
         <Head>{/* Include the EmailJS script */}</Head>
         <body>
           <Main />
