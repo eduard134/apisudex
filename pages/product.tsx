@@ -1,16 +1,22 @@
-  /* eslint-disable react-hooks/exhaustive-deps */
-  import { useRouter } from "next/router";
-  import Image from "next/image";
-  import productsData from "./products.json";
-  import Footer from "./components/Footer";
-  import { useState, useMemo } from "react";
-  import useLanguage from "../public/LanguageContext";
-  import { getTranslatedContent } from "./components/TranslateRoToRu";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useRouter } from "next/router";
+import Image from "next/image";
+import productsData from "./products.json";
+import Footer from "./components/Footer";
+import { useState, useMemo } from "react";
+import useLanguage from "../public/LanguageContext";
+import { getTranslatedContent } from "./components/TranslateRoToRu";
 
 interface Product {
   id: number;
   categoryId: number;
   image?: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+  image5?: string;
+  image6?: string;
   translations: ProductCategory;
 }
 
@@ -21,14 +27,68 @@ interface ProductCategory {
 
 interface Caracteristics {
   name: string;
-  pret1: string;
-  descriere: string;
-  reducere?: string;
-  opt1?: string;
-  opt2?: string;
-  opt3?: string;
-  pret2?: string;
-  pret3?: string;
+    btn1?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+    };
+    btn2?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+    };
+    btn3?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+      button1?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+      button2?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+      button3?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+    };
+    btn4?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+    };
 }
 
 export default function Product() {
@@ -48,22 +108,25 @@ export default function Product() {
 
   // Declare selectedOption and setSelectedOption using the useState hook
   const [selectedOption, setSelectedOption] = useState<string | undefined>(
-    translatedProduct?.translations.opt1 ||
-      translatedProduct?.translations.opt2 ||
-      translatedProduct?.translations.opt3
+    translatedProduct?.translations.btn1?.opt1 ||
+      translatedProduct?.translations.btn1?.opt2 ||
+      translatedProduct?.translations.btn1?.opt3 ||
+      translatedProduct?.translations.btn2?.opt1 ||
+      translatedProduct?.translations.btn2?.opt2 ||
+      translatedProduct?.translations.btn2?.opt3 ||
   );
 
   const selectedPrice = (() => {
-    if (selectedOption === translatedProduct?.translations.opt1) {
+    if (selectedOption === translatedProduct?.translations.btn1?.opt1) {
       return (
         translatedProduct?.translations.reducere ||
         translatedProduct?.translations.pret1
       );
     }
-    if (selectedOption === translatedProduct?.translations.opt2) {
+    if (selectedOption === translatedProduct?.translations.btn1?.opt2) {
       return translatedProduct?.translations.pret2;
     }
-    if (selectedOption === translatedProduct?.translations.opt3) {
+    if (selectedOption === translatedProduct?.translations.btn1?.opt3) {
       return translatedProduct?.translations.pret3;
     }
     return translatedProduct?.translations.pret1;
