@@ -25,6 +25,18 @@
   },
   {
     "id": 3,
+    "img": "/images/acces.png",
+    "translations": {
+      "ro": {
+        "denumire": "Rame"
+      },
+      "ru": {
+        "denumire": "Рамы"
+      }
+    }
+  },
+  {
+    "id": 3,
     "img": "/images/sale.png",
     "translations": {
       "ro": {
