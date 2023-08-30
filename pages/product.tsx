@@ -27,68 +27,58 @@ interface ProductCategory {
 
 interface Caracteristics {
   name: string;
-    btn1?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
+  btn1?: {
+    name: string;
+    opt1?: string;
+    opt2?: string;
+    opt3?: string;
+    pret1?: string;
+    pret2?: string;
+    pret3?: string;
+    descriere?: string;
+    reducere?: string;
+  };
+  btn2?: {
+    name: string;
+    pret1?: string;
+    descriere?: string;
+    reducere?: string;
+  };
+  btn3?: {
+    name: string;
+    pret1?: string;
+    descriere?: string;
+    reducere?: string;
+    button1?: {
+      name?: string;
       pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
       reducere?: string;
+      descriere?: string;
     };
-    btn2?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
+    button2?: {
+      name?: string;
       pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
       reducere?: string;
+      descriere?: string;
     };
-    btn3?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
+    button3?: {
+      name?: string;
       pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
       reducere?: string;
-      button1?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-      button2?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-      button3?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-    };
-    btn4?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
       descriere?: string;
-      reducere?: string;
     };
+  };
+  btn4?: {
+    name: string;
+    opt1?: string;
+    opt2?: string;
+    opt3?: string;
+    pret1?: string;
+    pret2?: string;
+    pret3?: string;
+    descriere?: string;
+    reducere?: string;
+  };
 }
 
 export default function Product() {
@@ -111,25 +101,47 @@ export default function Product() {
     translatedProduct?.translations.btn1?.opt1 ||
       translatedProduct?.translations.btn1?.opt2 ||
       translatedProduct?.translations.btn1?.opt3 ||
-      translatedProduct?.translations.btn2?.opt1 ||
-      translatedProduct?.translations.btn2?.opt2 ||
-      translatedProduct?.translations.btn2?.opt3 ||
+      translatedProduct?.translations.btn4?.opt1 ||
+      translatedProduct?.translations.btn4?.opt2 ||
+      translatedProduct?.translations.btn4?.opt3
   );
 
   const selectedPrice = (() => {
-    if (selectedOption === translatedProduct?.translations.btn1?.opt1) {
+    if (
+      selectedOption === translatedProduct?.translations.btn1?.opt1 ||
+      translatedProduct?.translations.btn4?.opt1
+    ) {
       return (
-        translatedProduct?.translations.reducere ||
-        translatedProduct?.translations.pret1
+        translatedProduct?.translations.btn3?.button1?.reducere ||
+        translatedProduct?.translations.btn3?.button2?.reducere ||
+        translatedProduct?.translations.btn3?.button3?.reducere ||
+        translatedProduct?.translations.btn3?.button1?.pret1 ||
+        translatedProduct?.translations.btn3?.button2?.pret1 ||
+        translatedProduct?.translations.btn3?.button3?.pret1
       );
     }
-    if (selectedOption === translatedProduct?.translations.btn1?.opt2) {
-      return translatedProduct?.translations.pret2;
+    if (
+      selectedOption === translatedProduct?.translations.btn1?.opt2 ||
+      translatedProduct?.translations.btn4?.opt2
+    ) {
+      return (
+        translatedProduct?.translations.btn1?.pret2 ||
+        translatedProduct?.translations.btn4?.pret2
+      );
     }
-    if (selectedOption === translatedProduct?.translations.btn1?.opt3) {
-      return translatedProduct?.translations.pret3;
+    if (
+      selectedOption === translatedProduct?.translations.btn1?.opt3 ||
+      translatedProduct?.translations.btn4?.opt3
+    ) {
+      return (
+        translatedProduct?.translations.btn1?.pret3 ||
+        translatedProduct?.translations.btn4?.pret3
+      );
     }
-    return translatedProduct?.translations.pret1;
+    return (
+      translatedProduct?.translations.btn1?.pret1 ||
+      translatedProduct?.translations.btn4?.pret1
+    );
   })();
 
   const handleOptionChange = (option: string) => {
@@ -155,57 +167,75 @@ export default function Product() {
                 {translatedProduct.translations.name}
               </h1>
               <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-semibold">
-                {translatedProduct.translations.opt1 && (
-                  <button
-                    onClick={() => {
-                      const option = translatedProduct.translations?.opt1;
-                      if (option !== undefined) {
-                        handleOptionChange(option);
-                      }
-                    }}
-                    className={`anim w-full py-1 ${
-                      selectedOption === translatedProduct.translations.opt1
-                        ? "bg-white text-black"
-                        : "bg-yellow-500 text-black"
-                    }`}
-                  >
-                    {translatedProduct.translations.opt1}
-                  </button>
-                )}
-                {translatedProduct.translations.opt2 && (
-                  <button
-                    onClick={() => {
-                      const option = translatedProduct.translations?.opt2;
-                      if (option !== undefined) {
-                        handleOptionChange(option);
-                      }
-                    }}
-                    className={`anim w-full py-1 ${
-                      selectedOption === translatedProduct.translations.opt2
-                        ? "bg-white text-black"
-                        : "bg-yellow-500 text-black"
-                    }`}
-                  >
-                    {translatedProduct.translations.opt2}
-                  </button>
-                )}
-                {translatedProduct.translations.opt3 && (
-                  <button
-                    onClick={() => {
-                      const option = translatedProduct.translations?.opt3;
-                      if (option !== undefined) {
-                        handleOptionChange(option);
-                      }
-                    }}
-                    className={`anim w-full py-1 ${
-                      selectedOption === translatedProduct.translations.opt3
-                        ? "bg-white text-black"
-                        : "bg-yellow-500 text-black"
-                    }`}
-                  >
-                    {translatedProduct.translations.opt3}
-                  </button>
-                )}
+                {translatedProduct?.translations.btn1?.opt1 ||
+                  (translatedProduct?.translations.btn4?.opt1 && (
+                    <button
+                      onClick={() => {
+                        const option =
+                          translatedProduct?.translations.btn1?.opt1 ||
+                          translatedProduct?.translations.btn4?.opt1;
+                        if (option !== undefined) {
+                          handleOptionChange(option);
+                        }
+                      }}
+                      className={`anim w-full py-1 ${
+                        selectedOption ===
+                          translatedProduct?.translations.btn1?.opt1 ||
+                        translatedProduct?.translations.btn4?.opt1
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
+                      {translatedProduct?.translations.btn1?.opt1 ||
+                        translatedProduct?.translations.btn4?.opt1}
+                    </button>
+                  ))}
+                {translatedProduct?.translations.btn1?.opt2 ||
+                  (translatedProduct?.translations.btn4?.opt2 && (
+                    <button
+                      onClick={() => {
+                        const option =
+                          translatedProduct?.translations.btn1?.opt2 ||
+                          translatedProduct?.translations.btn4?.opt2;
+                        if (option !== undefined) {
+                          handleOptionChange(option);
+                        }
+                      }}
+                      className={`anim w-full py-1 ${
+                        selectedOption ===
+                          translatedProduct?.translations.btn1?.opt2 ||
+                        translatedProduct?.translations.btn4?.opt2
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
+                      {translatedProduct?.translations.btn1?.opt2 ||
+                        translatedProduct?.translations.btn4?.opt2}
+                    </button>
+                  ))}
+                {translatedProduct?.translations.btn1?.opt3 ||
+                  (translatedProduct?.translations.btn4?.opt3 && (
+                    <button
+                      onClick={() => {
+                        const option =
+                          translatedProduct?.translations.btn1?.opt3 ||
+                          translatedProduct?.translations.btn4?.opt3;
+                        if (option !== undefined) {
+                          handleOptionChange(option);
+                        }
+                      }}
+                      className={`anim w-full py-1 ${
+                        selectedOption ===
+                          translatedProduct?.translations.btn1?.opt3 ||
+                        translatedProduct?.translations.btn4?.opt3
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
+                      {translatedProduct?.translations.btn1?.opt3 ||
+                        translatedProduct?.translations.btn4?.opt3}
+                    </button>
+                  ))}
               </div>
               <div className="bg-yellow-50 mt-6 shadow-md p-6 rounded-lg text-gray-800">
                 <p className="text-lg font-semibold text-yellow-500 mb-2 font-nunito">
@@ -215,11 +245,14 @@ export default function Product() {
                   {translatedProduct.translations.descriere}
                 </p>
                 <div className="flex items-center justify-end mb-1">
-                  {translatedProduct.translations?.reducere && (
-                    <p className="text-base line-through text-gray-400">
-                      {translatedProduct.translations.pret1}
-                    </p>
-                  )}
+                  {translatedProduct?.translations.btn3?.button1?.reducere ||
+                    translatedProduct?.translations.btn3?.button2?.reducere ||
+                    (translatedProduct?.translations.btn3?.button3
+                      ?.reducere && (
+                      <p className="text-base line-through text-gray-400">
+                        {translatedProduct.translations.pret1}
+                      </p>
+                    ))}
                 </div>
                 <p className="flex justify-between text-lg font-semibold text-yellow-500 mb-2 font-nunito">
                   {content.Total}
