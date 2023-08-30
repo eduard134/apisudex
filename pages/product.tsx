@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import productsData from "./products.json";
 import Footer from "./components/Footer";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import useLanguage from "../public/LanguageContext";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
 
@@ -36,13 +36,11 @@ interface Caracteristics {
     pret2?: string;
     pret3?: string;
     descriere?: string;
-    reducere?: string;
   };
   btn2?: {
     name: string;
     pret1?: string;
     descriere?: string;
-    reducere?: string;
   };
   btn3?: {
     name: string;
@@ -77,7 +75,6 @@ interface Caracteristics {
     pret2?: string;
     pret3?: string;
     descriere?: string;
-    reducere?: string;
   };
 }
 
@@ -86,39 +83,6 @@ export default function Product() {
   const { id: productId } = router.query;
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
-
-  const [selectedOption, setSelectedOption] = useState<string | undefined>();
-  const [showOptions, setShowOptions] = useState<boolean>(true);
-  const [showButtons, setShowButtons] = useState<boolean>(false);
-
-  interface ButtonBehavior {
-    showOptions: boolean;
-    showButtons: boolean;
-    selectedOption: string;
-  }
-
-  const buttonBehaviors: Record<string, ButtonBehavior> = {
-    btn1: {
-      showOptions: true,
-      showButtons: false,
-      selectedOption: "opt1",
-    },
-    btn2: {
-      showOptions: true,
-      showButtons: false,
-      selectedOption: "",
-    },
-    btn3: {
-      showOptions: true,
-      showButtons: true,
-      selectedOption: "",
-    },
-    btn4: {
-      showOptions: true,
-      showButtons: false,
-      selectedOption: "opt1",
-    },
-  };
 
   const translatedProduct = useMemo(() => {
     const translatedArray = productsData.map((product) => ({
@@ -129,85 +93,155 @@ export default function Product() {
     return translatedArray.find((p) => p.id === parseInt(productId as string));
   }, [productId, language]);
 
-  // Declare selectedOption and setSelectedOption using the useState hook
-
-  const selectedPrice = (() => {
-    if (
-      selectedOption === translatedProduct?.translations.btn1?.opt1 ||
-      translatedProduct?.translations.btn4?.opt1
-    ) {
-      return (
-        translatedProduct?.translations.btn3?.button1?.reducere ||
-        translatedProduct?.translations.btn3?.button2?.reducere ||
-        translatedProduct?.translations.btn3?.button3?.reducere ||
-        translatedProduct?.translations?.pret1 ||
-        translatedProduct?.translations?.btn1?.pret1 ||
-        translatedProduct?.translations?.btn2?.pret1 ||
-        translatedProduct?.translations?.btn3?.pret1 ||
-        translatedProduct?.translations?.btn3?.button1?.pret1 ||
-        translatedProduct?.translations?.btn3?.button2?.pret1 ||
-        translatedProduct?.translations?.btn3?.button3?.pret1 ||
-        translatedProduct?.translations?.btn4?.pret1
-      );
-    }
-    if (
-      selectedOption === translatedProduct?.translations.btn1?.opt2 ||
-      translatedProduct?.translations.btn4?.opt2
-    ) {
-      return (
-        translatedProduct?.translations.btn1?.pret2 ||
-        translatedProduct?.translations.btn4?.pret2
-      );
-    }
-    if (
-      selectedOption === translatedProduct?.translations.btn1?.opt3 ||
-      translatedProduct?.translations.btn4?.opt3
-    ) {
-      return (
-        translatedProduct?.translations.btn1?.pret3 ||
-        translatedProduct?.translations.btn4?.pret3
-      );
-    }
-    return (
-      translatedProduct?.translations.btn1?.pret1 ||
-      translatedProduct?.translations.btn4?.pret1
-    );
-  })();
-
-  // Toggle the visibility of options and buttons when the button is clicked
-  const handleOptionChange = (option: string) => {
-    console.log("Selected option:", option);
-    setSelectedOption(option);
-  };
-
-  const handleButtonChange = (option?: string) => {
-    console.log("Selected option:", option);
-
-    if (option) {
-      const behavior = buttonBehaviors[option];
-
-      if (behavior) {
-        console.log("Behavior:", behavior);
-
-        setShowOptions(behavior.showOptions);
-        setShowButtons(behavior.showButtons);
-        setSelectedOption(behavior.selectedOption);
-      } else {
-        console.log(`Behavior not found for option: ${option}`);
-      }
-    }
-  };
-
-  console.log("Button behaviors keys:", Object.keys(buttonBehaviors));
-
-  console.log(
-    "Component rendered. productId:",
-    productId,
-    "language:",
-    language
+  const [showButton1, setShowButton1] = useState(false);
+  const [showButton2, setShowButton2] = useState(false);
+  const [showButton3, setShowButton3] = useState(false);
+  const [showButton4, setShowButton4] = useState(false);
+  const [selectedPrice, setSelectedPrice] = useState<number | null>(
+    (translatedProduct?.translations?.pret1
+      ? parseFloat(translatedProduct?.translations?.pret1)
+      : null) ||
+      (translatedProduct?.translations?.btn1?.pret1
+        ? parseFloat(translatedProduct.translations.btn1.pret1)
+        : null)
   );
 
-  console.log("Translated product:", translatedProduct);
+  useEffect(() => {
+    if (translatedProduct && translatedProduct.translations.btn1) {
+      const pret1Value = translatedProduct.translations.btn1.pret1;
+      if (pret1Value !== undefined) {
+        setSelectedPrice(parseFloat(pret1Value));
+      }
+    }
+  }, [translatedProduct]);
+
+  console.log("btn1 pret1:", translatedProduct?.translations?.btn1?.pret1);
+  const handleOpt1Click = () => {
+    const selectedPriceValue = translatedProduct?.translations?.btn1?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleOpt2Click = () => {
+    const selectedPriceValue = translatedProduct?.translations?.btn1?.pret2;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleOpt3Click = () => {
+    const selectedPriceValue = translatedProduct?.translations?.btn1?.pret3;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleOpt1 = () => {
+    const selectedPriceValue = translatedProduct?.translations?.btn4?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleOpt2 = () => {
+    const selectedPriceValue = translatedProduct?.translations?.btn4?.pret2;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleOpt3 = () => {
+    const selectedPriceValue = translatedProduct?.translations?.btn4?.pret3;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton1Click = () => {
+    setShowButton1(true);
+    setShowButton2(false);
+    setShowButton3(false);
+    setShowButton4(false);
+
+    const btn1 = translatedProduct?.translations?.btn1;
+    const selectedPriceValue = btn1?.pret1 || btn1?.pret2 || btn1?.pret3;
+
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton2Click = () => {
+    setShowButton1(false);
+    setShowButton2(true);
+    setShowButton3(false);
+    setShowButton4(false);
+
+    const selectedPriceValue = translatedProduct?.translations?.btn2?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton3Click = () => {
+    setShowButton1(false);
+    setShowButton2(false);
+    setShowButton3(true);
+    setShowButton4(false);
+
+    const btn3 = translatedProduct?.translations?.btn3;
+    const selectedPriceValue =
+      btn3?.button1?.pret1 ||
+      btn3?.button2?.pret1 ||
+      btn3?.button3?.pret1 ||
+      btn3?.pret1;
+
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton4Click = () => {
+    setShowButton1(false);
+    setShowButton2(false);
+    setShowButton3(false);
+    setShowButton4(true);
+
+    const btn4 = translatedProduct?.translations?.btn4;
+    const selectedPriceValue = btn4?.pret1 || btn4?.pret2 || btn4?.pret3;
+
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton1 = () => {
+    const selectedPriceValue =
+      translatedProduct?.translations?.btn3?.button1?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton2 = () => {
+    const selectedPriceValue =
+      translatedProduct?.translations?.btn3?.button2?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const handleButton3 = () => {
+    const selectedPriceValue =
+      translatedProduct?.translations?.btn3?.button3?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  console.log(translatedProduct?.translations.btn4?.pret3);
+
   return (
     <div>
       {translatedProduct ? (
@@ -227,222 +261,101 @@ export default function Product() {
                 {translatedProduct.translations.name}
               </h1>
               <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-semibold mb-4">
-                <div>
+                {translatedProduct.translations.btn1 && (
                   <div>
-                    {translatedProduct?.translations.btn1 && (
-                      <button onClick={() => handleButtonChange("btn1")}>
-                        {translatedProduct.translations.btn1.name}
-                      </button>
-                    )}
-
-                    {translatedProduct?.translations.btn2 && (
-                      <button onClick={() => handleButtonChange("btn2")}>
-                        {translatedProduct.translations.btn2.name}
-                      </button>
-                    )}
-
-                    {translatedProduct?.translations.btn3 && (
-                      <button onClick={() => handleButtonChange("btn3")}>
-                        {translatedProduct.translations.btn3.name}
-                      </button>
-                    )}
-
-                    {translatedProduct?.translations.btn4 && (
-                      <button onClick={() => handleButtonChange("btn4")}>
-                        {translatedProduct.translations.btn4.name}
-                      </button>
-                    )}
+                    <button onClick={handleButton1Click}>
+                      {translatedProduct.translations.btn1.name}
+                    </button>
                   </div>
-                </div>
-
-                <div>
-                  {/* Options */}
-                  {showOptions && (
-                    <div>
-                      {translatedProduct?.translations.btn1 &&
-                        selectedOption ===
-                          translatedProduct?.translations.btn1?.name && (
-                          <>
-                            {translatedProduct.translations.btn1.opt1 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn1
-                                      ?.opt1 || ""
-                                  )
-                                }
-                              >
-                                {translatedProduct.translations.btn1.opt1}
-                              </button>
-                            )}
-                            {translatedProduct.translations.btn1.opt2 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn1
-                                      ?.opt2 || ""
-                                  )
-                                }
-                              >
-                                {translatedProduct.translations.btn1.opt2}
-                              </button>
-                            )}
-                            {translatedProduct.translations.btn1.opt3 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn1
-                                      ?.opt3 || ""
-                                  )
-                                }
-                              >
-                                {translatedProduct.translations.btn1.opt3}
-                              </button>
-                            )}
-                          </>
-                        )}
-                      {translatedProduct?.translations.btn4 &&
-                        selectedOption ===
-                          translatedProduct?.translations.btn4?.name && (
-                          <>
-                            {translatedProduct.translations.btn4.opt1 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn4
-                                      ?.opt1 || ""
-                                  )
-                                }
-                              >
-                                {translatedProduct.translations.btn4.opt1}
-                              </button>
-                            )}
-                            {translatedProduct.translations.btn4.opt2 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn4
-                                      ?.opt2 || ""
-                                  )
-                                }
-                              >
-                                {translatedProduct.translations.btn4.opt2}
-                              </button>
-                            )}
-                            {translatedProduct.translations.btn4.opt3 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn4
-                                      ?.opt3 || ""
-                                  )
-                                }
-                              >
-                                {translatedProduct.translations.btn4.opt3}
-                              </button>
-                            )}
-                          </>
-                        )}
-                    </div>
-                  )}
-
-                  {/* Button Buttons */}
-                  {showButtons && (
-                    <div>
-                      {translatedProduct?.translations.btn3 &&
-                        selectedOption ===
-                          translatedProduct?.translations.btn3?.name && (
-                          <>
-                            {translatedProduct.translations.btn3.button1 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn3
-                                      ?.button1?.name || ""
-                                  )
-                                }
-                              >
-                                {
-                                  translatedProduct.translations.btn3.button1
-                                    .name
-                                }
-                              </button>
-                            )}
-                            {translatedProduct.translations.btn3.button2 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn3
-                                      ?.button2?.name || ""
-                                  )
-                                }
-                              >
-                                {
-                                  translatedProduct.translations.btn3.button2
-                                    .name
-                                }
-                              </button>
-                            )}
-                            {translatedProduct.translations.btn3.button3 && (
-                              <button
-                                onClick={() =>
-                                  handleOptionChange(
-                                    translatedProduct?.translations?.btn3
-                                      ?.button3?.name || ""
-                                  )
-                                }
-                              >
-                                {
-                                  translatedProduct.translations.btn3.button3
-                                    .name
-                                }
-                              </button>
-                            )}
-                          </>
-                        )}
-                    </div>
-                  )}
-                </div>
-                <div className="bg-yellow-50 mt-6 shadow-md p-6 rounded-lg text-gray-800">
-                  <p className="text-lg font-semibold text-yellow-500 mb-2 font-nunito">
-                    {content.Descriere}
-                  </p>
-                  <p className="text-md font-nunito mb-6 font-semibold text-[#595459]">
-                    {translatedProduct.translations.descriere}
-                  </p>
-                  <div className="flex items-center justify-end mb-1">
-                    {translatedProduct?.translations.btn3?.button1?.reducere ||
-                      translatedProduct?.translations.btn3?.button2?.reducere ||
-                      (translatedProduct?.translations.btn3?.button3
-                        ?.reducere && (
-                        <p className="text-base line-through text-gray-400">
-                          {translatedProduct?.translations?.pret1 ||
-                            translatedProduct?.translations?.btn1?.pret1 ||
-                            translatedProduct?.translations?.btn2?.pret1 ||
-                            translatedProduct?.translations?.btn3?.pret1 ||
-                            translatedProduct?.translations?.btn3?.button1
-                              ?.pret1 ||
-                            translatedProduct?.translations?.btn3?.button2
-                              ?.pret1 ||
-                            translatedProduct?.translations?.btn3?.button3
-                              ?.pret1 ||
-                            translatedProduct?.translations?.btn4?.pret1}
-                        </p>
-                      ))}
+                )}
+                {translatedProduct.translations.btn2 && (
+                  <button onClick={handleButton2Click}>
+                    {translatedProduct.translations.btn2?.name}
+                  </button>
+                )}
+                {translatedProduct.translations.btn3 && (
+                  <button onClick={handleButton3Click}>
+                    {translatedProduct.translations.btn3?.name}
+                  </button>
+                )}
+                {translatedProduct.translations.btn4 && (
+                  <button onClick={handleButton4Click}>
+                    {translatedProduct.translations.btn4?.name}
+                  </button>
+                )}
+              </div>
+              <div className="flex justify-center">
+                {showButton1 && (
+                  <div className="mr-4">
+                    <button onClick={handleOpt1Click}>
+                      {translatedProduct?.translations?.btn1?.opt1}
+                    </button>
                   </div>
-                  <p className="flex justify-between text-lg font-semibold text-yellow-500 mb-2 font-nunito">
-                    {content.Total}
-                    <span className="text-2xl font-nunito">
-                      {selectedPrice}
-                    </span>
-                  </p>
-                  <p className="text-md flex justify-between text-yellow-500 font-nunito font-semibold">
-                    {content.Comanda}
-                    <span className="font-bold text-md font-nunito">
-                      076 723 462
-                    </span>
-                  </p>
-                </div>
+                )}
+                {showButton1 && (
+                  <div className="mr-4">
+                    <button onClick={handleOpt2Click}>
+                      {translatedProduct?.translations?.btn1?.opt2}
+                    </button>
+                  </div>
+                )}
+                {showButton1 && (
+                  <div className="">
+                    <button onClick={handleOpt3Click}>
+                      {translatedProduct?.translations?.btn1?.opt3}
+                    </button>
+                  </div>
+                )}
+              </div>
+              {showButton2}
+              <div className="flex justify-center">
+                {showButton3 && (
+                  <div className="mr-4">
+                    <button onClick={handleButton1}>
+                      {translatedProduct?.translations?.btn3?.button1?.name}
+                    </button>
+                  </div>
+                )}
+                {showButton3 && (
+                  <div className="mr-4">
+                    <button onClick={handleButton2}>
+                      {translatedProduct?.translations?.btn3?.button2?.name}
+                    </button>
+                  </div>
+                )}
+                {showButton3 && (
+                  <div className="">
+                    <button onClick={handleButton3}>
+                      {translatedProduct?.translations?.btn3?.button3?.name}
+                    </button>
+                  </div>
+                )}
+              </div>
+              <div className="flex justify-center">
+                {showButton4 && (
+                  <div className="mr-4">
+                    <button onClick={handleOpt1}>
+                      {translatedProduct?.translations?.btn4?.opt1}
+                    </button>
+                  </div>
+                )}
+                {showButton4 && (
+                  <div className="mr-4">
+                    <button onClick={handleOpt2}>
+                      {translatedProduct?.translations?.btn4?.opt2}
+                    </button>
+                  </div>
+                )}
+                {showButton4 && (
+                  <div className="">
+                    <button onClick={handleOpt3}>
+                      {translatedProduct?.translations?.btn4?.opt3}
+                    </button>
+                  </div>
+                )}
+              </div>
+              <div>
+                Total: {selectedPrice !== null ? selectedPrice : "N/A"} Lei
               </div>
             </div>
           </div>
