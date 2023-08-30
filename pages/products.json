@@ -13,17 +13,17 @@
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
         "btn1": {
-          "name": "Capac 10 Rame din Zinc, Termo-Izolat",
+          "name": "Capac",
           "pret1": "290 Lei",
           "descriere": "Capac pentru stup cu 10 rame din zinc, cu izolație termică."
         },
         "btn2": {
-          "name": "Inel Ching 10 Rame (Capac-Inferior)",
+          "name": "Inel Ching",
           "pret2": "100 Lei",
           "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior."
         },
         "btn3": {
-          "name": "Corp 10 Rame",
+          "name": "Corp",
           "button1": {
             "name": "145mm",
             "pret1": "264 Lei",
@@ -44,7 +44,7 @@
           }
         },
         "btn4": {
-          "name": "Fund 10 Rame",
+          "name": "Fund",
           "opt1": "Plasă Inox",
           "opt2": "Plasă Zinc",
           "opt3": "Lemn Total",

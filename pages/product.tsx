@@ -87,6 +87,39 @@ export default function Product() {
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
 
+  const [selectedOption, setSelectedOption] = useState<string | undefined>();
+  const [showOptions, setShowOptions] = useState<boolean>(true);
+  const [showButtons, setShowButtons] = useState<boolean>(false);
+
+  interface ButtonBehavior {
+    showOptions: boolean;
+    showButtons: boolean;
+    selectedOption: string;
+  }
+
+  const buttonBehaviors: Record<string, ButtonBehavior> = {
+    btn1: {
+      showOptions: true,
+      showButtons: false,
+      selectedOption: "opt1",
+    },
+    btn2: {
+      showOptions: true,
+      showButtons: false,
+      selectedOption: "",
+    },
+    btn3: {
+      showOptions: true,
+      showButtons: true,
+      selectedOption: "",
+    },
+    btn4: {
+      showOptions: true,
+      showButtons: false,
+      selectedOption: "opt1",
+    },
+  };
+
   const translatedProduct = useMemo(() => {
     const translatedArray = productsData.map((product) => ({
       ...product,
@@ -97,14 +130,6 @@ export default function Product() {
   }, [productId, language]);
 
   // Declare selectedOption and setSelectedOption using the useState hook
-  const [selectedOption, setSelectedOption] = useState<string | undefined>(
-    translatedProduct?.translations.btn1?.opt1 ||
-      translatedProduct?.translations.btn1?.opt2 ||
-      translatedProduct?.translations.btn1?.opt3 ||
-      translatedProduct?.translations.btn4?.opt1 ||
-      translatedProduct?.translations.btn4?.opt2 ||
-      translatedProduct?.translations.btn4?.opt3
-  );
 
   const selectedPrice = (() => {
     if (
@@ -115,9 +140,14 @@ export default function Product() {
         translatedProduct?.translations.btn3?.button1?.reducere ||
         translatedProduct?.translations.btn3?.button2?.reducere ||
         translatedProduct?.translations.btn3?.button3?.reducere ||
-        translatedProduct?.translations.btn3?.button1?.pret1 ||
-        translatedProduct?.translations.btn3?.button2?.pret1 ||
-        translatedProduct?.translations.btn3?.button3?.pret1
+        translatedProduct?.translations?.pret1 ||
+        translatedProduct?.translations?.btn1?.pret1 ||
+        translatedProduct?.translations?.btn2?.pret1 ||
+        translatedProduct?.translations?.btn3?.pret1 ||
+        translatedProduct?.translations?.btn3?.button1?.pret1 ||
+        translatedProduct?.translations?.btn3?.button2?.pret1 ||
+        translatedProduct?.translations?.btn3?.button3?.pret1 ||
+        translatedProduct?.translations?.btn4?.pret1
       );
     }
     if (
@@ -144,10 +174,40 @@ export default function Product() {
     );
   })();
 
+  // Toggle the visibility of options and buttons when the button is clicked
   const handleOptionChange = (option: string) => {
+    console.log("Selected option:", option);
     setSelectedOption(option);
   };
 
+  const handleButtonChange = (option?: string) => {
+    console.log("Selected option:", option);
+
+    if (option) {
+      const behavior = buttonBehaviors[option];
+
+      if (behavior) {
+        console.log("Behavior:", behavior);
+
+        setShowOptions(behavior.showOptions);
+        setShowButtons(behavior.showButtons);
+        setSelectedOption(behavior.selectedOption);
+      } else {
+        console.log(`Behavior not found for option: ${option}`);
+      }
+    }
+  };
+
+  console.log("Button behaviors keys:", Object.keys(buttonBehaviors));
+
+  console.log(
+    "Component rendered. productId:",
+    productId,
+    "language:",
+    language
+  );
+
+  console.log("Translated product:", translatedProduct);
   return (
     <div>
       {translatedProduct ? (
@@ -166,104 +226,223 @@ export default function Product() {
               <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito text-center sm:text-start">
                 {translatedProduct.translations.name}
               </h1>
-              <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-semibold">
-                {translatedProduct?.translations.btn1?.opt1 ||
-                  (translatedProduct?.translations.btn4?.opt1 && (
-                    <button
-                      onClick={() => {
-                        const option =
-                          translatedProduct?.translations.btn1?.opt1 ||
-                          translatedProduct?.translations.btn4?.opt1;
-                        if (option !== undefined) {
-                          handleOptionChange(option);
-                        }
-                      }}
-                      className={`anim w-full py-1 ${
-                        selectedOption ===
-                          translatedProduct?.translations.btn1?.opt1 ||
-                        translatedProduct?.translations.btn4?.opt1
-                          ? "bg-white text-black"
-                          : "bg-yellow-500 text-black"
-                      }`}
-                    >
-                      {translatedProduct?.translations.btn1?.opt1 ||
-                        translatedProduct?.translations.btn4?.opt1}
-                    </button>
-                  ))}
-                {translatedProduct?.translations.btn1?.opt2 ||
-                  (translatedProduct?.translations.btn4?.opt2 && (
-                    <button
-                      onClick={() => {
-                        const option =
-                          translatedProduct?.translations.btn1?.opt2 ||
-                          translatedProduct?.translations.btn4?.opt2;
-                        if (option !== undefined) {
-                          handleOptionChange(option);
-                        }
-                      }}
-                      className={`anim w-full py-1 ${
-                        selectedOption ===
-                          translatedProduct?.translations.btn1?.opt2 ||
-                        translatedProduct?.translations.btn4?.opt2
-                          ? "bg-white text-black"
-                          : "bg-yellow-500 text-black"
-                      }`}
-                    >
-                      {translatedProduct?.translations.btn1?.opt2 ||
-                        translatedProduct?.translations.btn4?.opt2}
-                    </button>
-                  ))}
-                {translatedProduct?.translations.btn1?.opt3 ||
-                  (translatedProduct?.translations.btn4?.opt3 && (
-                    <button
-                      onClick={() => {
-                        const option =
-                          translatedProduct?.translations.btn1?.opt3 ||
-                          translatedProduct?.translations.btn4?.opt3;
-                        if (option !== undefined) {
-                          handleOptionChange(option);
-                        }
-                      }}
-                      className={`anim w-full py-1 ${
-                        selectedOption ===
-                          translatedProduct?.translations.btn1?.opt3 ||
-                        translatedProduct?.translations.btn4?.opt3
-                          ? "bg-white text-black"
-                          : "bg-yellow-500 text-black"
-                      }`}
-                    >
-                      {translatedProduct?.translations.btn1?.opt3 ||
-                        translatedProduct?.translations.btn4?.opt3}
-                    </button>
-                  ))}
-              </div>
-              <div className="bg-yellow-50 mt-6 shadow-md p-6 rounded-lg text-gray-800">
-                <p className="text-lg font-semibold text-yellow-500 mb-2 font-nunito">
-                  {content.Descriere}
-                </p>
-                <p className="text-md font-nunito mb-6 font-semibold text-[#595459]">
-                  {translatedProduct.translations.descriere}
-                </p>
-                <div className="flex items-center justify-end mb-1">
-                  {translatedProduct?.translations.btn3?.button1?.reducere ||
-                    translatedProduct?.translations.btn3?.button2?.reducere ||
-                    (translatedProduct?.translations.btn3?.button3
-                      ?.reducere && (
-                      <p className="text-base line-through text-gray-400">
-                        {translatedProduct.translations.pret1}
-                      </p>
-                    ))}
+              <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-semibold mb-4">
+                <div>
+                  <div>
+                    {translatedProduct?.translations.btn1 && (
+                      <button onClick={() => handleButtonChange("btn1")}>
+                        {translatedProduct.translations.btn1.name}
+                      </button>
+                    )}
+
+                    {translatedProduct?.translations.btn2 && (
+                      <button onClick={() => handleButtonChange("btn2")}>
+                        {translatedProduct.translations.btn2.name}
+                      </button>
+                    )}
+
+                    {translatedProduct?.translations.btn3 && (
+                      <button onClick={() => handleButtonChange("btn3")}>
+                        {translatedProduct.translations.btn3.name}
+                      </button>
+                    )}
+
+                    {translatedProduct?.translations.btn4 && (
+                      <button onClick={() => handleButtonChange("btn4")}>
+                        {translatedProduct.translations.btn4.name}
+                      </button>
+                    )}
+                  </div>
                 </div>
-                <p className="flex justify-between text-lg font-semibold text-yellow-500 mb-2 font-nunito">
-                  {content.Total}
-                  <span className="text-2xl font-nunito">{selectedPrice}</span>
-                </p>
-                <p className="text-md flex justify-between text-yellow-500 font-nunito font-semibold">
-                  {content.Comanda}
-                  <span className="font-bold text-md font-nunito">
-                    076 723 462
-                  </span>
-                </p>
+
+                <div>
+                  {/* Options */}
+                  {showOptions && (
+                    <div>
+                      {translatedProduct?.translations.btn1 &&
+                        selectedOption ===
+                          translatedProduct?.translations.btn1?.name && (
+                          <>
+                            {translatedProduct.translations.btn1.opt1 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn1
+                                      ?.opt1 || ""
+                                  )
+                                }
+                              >
+                                {translatedProduct.translations.btn1.opt1}
+                              </button>
+                            )}
+                            {translatedProduct.translations.btn1.opt2 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn1
+                                      ?.opt2 || ""
+                                  )
+                                }
+                              >
+                                {translatedProduct.translations.btn1.opt2}
+                              </button>
+                            )}
+                            {translatedProduct.translations.btn1.opt3 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn1
+                                      ?.opt3 || ""
+                                  )
+                                }
+                              >
+                                {translatedProduct.translations.btn1.opt3}
+                              </button>
+                            )}
+                          </>
+                        )}
+                      {translatedProduct?.translations.btn4 &&
+                        selectedOption ===
+                          translatedProduct?.translations.btn4?.name && (
+                          <>
+                            {translatedProduct.translations.btn4.opt1 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn4
+                                      ?.opt1 || ""
+                                  )
+                                }
+                              >
+                                {translatedProduct.translations.btn4.opt1}
+                              </button>
+                            )}
+                            {translatedProduct.translations.btn4.opt2 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn4
+                                      ?.opt2 || ""
+                                  )
+                                }
+                              >
+                                {translatedProduct.translations.btn4.opt2}
+                              </button>
+                            )}
+                            {translatedProduct.translations.btn4.opt3 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn4
+                                      ?.opt3 || ""
+                                  )
+                                }
+                              >
+                                {translatedProduct.translations.btn4.opt3}
+                              </button>
+                            )}
+                          </>
+                        )}
+                    </div>
+                  )}
+
+                  {/* Button Buttons */}
+                  {showButtons && (
+                    <div>
+                      {translatedProduct?.translations.btn3 &&
+                        selectedOption ===
+                          translatedProduct?.translations.btn3?.name && (
+                          <>
+                            {translatedProduct.translations.btn3.button1 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn3
+                                      ?.button1?.name || ""
+                                  )
+                                }
+                              >
+                                {
+                                  translatedProduct.translations.btn3.button1
+                                    .name
+                                }
+                              </button>
+                            )}
+                            {translatedProduct.translations.btn3.button2 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn3
+                                      ?.button2?.name || ""
+                                  )
+                                }
+                              >
+                                {
+                                  translatedProduct.translations.btn3.button2
+                                    .name
+                                }
+                              </button>
+                            )}
+                            {translatedProduct.translations.btn3.button3 && (
+                              <button
+                                onClick={() =>
+                                  handleOptionChange(
+                                    translatedProduct?.translations?.btn3
+                                      ?.button3?.name || ""
+                                  )
+                                }
+                              >
+                                {
+                                  translatedProduct.translations.btn3.button3
+                                    .name
+                                }
+                              </button>
+                            )}
+                          </>
+                        )}
+                    </div>
+                  )}
+                </div>
+                <div className="bg-yellow-50 mt-6 shadow-md p-6 rounded-lg text-gray-800">
+                  <p className="text-lg font-semibold text-yellow-500 mb-2 font-nunito">
+                    {content.Descriere}
+                  </p>
+                  <p className="text-md font-nunito mb-6 font-semibold text-[#595459]">
+                    {translatedProduct.translations.descriere}
+                  </p>
+                  <div className="flex items-center justify-end mb-1">
+                    {translatedProduct?.translations.btn3?.button1?.reducere ||
+                      translatedProduct?.translations.btn3?.button2?.reducere ||
+                      (translatedProduct?.translations.btn3?.button3
+                        ?.reducere && (
+                        <p className="text-base line-through text-gray-400">
+                          {translatedProduct?.translations?.pret1 ||
+                            translatedProduct?.translations?.btn1?.pret1 ||
+                            translatedProduct?.translations?.btn2?.pret1 ||
+                            translatedProduct?.translations?.btn3?.pret1 ||
+                            translatedProduct?.translations?.btn3?.button1
+                              ?.pret1 ||
+                            translatedProduct?.translations?.btn3?.button2
+                              ?.pret1 ||
+                            translatedProduct?.translations?.btn3?.button3
+                              ?.pret1 ||
+                            translatedProduct?.translations?.btn4?.pret1}
+                        </p>
+                      ))}
+                  </div>
+                  <p className="flex justify-between text-lg font-semibold text-yellow-500 mb-2 font-nunito">
+                    {content.Total}
+                    <span className="text-2xl font-nunito">
+                      {selectedPrice}
+                    </span>
+                  </p>
+                  <p className="text-md flex justify-between text-yellow-500 font-nunito font-semibold">
+                    {content.Comanda}
+                    <span className="font-bold text-md font-nunito">
+                      076 723 462
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
