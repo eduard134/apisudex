@@ -2,574 +2,217 @@
   {
     "id": 1,
     "categoryId": 1,
-    "image": "/images/Capac_10_rame.png",
+    "image": "/images/.png",
+    "image1": "/images/Capac_10_rame.png",
+    "image2": "/images/Inel_10rame.png",
+    "image3": "/images/corp_10r_145.png",
+    "image4": "/images/corp_10r_230.png",
+    "image5": "/images/Corp_10_rame__nefiert.png",
+    "image6": "/images/fund_10r.png",
     "translations": {
       "ro": {
-        "name": "Capac 10 Rame din Zinc, Termo-Izolat",
-        "pret1": "290 Lei",
-        "descriere": "Capac pentru stup cu 10 rame din zinc, cu izolație termică."
+        "name": "Stupi Verticali de 10 Rame",
+        "btn1": {
+          "name": "Capac 10 Rame din Zinc, Termo-Izolat",
+          "pret1": "290 Lei",
+          "descriere": "Capac pentru stup cu 10 rame din zinc, cu izolație termică."
+        },
+        "btn2": {
+          "name": "Inel Ching 10 Rame (Capac-Inferior)",
+          "pret2": "100 Lei",
+          "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior."
+        },
+        "btn3": {
+          "name": "Corp 10 Rame",
+          "button1": {
+            "name": "145mm",
+            "pret1": "264 Lei",
+            "reducere": "240 Lei",
+            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm."
+          },
+          "button2": {
+            "name": "230mm",
+            "pret1": "374 Lei",
+            "reducere": "340 Lei",
+            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm."
+          },
+          "button3": {
+            "name": "300mm",
+            "pret1": "484 Lei",
+            "reducere": "440 Lei",
+            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 300mm."
+          }
+        },
+        "btn4": {
+          "name": "Fund 10 Rame",
+          "opt1": "Plasă Inox",
+          "opt2": "Plasă Zinc",
+          "opt3": "Lemn Total",
+          "pret1": "290 Lei",
+          "pret2": "190 Lei",
+          "pret3": "180 Lei",
+          "descriere": "Fund pentru stup cu 10 rame, disponibil în variantele: plasă inox, plasă zinc și lemn total."
+        }
       },
       "ru": {
-        "name": "Крышка 10 цинковых рамок с термоизоляцией",
-        "pret1": "290 Лей",
-        "descriere": "Крышка улья с 10 цинковыми рамками, с теплоизоляцией."
+        "name": "Вертикальные ульи на 10 рамок",
+        "btn1": {
+          "name": "Крышка 10 цинковых рамок с термоизоляцией",
+          "pret1": "290 Лей",
+          "descriere": "Крышка улья с 10 цинковыми рамками, с теплоизоляцией."
+        },
+        "btn2": {
+          "name": "Кольцо 10 рамок (крышка-нижняя)",
+          "pret1": "100 Лей",
+          "descriere": "Улей-кольцо на 10 рамок, подходит для нижней крышки."
+        },
+        "btn3": {
+          "name": "Кузов 10 рам",
+          "button1": {
+            "name": "145мм",
+            "pret1": "264 Лей",
+            "reducere": "240 Лей",
+            "descriere": "Корпус улья на 10 рамок, высотой 145мм."
+          },
+          "button2": {
+            "name": "230мм",
+            "pret1": "374 Лей",
+            "reducere": "340 Лей",
+            "descriere": "Корпус улья на 10 рамок высотой 230мм."
+          },
+          "button3": {
+            "name": "300мм",
+            "pret1": "484 Лей",
+            "reducere": "440 Лей",
+            "descriere": "Корпус улья на 12 рамок, высотой 300мм."
+          }
+        },
+        "btn4": {
+          "name": "Нижние 10 кадров",
+          "opt1": "Сетка нержавеющей стали",
+          "opt2": "Цинковая сетка",
+          "opt3": "Всего древесины",
+          "pret1": "290 Лей",
+          "pret2": "190 Лей",
+          "pret3": "180 Лей",
+          "descriere": "Дно улья с 10 рамками, доступно в следующих вариантах: сетка из нержавеющей стали, цинковая сетка и массив дерева."
+        }
       }
     }
   },
   {
     "id": 2,
     "categoryId": 1,
-    "image": "/images/Inel_10rame.png",
+    "image": "/images/.png",
+    "image1": "/images/Capac_12_rame_Nefiert_1.png",
+    "image2": "/images/Inel_10rame.png",
+    "image3": "/images/corp_10r_145.png",
+    "image4": "/images/corp_10r_230.png",
+    "image5": "/images/12-rame-corp1.png",
+    "image6": "/images/Fund_12_rame__fiert_1.png",
     "translations": {
       "ro": {
-        "name": "Inel 10 Rame (Capac-Inferior)",
-        "pret1": "100 Lei",
-        "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior."
+        "name": "Stupi Verticali de 12 Rame",
+        "btn1": {
+          "name": "Capac 12 Rame",
+          "opt1": "Zinc, Termo-Izolat",
+          "opt2": "Aluminiu, Termo-Izolat",
+          "opt3": "Aluminiu, Neizolat",
+          "pret1": "320 Lei",
+          "pret2": "210 Lei",
+          "pret3": "165 Lei",
+          "descriere": "Capac pentru stup cu 12 rame, disponibil în variantele: zinc termo-izolat, aluminiu termo-izolat și aluminiu neizolat."
+        },
+        "btn2": {
+          "name": "Inel Ching 12 Rame (Capac-Inferior)",
+          "pret1": "110 Lei",
+          "descriere": "Inel pentru stup cu 12 rame, potrivit pentru capacul inferior."
+        },
+        "btn3": {
+          "name": "Corp 12 Rame",
+          "button1": {
+            "name": "145mm",
+            "pret1": "291.5 Lei",
+            "reducere": "265 Lei",
+            "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 145mm."
+          },
+          "button2": {
+            "name": "230mm",
+            "pret1": "412.5 Lei",
+            "reducere": "375 Lei",
+            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm."
+          },
+          "button3": {
+            "name": "300mm",
+            "pret1": "533.5 Lei",
+            "reducere": "485 Lei",
+            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 300mm."
+          }
+        },
+        "btn4": {
+          "name": "Fund 12 Rame",
+          "opt1": "Plasă Inox",
+          "opt2": "Plasă Zinc",
+          "opt3": "Lemn Total",
+          "pret1": "320 Lei",
+          "pret2": "210 Lei",
+          "pret3": "200 Lei",
+          "descriere": "Fund pentru stup cu 12 rame, disponibil în variantele: plasă inox, plasă zinc și lemn total."
+        }
       },
       "ru": {
-        "name": "Кольцо 10 рамок (крышка-нижняя)",
-        "pret1": "100 Лей",
-        "descriere": "Улей-кольцо на 10 рамок, подходит для нижней крышки."
+        "name": "Вертикальные ульи на 12 рамок",
+        "btn1": {
+          "name": "Обложка 12 кадров",
+          "opt1": "Цинк, с теплоизоляцией",
+          "opt2": "Алюминий, с термоизоляцией",
+          "opt3": "Алюминий, Неизолированный",
+          "pret1": "320 Лей",
+          "pret2": "210 Лей",
+          "pret3": "165 Лей",
+          "descriere": "Крышка улья с 12 рамками, доступна из: термоизолированного цинка, термоизолированного алюминия и неизолированного алюминия."
+        },
+        "btn2": {
+          "name": "Кольцо 12 Рамок (Крышка-Нижняя)",
+          "pret1": "110 Лей",
+          "descriere": "Улей кольцевой на 12 рамок, подходит для нижней крышки."
+        },
+        "btn3": {
+          "name": "Кузов 12 рам",
+          "button1": {
+            "name": "145мм",
+            "pret1": "291.5 Лей",
+            "reducere": "265 Лей",
+            "descriere": "Корпус улья на 12 рамок, высотой 145мм."
+          },
+          "button2": {
+            "name": "230мм",
+            "pret1": "412.5 Лей",
+            "reducere": "375 Лей",
+            "descriere": "Корпус улья на 10 рамок высотой 230мм."
+          },
+          "button3": {
+            "name": "300мм",
+            "pret1": "533.5 Лей",
+            "reducere": "485 Лей",
+            "descriere": "Корпус улья на 12 рамок, высотой 300мм."
+          }
+        },
+        "btn4": {
+          "name": "Нижние 12 кадров",
+          "opt1": "Сетка нержавеющей стали",
+          "opt2": "Цинковая сетка",
+          "opt3": "Всего древесины",
+          "pret1": "320 Лей",
+          "pret2": "210 Лей",
+          "pret3": "200 Лей",
+          "descriere": "Дно улья с 12 рамками, доступно в следующих вариантах: сетка из нержавеющей стали, цинковая сетка и массив дерева."
+        }
       }
     }
   },
   {
     "id": 3,
-    "categoryId": 1,
-    "image": "/images/corp_10r_145.png",
-    "translations": {
-      "ro": {
-        "name": "Corp 10 Rame 145mm",
-        "pret1": "240 Lei",
-        "reducere": "215.99 Lei",
-        "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm."
-      },
-      "ru": {
-        "name": "Кузов 10 рам 145 мм",
-        "pret1": "240 Лей",
-        "reducere": "215.99 Лей",
-        "descriere": "Корпус улья на 10 рамок, высотой 145мм."
-      }
-    }
-  },
-  {
-    "id": 4,
-    "categoryId": 1,
-    "image": "/images/corp_10r_230.png",
-    "translations": {
-      "ro": {
-        "name": "Corp 10 Rame 230mm",
-        "pret1": "340 Lei",
-        "reducere": "305.99 Lei",
-        "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm."
-      },
-      "ru": {
-        "name": "Кузов 10 рам 230мм",
-        "pret1": "340 Лей",
-        "reducere": "305.99 Лей",
-        "descriere": "Корпус улья на 10 рамок высотой 230мм."
-      }
-    }
-  },
-  {
-    "id": 5,
-    "categoryId": 1,
-    "image": "/images/Corp_10_rame__nefiert.png",
-    "translations": {
-      "ro": {
-        "name": "Corp 10 Rame 300mm",
-        "pret1": "440 Lei",
-        "reducere": "395.99 Lei",
-        "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 300mm."
-      },
-      "ru": {
-        "name": "Кузов 10 рам 300 мм",
-        "pret1": "440 Лей",
-        "reducere": "395.99 Лей",
-        "descriere": "Корпус улья на 10 рамок высотой 300мм."
-      }
-    }
-  },
-  {
-    "id": 6,
-    "categoryId": 1,
-    "image": "/images/fund_10r.png",
-    "translations": {
-      "ro": {
-        "name": "Fund 10 Rame",
-        "opt1": "Plasă Inox",
-        "opt2": "Plasă Zinc",
-        "opt3": "Lemn Total",
-        "pret1": "290 Lei",
-        "pret2": "190 Lei",
-        "pret3": "180 Lei",
-        "descriere": "Fund pentru stup cu 10 rame, disponibil în variantele: plasă inox, plasă zinc și lemn total."
-      },
-      "ru": {
-        "name": "Нижние 10 кадров",
-        "opt1": "Сетка нержавеющей стали",
-        "opt2": "Цинковая сетка",
-        "opt3": "Всего древесины",
-        "pret1": "290 Лей",
-        "pret2": "190 Лей",
-        "pret3": "180 Лей",
-        "descriere": "Дно улья с 10 рамками, доступно в следующих вариантах: сетка из нержавеющей стали, цинковая сетка и массив дерева."
-      }
-    }
-  },
-  {
-    "id": 7,
-    "categoryId": 1,
-    "image": "/images/Capac_12_rame_Nefiert_1.png",
-    "translations": {
-      "ro": {
-        "name": "Capac 12 Rame",
-        "opt1": "Zinc, Termo-Izolat",
-        "opt2": "Aluminiu, Termo-Izolat",
-        "opt3": "Aluminiu, Neizolat",
-        "pret1": "320 Lei",
-        "pret2": "210 Lei",
-        "pret3": "165 Lei",
-        "descriere": "Capac pentru stup cu 12 rame, disponibil în variantele: zinc termo-izolat, aluminiu termo-izolat și aluminiu neizolat."
-      },
-      "ru": {
-        "name": "Обложка 12 кадров",
-        "opt1": "Цинк, с теплоизоляцией",
-        "opt2": "Алюминий, с термоизоляцией",
-        "opt3": "Алюминий, Неизолированный",
-        "pret1": "320 Лей",
-        "pret2": "210 Лей",
-        "pret3": "165 Лей",
-        "descriere": "Крышка улья с 12 рамками, доступна из: термоизолированного цинка, термоизолированного алюминия и неизолированного алюминия."
-      }
-    }
-  },
-  {
-    "id": 8,
-    "categoryId": 1,
-    "image": "/images/Inel_10rame.png",
-    "translations": {
-      "ro": {
-        "name": "Inel 12 Rame (Capac-Inferior)",
-        "pret1": "110 Lei",
-        "descriere": "Inel pentru stup cu 12 rame, potrivit pentru capacul inferior."
-      },
-      "ru": {
-        "name": "Кольцо 12 Рамок (Крышка-Нижняя)",
-        "pret1": "110 Лей",
-        "descriere": "Улей кольцевой на 12 рамок, подходит для нижней крышки."
-      }
-    }
-  },
-  {
-    "id": 9,
-    "categoryId": 1,
-    "image": "/images/corp_10r_145.png",
-    "translations": {
-      "ro": {
-        "name": "Corp 12 Rame 145mm",
-        "pret1": "265 Lei",
-        "reducere": "238.99 Lei",
-        "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 145mm."
-      },
-      "ru": {
-        "name": "Кузов 12 рам 145 мм",
-        "pret1": "265 Лей",
-        "reducere": "238.99 Лей",
-        "descriere": "Корпус улья на 12 рамок, высотой 145мм."
-      }
-    }
-  },
-  {
-    "id": 10,
-    "categoryId": 1,
-    "image": "/images/corp_10r_230.png",
-    "translations": {
-      "ro": {
-        "name": "Corp 12 Rame 230mm",
-        "pret1": "375 Lei",
-        "reducere": "337.99 Lei",
-        "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 230mm."
-      },
-      "ru": {
-        "name": "Кузов 12 рам 230мм",
-        "pret1": "375 Лей",
-        "reducere": "337.99 Лей",
-        "descriere": "Корпус для улья на 12 рамок высотой 230 мм."
-      }
-    }
-  },
-  {
-    "id": 11,
-    "categoryId": 1,
-    "image": "/images/12-rame-corp1.png",
-    "translations": {
-      "ro": {
-        "name": "Corp 12 Rame 300mm",
-        "pret1": "485 Lei",
-        "reducere": "436.99 Lei",
-        "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 300mm."
-      },
-      "ru": {
-        "name": "Кузов 12 рам 300мм",
-        "pret1": "485 Лей",
-        "reducere": "436.99 Лей",
-        "descriere": "Корпус улья на 12 рамок, высотой 300мм."
-      }
-    }
-  },
-  {
-    "id": 12,
-    "categoryId": 1,
-    "image": "/images/Fund_12_rame__fiert_1.png",
-    "translations": {
-      "ro": {
-        "name": "Fund 12 Rame",
-        "opt1": "Plasă Inox",
-        "opt2": "Plasă Zinc",
-        "opt3": "Lemn Total",
-        "pret1": "320 Lei",
-        "pret2": "210 Lei",
-        "pret3": "200 Lei",
-        "descriere": "Fund pentru stup cu 12 rame, disponibil în variantele: plasă inox, plasă zinc și lemn total."
-      },
-      "ru": {
-        "name": "Нижние 12 кадров",
-        "opt1": "Сетка нержавеющей стали",
-        "opt2": "Цинковая сетка",
-        "opt3": "Всего древесины",
-        "pret1": "320 Лей",
-        "pret2": "210 Лей",
-        "pret3": "200 Лей",
-        "descriere": "Дно улья с 12 рамками, доступно в следующих вариантах: сетка из нержавеющей стали, цинковая сетка и массив дерева."
-      }
-    }
-  },
-  {
-    "id": 13,
-    "categoryId": 2,
-    "image": "/images/Caldare_32l.png",
-    "translations": {
-      "ro": {
-        "name": "Căldare 32L",
-        "pret1": "89 Lei",
-        "descriere": "Căldare de 32 de litri."
-      },
-      "ru": {
-        "name": "Ведро 32Л",
-        "pret1": "89 Лей",
-        "descriere": "Ведро 32 литра"
-      }
-    }
-  },
-  {
-    "id": 14,
-    "categoryId": 2,
-    "image": "/images/Sirop_Invertit-Dulcofruct.png",
-    "translations": {
-      "ro": {
-        "name": "Sirop Invertit-Dulcofruct",
-        "pret1": "22 Lei/KG",
-        "descriere": "Sirop invertit pentru hrănirea albinelor. 22 Lei/KG până la un cub."
-      },
-      "ru": {
-        "name": "Инвертированный сироп Дулькофрукт",
-        "pret1": "22 Лей/КГ",
-        "descriere": "Инвертный сироп для подкормки пчел. 22 Лей/кг до одного куба."
-      }
-    }
-  },
-  {
-    "id": 15,
-    "categoryId": 2,
-    "image": "/images/fagure.png",
-    "translations": {
-      "ro": {
-        "name": "Fagure natural",
-        "pret1": "200 Lei",
-        "descriere": "Fagure pentru stup."
-      },
-      "ru": {
-        "name": "Натуральные соты",
-        "pret1": "200 Лей",
-        "descriere": "Соты для улья."
-      }
-    }
-  },
-  {
-    "id": 16,
-    "categoryId": 2,
-    "image": "/images/rametei300.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Asamblată din Tei 300mm",
-        "pret1": "17 Lei",
-        "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm."
-      },
-      "ru": {
-        "name": "Каркас из лип 300мм в сборе.",
-        "pret1": "17 Лей",
-        "descriere": "Каркас из липы в сборе, высота: 300мм."
-      }
-    }
-  },
-  {
-    "id": 17,
-    "categoryId": 2,
-    "image": "/images/rametei230.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Asamblată din Tei 230mm",
-        "pret1": "16 Lei",
-        "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm."
-      },
-      "ru": {
-        "name": "Каркас из лип 230мм в сборе.",
-        "pret1": "16 Лей",
-        "descriere": "Каркас из липы в собранном виде, высота: 230мм."
-      }
-    }
-  },
-  {
-    "id": 18,
-    "categoryId": 2,
-    "image": "/images/rametei145.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Asamblată din Tei 145mm",
-        "pret1": "11.5 Lei",
-        "descriere": "Ramă asamblată din lemn de tei, înălțime: 145mm."
-      },
-      "ru": {
-        "name": "Каркас из лип 145мм в сборе.",
-        "pret1": "11.5 Лей",
-        "descriere": "Рама из липы в собранном виде, высота: 145 мм."
-      }
-    }
-  },
-  {
-    "id": 19,
-    "categoryId": 2,
-    "image": "/images/rametei300.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Asamblată din Pin 300mm",
-        "pret1": "16 Lei",
-        "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm."
-      },
-      "ru": {
-        "name": "Каркас сосновый 300мм в сборе",
-        "pret1": "16 Лей",
-        "descriere": "Собранный каркас из соснового дерева, высота: 300 мм."
-      }
-    }
-  },
-  {
-    "id": 20,
-    "categoryId": 2,
-    "image": "/images/rametei230.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Asamblată din Pin 230mm",
-        "pret1": "15 Lei",
-        "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm."
-      },
-      "ru": {
-        "name": "Каркас сосновый 230мм в сборе",
-        "pret1": "15 Лей",
-        "descriere": "Собранный каркас из соснового дерева, высота: 230 мм."
-      }
-    }
-  },
-  {
-    "id": 21,
-    "categoryId": 2,
-    "image": "/images/rametei145.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Asamblată din Pin 145mm",
-        "pret1": "11 Lei",
-        "descriere": "Ramă asamblată din lemn de pin, înălțime: 145mm."
-      },
-      "ru": {
-        "name": "Сосновый каркас 145 мм в сборе",
-        "pret1": "11 Лей",
-        "descriere": "Собранный каркас из соснового дерева, высота: 145 мм."
-      }
-    }
-  },
-  {
-    "id": 22,
-    "categoryId": 2,
-    "image": "/images/rama300mm_Ne.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Dezasamblată din Tei 300mm",
-        "pret1": "10 Lei",
-        "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm."
-      },
-      "ru": {
-        "name": "Рама из лип 300мм в разобранном виде",
-        "pret1": "10 Лей",
-        "descriere": "Липовый каркас в разобранном виде, высота: 300мм."
-      }
-    }
-  },
-  {
-    "id": 23,
-    "categoryId": 2,
-    "image": "/images/rama230mm_Ne.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Dezasamblată din Tei 230mm",
-        "pret1": "9 Lei",
-        "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm."
-      },
-      "ru": {
-        "name": "Рама из лип 230 мм в разобранном виде",
-        "pret1": "9 Лей",
-        "descriere": "Липовый каркас в разобранном виде, высота: 230мм."
-      }
-    }
-  },
-  {
-    "id": 24,
-    "categoryId": 2,
-    "image": "/images/rama145mm_Ne.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Dezasamblată din Tei 145mm",
-        "pret1": "8 Lei",
-        "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 145mm."
-      },
-      "ru": {
-        "name": "Рама из лип 145 мм в разобранном виде",
-        "pret1": "8 Лей",
-        "descriere": "Липовый каркас в разобранном виде, высота: 145мм."
-      }
-    }
-  },
-  {
-    "id": 25,
-    "categoryId": 2,
-    "image": "/images/rama300mm_Ne.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Dezasamblată din Pin 300mm",
-        "pret1": "8.5 Lei",
-        "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm."
-      },
-      "ru": {
-        "name": "Разобранная сосновая рама 300 мм",
-        "pret1": "8.5 Лей",
-        "descriere": "Каркас из соснового дерева в разобранном виде, высота: 300 мм."
-      }
-    }
-  },
-  {
-    "id": 26,
-    "categoryId": 2,
-    "image": "/images/rama230mm_Ne.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Dezasamblată din Pin 230mm",
-        "pret1": "8 Lei",
-        "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm."
-      },
-      "ru": {
-        "name": "Каркас из сосны 230 мм в разобранном виде.",
-        "pret1": "8 Лей",
-        "descriere": "Каркас из соснового дерева в разобранном виде, высота: 230 мм."
-      }
-    }
-  },
-  {
-    "id": 27,
-    "categoryId": 2,
-    "image": "/images/rama145mm_Ne.png",
-    "translations": {
-      "ro": {
-        "name": "Ramă Dezasamblată din Pin 145mm",
-        "pret1": "7 Lei",
-        "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 145mm."
-      },
-      "ru": {
-        "name": "Разобранная сосновая рама 145 мм.",
-        "pret1": "7 Лей",
-        "descriere": "Каркас из соснового дерева в разобранном виде, высота: 145 мм."
-      }
-    }
-  },
-  {
-    "id": 28,
-    "categoryId": 3,
-    "image": "/images/set_stup.png",
-    "translations": {
-      "ro": {
-        "name": "Set Stup",
-        "pret1": "1400 Lei",
-        "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat"
-      },
-      "ru": {
-        "name": "Набор ульев",
-        "pret1": "1400 Лей",
-        "descriere": "Дно + 2 корпуса (300 мм) + Нижняя крышка + Изолированная крышка"
-      }
-    }
-  },
-  {
-    "id": 29,
-    "categoryId": 3,
-    "image": "/images/spec_off.png",
-    "translations": {
-      "ro": {
-        "name": "Impregnare în Ulei Vegetal",
-        "pret1": "1450 Lei",
-        "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat + Impregnare în Ulei Vegetal"
-      },
-      "ru": {
-        "name": "Пропитка в растительном масле",
-        "pret1": "1450 Лей",
-        "descriere": "Дно + 2 корпуса (300мм) + Нижняя крышка + Утепленная крышка + Пропитка растительным маслом"
-      }
-    }
-  },
-  {
-    "id": 30,
-    "categoryId": 3,
-    "image": "/images/special_offer.png",
-    "translations": {
-      "ro": {
-        "name": "Impregnare în Parafină",
-        "pret1": "1500 Lei",
-        "descriere": "Fund + 2 Corpuri (300mm) + Capac Inferior + Capac Izolat + Impregnare în Parafină"
-      },
-      "ru": {
-        "name": "Парафиновая пропитка",
-        "pret1": "1500 Лей",
-        "descriere": "Дно + 2 корпуса (300мм) + Нижняя крышка + Утепленная крышка + Парафиновая пропитка"
-      }
-    }
-  },
-  {
-    "id": 31,
-    "categoryId": 3,
-    "image": "/images/bonus.png",
-    "translations": {
-      "ro": {
-        "name": "Stup + Căldare Cadou",
-        "pret1": "1400 Lei",
-        "descriere": "Un pachet special care include un stup și o căldare ca bonus."
-      },
-      "ru": {
-        "name": "Улей + Котел в подарок",
-        "pret1": "1400 Лей",
-        "descriere": "Специальный пакет, в который в качестве бонуса входят улей и котел."
-      }
-    }
-  },
-  {
-    "id": 32,
     "categoryId": 1,
     "image": "/images/stup_orizontal.png",
     "translations": {
@@ -586,19 +229,229 @@
     }
   },
   {
-    "id": 33,
-    "categoryId": 3,
-    "image": "/images/rama.png",
+    "id": 4,
+    "categoryId": 1,
+    "image": "/images/stup_orizontal.png",
     "translations": {
       "ro": {
-        "name": "Stup + Ramă",
-        "pret1": "1412 Lei",
-        "descriere": "În set cu stupul comandat, rame ÎNSÂRMATE de mărime 145 la doar 12 lei, iar rama de mărime 300 la doar 15 lei!"
+        "name": "Nucleu de 6 Rame",
+        "pret1": "700 Lei",
+        "descriere": "Nucleu apicol compact cu 6 rame pentru creșterea albinelor."
       },
       "ru": {
-        "name": "Улей + Рамка",
-        "pret1": "1412 Лей",
-        "descriere": "В комплекте с заказанным ульем рамки WIRE размером 145 всего за 12 лей и рамка 300 размера всего за 15 лей!"
+        "name": "Пчелиное гнездо на 6 рамок",
+        "pret1": "700 Лей",
+        "descriere": "Компактное пчелиное гнездо с 6 рамками для разведения пчел."
+      }
+    }
+  },
+  {
+    "id": 5,
+    "categoryId": 2,
+    "image": "/images/Caldare_32l.png",
+    "translations": {
+      "ro": {
+        "name": "Căldare 32L",
+        "pret1": "89 Lei",
+        "descriere": "Căldare de 32 de litri."
+      },
+      "ru": {
+        "name": "Ведро 32Л",
+        "pret1": "89 Лей",
+        "descriere": "Ведро 32 литра"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "categoryId": 2,
+    "image": "/images/Sirop_Invertit-Dulcofruct.png",
+    "translations": {
+      "ro": {
+        "name": "Sirop Invertit-Dulcofruct",
+        "pret1": "22 Lei/KG",
+        "descriere": "Sirop invertit pentru hrănirea albinelor. 22 Lei/KG până la un cub."
+      },
+      "ru": {
+        "name": "Инвертированный сироп Дулькофрукт",
+        "pret1": "22 Лей/КГ",
+        "descriere": "Инвертный сироп для подкормки пчел. 22 Лей/кг до одного куба."
+      }
+    }
+  },
+  {
+    "id": 7,
+    "categoryId": 2,
+    "image": "/images/fagure.png",
+    "translations": {
+      "ro": {
+        "name": "Fagure natural",
+        "pret1": "200 Lei",
+        "descriere": "Fagure pentru stup."
+      },
+      "ru": {
+        "name": "Натуральные соты",
+        "pret1": "200 Лей",
+        "descriere": "Соты для улья."
+      }
+    }
+  },
+  {
+    "id": 8,
+    "categoryId": 3,
+    "image": "/images/rametei300.png",
+    "translations": {
+      "ro": {
+        "name": "Ramă 300mm",
+        "btn1": {
+          "name": "Asamblată din Tei",
+          "pret1": "17 Lei",
+          "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm."
+        },
+        "btn2": {
+          "name": "Asamblată din Pin",
+          "pret1": "16 Lei",
+          "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm."
+        },
+        "btn3": {
+          "name": "Dezasamblată din Tei",
+          "pret1": "10 Lei",
+          "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm."
+        },
+        "btn4": {
+          "name": "Dezasamblată din Pin",
+          "pret1": "8.5 Lei",
+          "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm."
+        }
+      },
+      "ru": {
+        "name": "Каркас 300мм",
+        "btn1": {
+          "name": "Собран из липы",
+          "pret1": "17 Лей",
+          "descriere": "Каркас из липы в сборе, высота: 300мм."
+        },
+        "btn2": {
+          "name": "Собран из сосны",
+          "pret1": "16 Лей",
+          "descriere": "Собранный каркас из соснового дерева, высота: 300 мм."
+        },
+        "btn3": {
+          "name": "Разобранный из липы",
+          "pret1": "10 Лей",
+          "descriere": "Липовый каркас в разобранном виде, высота: 300мм."
+        },
+        "btn4": {
+          "name": "Разобранный из сосны",
+          "pret1": "8.5 Лей",
+          "descriere": "Каркас из соснового дерева в разобранном виде, высота: 300 мм."
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "categoryId": 3,
+    "image": "/images/rametei300.png",
+    "translations": {
+      "ro": {
+        "name": "Ramă 230mm",
+        "btn1": {
+          "name": "Asamblată din Tei",
+          "pret1": "16 Lei",
+          "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm."
+        },
+        "btn2": {
+          "name": "Asamblată din Pin",
+          "pret1": "15 Lei",
+          "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm."
+        },
+        "btn3": {
+          "name": "Dezasamblată din Tei",
+          "pret1": "9 Lei",
+          "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm."
+        },
+        "btn4": {
+          "name": "Dezasamblată din Pin",
+          "pret1": "8 Lei",
+          "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm."
+        }
+      },
+      "ru": {
+        "name": "Каркас 300мм",
+        "btn1": {
+          "name": "Собран из липы",
+          "pret1": "16 Лей",
+          "descriere": "Каркас из липы в сборе, высота: 230мм."
+        },
+        "btn2": {
+          "name": "Собран из сосны",
+          "pret1": "15 Лей",
+          "descriere": "Собранный каркас из соснового дерева, высота: 230 мм."
+        },
+        "btn3": {
+          "name": "Разобранный из липы",
+          "pret1": "9 Лей",
+          "descriere": "Липовый каркас в разобранном виде, высота: 230мм."
+        },
+        "btn4": {
+          "name": "Разобранный из сосны",
+          "pret1": "8 Лей",
+          "descriere": "Каркас из соснового дерева в разобранном виде, высота: 230 мм."
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "categoryId": 3,
+    "image": "/images/rametei300.png",
+    "translations": {
+      "ro": {
+        "name": "Ramă 145mm",
+        "btn1": {
+          "name": "Asamblată din Tei",
+          "pret1": "11.5 Lei",
+          "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm."
+        },
+        "btn2": {
+          "name": "Asamblată din Pin",
+          "pret1": "11 Lei",
+          "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm."
+        },
+        "btn3": {
+          "name": "Dezasamblată din Tei",
+          "pret1": "8 Lei",
+          "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm."
+        },
+        "btn4": {
+          "name": "Dezasamblată din Pin",
+          "pret1": "7 Lei",
+          "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm."
+        }
+      },
+      "ru": {
+        "name": "Каркас 300мм",
+        "btn1": {
+          "name": "Собран из липы",
+          "pret1": "11.5 Лей",
+          "descriere": "Каркас из липы в сборе, высота: 230мм."
+        },
+        "btn2": {
+          "name": "Собран из сосны",
+          "pret1": "11 Лей",
+          "descriere": "Собранный каркас из соснового дерева, высота: 230 мм."
+        },
+        "btn3": {
+          "name": "Разобранный из липы",
+          "pret1": "8 Лей",
+          "descriere": "Липовый каркас в разобранном виде, высота: 230мм."
+        },
+        "btn4": {
+          "name": "Разобранный из сосны",
+          "pret1": "7 Лей",
+          "descriere": "Каркас из соснового дерева в разобранном виде, высота: 230 мм."
+        }
       }
     }
   }

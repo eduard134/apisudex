@@ -5,38 +5,155 @@ import { useRouter } from "next/router";
 import translateData from "../translate.json"; // Update the path as needed
 import categoriesData from "../categories.json";
 import Product from "../product";
-import  useLanguage  from "../../public/LanguageContext";
+import useLanguage from "../../public/LanguageContext";
 
 interface Product {
   id: number;
   categoryId: number;
-  image?: string;
+  image: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+  image5?: string;
+  image6?: string;
+  name?: string;
+  descriere?: string;
   translations: {
     ro: {
       name: string;
-      pret1: string;
-      descriere: string;
-      reducere?: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret2?: string;
-      pret3?: string;
+      pret1?: string;
+      btn1?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn2?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn3?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+        button1?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button2?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button3?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+      };
+      btn4?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
     };
     ru: {
       name: string;
-      pret1: string;
-      descriere: string;
-      reducere?: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret2?: string;
-      pret3?: string;
+      pret1?: string;
+      btn1?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn2?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn3?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+        button1?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button2?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button3?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+      };
+      btn4?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
     };
   };
 }
-
 const products: Product[] = translateData.products;
 
 export function getTranslatedContent(language: string) {
