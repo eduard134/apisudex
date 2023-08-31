@@ -255,6 +255,12 @@ export default function Product() {
                 objectFit="cover"
               />
             </div>
+          <div>
+            <div><Image alt="" src={""} /></div>
+            <div><Image alt="" src={""} /></div>
+            <div><Image alt="" src={""} /></div>
+            <div><Image alt="" src={""} /></div>
+          </div>
 
             <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-4 sm:p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
               <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito text-center sm:text-start">
