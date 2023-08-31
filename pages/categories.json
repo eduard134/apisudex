@@ -34,17 +34,5 @@
         "denumire": "Рамы"
       }
     }
-  },
-  {
-    "id": 4,
-    "img": "/images/sale.png",
-    "translations": {
-      "ro": {
-        "denumire": "Bonusuri"
-      },
-      "ru": {
-        "denumire": "Бонусы"
-      }
-    }
   }
 ]

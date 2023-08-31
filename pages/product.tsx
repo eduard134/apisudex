@@ -200,6 +200,17 @@ export default function Product() {
     setSelectedPrice(
       selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
     );
+
+    const discountedPriceValue =
+      btn3?.button1?.reducere ||
+      btn3?.button2?.reducere ||
+      btn3?.button3?.reducere ||
+      btn3?.pret1;
+    setSelectedPrice(
+      discountedPriceValue !== undefined
+        ? parseFloat(discountedPriceValue)
+        : null
+    );
   };
 
   const handleButton4Click = () => {
@@ -247,20 +258,31 @@ export default function Product() {
       {translatedProduct ? (
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
-            <div className="w-96 h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
-              <Image
-                src={translatedProduct.image || "/default-image.jpg"}
-                alt={translatedProduct.translations.name}
-                layout="fill"
-                objectFit="cover"
-              />
+            <div className="w-[30%]">
+              <div className="w-auto h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
+                <Image
+                  src={translatedProduct.image || "/default-image.jpg"}
+                  alt={translatedProduct.translations.name}
+                  layout="intrinsic"
+                  width={200}
+                  height={200}
+                />
+              </div>
             </div>
-          <div>
-            <div><Image alt="" src={""} /></div>
-            <div><Image alt="" src={""} /></div>
-            <div><Image alt="" src={""} /></div>
-            <div><Image alt="" src={""} /></div>
-          </div>
+            <div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+            </div>
 
             <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-4 sm:p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
               <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito text-center sm:text-start">
@@ -360,8 +382,39 @@ export default function Product() {
                   </div>
                 )}
               </div>
-              <div>
-                Total: {selectedPrice !== null ? selectedPrice : "N/A"} Lei
+              <div className="flex">
+                Total:{" "}
+                {selectedPrice !== null ? (
+                  <>
+                    {showButton3 &&
+                    (translatedProduct.translations?.btn3?.button1?.reducere ||
+                      translatedProduct.translations?.btn3?.button2?.reducere ||
+                      translatedProduct.translations?.btn3?.button3
+                        ?.reducere) ? (
+                      <div className="flex flex-col items-center">
+                        <p className="line-through text-gray-700 text-sm md:text-base">
+                          {selectedPrice}
+                        </p>
+                        <p className="text-sm md:text-base">
+                          {showButton1 &&
+                            translatedProduct.translations?.btn3?.button1
+                              ?.reducere}
+                          {showButton2 &&
+                            translatedProduct.translations?.btn3?.button2
+                              ?.reducere}
+                          {showButton3 &&
+                            translatedProduct.translations?.btn3?.button3
+                              ?.reducere}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="text-sm md:text-base">{selectedPrice}</p>
+                    )}
+                  </>
+                ) : (
+                  <></>
+                )}{" "}
+                Lei
               </div>
             </div>
           </div>

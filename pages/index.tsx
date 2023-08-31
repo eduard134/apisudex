@@ -13,29 +13,279 @@ import {
 interface Product {
   id: number;
   categoryId: number;
-  image?: string;
+  image: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+  image5?: string;
+  image6?: string;
+  name?: string;
+  descriere?: string;
   translations: {
     ro: {
       name: string;
-      pret1: string;
-      descriere: string;
-      reducere?: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret2?: string;
-      pret3?: string;
+      pret1?: string;
+      btn1?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn2?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn3?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+        button1?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button2?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button3?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+      };
+      btn4?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
     };
     ru: {
       name: string;
-      pret1: string;
-      descriere: string;
-      reducere?: string;
+      pret1?: string;
+      btn1?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn2?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+      btn3?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+        button1?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button2?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+        button3?: {
+          name?: string;
+          pret1?: string;
+          reducere?: string;
+          descriere?: string;
+        };
+      };
+      btn4?: {
+        name: string;
+        opt1?: string;
+        opt2?: string;
+        opt3?: string;
+        pret1?: string;
+        pret2?: string;
+        pret3?: string;
+        descriere?: string;
+        reducere?: string;
+      };
+    };
+  };
+}
+
+interface CategoryTranslations {
+  ro: {
+    name: string;
+    pret1?: string;
+    btn1?: {
+      name: string;
       opt1?: string;
       opt2?: string;
       opt3?: string;
+      pret1?: string;
       pret2?: string;
       pret3?: string;
+      descriere?: string;
+      reducere?: string;
+    };
+    btn2?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+    };
+    btn3?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+      button1?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+      button2?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+      button3?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+    };
+    btn4?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+    };
+  };
+  ru: {
+    name: string;
+    pret1?: string;
+    btn1?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+    };
+    btn2?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+    };
+    btn3?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
+      reducere?: string;
+      button1?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+      button2?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+      button3?: {
+        name?: string;
+        pret1?: string;
+        reducere?: string;
+        descriere?: string;
+      };
+    };
+    btn4?: {
+      name: string;
+      opt1?: string;
+      opt2?: string;
+      opt3?: string;
+      pret1?: string;
+      pret2?: string;
+      pret3?: string;
+      descriere?: string;
     };
   };
 }
@@ -96,20 +346,18 @@ export default function Home() {
               />
             </div>
             <div className="font-bold text-base md:text-lg text-slate-600 mb-2 md:mb-3 font-nunito">
-              {product.translations.reducere ? (
-                <div className="flex flex-col items-center">
-                  <p className="line-through text-gray-400 text-sm md:text-base">
-                    {product.translations.pret1}
-                  </p>
-                  <p className="text-sm md:text-base">
-                    {product.translations.reducere}
-                  </p>
-                </div>
-              ) : (
+              <div className="flex flex-col items-center">
                 <p className="text-sm md:text-base">
-                  {product.translations.pret1}
+                  {product.translations?.pret1 ||
+                    product.translations?.btn1?.pret1 ||
+                    product.translations?.btn2?.pret1 ||
+                    product.translations?.btn3?.pret1 ||
+                    product.translations?.btn3?.button1?.pret1 ||
+                    product.translations?.btn3?.button2?.pret1 ||
+                    product.translations?.btn3?.button3?.pret1 ||
+                    product.translations?.btn4?.pret1}
                 </p>
-              )}
+              </div>
             </div>
             <div className="font-semibold text-slate-600 text-sm md:text-base font-nunito">
               <p className="leading-5 text-center">
