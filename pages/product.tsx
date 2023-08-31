@@ -6,6 +6,10 @@ import Footer from "./components/Footer";
 import { useState, useMemo, useEffect } from "react";
 import useLanguage from "../public/LanguageContext";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
+import ph1 from "../public/images/rama_145_1.png";
+import ph2 from "../public/images/rama_145_2.png";
+import ph3 from "../public/images/rama_145pr.png";
+import ph4 from "../public/images/rama_300_1.png";
 
 interface Product {
   id: number;
@@ -83,6 +87,11 @@ export default function Product() {
   const { id: productId } = router.query;
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
+  const [activeImageIndex, setActiveImageIndex] = useState<number | null>(0);
+
+  const handleImageClick = (index: number) => {
+    setActiveImageIndex(index);
+  };
 
   const translatedProduct = useMemo(() => {
     const translatedArray = productsData.map((product) => ({
@@ -258,29 +267,68 @@ export default function Product() {
       {translatedProduct ? (
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
-            <div className="w-[30%]">
-              <div className="w-auto h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
+            <div className="w-[35%]">
+              <div className="w-auto flex items-center justify-center h-80  lg:mr-10 relative overflow-hidden  mr-0">
                 <Image
-                  src={translatedProduct.image || "/default-image.jpg"}
+                  src={
+                    activeImageIndex === 0
+                      ? translatedProduct.image || "/default-image.jpg"
+                      : activeImageIndex === 1
+                      ? ph1
+                      : activeImageIndex === 2
+                      ? ph2
+                      : activeImageIndex === 3
+                      ? ph3
+                      : ph4
+                  }
                   alt={translatedProduct.translations.name}
                   layout="intrinsic"
                   width={200}
                   height={200}
                 />
               </div>
-            </div>
-            <div>
-              <div>
-                <Image alt="" src={""} />
-              </div>
-              <div>
-                <Image alt="" src={""} />
-              </div>
-              <div>
-                <Image alt="" src={""} />
-              </div>
-              <div>
-                <Image alt="" src={""} />
+
+              <div className=" flex justify-center items-center">
+                <div
+                  className={`mr-10 border-2 border-[#F2A421] ${
+                    activeImageIndex === 0
+                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                      : ""
+                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                  onClick={() => handleImageClick(0)}
+                >
+                  <Image alt="" src={ph1} />
+                </div>
+                <div
+                  className={`mr-10 border-2 border-[#F2A421] ${
+                    activeImageIndex === 1
+                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                      : ""
+                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                  onClick={() => handleImageClick(1)}
+                >
+                  <Image alt="" src={ph2} />
+                </div>
+                <div
+                  className={`mr-10 border-2 border-[#F2A421] ${
+                    activeImageIndex === 2
+                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                      : ""
+                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                  onClick={() => handleImageClick(2)}
+                >
+                  <Image alt="" src={ph3} />
+                </div>
+                <div
+                  className={`mr-10 border-2 border-[#F2A421] ${
+                    activeImageIndex === 3
+                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                      : ""
+                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                  onClick={() => handleImageClick(3)}
+                >
+                  <Image alt="" src={ph4} />
+                </div>
               </div>
             </div>
 
