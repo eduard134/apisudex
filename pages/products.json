@@ -48,7 +48,7 @@
           "name": "Inel",
           "button1": {
             "name": "Inel (Ching)",
-            "pret1": "264 Lei",
+            "pret1": "150 Lei",
             "descriere": "Inel Ching pentru stup cu 10 rame"
           },
           "button2": {
@@ -105,12 +105,12 @@
           "name": "Кольцо",
           "button1": {
             "name": "Кольцо (Ching)",
-            "pret1": "264 Lei",
+            "pret1": "150 Лей",
             "descriere": "Кольцо Ching на 10 рамок"
           },
           "button2": {
             "name": " Кольцо (Нижняя-крышка)",
-            "pret1": "100 Lei",
+            "pret1": "100 Лей",
             "descriere": "Кольцо на 10 рамок"
           }
         },
