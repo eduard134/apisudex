@@ -258,20 +258,31 @@ export default function Product() {
       {translatedProduct ? (
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
-            <div className="w-96 h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
-              <Image
-                src={translatedProduct.image || "/default-image.jpg"}
-                alt={translatedProduct.translations.name}
-                layout="fill"
-                objectFit="cover"
-              />
+            <div className="w-[30%]">
+              <div className="w-auto h-80 lg:mr-10 relative overflow-hidden mb-6 mr-0">
+                <Image
+                  src={translatedProduct.image || "/default-image.jpg"}
+                  alt={translatedProduct.translations.name}
+                  layout="intrinsic"
+                  width={200}
+                  height={200}
+                />
+              </div>
             </div>
-          <div>
-            <div><Image alt="" src={""} /></div>
-            <div><Image alt="" src={""} /></div>
-            <div><Image alt="" src={""} /></div>
-            <div><Image alt="" src={""} /></div>
-          </div>
+            <div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+              <div>
+                <Image alt="" src={""} />
+              </div>
+            </div>
 
             <div className="bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-4 sm:p-6 rounded-xl shadow-lg h-full lg:w-[50%] w-[90%]">
               <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito text-center sm:text-start">
@@ -401,7 +412,7 @@ export default function Product() {
                     )}
                   </>
                 ) : (
-                  "N/A"
+                  <></>
                 )}{" "}
                 Lei
               </div>
