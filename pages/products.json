@@ -21,6 +21,16 @@
     "image7": "/images/stup_10_rame_fund_plasa_pr.png",
     "image7.1": "/images/stup_10_rame_fund_plasa_1.png",
     "image7.2": "/images/stup_10_rame_fund_plasa_2.png",
+    "image8": "/images/stup_10_rame_inel_capac_inferior_pr.png",
+    "image8.1": "/images/stup_10_rame_inel_capac_inferior_1.png",
+    "image8.2": "/images/stup_10_rame_inel_capac_inferior_2.png",
+    "image8.3": "/images/stup_10_rame_inel_capac_inferior_3.png",
+    "image8.4": "/images/stup_10_rame_inel_capac_inferior_4.png",
+    "image8.5": "/images/stup_10_rame_inel_capac_inferior_5.png",
+    "image8.6": "/images/stup_10_rame_inel_capac_inferior_6.png",
+    "image8.7": "/images/stup_10_rame_inel_capac_inferior_7.png",
+    "image9": "/images/stup_10_rame_inel_chinga_pr.png",
+    "image9.1": "/images/stup_10_rame_inel_chinga_1.png",
     "translations": {
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
@@ -35,9 +45,17 @@
           "descriere": "Capac pentru stup cu 10 rame, disponibil în variantele: zinc termo-izolat, termo-aluminium și aluminiu simplu"
         },
         "btn2": {
-          "name": "Inel Ching",
-          "pret1": "100 Lei",
-          "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior"
+          "name": "Inel",
+          "button1": {
+            "name": "Inel (Ching)",
+            "pret1": "264 Lei",
+            "descriere": "Inel Ching pentru stup cu 10 rame"
+          },
+          "button2": {
+            "name": " Inel (Capac-Inferior)",
+            "pret1": "100 Lei",
+            "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior"
+          }
         },
         "btn3": {
           "name": "Corp",
@@ -84,12 +102,20 @@
           "descriere": "Крышка улья с 10 рамками, доступна из: термоизолированного цинка, термоалюминий и обычный алюминий"
         },
         "btn2": {
-          "name": "Кольцо 10 рамок (крышка-нижняя)",
-          "pret1": "100 Лей",
-          "descriere": "Улей-кольцо на 10 рамок, подходит для нижней крышки"
+          "name": "Кольцо",
+          "button1": {
+            "name": "Кольцо (Ching)",
+            "pret1": "264 Lei",
+            "descriere": "Кольцо Ching на 10 рамок"
+          },
+          "button2": {
+            "name": " Кольцо (Нижняя-крышка)",
+            "pret1": "100 Lei",
+            "descriere": "Кольцо на 10 рамок"
+          }
         },
         "btn3": {
-          "name": "Кузов 10 рам",
+          "name": "Корпус 10 рам",
           "button1": {
             "name": "145мм",
             "pret1": "264 Лей",
@@ -154,9 +180,9 @@
           "descriere": "Capac pentru stup cu 12 rame, disponibil în variantele: zinc termo-izolat, termo-aluminium și aluminiu simplu"
         },
         "btn2": {
-          "name": "Inel Ching 12 Rame (Capac-Inferior)",
+          "name": "Inel 12 Rame",
           "pret1": "110 Lei",
-          "descriere": "Inel pentru stup cu 12 rame, potrivit pentru capacul inferior"
+          "descriere": "Inel pentru stup cu 12 rame"
         },
         "btn3": {
           "name": "Corp 12 Rame",
@@ -203,12 +229,12 @@
           "descriere": "Крышка улья с 12 рамками, доступна из: термоизолированного цинка, термоалюминий и обычный алюминий"
         },
         "btn2": {
-          "name": "Кольцо 12 Рамок (Крышка-Нижняя)",
+          "name": "Кольцо 12 Рамок",
           "pret1": "110 Лей",
-          "descriere": "Улей кольцевой на 12 рамок, подходит для нижней крышки"
+          "descriere": "Кольцо на 12 рамок"
         },
         "btn3": {
-          "name": "Кузов 12 рам",
+          "name": "Корпус 12 рам",
           "button1": {
             "name": "145мм",
             "pret1": "291.5 Лей",
@@ -252,7 +278,7 @@
         "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine"
       },
       "ru": {
-        "name": "Горизонтальный улей на 22 рамки",
+        "name": "Лежак на 22 рамки",
         "pret1": "1200 Лей",
         "descriere": "Горизонтальный улей, рассчитанный на 22 рамки, обеспечивает достаточно места для развития пчелиной семьи"
       }
