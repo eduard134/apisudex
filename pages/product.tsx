@@ -200,6 +200,17 @@ export default function Product() {
     setSelectedPrice(
       selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
     );
+
+    const discountedPriceValue =
+      btn3?.button1?.reducere ||
+      btn3?.button2?.reducere ||
+      btn3?.button3?.reducere ||
+      btn3?.pret1;
+    setSelectedPrice(
+      discountedPriceValue !== undefined
+        ? parseFloat(discountedPriceValue)
+        : null
+    );
   };
 
   const handleButton4Click = () => {
@@ -354,8 +365,39 @@ export default function Product() {
                   </div>
                 )}
               </div>
-              <div>
-                Total: {selectedPrice !== null ? selectedPrice : "N/A"} Lei
+              <div className="flex">
+                Total:{" "}
+                {selectedPrice !== null ? (
+                  <>
+                    {showButton3 &&
+                    (translatedProduct.translations?.btn3?.button1?.reducere ||
+                      translatedProduct.translations?.btn3?.button2?.reducere ||
+                      translatedProduct.translations?.btn3?.button3
+                        ?.reducere) ? (
+                      <div className="flex flex-col items-center">
+                        <p className="line-through text-gray-700 text-sm md:text-base">
+                          {selectedPrice}
+                        </p>
+                        <p className="text-sm md:text-base">
+                          {showButton1 &&
+                            translatedProduct.translations?.btn3?.button1
+                              ?.reducere}
+                          {showButton2 &&
+                            translatedProduct.translations?.btn3?.button2
+                              ?.reducere}
+                          {showButton3 &&
+                            translatedProduct.translations?.btn3?.button3
+                              ?.reducere}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="text-sm md:text-base">{selectedPrice}</p>
+                    )}
+                  </>
+                ) : (
+                  "N/A"
+                )}{" "}
+                Lei
               </div>
             </div>
           </div>
