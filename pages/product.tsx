@@ -291,33 +291,23 @@ export default function Product() {
               <div className=" flex justify-center items-center">
                 <div
                   className={`mr-10 border-2 border-[#F2A421] ${
-                    activeImageIndex === 0
-                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-                      : ""
-                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
-                  onClick={() => handleImageClick(0)}
-                >
-                  <Image alt="" src={ph1} />
-                </div>
-                <div
-                  className={`mr-10 border-2 border-[#F2A421] ${
                     activeImageIndex === 1
                       ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                       : ""
                   } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
                   onClick={() => handleImageClick(1)}
                 >
-                  <Image alt="" src={ph2} />
+                  <Image alt="" src={ph1} />
                 </div>
                 <div
                   className={`mr-10 border-2 border-[#F2A421] ${
-                    activeImageIndex === 2
+                    activeImageIndex === 2  
                       ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                       : ""
                   } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
                   onClick={() => handleImageClick(2)}
                 >
-                  <Image alt="" src={ph3} />
+                  <Image alt="" src={ph2} />
                 </div>
                 <div
                   className={`mr-10 border-2 border-[#F2A421] ${
@@ -326,6 +316,16 @@ export default function Product() {
                       : ""
                   } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
                   onClick={() => handleImageClick(3)}
+                >
+                  <Image alt="" src={ph3} />
+                </div>
+                <div
+                  className={`mr-10 border-2 border-[#F2A421] ${
+                    activeImageIndex === 4
+                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                      : ""
+                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                  onClick={() => handleImageClick(4)}
                 >
                   <Image alt="" src={ph4} />
                 </div>
