@@ -3,38 +3,11 @@
     "id": 1,
     "categoryId": 1,
     "image": "/images/stup_10_rame.png",
-    "image1": "/images/stup_10_rame_capac_10_rame_pr.png",
-    "image2": "/images/Inel_10rame.png",
-    "image3": "/images/stup_10_rame_corp145_pr.png",
-    "image3.1": "/images/stup_10_rame_corp145_1.png",
-    "image3.2": "/images/stup_10_rame_corp145_2.png",
-    "image4": "/images/stup_10_rame_corp230_pr.png",
-    "image4.1": "/images/stup_10_rame_corp230_1.png",
-    "image5": "/images/stup_10_rame_corp300.png",
-    "image6": "/images/stup_10_rame_fund_lemn_pr.png",
-    "image6.1": "/images/stup_10_rame_fund_lemn_1.png",
-    "image6.2": "/images/stup_10_rame_fund_lemn_2.png",
-    "image6.3": "/images/stup_10_rame_fund_lemn_3.png",
-    "image6.4": "/images/stup_10_rame_fund_lemn_4.png",
-    "image6.5": "/images/stup_10_rame_fund_lemn_5.png",
-    "image6.6": "/images/stup_10_rame_fund_lemn_6.png",
-    "image7": "/images/stup_10_rame_fund_plasa_pr.png",
-    "image7.1": "/images/stup_10_rame_fund_plasa_1.png",
-    "image7.2": "/images/stup_10_rame_fund_plasa_2.png",
-    "image8": "/images/stup_10_rame_inel_capac_inferior_pr.png",
-    "image8.1": "/images/stup_10_rame_inel_capac_inferior_1.png",
-    "image8.2": "/images/stup_10_rame_inel_capac_inferior_2.png",
-    "image8.3": "/images/stup_10_rame_inel_capac_inferior_3.png",
-    "image8.4": "/images/stup_10_rame_inel_capac_inferior_4.png",
-    "image8.5": "/images/stup_10_rame_inel_capac_inferior_5.png",
-    "image8.6": "/images/stup_10_rame_inel_capac_inferior_6.png",
-    "image8.7": "/images/stup_10_rame_inel_capac_inferior_7.png",
-    "image9": "/images/stup_10_rame_inel_chinga_pr.png",
-    "image9.1": "/images/stup_10_rame_inel_chinga_1.png",
     "translations": {
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
         "btn1": {
+          "image": "/images/stup_10_rame_capac_10_rame_pr.png",
           "name": "Capac 10 rame",
           "opt1": "Zinc, Termo-Izolat",
           "opt2": "Termo-Aluminium",
@@ -46,12 +19,19 @@
         },
         "btn2": {
           "name": "Inel",
+          "descriere": "Inel Ching pentru stup cu 10 rame",
           "button1": {
+            "image": "/images/stup_10_rame_inel_chinga_pr.png",
+            "image1": "/images/stup_10_rame_inel_chinga_1.png",
             "name": "Inel (Ching)",
             "pret1": "150 Lei",
             "descriere": "Inel Ching pentru stup cu 10 rame"
           },
           "button2": {
+            "image": "/images/stup_10_rame_inel_capac_inferior_2.png",
+            "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
+            "image2": "/images/stup_10_rame_inel_capac_inferior_5.png",
+            "image3": "/images/stup_10_rame_inel_capac_inferior_7.png",
             "name": " Inel (Capac-Inferior)",
             "pret1": "100 Lei",
             "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior"
@@ -59,19 +39,26 @@
         },
         "btn3": {
           "name": "Corp",
+          "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm",
           "button1": {
+            "image": "/images/stup_10_rame_corp145_pr.png",
+            "image1": "/images/stup_10_rame_corp145_1.png",
+            "image2": "/images/stup_10_rame_corp145_2.png",
             "name": "145mm",
             "pret1": "264 Lei",
             "reducere": "240 Lei",
             "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm"
           },
           "button2": {
+            "image": "/images/stup_10_rame_corp230_pr.png",
+            "image1": "/images/stup_10_rame_corp230_1.png",
             "name": "230mm",
             "pret1": "374 Lei",
             "reducere": "340 Lei",
             "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm"
           },
           "button3": {
+            "image": "/images/stup_10_rame_corp300.png",
             "name": "300mm",
             "pret1": "484 Lei",
             "reducere": "440 Lei",
@@ -79,6 +66,13 @@
           }
         },
         "btn4": {
+          "image": "/images/stup_10_rame_fund_lemn_pr.png",
+          "image1": "/images/stup_10_rame_fund_lemn_1.png",
+          "image2": "/images/stup_10_rame_fund_lemn_2.png",
+          "image3": "/images/stup_10_rame_fund_lemn_4.png",
+          "image4": "/images/stup_10_rame_fund_plasa_pr.png",
+          "image5": "/images/stup_10_rame_fund_plasa_1.png",
+          "image6": "/images/stup_10_rame_fund_plasa_2.png",
           "name": "Fund",
           "opt1": "Plasă Inox",
           "opt2": "Plasă Zinc",
@@ -92,6 +86,7 @@
       "ru": {
         "name": "Вертикальные ульи на 10 рамок",
         "btn1": {
+          "image": "/images/stup_10_rame_capac_10_rame_pr.png",
           "name": "Крышка 10 рамок",
           "opt1": "Цинк, с теплоизоляцией",
           "opt2": "Термоалюминий",
@@ -104,11 +99,17 @@
         "btn2": {
           "name": "Кольцо",
           "button1": {
+            "image": "/images/stup_10_rame_inel_chinga_pr.png",
+            "image1": "/images/stup_10_rame_inel_chinga_1.png",
             "name": "Кольцо (Ching)",
             "pret1": "150 Лей",
             "descriere": "Кольцо Ching на 10 рамок"
           },
           "button2": {
+            "image": "/images/stup_10_rame_inel_capac_inferior_2.png",
+            "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
+            "image2": "/images/stup_10_rame_inel_capac_inferior_5.png",
+            "image3": "/images/stup_10_rame_inel_capac_inferior_7.png",
             "name": " Кольцо (Нижняя-крышка)",
             "pret1": "100 Лей",
             "descriere": "Кольцо на 10 рамок"
@@ -117,18 +118,24 @@
         "btn3": {
           "name": "Корпус 10 рам",
           "button1": {
+            "image": "/images/stup_10_rame_corp145_pr.png",
+            "image1": "/images/stup_10_rame_corp145_1.png",
+            "image2": "/images/stup_10_rame_corp145_2.png",
             "name": "145мм",
             "pret1": "264 Лей",
             "reducere": "240 Лей",
             "descriere": "Корпус улья на 10 рамок, высотой 145мм"
           },
           "button2": {
+            "image": "/images/stup_10_rame_corp230_pr.png",
+            "image1": "/images/stup_10_rame_corp230_1.png",
             "name": "230мм",
             "pret1": "374 Лей",
             "reducere": "340 Лей",
             "descriere": "Корпус улья на 10 рамок высотой 230мм"
           },
           "button3": {
+            "image": "/images/stup_10_rame_corp300.png",
             "name": "300мм",
             "pret1": "484 Лей",
             "reducere": "440 Лей",
@@ -136,6 +143,13 @@
           }
         },
         "btn4": {
+          "image": "/images/stup_10_rame_fund_lemn_pr.png",
+          "image1": "/images/stup_10_rame_fund_lemn_1.png",
+          "image2": "/images/stup_10_rame_fund_lemn_2.png",
+          "image3": "/images/stup_10_rame_fund_lemn_4.png",
+          "image4": "/images/stup_10_rame_fund_plasa_pr.png",
+          "image5": "/images/stup_10_rame_fund_plasa_1.png",
+          "image6": "/images/stup_10_rame_fund_plasa_2.png",
           "name": "Нижние 10 кадров",
           "opt1": "Сетка нержавеющей стали",
           "opt2": "Цинковая сетка",
@@ -511,7 +525,7 @@
           "pret1": "11 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 145 мм"
         },
-        "btn3": { 
+        "btn3": {
           "name": "Разобранный из липы",
           "pret1": "8 Лей",
           "descriere": "Липовая рама в разобранном виде, высота: 145мм"
