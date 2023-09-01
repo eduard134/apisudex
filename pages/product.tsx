@@ -22,6 +22,7 @@ interface Product {
   image5?: string;
   image6?: string;
   translations: ProductCategory;
+  descriere?: string;
 }
 
 interface ProductCategory {
@@ -133,12 +134,12 @@ export default function Product() {
     }
   }, [translatedProduct]);
 
-  console.log("btn1 pret1:", translatedProduct?.translations?.btn1?.pret1);
   const handleOpt1Click = () => {
     const selectedPriceValue = translatedProduct?.translations?.btn1?.pret1;
     setSelectedPrice(
       selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
     );
+
   };
 
   const handleOpt2Click = () => {
@@ -508,15 +509,15 @@ export default function Product() {
                   </div>
                 )}
               </div>
-              <div className="flex">
-                Total: 
+              <div className="flex items-end">
+                <p className="">Total: </p>
                 {selectedPrice !== null ? (
                   <>
                     {showButton3 &&
                     (selectedDiscount) ? (
-                      <div className="flex flex-col items-center">
+                      <div className="flex flex-col items-center ml-1">
                         <p className="line-through text-gray-700 text-sm md:text-base">
-                          {selectedPrice}
+                          {selectedPrice} Lei
                         </p>
                         <p className="text-sm md:text-base">
                           {selectedDiscount} Lei
@@ -529,8 +530,7 @@ export default function Product() {
                 ) : (
                   <></>
                 )}{" "}
-                Lei
-              </div>
+                </div>
             </div>
           </div>
         </>
