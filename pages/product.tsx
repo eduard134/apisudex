@@ -106,6 +106,15 @@ export default function Product() {
   const [showButton2, setShowButton2] = useState(false);
   const [showButton3, setShowButton3] = useState(false);
   const [showButton4, setShowButton4] = useState(false);
+  const [watchButton1, setWatchButton1] = useState(false);
+  const [watchButton2, setWatchButton2] = useState(false);
+  const [watchButton3, setWatchButton3] = useState(false);
+
+  const [selectedDiscount, setSelectedDiscount] = useState<number | null>(
+    translatedProduct?.translations?.btn3?.button1?.reducere
+      ? parseFloat(translatedProduct?.translations?.btn3?.button1?.reducere)
+      : null
+  );
   const [selectedPrice, setSelectedPrice] = useState<number | null>(
     (translatedProduct?.translations?.pret1
       ? parseFloat(translatedProduct?.translations?.pret1)
@@ -187,7 +196,10 @@ export default function Product() {
     setShowButton3(false);
     setShowButton4(false);
 
-    const selectedPriceValue = translatedProduct?.translations?.btn2?.pret1;
+    const btn2 = translatedProduct?.translations?.btn2;
+    const selectedPriceValue =
+      btn2?.button1?.pret1 || btn2?.button2?.pret1 || btn2?.pret1;
+
     setSelectedPrice(
       selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
     );
@@ -213,9 +225,8 @@ export default function Product() {
     const discountedPriceValue =
       btn3?.button1?.reducere ||
       btn3?.button2?.reducere ||
-      btn3?.button3?.reducere ||
-      btn3?.pret1;
-    setSelectedPrice(
+      btn3?.button3?.reducere;
+    setSelectedDiscount(
       discountedPriceValue !== undefined
         ? parseFloat(discountedPriceValue)
         : null
@@ -236,7 +247,35 @@ export default function Product() {
     );
   };
 
+  const Button1 = () => {
+    const selectedPriceValue =
+      translatedProduct?.translations?.btn2?.button1?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
+  const Button2 = () => {
+    const selectedPriceValue =
+      translatedProduct?.translations?.btn2?.button2?.pret1;
+    setSelectedPrice(
+      selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
+    );
+  };
+
   const handleButton1 = () => {
+    setWatchButton1(true);
+
+    const btn3 = translatedProduct?.translations?.btn3;
+    const discountedPriceValue =
+    btn3?.button1?.reducere
+
+  setSelectedDiscount(
+    discountedPriceValue !== undefined
+      ? parseFloat(discountedPriceValue)
+      : null
+  );
+
     const selectedPriceValue =
       translatedProduct?.translations?.btn3?.button1?.pret1;
     setSelectedPrice(
@@ -245,6 +284,18 @@ export default function Product() {
   };
 
   const handleButton2 = () => {
+    setWatchButton2(true);
+
+    const btn3 = translatedProduct?.translations?.btn3;
+    const discountedPriceValue =
+    btn3?.button2?.reducere
+
+  setSelectedDiscount(
+    discountedPriceValue !== undefined
+      ? parseFloat(discountedPriceValue)
+      : null
+  );
+
     const selectedPriceValue =
       translatedProduct?.translations?.btn3?.button2?.pret1;
     setSelectedPrice(
@@ -253,6 +304,18 @@ export default function Product() {
   };
 
   const handleButton3 = () => {
+    setWatchButton3(true);
+
+    const btn3 = translatedProduct?.translations?.btn3;
+    const discountedPriceValue =
+    btn3?.button3?.reducere
+
+  setSelectedDiscount(
+    discountedPriceValue !== undefined
+      ? parseFloat(discountedPriceValue)
+      : null
+  );
+
     const selectedPriceValue =
       translatedProduct?.translations?.btn3?.button3?.pret1;
     setSelectedPrice(
@@ -301,7 +364,7 @@ export default function Product() {
                 </div>
                 <div
                   className={`mr-10 border-2 border-[#F2A421] ${
-                    activeImageIndex === 2  
+                    activeImageIndex === 2
                       ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                       : ""
                   } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
@@ -383,7 +446,22 @@ export default function Product() {
                   </div>
                 )}
               </div>
-              {showButton2}
+              <div className="flex justify-center">
+                {showButton2 && (
+                  <div className="mr-4">
+                    <button onClick={Button1}>
+                      {translatedProduct?.translations?.btn2?.button1?.name}
+                    </button>
+                  </div>
+                )}
+                {showButton2 && (
+                  <div className="mr-4">
+                    <button onClick={Button2}>
+                      {translatedProduct?.translations?.btn2?.button2?.name}
+                    </button>
+                  </div>
+                )}
+              </div>
               <div className="flex justify-center">
                 {showButton3 && (
                   <div className="mr-4">
@@ -444,15 +522,7 @@ export default function Product() {
                           {selectedPrice}
                         </p>
                         <p className="text-sm md:text-base">
-                          {showButton1 &&
-                            translatedProduct.translations?.btn3?.button1
-                              ?.reducere}
-                          {showButton2 &&
-                            translatedProduct.translations?.btn3?.button2
-                              ?.reducere}
-                          {showButton3 &&
-                            translatedProduct.translations?.btn3?.button3
-                              ?.reducere}
+                          {selectedDiscount} Lei
                         </p>
                       </div>
                     ) : (
