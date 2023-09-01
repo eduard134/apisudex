@@ -509,14 +509,11 @@ export default function Product() {
                 )}
               </div>
               <div className="flex">
-                Total:{" "}
+                Total: 
                 {selectedPrice !== null ? (
                   <>
                     {showButton3 &&
-                    (translatedProduct.translations?.btn3?.button1?.reducere ||
-                      translatedProduct.translations?.btn3?.button2?.reducere ||
-                      translatedProduct.translations?.btn3?.button3
-                        ?.reducere) ? (
+                    (selectedDiscount) ? (
                       <div className="flex flex-col items-center">
                         <p className="line-through text-gray-700 text-sm md:text-base">
                           {selectedPrice}
