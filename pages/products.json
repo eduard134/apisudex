@@ -210,13 +210,13 @@
             "name": "230mm",
             "pret1": "412.5 Lei",
             "reducere": "375 Lei",
-            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm"
+            "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 230mm"
           },
           "button3": {
             "name": "300mm",
             "pret1": "533.5 Lei",
             "reducere": "485 Lei",
-            "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 300mm"
+            "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 300mm"
           }
         },
         "btn4": {
@@ -259,7 +259,7 @@
             "name": "230мм",
             "pret1": "412.5 Лей",
             "reducere": "375 Лей",
-            "descriere": "Корпус улья на 10 рамок высотой 230мм."
+            "descriere": "Корпус улья на 12 рамок высотой 230мм."
           },
           "button3": {
             "name": "300мм",
@@ -449,7 +449,7 @@
         "btn3": {
           "name": "Dezasamblată din Tei",
           "pret1": "9 Lei",
-          "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mь"
+          "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm"
         },
         "btn4": {
           "name": "Dezasamblată din Pin",
