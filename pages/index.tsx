@@ -334,9 +334,9 @@ export default function Home() {
           <Link
             href={`/product?id=${product.id}`}
             key={product.id}
-            className="mb-6 md:mb-0 md:ml-8 flex flex-col items-center rounded-md p-2 md:p-5 w-[60%] md:w-[20%] h-[250px] md:h-[290px] bg-slate-100 hover:scale-105 transition-transform duration-800 ease-in hover:bg-opacity-90"
+            className="mb-6 md:mb-0 md:ml-8 flex flex-col items-center rounded-md p-2 md:p-5 w-[60%] md:w-[20%] h-[250px] md:h-[290px] lg:h-[full] bg-slate-100 hover:scale-105 transition-transform duration-800 ease-in hover:bg-opacity-90"
           >
-            <div className="h-[60%] w-full mb-2 md:mb-4 flex justify-center items-center">
+            <div className=" h-[78%] md:h-[70%] w-full mb-2 md:mb-4 flex justify-center items-center">
               <Image
                 src={product.image || "/default-image.jpg"}
                 alt={product.translations.name}
