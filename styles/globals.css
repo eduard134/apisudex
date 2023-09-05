@@ -190,7 +190,48 @@ textarea::placeholder {
 .anim:hover::before {
   top: -30px;
   left: -30px;
-  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
+  background: linear-gradient(to bottom left, #DD5452 0%, #976a09 100%);
+  /* Change the background color on hover */
+}
+
+.anim1 {
+  --color: rgb(237, 205, 46);
+  /* Change to the desired color for the bee theme */
+  font-family: inherit;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 17px;
+  z-index: 1;
+  border: 2px solid var(--color);
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s color;
+}
+
+.anim1::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 350px;
+  height: 220px;
+  z-index: -1;
+  border-radius: 40%;
+  transition: 0.3s all;
+}
+
+.anim1:hover {
+  color: #f0f0f0;
+}
+
+.anim1:before {
+  top: 100%;
+  left: 100%;
+}
+
+.anim1:hover::before {
+  top: -30px;
+  left: -30px;
+  background: linear-gradient(to bottom left, #DD5452 0%, #c28c17 100%);
   /* Change the background color on hover */
 }
 
