@@ -54,6 +54,26 @@ interface Caracteristics {
     name: string;
     pret1?: string;
     descriere?: string;
+    button1?: {
+      image?: string;
+      image1?: string;
+      image2?: string;
+      image3?: string;
+      name?: string;
+      pret1?: string;
+      reducere?: string;
+      descriere?: string;
+    };
+    button2?: {
+      image?: string;
+      image1?: string;
+      image2?: string;
+      image3?: string;
+      name?: string;
+      pret1?: string;
+      reducere?: string;
+      descriere?: string;
+    };
   };
   btn3?: {
     image?: string;
@@ -140,9 +160,13 @@ export default function Product() {
   const [watchButton2, setWatchButton2] = useState(false);
   const [watchButton3, setWatchButton3] = useState(false);
   const [showImageBtn1, setImageBtn1] = useState(false);
+  const [showImageBtn2, setImageBtn2] = useState(false);
+  const [showImageBtn3, setImageBtn3] = useState(false);
+  const [showImageBtn4, setImageBtn4] = useState(false);
   const [selectedDescription, setSelectedDescription] = useState<string | null>(
     null
   );
+  const [selectedButton, setSelectedButton] = useState<string | null>(null);
 
   const [selectedDiscount, setSelectedDiscount] = useState<number | null>(
     translatedProduct?.translations?.btn3?.button1?.reducere
@@ -237,7 +261,7 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(false);
     setShowButton4(false);
-    setImageBtn1(true);
+    setSelectedButton("btn1");
 
     const btn1 = translatedProduct?.translations?.btn1;
     const selectedPriceValue = btn1?.pret1 || btn1?.pret2 || btn1?.pret3;
@@ -256,6 +280,7 @@ export default function Product() {
     setShowButton2(true);
     setShowButton3(false);
     setShowButton4(false);
+    setSelectedButton("btn2");
 
     const btn2 = translatedProduct?.translations?.btn2;
     const selectedPriceValue =
@@ -275,6 +300,7 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(true);
     setShowButton4(false);
+    setSelectedButton("btn3");
 
     const btn3 = translatedProduct?.translations?.btn3;
     const selectedPriceValue =
@@ -307,6 +333,7 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(false);
     setShowButton4(true);
+    setSelectedButton("btn4");
 
     const btn4 = translatedProduct?.translations?.btn4;
     const selectedPriceValue = btn4?.pret1 || btn4?.pret2 || btn4?.pret3;
@@ -419,7 +446,43 @@ export default function Product() {
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
             <div className="w-[35%]">
-              <div className="w-auto flex items-center justify-center h-80  lg:mr-10 relative overflow-hidden  mr-0"></div>
+              <div className="w-auto flex items-center justify-center h-80  lg:mr-10 relative overflow-hidden  mr-0">
+                <Image
+                  alt=""
+                  src={
+                    selectedButton === "btn1"
+                      ? showImageBtn1
+                        ? translatedProduct?.translations?.btn1?.image1 ||
+                          "/default-image.jpg"
+                        : translatedProduct?.translations?.btn1?.image ||
+                          "/default-image.jpg"
+                      : selectedButton === "btn2"
+                      ? showImageBtn2
+                        ? translatedProduct?.translations?.btn2?.button1
+                            ?.image || "/default-image.jpg"
+                        : translatedProduct?.translations?.btn2?.button2
+                            ?.image || "/default-image.jpg"
+                      : selectedButton === "btn3"
+                      ? showImageBtn3
+                        ? translatedProduct?.translations?.btn3?.button1
+                            ?.image || "/default-image.jpg"
+                        : showImageBtn3
+                        ? translatedProduct?.translations?.btn3?.button2
+                            ?.image || "/default-image.jpg"
+                        : translatedProduct?.translations?.btn3?.button3
+                            ?.image || "/default-image.jpg"
+                      : selectedButton === "btn4"
+                      ? showImageBtn4
+                        ? translatedProduct?.translations?.btn4?.image1 ||
+                          "/default-image.jpg"
+                        : translatedProduct?.translations?.btn4?.image ||
+                          "/default-image.jpg"
+                      : "/default-image.jpg"
+                  }
+                  width={400}
+                  height={400}
+                />
+              </div>
 
               <div className=" flex justify-center items-center">
                 <div
@@ -433,8 +496,19 @@ export default function Product() {
                   <Image
                     alt=""
                     src={
-                      translatedProduct?.translations?.btn1?.image ||
-                      "/default-image.jpg"
+                      selectedButton === "btn1"
+                        ? translatedProduct?.translations?.btn1?.image ||
+                          "/default-image.jpg"
+                        : selectedButton === "btn2"
+                        ? translatedProduct?.translations?.btn2?.button1
+                            ?.image || "/default-image.jpg"
+                        : selectedButton === "btn3"
+                        ? translatedProduct?.translations?.btn3?.button1
+                            ?.image || "/default-image.jpg"
+                        : selectedButton === "btn4"
+                        ? translatedProduct?.translations?.btn4?.image ||
+                          "/default-image.jpg"
+                        : "/default-image.jpg"
                     }
                     width={200}
                     height={200}
@@ -451,9 +525,19 @@ export default function Product() {
                   <Image
                     alt=""
                     src={
-                      translatedProduct?.translations?.btn2?.button1?.image ||
-                      translatedProduct?.translations?.btn2?.button2?.image ||
-                      "/default-image.jpg"
+                      selectedButton === "btn1"
+                        ? translatedProduct?.translations?.btn1?.image1 ||
+                          "/default-image.jpg"
+                        : selectedButton === "btn2"
+                        ? translatedProduct?.translations?.btn2?.button1
+                            ?.image1 || "/default-image.jpg"
+                        : selectedButton === "btn3"
+                        ? translatedProduct?.translations?.btn3?.button1
+                            ?.image1 || "/default-image.jpg"
+                        : selectedButton === "btn4"
+                        ? translatedProduct?.translations?.btn4?.image1 ||
+                          "/default-image.jpg"
+                        : "/default-image.jpg"
                     }
                     width={200}
                     height={200}
@@ -470,10 +554,20 @@ export default function Product() {
                   <Image
                     alt=""
                     src={
-                      translatedProduct?.translations?.btn3?.button1?.image ||
-                      translatedProduct?.translations?.btn3?.button2?.image ||
-                      translatedProduct?.translations?.btn3?.button3?.image ||
-                      "/default-image.jpg"
+                      selectedButton === "btn1"
+                        ? translatedProduct?.translations?.btn1?.image2 ||
+                          "/default-image.jpg"
+                        : selectedButton === "btn2"
+                        ? translatedProduct?.translations?.btn2?.button1
+                            ?.image || "/default-image.jpg"
+                        : // trebu de facut gol
+                        selectedButton === "btn3"
+                        ? translatedProduct?.translations?.btn3?.button1
+                            ?.image2 || "/default-image.jpg"
+                        : selectedButton === "btn4"
+                        ? translatedProduct?.translations?.btn4?.image2 ||
+                          "/default-image.jpg"
+                        : "/default-image.jpg"
                     }
                     width={200}
                     height={200}
@@ -490,8 +584,19 @@ export default function Product() {
                   <Image
                     alt=""
                     src={
-                      translatedProduct?.translations?.btn4?.image ||
-                      "/default-image.jpg"
+                      selectedButton === "btn1"
+                        ? translatedProduct?.translations?.btn1?.image3 ||
+                          "/default-image.jpg"
+                        : selectedButton === "btn2"
+                        ? translatedProduct?.translations?.btn2?.button1
+                            ?.image3 || "/default-image.jpg"
+                        : selectedButton === "btn3"
+                        ? translatedProduct?.translations?.btn3?.button1
+                            ?.image3 || "/default-image.jpg"
+                        : selectedButton === "btn4"
+                        ? translatedProduct?.translations?.btn4?.image3 ||
+                          "/default-image.jpg"
+                        : "/default-image.jpg"
                     }
                     width={200}
                     height={200}
