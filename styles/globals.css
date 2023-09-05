@@ -190,7 +190,7 @@ textarea::placeholder {
 .anim:hover::before {
   top: -30px;
   left: -30px;
-  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
+  background: linear-gradient(to bottom left, #DD5452 0%, #976a09 100%);
   /* Change the background color on hover */
 }
 
@@ -231,7 +231,7 @@ textarea::placeholder {
 .anim1:hover::before {
   top: -30px;
   left: -30px;
-  background: linear-gradient(to bottom left, #DD5452 0%, #D8AA46 100%);
+  background: linear-gradient(to bottom left, #DD5452 0%, #c28c17 100%);
   /* Change the background color on hover */
 }
 

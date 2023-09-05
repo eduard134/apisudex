@@ -118,6 +118,7 @@ export default function Product() {
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(0);
+  const [actvButton, setActvButton] = useState(1);
 
   const handleImageClick = (index: number) => {
     setActiveImageIndex(index);
@@ -238,6 +239,7 @@ export default function Product() {
     setShowButton3(false);
     setShowButton4(false);
     setImageBtn1(true);
+    setActvButton(1);
 
     const btn1 = translatedProduct?.translations?.btn1;
     const selectedPriceValue = btn1?.pret1 || btn1?.pret2 || btn1?.pret3;
@@ -256,6 +258,7 @@ export default function Product() {
     setShowButton2(true);
     setShowButton3(false);
     setShowButton4(false);
+    setActvButton(1);
 
     const btn2 = translatedProduct?.translations?.btn2;
     const selectedPriceValue =
@@ -275,6 +278,7 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(true);
     setShowButton4(false);
+    setActvButton(1);
 
     const btn3 = translatedProduct?.translations?.btn3;
     const selectedPriceValue =
@@ -307,6 +311,7 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(false);
     setShowButton4(true);
+    setActvButton(1);
 
     const btn4 = translatedProduct?.translations?.btn4;
     const selectedPriceValue = btn4?.pret1 || btn4?.pret2 || btn4?.pret3;
@@ -412,6 +417,10 @@ export default function Product() {
       translatedProduct?.translations?.btn3?.button3?.descriere || null
     );
   };
+
+  function setActiveButton(arg0: number) {
+    throw new Error("Function not implemented.");
+  }
 
   return (
     <div>
@@ -557,21 +566,51 @@ export default function Product() {
               <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton1 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt1Click} className="anim1 px-3 ">
+                    <button
+                      onClick={() => {
+                        handleButton1Click();
+                        setActvButton(1); // Set the active button to 1
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 1
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn1?.opt1}
                     </button>
                   </div>
                 )}
                 {showButton1 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt2Click} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleOpt2Click();
+                        setActvButton(2); // Set the active button to 2
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 2
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn1?.opt2}
                     </button>
                   </div>
                 )}
                 {showButton1 && (
                   <div className="">
-                    <button onClick={handleOpt3Click} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleOpt3Click();
+                        setActvButton(3); // Set the active button to 3
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 3
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn1?.opt3}
                     </button>
                   </div>
@@ -580,14 +619,34 @@ export default function Product() {
               <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton2 && (
                   <div className="mr-4">
-                    <button onClick={Button1} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        Button1;
+                        setActvButton(1);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 1
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn2?.button1?.name}
                     </button>
                   </div>
                 )}
                 {showButton2 && (
                   <div className="mr-4">
-                    <button onClick={Button2} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        Button2;
+                        setActvButton(2);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 2
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn2?.button2?.name}
                     </button>
                   </div>
@@ -596,21 +655,51 @@ export default function Product() {
               <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton3 && (
                   <div className="mr-4">
-                    <button onClick={handleButton1} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleButton1();
+                        setActvButton(1); // Set the active button to 4
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 1
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn3?.button1?.name}
                     </button>
                   </div>
                 )}
                 {showButton3 && (
                   <div className="mr-4">
-                    <button onClick={handleButton2} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleButton2();
+                        setActvButton(2);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 2
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn3?.button2?.name}
                     </button>
                   </div>
                 )}
                 {showButton3 && (
                   <div className="">
-                    <button onClick={handleButton3} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleButton3();
+                        setActvButton(3);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 3
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn3?.button3?.name}
                     </button>
                   </div>
@@ -619,26 +708,57 @@ export default function Product() {
               <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton4 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt1} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleOpt1();
+                        setActvButton(1);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 1
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn4?.opt1}
                     </button>
                   </div>
                 )}
                 {showButton4 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt2} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleOpt2();
+                        setActvButton(2);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 2
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn4?.opt2}
                     </button>
                   </div>
                 )}
                 {showButton4 && (
                   <div className="">
-                    <button onClick={handleOpt3} className="anim1 px-3">
+                    <button
+                      onClick={() => {
+                        handleOpt3();
+                        setActvButton(3);
+                      }}
+                      className={`anim w-full py-1 px-2 ${
+                        actvButton === 3
+                          ? "bg-white text-black"
+                          : "bg-yellow-500 text-black"
+                      }`}
+                    >
                       {translatedProduct?.translations?.btn4?.opt3}
                     </button>
                   </div>
                 )}
               </div>
+
               <div className="bg-yellow-50 mt-6 shadow-md p-4 rounded-lg text-gray-800">
                 {selectedDescription && (
                   <div className="text-md font-nunito mb-6 font-semibold text-[#595459]">
@@ -656,15 +776,15 @@ export default function Product() {
                       <>
                         {showButton3 && selectedDiscount ? (
                           <div className="flex flex-col items-center ml-1">
-                            <p className="line-through text-gray-700 text-lg md:text-xl">
+                            <p className="line-through text-gray-400 text-lg md:text-sm ">
                               {selectedPrice} Lei
                             </p>
-                            <p className="text-sm md:text-base">
-                              {selectedDiscount}
+                            <p className="text-sm md:text-xl">
+                              {selectedDiscount} Lei
                             </p>
                           </div>
                         ) : (
-                          <p className="text-sm md:text-base">
+                          <p className="text-sm md:text-xl">
                             {selectedPrice} Lei
                           </p>
                         )}
@@ -676,7 +796,7 @@ export default function Product() {
                 </div>
                 <div className=" font-semibold text-yellow-500 mb-2 font-nunito flex justify-between">
                   <p>Comandă acum la</p>
-                  <p className="text-lg">076 723 462</p>
+                  <p className="text-xl">076 723 462</p>
                 </div>
               </div>
             </div>
