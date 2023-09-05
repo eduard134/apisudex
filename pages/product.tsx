@@ -504,139 +504,180 @@ export default function Product() {
               <h1 className="text-3xl font-extrabold text-white mb-4 font-nunito text-center sm:text-start">
                 {translatedProduct.translations.name}
               </h1>
-              <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-semibold mb-4">
+              <div className="flex justify-center gap-3 flex-wrap sm:flex-nowrap font-nunito font-bold mb-4 mt-10">
                 {translatedProduct.translations.btn1 && (
-                  <div>
-                    <button onClick={handleButton1Click}>
-                      {translatedProduct.translations.btn1.name}
-                    </button>
-                  </div>
+                  <button
+                    onClick={handleButton1Click}
+                    className={`anim w-full py-1 px-2 ${
+                      showButton1
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
+                  >
+                    {translatedProduct.translations.btn1.name}
+                  </button>
                 )}
                 {translatedProduct.translations.btn2 && (
-                  <button onClick={handleButton2Click}>
-                    {translatedProduct.translations.btn2?.name}
+                  <button
+                    onClick={handleButton2Click}
+                    className={`anim w-full py-1 px-2 ${
+                      showButton2
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
+                  >
+                    {translatedProduct.translations.btn2.name}
                   </button>
                 )}
                 {translatedProduct.translations.btn3 && (
-                  <button onClick={handleButton3Click}>
-                    {translatedProduct.translations.btn3?.name}
+                  <button
+                    onClick={handleButton3Click}
+                    className={`anim w-full py-1 px-2 ${
+                      showButton3
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
+                  >
+                    {translatedProduct.translations.btn3.name}
                   </button>
                 )}
                 {translatedProduct.translations.btn4 && (
-                  <button onClick={handleButton4Click}>
-                    {translatedProduct.translations.btn4?.name}
+                  <button
+                    onClick={handleButton4Click}
+                    className={`anim w-full py-1 px-2 ${
+                      showButton4
+                        ? "bg-white text-black"
+                        : "bg-yellow-500 text-black"
+                    }`}
+                  >
+                    {translatedProduct.translations.btn4.name}
                   </button>
                 )}
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton1 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt1Click}>
+                    <button onClick={handleOpt1Click} className="anim1 px-3 ">
                       {translatedProduct?.translations?.btn1?.opt1}
                     </button>
                   </div>
                 )}
                 {showButton1 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt2Click}>
+                    <button onClick={handleOpt2Click} className="anim1 px-3">
                       {translatedProduct?.translations?.btn1?.opt2}
                     </button>
                   </div>
                 )}
                 {showButton1 && (
                   <div className="">
-                    <button onClick={handleOpt3Click}>
+                    <button onClick={handleOpt3Click} className="anim1 px-3">
                       {translatedProduct?.translations?.btn1?.opt3}
                     </button>
                   </div>
                 )}
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton2 && (
                   <div className="mr-4">
-                    <button onClick={Button1}>
+                    <button onClick={Button1} className="anim1 px-3">
                       {translatedProduct?.translations?.btn2?.button1?.name}
                     </button>
                   </div>
                 )}
                 {showButton2 && (
                   <div className="mr-4">
-                    <button onClick={Button2}>
+                    <button onClick={Button2} className="anim1 px-3">
                       {translatedProduct?.translations?.btn2?.button2?.name}
                     </button>
                   </div>
                 )}
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton3 && (
                   <div className="mr-4">
-                    <button onClick={handleButton1}>
+                    <button onClick={handleButton1} className="anim1 px-3">
                       {translatedProduct?.translations?.btn3?.button1?.name}
                     </button>
                   </div>
                 )}
                 {showButton3 && (
                   <div className="mr-4">
-                    <button onClick={handleButton2}>
+                    <button onClick={handleButton2} className="anim1 px-3">
                       {translatedProduct?.translations?.btn3?.button2?.name}
                     </button>
                   </div>
                 )}
                 {showButton3 && (
                   <div className="">
-                    <button onClick={handleButton3}>
+                    <button onClick={handleButton3} className="anim1 px-3">
                       {translatedProduct?.translations?.btn3?.button3?.name}
                     </button>
                   </div>
                 )}
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center font-nunito font-semibold text-md">
                 {showButton4 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt1}>
+                    <button onClick={handleOpt1} className="anim1 px-3">
                       {translatedProduct?.translations?.btn4?.opt1}
                     </button>
                   </div>
                 )}
                 {showButton4 && (
                   <div className="mr-4">
-                    <button onClick={handleOpt2}>
+                    <button onClick={handleOpt2} className="anim1 px-3">
                       {translatedProduct?.translations?.btn4?.opt2}
                     </button>
                   </div>
                 )}
                 {showButton4 && (
                   <div className="">
-                    <button onClick={handleOpt3}>
+                    <button onClick={handleOpt3} className="anim1 px-3">
                       {translatedProduct?.translations?.btn4?.opt3}
                     </button>
                   </div>
                 )}
               </div>
-              {selectedDescription && (
-                <div className="text-white mb-4">{selectedDescription}</div>
-              )}
-              <div className="flex items-end">
-                <p className="mr-2">Total: </p>
-                {selectedPrice !== null ? (
-                  <>
-                    {showButton3 && selectedDiscount ? (
-                      <div className="flex flex-col items-center ml-1">
-                        <p className="line-through text-gray-700 text-sm md:text-base">
-                          {selectedPrice} Lei
-                        </p>
-                        <p className="text-sm md:text-base">
-                          {selectedDiscount}
-                        </p>
-                      </div>
+              <div className="bg-yellow-50 mt-6 shadow-md p-4 rounded-lg text-gray-800">
+                {selectedDescription && (
+                  <div className="text-md font-nunito mb-6 font-semibold text-[#595459]">
+                    {" "}
+                    <span className="text-yellow-500 text-xl">
+                      Descriere:
+                    </span>{" "}
+                    <br /> {selectedDescription}
+                  </div>
+                )}
+                <div className="flex items-end justify-between font-semibold text-yellow-500 mb-2 font-nunito">
+                  <p className="mr-2">Total: </p>
+                  <p>
+                    {selectedPrice !== null ? (
+                      <>
+                        {showButton3 && selectedDiscount ? (
+                          <div className="flex flex-col items-center ml-1">
+                            <p className="line-through text-gray-700 text-lg md:text-xl">
+                              {selectedPrice} Lei
+                            </p>
+                            <p className="text-sm md:text-base">
+                              {selectedDiscount}
+                            </p>
+                          </div>
+                        ) : (
+                          <p className="text-sm md:text-base">
+                            {selectedPrice} Lei
+                          </p>
+                        )}
+                      </>
                     ) : (
-                      <p className="text-sm md:text-base">{selectedPrice}</p>
-                    )}
-                  </>
-                ) : (
-                  <></>
-                )}{" "}
-                <p className="ml-1">Lei </p>
+                      <></>
+                    )}{" "}
+                  </p>
+                </div>
+                <div className=" font-semibold text-yellow-500 mb-2 font-nunito flex justify-between">
+                  <p>Comandă acum la</p>
+                  <p className="text-lg">076 723 462</p>
+                </div>
               </div>
             </div>
           </div>
