@@ -139,6 +139,7 @@ export default function Product() {
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(0);
   const [actvButton, setActvButton] = useState(1);
+  const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
     setActiveImageIndex(index);
@@ -263,6 +264,7 @@ export default function Product() {
     setShowButton3(false);
     setShowButton4(false);
     setSelectedButton("btn1");
+    setActvButtonDisplay("btn1");
     setActvButton(1);
 
     const btn1 = translatedProduct?.translations?.btn1;
@@ -283,7 +285,8 @@ export default function Product() {
     setShowButton2(true);
     setShowButton3(false);
     setShowButton4(false);
-    setActvButton(1);
+    setActvButton(2);
+    setActvButtonDisplay("btn2");
     setSelectedButton("btn2");
 
     const btn2 = translatedProduct?.translations?.btn2;
@@ -304,7 +307,8 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(true);
     setShowButton4(false);
-    setActvButton(1);
+    setActvButton(3);
+    setActvButtonDisplay("btn3");
     setSelectedButton("btn3");
 
     const btn3 = translatedProduct?.translations?.btn3;
@@ -338,7 +342,8 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(false);
     setShowButton4(true);
-    setActvButton(1);
+    setActvButton(4);
+    setActvButtonDisplay("btn4");
     setSelectedButton("btn4");
 
     const btn4 = translatedProduct?.translations?.btn4;
@@ -456,11 +461,11 @@ export default function Product() {
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
             <div className="w-[35%]">
-              <div className="w-auto flex items-center justify-center h-80  lg:mr-10 relative overflow-hidden  mr-0">
+              <div className="w-auto flex items-center justify-center h-80 lg:mr-10 relative overflow-hidden mr-0">
                 <Image
                   alt=""
                   src={
-                    selectedButton === "btn1"
+                    actvButtonDisplay === "btn1" || selectedButton === "btn1"
                       ? showImageBtn1
                         ? translatedProduct?.translations?.btn1?.image1 ||
                           "/default-image.jpg"
@@ -470,8 +475,8 @@ export default function Product() {
                       ? showImageBtn2
                         ? translatedProduct?.translations?.btn2?.button1
                             ?.image || "/default-image.jpg"
-                        : translatedProduct?.translations?.btn2?.button2
-                            ?.image || "/default-image.jpg"
+                        : translatedProduct?.translations?.btn2?.image ||
+                          "/default-image.jpg"
                       : selectedButton === "btn3"
                       ? showImageBtn3
                         ? translatedProduct?.translations?.btn3?.button1
@@ -494,47 +499,65 @@ export default function Product() {
                 />
               </div>
 
-              <div className=" flex justify-center items-center">
-                <div
-                  className={`mr-10 border-2 border-[#F2A421] ${
-                    activeImageIndex === 1
-                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-                      : ""
-                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
-                  onClick={() => handleImageClick(1)}
-                >
-                  <Image
-                    alt=""
-                    src={
-                      selectedButton === "btn1"
-                        ? translatedProduct?.translations?.btn1?.image ||
+              <div className="flex justify-center items-center mt-10 h-[20vh] ">
+                {
+                  actvButtonDisplay === "btn1" ||
+                  (selectedButton === "btn1" &&
+                    translatedProduct?.translations?.btn1?.image) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.button1?.image) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.image) ||
+                  (selectedButton === "btn3" &&
+                    translatedProduct?.translations?.btn3?.button1?.image) ||
+                  (selectedButton === "btn4" &&
+                    translatedProduct?.translations?.btn4?.image) ? (
+                    <div
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                        activeImageIndex === 1
+                          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                          : ""
+                      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                      onClick={() => handleImageClick(1)}
+                    >
+                      <Image
+                        alt=""
+                        src={
+                          (actvButtonDisplay === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image) ||
+                          (selectedButton === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.button1
+                              ?.image) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.image) ||
+                          (selectedButton === "btn3" &&
+                            translatedProduct?.translations?.btn3?.button1
+                              ?.image) ||
+                          (selectedButton === "btn4" &&
+                            translatedProduct?.translations?.btn4?.image) ||
                           "/default-image.jpg"
-                        : selectedButton === "btn2"
-                        ? translatedProduct?.translations?.btn2?.button1
-                            ?.image || "/default-image.jpg"
-                        : selectedButton === "btn3"
-                        ? translatedProduct?.translations?.btn3?.button1
-                            ?.image || "/default-image.jpg"
-                        : selectedButton === "btn4"
-                        ? translatedProduct?.translations?.btn4?.image ||
-                          "/default-image.jpg"
-                        : "/default-image.jpg"
-                    }
-                    width={200}
-                    height={200}
-                  />
-                </div>
+                        }
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                  ) : null // This will render nothing (null) if there is no image source available.
+                }
                 {
                   (selectedButton === "btn1" &&
                     translatedProduct?.translations?.btn1?.image1) ||
                   (selectedButton === "btn2" &&
                     translatedProduct?.translations?.btn2?.button1?.image1) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.image1) ||
                   (selectedButton === "btn3" &&
                     translatedProduct?.translations?.btn3?.button1?.image1) ||
                   (selectedButton === "btn4" &&
                     translatedProduct?.translations?.btn4?.image1) ? (
                     <div
-                      className={`mr-10 border-2 border-[#F2A421] ${
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
                         activeImageIndex === 2
                           ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                           : ""
@@ -549,6 +572,8 @@ export default function Product() {
                           (selectedButton === "btn2" &&
                             translatedProduct?.translations?.btn2?.button1
                               ?.image1) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.image1) ||
                           (selectedButton === "btn3" &&
                             translatedProduct?.translations?.btn3?.button1
                               ?.image1) ||
@@ -570,7 +595,7 @@ export default function Product() {
                   (selectedButton === "btn4" &&
                     translatedProduct?.translations?.btn4?.image2) ? (
                     <div
-                      className={`mr-10 border-2 border-[#F2A421] ${
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
                         activeImageIndex === 3
                           ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                           : ""
@@ -601,7 +626,7 @@ export default function Product() {
                   (selectedButton === "btn4" &&
                     translatedProduct?.translations?.btn4?.image3) ? (
                     <div
-                      className={`mr-10 border-2 border-[#F2A421] ${
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
                         activeImageIndex === 4
                           ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                           : ""
@@ -635,7 +660,7 @@ export default function Product() {
                   <button
                     onClick={handleButton1Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton1
+                      actvButtonDisplay === "btn1" || showButton1
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
@@ -647,7 +672,7 @@ export default function Product() {
                   <button
                     onClick={handleButton2Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton2
+                      actvButtonDisplay === "btn2" || showButton2
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
@@ -659,7 +684,7 @@ export default function Product() {
                   <button
                     onClick={handleButton3Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton3
+                      actvButtonDisplay === "btn3" || showButton3
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
@@ -671,7 +696,7 @@ export default function Product() {
                   <button
                     onClick={handleButton4Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton4
+                      actvButtonDisplay === "btn4" || showButton4
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}

@@ -3,15 +3,19 @@ import type { AppProps } from "next/app";
 import NavBar from "./components/NavBar";
 import Head from "next/head";
 import { LanguageProvider } from "../public/LanguageContext";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <LanguageProvider>
-        <Head>  
+        <Head>
           <title>ApiSudex</title>
           <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+          <meta
+            name="google-site-verification"
+            content="rfmUZHof7-SwUw3HEMPxxrCLnf9SD8_c4TPcKpWzvG4"
+          />
           <meta
             name="description"
             content="Descoperă universul fascinant al apiculturii cu Apisudex - destinația ta principală pentru cunoaștere și echipamente apicole. Explorează o gamă diversificată de informații despre apicultură, tehnici de îngrijire a stupilor și colectare a mierii, împărtășite de experți în domeniu. Găsește cele mai inovatoare și eficiente soluții pentru gestionarea stupilor și producția de miere de calitate. Oferim o varietate de stupi și rame de cea mai bună calitate, adaptate nevoilor fiecărui apicultor, de la cei începători până la cei avansați. "
