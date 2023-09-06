@@ -277,6 +277,7 @@ export default function Product() {
     setSelectedDescription(
       translatedProduct?.translations?.btn1?.descriere || null
     );
+    Button1();
   };
 
   const handleButton2Click = () => {
