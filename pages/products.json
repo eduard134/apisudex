@@ -294,14 +294,15 @@
   {
     "id": 3,
     "categoryId": 1,
-    "image": "/images/stup_orizontal.png",
     "translations": {
       "ro": {
+        "image": "/images/stup_orizontal.png",
         "name": "Stup Orizontal 22 Rame",
         "pret1": "1200 Lei",
         "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine"
       },
       "ru": {
+        "image": "/images/stup_orizontal.png",
         "name": "Лежак на 22 рамки",
         "pret1": "1200 Лей",
         "descriere": "Горизонтальный улей, рассчитанный на 22 рамки, обеспечивает достаточно места для развития пчелиной семьи"
@@ -314,18 +315,12 @@
     "translations": {
       "ro": {
         "image": "/images/nucleu.png",
-        "image1": "/images/nucleu_de_6_rame_corp_230_pr.png",
-        "image2": "/images/nucleu_de_6_rame_corp_230_1.png",
-        "image3": "/images/nucleu_de_6_rame_fund_pr.png",
         "name": "Nucleu de 6 Rame",
         "pret1": "700 Lei",
         "descriere": "Nucleu apicol compact cu 6 rame pentru creșterea albinelor"
       },
       "ru": {
         "image": "/images/nucleu.png",
-        "image1": "/images/nucleu_de_6_rame_corp_230_pr.png",
-        "image2": "/images/nucleu_de_6_rame_corp_230_1.png",
-        "image3": "/images/nucleu_de_6_rame_fund_pr.png",
         "name": "Пчелиное гнездо на 6 рамок",
         "pret1": "700 Лей",
         "descriere": "Компактное пчелиное гнездо с 6 рамками для разведения пчел"
@@ -394,36 +389,32 @@
         "name": "Ramă 300mm",
         "btn1": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Asamblată din Tei",
           "pret1": "17 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm"
         },
         "btn2": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Asamblată din Pin",
           "pret1": "16 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm"
         },
         "btn3": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Dezasamblată din Tei",
           "pret1": "10 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm"
         },
         "btn4": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Dezasamblată din Pin",
           "pret1": "8.5 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm"
@@ -433,36 +424,32 @@
         "name": "Рама 300мм",
         "btn1": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Собран из липы",
           "pret1": "17 Лей",
           "descriere": "Рамы из липы в сборе, высота: 300мм"
         },
         "btn2": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Собран из сосны",
           "pret1": "16 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 300 мм"
         },
         "btn3": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2.png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Разобранный из липы",
           "pret1": "10 Лей",
           "descriere": "Липовыйая рама в разобранном виде, высота: 300мм"
         },
         "btn4": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_pr.png",
+          "image1": "/images/rama_300_2 .png",
           "image2": "/images/rama_300_1.png",
-          "image3": "/images/rama_300_2.png",
           "name": "Разобранный из сосны",
           "pret1": "8.5 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 300 мм"
@@ -538,36 +525,32 @@
         "name": "Ramă 145mm",
         "btn1": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Asamblată din Tei",
           "pret1": "11.5 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 145mm"
         },
         "btn2": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Asamblată din Pin",
           "pret1": "11 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 145mm"
         },
         "btn3": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Dezasamblată din Tei",
           "pret1": "8 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 145mm"
         },
         "btn4": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Dezasamblată din Pin",
           "pret1": "7 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 145mm"
@@ -577,36 +560,32 @@
         "name": "Рама 145мм",
         "btn1": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Собран из липы",
           "pret1": "11.5 Лей",
           "descriere": "Рамы из липы в сборе, высота: 145мм"
         },
         "btn2": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Собран из сосны",
           "pret1": "11 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 145 мм"
         },
         "btn3": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Разобранный из липы",
           "pret1": "8 Лей",
           "descriere": "Липовая рама в разобранном виде, высота: 145мм"
         },
         "btn4": {
           "image": "/images/rama_145pr.png",
-          "image1": "/images/rama_145pr.png",
+          "image1": "/images/rama_145_2.png",
           "image2": "/images/rama_145_1.png",
-          "image3": "/images/rama_145_2.png",
           "name": "Разобранный из сосны",
           "pret1": "7 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 145 мм"
