@@ -455,7 +455,7 @@ export default function Product() {
         <>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
             <div className="w-[35%]">
-              <div className="w-auto flex items-center justify-center h-80  lg:mr-10 relative overflow-hidden  mr-0">
+              <div className="w-auto flex items-center justify-center h-80 lg:mr-10 relative overflow-hidden mr-0">
                 <Image
                   alt=""
                   src={
@@ -469,8 +469,8 @@ export default function Product() {
                       ? showImageBtn2
                         ? translatedProduct?.translations?.btn2?.button1
                             ?.image || "/default-image.jpg"
-                        : translatedProduct?.translations?.btn2?.button2
-                            ?.image || "/default-image.jpg"
+                        : translatedProduct?.translations?.btn2?.image ||
+                          "/default-image.jpg"
                       : selectedButton === "btn3"
                       ? showImageBtn3
                         ? translatedProduct?.translations?.btn3?.button1
@@ -493,135 +493,152 @@ export default function Product() {
                 />
               </div>
 
-              <div className=" flex justify-center items-center">
-                <div
-                  className={`mr-10 border-2 border-[#F2A421] ${
-                    activeImageIndex === 1
-                      ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-                      : ""
-                  } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
-                  onClick={() => handleImageClick(1)}
-                >
-                  <Image
-                    alt=""
-                    src={
-                      selectedButton === "btn1"
-                        ? translatedProduct?.translations?.btn1?.image ||
-                          "/default-image.jpg"
-                        : selectedButton === "btn2"
-                        ? translatedProduct?.translations?.btn2?.button1
-                            ?.image || "/default-image.jpg"
-                        : selectedButton === "btn3"
-                        ? translatedProduct?.translations?.btn3?.button1
-                            ?.image || "/default-image.jpg"
-                        : selectedButton === "btn4"
-                        ? translatedProduct?.translations?.btn4?.image ||
-                          "/default-image.jpg"
-                        : "/default-image.jpg"
-                    }
-                    width={200}
-                    height={200}
-                  />
-                </div>
+              <div className="flex justify-center items-center mt-10 h-[20vh] ">
                 {
-  ((selectedButton === "btn1" &&
-    translatedProduct?.translations?.btn1?.image1) ||
-  (selectedButton === "btn2" &&
-    translatedProduct?.translations?.btn2?.button1?.image1) ||
-  (selectedButton === "btn3" &&
-    translatedProduct?.translations?.btn3?.button1?.image1) ||
-  (selectedButton === "btn4" &&
-    translatedProduct?.translations?.btn4?.image1)) ? (
-    <div
-      className={`mr-10 border-2 border-[#F2A421] ${
-        activeImageIndex === 2
-          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-          : ""
-      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
-      onClick={() => handleImageClick(2)}
-    >
-      <Image
-        alt=""
-        src={
-          (selectedButton === "btn1" &&
-            translatedProduct?.translations?.btn1?.image1) ||
-          (selectedButton === "btn2" &&
-            translatedProduct?.translations?.btn2?.button1
-              ?.image1) ||
-          (selectedButton === "btn3" &&
-            translatedProduct?.translations?.btn3?.button1
-              ?.image1) ||
-          (selectedButton === "btn4" &&
-            translatedProduct?.translations?.btn4?.image1) ||
-          "/default-image.jpg"
-        }
-        width={200}
-        height={200}
-      />
-    </div>
-  ) : null // This will render nothing (null) if there is no image source available.
-}
-{
-  ((selectedButton === "btn1" &&
-    translatedProduct?.translations?.btn1?.image2) ||
-  (selectedButton === "btn3" &&
-    translatedProduct?.translations?.btn3?.button1?.image2) ||
-  (selectedButton === "btn4" &&
-    translatedProduct?.translations?.btn4?.image2)) ? (
-    <div
-      className={`mr-10 border-2 border-[#F2A421] ${
-        activeImageIndex === 3
-          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-          : ""
-      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
-      onClick={() => handleImageClick(3)}
-    >
-      <Image
-        alt=""
-        src={
-          (selectedButton === "btn1" &&
-            translatedProduct?.translations?.btn1?.image2) ||
-          (selectedButton === "btn3" &&
-            translatedProduct?.translations?.btn3?.button1
-              ?.image2) ||
-          (selectedButton === "btn4" &&
-            translatedProduct?.translations?.btn4?.image2) ||
-          "/default-image.jpg"
-        }
-        width={200}
-        height={200}
-      />
-    </div>
-  ) : null // This will render nothing (null) if there is no image source available.
-}
-{
-  ((selectedButton === "btn1" &&
-    translatedProduct?.translations?.btn1?.image3) ||
-  (selectedButton === "btn4" &&
-    translatedProduct?.translations?.btn4?.image3)) ? (
-    <div
-      className={`mr-10 border-2 border-[#F2A421] ${
-        activeImageIndex === 4
-          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-          : ""
-      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
-      onClick={() => handleImageClick(4)}
-    >
-      <Image
-        alt=""
-        src={
-          (selectedButton === "btn1" &&
-            translatedProduct?.translations?.btn1?.image3) ||
-          (selectedButton === "btn4" &&
-            translatedProduct?.translations?.btn4?.image3) ||
-          "/default-image.jpg"
-        }
-        width={200}
-        height={200}
-      />
-    </div>
-  ) : null // This will render nothing (null) if there is no image source available.
-}
+                  (selectedButton === "btn1" &&
+                    translatedProduct?.translations?.btn1?.image) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.button1?.image) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.image) ||
+                  (selectedButton === "btn3" &&
+                    translatedProduct?.translations?.btn3?.button1?.image) ||
+                  (selectedButton === "btn4" &&
+                    translatedProduct?.translations?.btn4?.image) ? (
+                    <div
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                        activeImageIndex === 1
+                          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                          : ""
+                      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                      onClick={() => handleImageClick(1)}
+                    >
+                      <Image
+                        alt=""
+                        src={
+                          (selectedButton === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.button1
+                              ?.image) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.image) ||
+                          (selectedButton === "btn3" &&
+                            translatedProduct?.translations?.btn3?.button1
+                              ?.image) ||
+                          (selectedButton === "btn4" &&
+                            translatedProduct?.translations?.btn4?.image) ||
+                          "/default-image.jpg"
+                        }
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                  ) : null // This will render nothing (null) if there is no image source available.
+                }
+                {
+                  (selectedButton === "btn1" &&
+                    translatedProduct?.translations?.btn1?.image1) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.button1?.image1) ||
+                  (selectedButton === "btn2" &&
+                    translatedProduct?.translations?.btn2?.image1) ||
+                  (selectedButton === "btn3" &&
+                    translatedProduct?.translations?.btn3?.button1?.image1) ||
+                  (selectedButton === "btn4" &&
+                    translatedProduct?.translations?.btn4?.image1) ? (
+                    <div
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                        activeImageIndex === 2
+                          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                          : ""
+                      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                      onClick={() => handleImageClick(2)}
+                    >
+                      <Image
+                        alt=""
+                        src={
+                          (selectedButton === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image1) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.button1
+                              ?.image1) ||
+                          (selectedButton === "btn2" &&
+                            translatedProduct?.translations?.btn2?.image1) ||
+                          (selectedButton === "btn3" &&
+                            translatedProduct?.translations?.btn3?.button1
+                              ?.image1) ||
+                          (selectedButton === "btn4" &&
+                            translatedProduct?.translations?.btn4?.image1) ||
+                          "/default-image.jpg"
+                        }
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                  ) : null // This will render nothing (null) if there is no image source available.
+                }
+                {
+                  (selectedButton === "btn1" &&
+                    translatedProduct?.translations?.btn1?.image2) ||
+                  (selectedButton === "btn3" &&
+                    translatedProduct?.translations?.btn3?.button1?.image2) ||
+                  (selectedButton === "btn4" &&
+                    translatedProduct?.translations?.btn4?.image2) ? (
+                    <div
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                        activeImageIndex === 3
+                          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                          : ""
+                      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                      onClick={() => handleImageClick(3)}
+                    >
+                      <Image
+                        alt=""
+                        src={
+                          (selectedButton === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image2) ||
+                          (selectedButton === "btn3" &&
+                            translatedProduct?.translations?.btn3?.button1
+                              ?.image2) ||
+                          (selectedButton === "btn4" &&
+                            translatedProduct?.translations?.btn4?.image2) ||
+                          "/default-image.jpg"
+                        }
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                  ) : null // This will render nothing (null) if there is no image source available.
+                }
+                {
+                  (selectedButton === "btn1" &&
+                    translatedProduct?.translations?.btn1?.image3) ||
+                  (selectedButton === "btn4" &&
+                    translatedProduct?.translations?.btn4?.image3) ? (
+                    <div
+                      className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                        activeImageIndex === 4
+                          ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
+                          : ""
+                      } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md`}
+                      onClick={() => handleImageClick(4)}
+                    >
+                      <Image
+                        alt=""
+                        src={
+                          (selectedButton === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image3) ||
+                          (selectedButton === "btn4" &&
+                            translatedProduct?.translations?.btn4?.image3) ||
+                          "/default-image.jpg"
+                        }
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                  ) : null // This will render nothing (null) if there is no image source available.
+                }
               </div>
             </div>
 
