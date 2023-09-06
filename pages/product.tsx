@@ -139,6 +139,7 @@ export default function Product() {
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(0);
   const [actvButton, setActvButton] = useState(1);
+  const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
     setActiveImageIndex(index);
@@ -263,6 +264,7 @@ export default function Product() {
     setShowButton3(false);
     setShowButton4(false);
     setSelectedButton("btn1");
+    setActvButtonDisplay("btn1");
     setActvButton(1);
 
     const btn1 = translatedProduct?.translations?.btn1;
@@ -282,7 +284,8 @@ export default function Product() {
     setShowButton2(true);
     setShowButton3(false);
     setShowButton4(false);
-    setActvButton(1);
+    setActvButton(2);
+    setActvButtonDisplay("btn2");
     setSelectedButton("btn2");
 
     const btn2 = translatedProduct?.translations?.btn2;
@@ -303,7 +306,8 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(true);
     setShowButton4(false);
-    setActvButton(1);
+    setActvButton(3);
+    setActvButtonDisplay("btn3");
     setSelectedButton("btn3");
 
     const btn3 = translatedProduct?.translations?.btn3;
@@ -337,7 +341,8 @@ export default function Product() {
     setShowButton2(false);
     setShowButton3(false);
     setShowButton4(true);
-    setActvButton(1);
+    setActvButton(4);
+    setActvButtonDisplay("btn4");
     setSelectedButton("btn4");
 
     const btn4 = translatedProduct?.translations?.btn4;
@@ -459,7 +464,7 @@ export default function Product() {
                 <Image
                   alt=""
                   src={
-                    selectedButton === "btn1"
+                    actvButtonDisplay === "btn1" || selectedButton === "btn1"
                       ? showImageBtn1
                         ? translatedProduct?.translations?.btn1?.image1 ||
                           "/default-image.jpg"
@@ -495,6 +500,7 @@ export default function Product() {
 
               <div className="flex justify-center items-center mt-10 h-[20vh] ">
                 {
+                  actvButtonDisplay === "btn1" ||
                   (selectedButton === "btn1" &&
                     translatedProduct?.translations?.btn1?.image) ||
                   (selectedButton === "btn2" &&
@@ -516,6 +522,8 @@ export default function Product() {
                       <Image
                         alt=""
                         src={
+                          (actvButtonDisplay === "btn1" &&
+                            translatedProduct?.translations?.btn1?.image) ||
                           (selectedButton === "btn1" &&
                             translatedProduct?.translations?.btn1?.image) ||
                           (selectedButton === "btn2" &&
@@ -651,7 +659,7 @@ export default function Product() {
                   <button
                     onClick={handleButton1Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton1
+                      actvButtonDisplay === "btn1" || showButton1
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
@@ -663,7 +671,7 @@ export default function Product() {
                   <button
                     onClick={handleButton2Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton2
+                      actvButtonDisplay === "btn2" || showButton2
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
@@ -675,7 +683,7 @@ export default function Product() {
                   <button
                     onClick={handleButton3Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton3
+                      actvButtonDisplay === "btn3" || showButton3
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
@@ -687,7 +695,7 @@ export default function Product() {
                   <button
                     onClick={handleButton4Click}
                     className={`anim w-full py-1 px-2 ${
-                      showButton4
+                      actvButtonDisplay === "btn4" || showButton4
                         ? "bg-white text-black"
                         : "bg-yellow-500 text-black"
                     }`}
