@@ -19,22 +19,22 @@
         },
         "btn2": {
           "name": "Inel",
-          "descriere": "Inel Ching pentru stup cu 10 rame",
+          "descriere": "Inel Chinga pentru stup cu 10 rame",
           "button1": {
             "image": "/images/stup_10_rame_inel_chinga_pr.png",
             "image1": "/images/stup_10_rame_inel_chinga_1.png",
-            "name": "Inel (Ching)",
+            "name": "Chinga",
             "pret1": "150 Lei",
-            "descriere": "Inel Ching pentru stup cu 10 rame"
+            "descriere": "Inel Chinga pentru stup cu 10 rame"
           },
           "button2": {
             "image": "/images/stup_10_rame_inel_capac_inferior_2.png",
             "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
             "image2": "/images/stup_10_rame_inel_capac_inferior_5.png",
             "image3": "/images/stup_10_rame_inel_capac_inferior_7.png",
-            "name": "Inel (Capac-Inferior)",
+            "name": "Capac inferior (inel)",
             "pret1": "100 Lei",
-            "descriere": "Inel pentru stup cu 10 rame, potrivit pentru capacul inferior"
+            "descriere": "Capac inferior (inel) pentru stup cu 10 rame, potrivit pentru capacul inferior"
           }
         },
         "btn3": {
@@ -98,16 +98,16 @@
           "button1": {
             "image": "/images/stup_10_rame_inel_chinga_pr.png",
             "image1": "/images/stup_10_rame_inel_chinga_1.png",
-            "name": "Кольцо (Ching)",
+            "name": "Кольцо Наращивание",
             "pret1": "150 Лей",
-            "descriere": "Кольцо Ching на 10 рамок"
+            "descriere": "Кольцо Наращивание   на 10 рамок"
           },
           "button2": {
             "image": "/images/stup_10_rame_inel_capac_inferior_2.png",
             "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
             "image2": "/images/stup_10_rame_inel_capac_inferior_5.png",
             "image3": "/images/stup_10_rame_inel_capac_inferior_7.png",
-            "name": " Кольцо (Нижняя-крышка)",
+            "name": " Подкрышник (кольцо)",
             "pret1": "100 Лей",
             "descriere": "Кольцо на 10 рамок"
           }
@@ -144,7 +144,7 @@
           "image1": "/images/stup_10_rame_fund_lemn_2.png",
           "image2": "/images/stup_10_rame_fund_lemn_5.png",
           "image3": "/images/stup_10_rame_fund_plasa_pr.png",
-          "name": "Нижние 10 кадров",
+          "name": "Нижние 10 рамок",
           "opt1": "Сетка нержавеющей стали",
           "opt2": "Цинковая сетка",
           "opt3": "Всего древесины",
@@ -361,13 +361,13 @@
       "ro": {
         "image": "/images/Sirop_Invertit-Dulcofruct.png",
         "name": "Sirop Invertit-Dulcofruct",
-        "pret1": "22 Lei/KG",
+        "pret1": "23 Lei/KG",
         "descriere": "Sirop invertit pentru mierea albinelor. 23 lei per kg de la 1 vrac"
       },
       "ru": {
         "image": "/images/Sirop_Invertit-Dulcofruct.png",
         "name": "Инвертированный сироп Дулко-фрукт",
-        "pret1": "22 Лей/КГ",
+        "pret1": "23 Лей/КГ",
         "descriere": "Инвертный сироп для медоносных пчел. 23 лея за кг с 1 куба"
       }
     }

@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <LanguageProvider>
-        <Head>
+        <Head>  
           <title>ApiSudex</title>
           <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
           <meta
