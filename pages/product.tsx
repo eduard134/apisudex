@@ -142,13 +142,14 @@ export default function Product() {
   const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
-    setActiveImageIndex(index);
+    setActiveLargeImageIndex(index); // Update the active large image
+    setActiveSmallImageIndex(index); // Update the active small image
   };
 
   const translatedProduct = useMemo(() => {
     const translatedArray = productsData.map((product) => ({
       ...product,
-        translations:
+      translations:
         language === "ro" ? product.translations.ro : product.translations.ru,
     }));
     return translatedArray.find((p) => p.id === parseInt(productId as string));
@@ -169,6 +170,8 @@ export default function Product() {
     null
   );
   const [selectedButton, setSelectedButton] = useState<string | null>(null);
+  const [activeLargeImageIndex, setActiveLargeImageIndex] = useState(0);
+  const [activeSmallImageIndex, setActiveSmallImageIndex] = useState(0);
 
   const [selectedDiscount, setSelectedDiscount] = useState<number | null>(
     translatedProduct?.translations?.btn3?.button1?.reducere
@@ -277,7 +280,6 @@ export default function Product() {
     setSelectedDescription(
       translatedProduct?.translations?.btn1?.descriere || null
     );
-    Button1();
   };
 
   const handleButton2Click = () => {
@@ -731,7 +733,7 @@ export default function Product() {
                   <div className="mr-4">
                     <button
                       onClick={() => {
-                        handleButton1Click();
+                        handleOpt1Click();
                         setActvButton(1); // Set the active button to 1
                       }}
                       className={`anim w-full py-1 px-2 ${
@@ -784,7 +786,7 @@ export default function Product() {
                   <div className="mr-4">
                     <button
                       onClick={() => {
-                        Button1;
+                        Button1();
                         setActvButton(1);
                       }}
                       className={`anim w-full py-1 px-2 ${
@@ -801,7 +803,7 @@ export default function Product() {
                   <div className="mr-4">
                     <button
                       onClick={() => {
-                        Button2;
+                        Button2();
                         setActvButton(2);
                       }}
                       className={`anim w-full py-1 px-2 ${
