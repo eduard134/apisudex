@@ -160,13 +160,29 @@ export default function Product() {
   const [watchButton1, setWatchButton1] = useState(false);
   const [watchButton2, setWatchButton2] = useState(false);
   const [watchButton3, setWatchButton3] = useState(false);
-  const [showImageBtn1, setImageBtn1] = useState(false);
-  const [showImageBtn2, setImageBtn2] = useState(false);
-  const [showImageBtn3, setImageBtn3] = useState(false);
-  const [showImageBtn4, setImageBtn4] = useState(false);
+  const [showImageBtn1, setImageBtn1] = useState(true);
+  const [showImageBtn2, setImageBtn2] = useState(true);
+  const [showImageBtn3, setImageBtn3] = useState(true);
+  const [showImageBtn4, setImageBtn4] = useState(true);
   const [selectedDescription, setSelectedDescription] = useState<string | null>(
     null
   );
+
+  const handleImage1Click = () => {
+    setImageBtn1(true);
+    setImageBtn2(true);
+    setImageBtn3(true);
+    setImageBtn4(true);
+    handleImageClick(1);
+  };
+
+  const handleImage2Click = () => {
+    setImageBtn1(false);
+    setImageBtn2(false);
+    setImageBtn3(false);
+    setImageBtn4(false);
+    handleImageClick(2);
+  };
 
   const [selectedButton, setSelectedButton] = useState<string | null>(null);
 
@@ -467,35 +483,31 @@ export default function Product() {
                     ((actvButtonDisplay === "btn1" ||
                       selectedButton === "btn1") &&
                       (showImageBtn1
-                        ? translatedProduct?.translations?.btn1?.image1
-                        : translatedProduct?.translations?.btn1?.image)) ||
+                        ? translatedProduct?.translations?.btn1?.image
+                        : translatedProduct?.translations?.btn1?.image1)) ||
                     translatedProduct?.translations?.image ||
                     (selectedButton === "btn2" &&
                       (showImageBtn2
-                        ? translatedProduct?.translations?.btn2?.button1?.image1
+                        ? translatedProduct?.translations?.btn2?.button1?.image
                         : translatedProduct?.translations?.btn2?.button1
-                            ?.image)) ||
+                            ?.image1)) ||
                     (selectedButton === "btn2" &&
                       (showImageBtn2
-                        ? translatedProduct?.translations?.btn2?.image1
-                        : translatedProduct?.translations?.btn2?.image)) ||
+                        ? translatedProduct?.translations?.btn2?.image
+                        : translatedProduct?.translations?.btn2?.image1)) ||
                     (selectedButton === "btn3" &&
                       (showImageBtn3
                         ? translatedProduct?.translations?.btn3?.button1?.image
-                        : showImageBtn3
-                        ? translatedProduct?.translations?.btn3?.button2?.image
-                        : translatedProduct?.translations?.btn3?.button3
-                            ?.image)) ||
+                        : translatedProduct?.translations?.btn3?.button1
+                            ?.image1)) ||
                     (selectedButton === "btn3" &&
                       (showImageBtn3
                         ? translatedProduct?.translations?.btn3?.image
-                        : showImageBtn3
-                        ? translatedProduct?.translations?.btn3?.image
-                        : translatedProduct?.translations?.btn3?.image)) ||
+                        : translatedProduct?.translations?.btn3?.image1)) ||
                     (selectedButton === "btn4" &&
                       (showImageBtn4
-                        ? translatedProduct?.translations?.btn4?.image1
-                        : translatedProduct?.translations?.btn4?.image)) ||
+                        ? translatedProduct?.translations?.btn4?.image
+                        : translatedProduct?.translations?.btn4?.image1)) ||
                     "/default-image.jpg"
                   }
                   width={400}
@@ -522,7 +534,7 @@ export default function Product() {
                         ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                         : ""
                     } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
-                    onClick={() => handleImageClick(1)}
+                    onClick={() => handleImage1Click()}
                   >
                     <Image
                       alt=""
@@ -573,7 +585,7 @@ export default function Product() {
                         ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                         : ""
                     } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
-                    onClick={() => handleImageClick(2)}
+                    onClick={() => handleImage2Click()}
                   >
                     <Image
                       alt=""
@@ -598,69 +610,6 @@ export default function Product() {
                         ((actvButtonDisplay === "btn4" ||
                           selectedButton === "btn4") &&
                           translatedProduct?.translations?.btn4?.image1) ||
-                        "/default-image.jpg"
-                      }
-                      width={200}
-                      height={200}
-                    />
-                  </div>
-                ) : null}
-
-                {((actvButtonDisplay === "btn1" || selectedButton === "btn1") &&
-                  translatedProduct?.translations?.btn1?.image2) ||
-                ((actvButtonDisplay === "btn3" || selectedButton === "btn3") &&
-                  translatedProduct?.translations?.btn3?.button1?.image2) ||
-                ((actvButtonDisplay === "btn3" || selectedButton === "btn3") &&
-                  translatedProduct?.translations?.btn3?.image2) ||
-                ((actvButtonDisplay === "btn4" || selectedButton === "btn4") &&
-                  translatedProduct?.translations?.btn4?.image2) ? (
-                  <div
-                    className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
-                      activeImageIndex === 3
-                        ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-                        : ""
-                    } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
-                    onClick={() => handleImageClick(3)}
-                  >
-                    <Image
-                      alt=""
-                      src={
-                        ((actvButtonDisplay === "btn1" ||
-                          selectedButton === "btn1") &&
-                          translatedProduct?.translations?.btn1?.image2) ||
-                        ((actvButtonDisplay === "btn3" ||
-                          selectedButton === "btn3") &&
-                          translatedProduct?.translations?.btn3?.button1
-                            ?.image2) ||
-                        ((actvButtonDisplay === "btn3" ||
-                          selectedButton === "btn3") &&
-                          translatedProduct?.translations?.btn3?.image2) ||
-                        ((actvButtonDisplay === "btn4" ||
-                          selectedButton === "btn4") &&
-                          translatedProduct?.translations?.btn4?.image2) ||
-                        "/default-image.jpg"
-                      }
-                      width={200}
-                      height={200}
-                    />
-                  </div>
-                ) : null}
-
-                {selectedButton === "btn4" &&
-                translatedProduct?.translations?.btn4?.image3 ? (
-                  <div
-                    className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
-                      activeImageIndex === 4
-                        ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
-                        : ""
-                    } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
-                    onClick={() => handleImageClick(4)}
-                  >
-                    <Image
-                      alt=""
-                      src={
-                        (selectedButton === "btn4" &&
-                          translatedProduct?.translations?.btn4?.image3) ||
                         "/default-image.jpg"
                       }
                       width={200}

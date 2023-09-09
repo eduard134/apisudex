@@ -37,24 +37,20 @@
           "name": "Corp",
           "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm",
           "button1": {
-            "image": "/images/Stup_10_rame_corp145_pr.png",
-            "image1": "/images/stup_10_rame_corp145_1.png",
-            "image2": "/images/stup_10_rame_corp145_2.png",
+            "image": "/images/stup_10_rame_corp145_1.png",
+            "image1": "/images/stup_10_rame_corp145_2.png",
             "name": "145mm",
             "pret1": "264 Lei",
             "reducere": "240 Lei",
             "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 145mm"
           },
           "button2": {
-            "image": "/images/stup_10_rame_corp230_pr.png",
-            "image1": "/images/stup_10_rame_corp230_1.png",
             "name": "230mm",
             "pret1": "374 Lei",
             "reducere": "340 Lei",
             "descriere": "Corp pentru stup cu 10 rame, având înălțimea de 230mm"
           },
           "button3": {
-            "image": "/images/stup_10_rame_corp300.png",
             "name": "300mm",
             "pret1": "484 Lei",
             "reducere": "440 Lei",
@@ -64,8 +60,6 @@
         "btn4": {
           "image": "/images/stup_10_rame_fund_lemn_pr.png",
           "image1": "/images/stup_10_rame_fund_lemn_2.png",
-          "image2": "/images/stup_10_rame_fund_lemn_5.png",
-          "image3": "/images/stup_10_rame_fund_plasa_pr.png",
           "name": "Fund",
           "opt1": "Plasă Inox",
           "opt2": "Plasă Zinc",
@@ -91,44 +85,38 @@
         },
         "btn2": {
           "name": "Кольцо",
+          "descriere": "Кольцо Наращивание на 10 рамок",
           "button1": {
             "image": "/images/stup_10_rame_inel_chinga_pr.png",
             "image1": "/images/stup_10_rame_inel_chinga_1.png",
             "name": "Кольцо Наращивание",
             "pret1": "150 Лей",
-            "descriere": "Кольцо Наращивание   на 10 рамок"
+            "descriere": "Кольцо Наращивание на 10 рамок"
           },
           "button2": {
-            "image": "/images/stup_10_rame_inel_capac_inferior_2.png",
-            "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
-            "image2": "/images/stup_10_rame_inel_capac_inferior_5.png",
-            "image3": "/images/stup_10_rame_inel_capac_inferior_7.png",
-            "name": " Подкрышник (кольцо)",
+            "name": "Подкрышник (кольцо)",
             "pret1": "100 Лей",
             "descriere": "Кольцо на 10 рамок"
           }
         },
         "btn3": {
           "name": "Корпус 10 рам",
+          "descriere": "Корпус улья на 10 рамок, высотой 145мм",
           "button1": {
-            "image": "/images/stup_10_rame_corp145_pr.png",
-            "image1": "/images/stup_10_rame_corp145_1.png",
-            "image2": "/images/stup_10_rame_corp145_2.png",
+            "image": "/images/stup_10_rame_corp145_1.png",
+            "image1": "/images/stup_10_rame_corp145_2.png",
             "name": "145мм",
             "pret1": "264 Лей",
             "reducere": "240 Лей",
             "descriere": "Корпус улья на 10 рамок, высотой 145мм"
           },
           "button2": {
-            "image": "/images/stup_10_rame_corp230_pr.png",
-            "image1": "/images/stup_10_rame_corp230_1.png",
             "name": "230мм",
             "pret1": "374 Лей",
             "reducere": "340 Лей",
             "descriere": "Корпус улья на 10 рамок высотой 230мм"
           },
           "button3": {
-            "image": "/images/stup_10_rame_corp300.png",
             "name": "300мм",
             "pret1": "484 Лей",
             "reducere": "440 Лей",
@@ -138,8 +126,6 @@
         "btn4": {
           "image": "/images/stup_10_rame_fund_lemn_pr.png",
           "image1": "/images/stup_10_rame_fund_lemn_2.png",
-          "image2": "/images/stup_10_rame_fund_lemn_5.png",
-          "image3": "/images/stup_10_rame_fund_plasa_pr.png",
           "name": "Нижние 10 рамок",
           "opt1": "Сетка нержавеющей стали",
           "opt2": "Цинковая сетка",
@@ -159,9 +145,8 @@
       "ro": {
         "name": "Stupi Verticali de 12 Rame",
         "btn1": {
-          "image": "/images/stup_12.png",
+          "image": "/images/stup_12_rame_capac_1.png",
           "image1": "/images/stup_12_rame_capac_pr.png",
-          "image2": "/images/stup_12_rame_capac_1.png",
           "name": "Capac 12 Rame",
           "opt1": "Zinc, Termo-Izolat",
           "opt2": "Termo-Aluminium",
@@ -183,8 +168,7 @@
           "descriere": "Corp pentru stup cu 12 rame, având înălțimea de 145mm",
           "button1": {
             "image": "/images/stup_12_rame_corp_145_pr.png",
-            "image1": "/images/stup_12_rame_corp_145_1.png",
-            "image2": "/images/stup_12_rame_corp_145_2.png",
+            "image1": "/images/stup_12_rame_corp_145_2.png",
             "name": "145mm",
             "pret1": "291.5 Lei",
             "reducere": "265 Lei",
@@ -201,8 +185,6 @@
           "button3": {
             "image": "/images/stup_12_rame_corp_300_pr.png",
             "image1": "/images/stup_12_rame_corp_300_1.png",
-            "image2": "/images/stup_12_rame_corp_300_2.png",
-            "image3": "/images/stup_12_rame_corp_300_3.png",
             "name": "300mm",
             "pret1": "533.5 Lei",
             "reducere": "485 Lei",
@@ -211,8 +193,7 @@
         },
         "btn4": {
           "image": "/images/stup_12_rame_fund_plasa_pr.png",
-          "image1": "/images/stup_12_rame_fund_plasa_1.png",
-          "image2": "/images/stup_12_rame_fund_plasa_2.png",
+          "image1": "/images/stup_12_rame_fund_plasa_2.png",
           "name": "Fund 12 Rame",
           "opt1": "Plasă Inox",
           "opt2": "Plasă Zinc",
@@ -226,9 +207,8 @@
       "ru": {
         "name": "Вертикальные ульи на 12 рамок",
         "btn1": {
-          "image": "/images/stup_12.png",
-          "image1": "/images/stup_12_rame_capac_pr.png",
-          "image2": "/images/stup_12_rame_capac_1.png",
+          "image": "/images/stup_12_rame_capac_pr.png",
+          "image1": "/images/stup_12_rame_capac_1.png",
           "name": "Kрышка на 12 рамок",
           "opt1": "Цинк, с теплоизоляцией",
           "opt2": "Термоалюминий",
@@ -247,10 +227,10 @@
         },
         "btn3": {
           "name": "Корпус 12 рам",
+          "descriere": "Корпус улья на 12 рамок, высотой 145мм",
           "button1": {
             "image": "/images/stup_12_rame_corp_145_pr.png",
             "image1": "/images/stup_12_rame_corp_145_1.png",
-            "image2": "/images/stup_12_rame_corp_145_2.png",
             "name": "145мм",
             "pret1": "291.5 Лей",
             "reducere": "265 Лей",
@@ -267,8 +247,6 @@
           "button3": {
             "image": "/images/stup_12_rame_corp_300_pr.png",
             "image1": "/images/stup_12_rame_corp_300_1.png",
-            "image2": "/images/stup_12_rame_corp_300_2.png",
-            "image3": "/images/stup_12_rame_corp_300_3.png",
             "name": "300мм",
             "pret1": "533.5 Лей",
             "reducere": "485 Лей",
@@ -277,8 +255,7 @@
         },
         "btn4": {
           "image": "/images/stup_12_rame_fund_plasa_pr.png",
-          "image1": "/images/stup_12_rame_fund_plasa_1.png",
-          "image2": "/images/stup_12_rame_fund_plasa_2.png",
+          "image1": "/images/stup_12_rame_fund_plasa_2.png",
           "name": "Нижние 12 кадров",
           "opt1": "Сетка нержавеющей стали",
           "opt2": "Цинковая сетка",
@@ -390,7 +367,6 @@
         "btn1": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Asamblată din Tei",
           "pret1": "17 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm"
@@ -398,7 +374,6 @@
         "btn2": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Asamblată din Pin",
           "pret1": "16 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm"
@@ -406,7 +381,6 @@
         "btn3": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Dezasamblată din Tei",
           "pret1": "10 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm"
@@ -414,7 +388,6 @@
         "btn4": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Dezasamblată din Pin",
           "pret1": "8.5 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm"
@@ -425,7 +398,6 @@
         "btn1": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Собран из липы",
           "pret1": "17 Лей",
           "descriere": "Рамы из липы в сборе, высота: 300мм"
@@ -433,7 +405,6 @@
         "btn2": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Собран из сосны",
           "pret1": "16 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 300 мм"
@@ -441,15 +412,13 @@
         "btn3": {
           "image": "/images/rama_300_pr.png",
           "image1": "/images/rama_300_2.png",
-          "image2": "/images/rama_300_1.png",
           "name": "Разобранный из липы",
           "pret1": "10 Лей",
           "descriere": "Липовыйая рама в разобранном виде, высота: 300мм"
         },
         "btn4": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_300_2 .png",
-          "image2": "/images/rama_300_1.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из сосны",
           "pret1": "8.5 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 300 мм"
@@ -465,24 +434,28 @@
         "name": "Ramă 230mm",
         "btn1": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Asamblată din Tei",
           "pret1": "16 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm"
         },
         "btn2": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Asamblată din Pin",
           "pret1": "15 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm"
         },
         "btn3": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Dezasamblată din Tei",
           "pret1": "9 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm"
         },
         "btn4": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Dezasamblată din Pin",
           "pret1": "8 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm"
@@ -492,24 +465,28 @@
         "name": "Рама 230мм",
         "btn1": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Собран из липы",
           "pret1": "16 Лей",
           "descriere": "Рамы из липы в сборе, высота: 230мм"
         },
         "btn2": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Собран из сосны",
           "pret1": "15 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 230 мм"
         },
         "btn3": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из липы",
           "pret1": "9 Лей",
           "descriere": "Липовая рама в разобранном виде, высота: 230мм"
         },
         "btn4": {
           "image": "/images/rama_230pr.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из сосны",
           "pret1": "8 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 230 мм"
@@ -526,7 +503,6 @@
         "btn1": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Asamblată din Tei",
           "pret1": "11.5 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 145mm"
@@ -534,7 +510,6 @@
         "btn2": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Asamblată din Pin",
           "pret1": "11 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 145mm"
@@ -542,7 +517,6 @@
         "btn3": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Dezasamblată din Tei",
           "pret1": "8 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 145mm"
@@ -550,7 +524,6 @@
         "btn4": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Dezasamblată din Pin",
           "pret1": "7 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 145mm"
@@ -561,7 +534,6 @@
         "btn1": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Собран из липы",
           "pret1": "11.5 Лей",
           "descriere": "Рамы из липы в сборе, высота: 145мм"
@@ -569,7 +541,6 @@
         "btn2": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Собран из сосны",
           "pret1": "11 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 145 мм"
@@ -577,7 +548,6 @@
         "btn3": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Разобранный из липы",
           "pret1": "8 Лей",
           "descriere": "Липовая рама в разобранном виде, высота: 145мм"
@@ -585,7 +555,6 @@
         "btn4": {
           "image": "/images/rama_145pr.png",
           "image1": "/images/rama_145_2.png",
-          "image2": "/images/rama_145_1.png",
           "name": "Разобранный из сосны",
           "pret1": "7 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 145 мм"
