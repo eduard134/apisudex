@@ -132,18 +132,16 @@ interface Caracteristics {
 }
 
 export default function Product() {
-  let imageSource;
   const router = useRouter();
   const { id: productId } = router.query;
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [activeImageIndex, setActiveImageIndex] = useState(1);
   const [actvButton, setActvButton] = useState(1);
   const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
-    setActiveLargeImageIndex(index); // Update the active large image
-    setActiveSmallImageIndex(index); // Update the active small image
+    setActiveImageIndex(index); // Update the active large image
   };
 
   const translatedProduct = useMemo(() => {
@@ -169,9 +167,8 @@ export default function Product() {
   const [selectedDescription, setSelectedDescription] = useState<string | null>(
     null
   );
+
   const [selectedButton, setSelectedButton] = useState<string | null>(null);
-  const [activeLargeImageIndex, setActiveLargeImageIndex] = useState(0);
-  const [activeSmallImageIndex, setActiveSmallImageIndex] = useState(0);
 
   const [selectedDiscount, setSelectedDiscount] = useState<number | null>(
     translatedProduct?.translations?.btn3?.button1?.reducere
@@ -622,7 +619,7 @@ export default function Product() {
                       activeImageIndex === 3
                         ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                         : ""
-                    } hover.bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
+                    } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
                     onClick={() => handleImageClick(3)}
                   >
                     <Image
