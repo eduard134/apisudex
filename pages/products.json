@@ -6,7 +6,6 @@
     "translations": {
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
-        "image": "/images/stup_10_rame.png",
         "btn1": {
           "image": "/images/stup_10_rame_capac_10_rame_pr.png",
           "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
@@ -73,7 +72,6 @@
         }
       },
       "ru": {
-        "image": "/images/stup_10_rame.png",
         "name": "Вертикальные ульи на 10 рамок",
         "btn1": {
           "image": "/images/stup_10_rame_capac_10_rame_pr.png",
@@ -147,7 +145,6 @@
     "image": "/images/stup_12.png",
     "translations": {
       "ro": {
-        "image": "/images/stup_12.png",
         "name": "Stupi Verticali de 12 Rame",
         "btn1": {
           "image": "/images/stup_12_rame_capac_1.png",
@@ -210,7 +207,6 @@
         }
       },
       "ru": {
-        "image": "/images/stup_12.png",
         "name": "Вертикальные ульи на 12 рамок",
         "btn1": {
           "image": "/images/stup_12_rame_capac_pr.png",
@@ -279,13 +275,11 @@
     "categoryId": 1,
     "translations": {
       "ro": {
-        "image": "/images/stup_orizontal.png",
         "name": "Stup Orizontal 22 Rame",
         "pret1": "1200 Lei",
         "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine"
       },
       "ru": {
-        "image": "/images/stup_orizontal.png",
         "name": "Лежак на 22 рамки",
         "pret1": "1200 Лей",
         "descriere": "Горизонтальный улей, рассчитанный на 22 рамки, обеспечивает достаточно места для развития пчелиной семьи"
@@ -297,7 +291,6 @@
     "categoryId": 1,
     "translations": {
       "ro": {
-        "image": "/images/nucleu.png",
         "name": "Nucleu de 6 Rame",
         "btn1": {
           "pret1": "NaN",
@@ -322,7 +315,6 @@
         }
       },
       "ru": {
-        "image": "/images/nucleu.png",
         "name": "Нуклеус из 6 Рамок",
         "btn1": {
           "pret1": "NaN",
@@ -353,7 +345,6 @@
     "categoryId": 2,
     "translations": {
       "ro": {
-        "image": "/images/caldare_32l.png",
         "name": "Căldare 32L",
         "pret1": "89 Lei",
         "descriere": "Căldare de 32 de litri"
@@ -371,7 +362,6 @@
     "categoryId": 2,
     "translations": {
       "ro": {
-        "image": "/images/sirop_invertit-dulcofruct.png",
         "name": "Sirop Invertit-Dulcofruct",
         "pret1": "23 Lei/KG",
         "descriere": "Sirop invertit pentru mierea albinelor. 23 lei per kg de la 1 vrac"
@@ -389,13 +379,11 @@
     "categoryId": 2,
     "translations": {
       "ro": {
-        "image": "/images/fagure.png",
         "name": "Fagure natural",
         "pret1": "200 Lei",
         "descriere": "Fagure pentru rame"
       },
       "ru": {
-        "image": "/images/fagure.png",
         "name": "Натуральные соты",
         "pret1": "200 Лей",
         "descriere": "Соты для рамок"
