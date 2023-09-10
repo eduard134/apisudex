@@ -244,7 +244,7 @@
             "name": "230мм",
             "pret1": "412.5 Лей",
             "reducere": "375 Лей",
-            "descriere": "Корпус улья на 12 рамок высотой 230мм."
+            "descriere": "Корпус улья на 12 рамок, высотой 230мм."
           },
           "button3": {
             "image": "/images/stup_12_rame_corp_300_pr.png",
@@ -258,14 +258,14 @@
         "btn4": {
           "image": "/images/stup_12_rame_fund_plasa_pr.png",
           "image1": "/images/stup_12_rame_fund_plasa_2.png",
-          "name": "Нижние 12 кадров",
+          "name": "Дно 12 кадров",
           "opt1": "Сетка нержавеющей стали",
           "opt2": "Цинковая сетка",
           "opt3": "Всего древесины",
           "pret1": "320 Лей",
           "pret2": "210 Лей",
           "pret3": "200 Лей",
-          "descriere": "Днище на 12 рамок "
+          "descriere": "Дно на 12 рамок "
         }
       }
     }
@@ -317,18 +317,18 @@
         }
       },
       "ru": {
-        "name": "Ядро из 6 кадров",
+        "name": "Нуклеус из 6 Рамок",
         "btn1": {
           "pret1": "NaN",
           "image": "/images/nucleu_de_6_rame_capac_1.png",
           "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
-          "name": "Kрышка на 12 рамок",
-          "descriere": "Capac pentru nucleu cu 6 rame"
+          "name": "Kрышка",
+          "descriere": "Kрышка для Нуклеуса из 6 рамок"
         },
         "btn2": {
           "pret1": "NaN",
-          "name": "Corp 6 Rame",
-          "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
+          "name": "Корпус из 6 Рамок",
+          "descriere": "Корпус для Нуклеуса из 6 рамок, высотой 230мм",
           "image": "/images/nucleu_de_6_rame_corp_230_1.png",
           "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
         },
@@ -336,8 +336,8 @@
           "pret1": "NaN",
           "image": "/images/nucleu_de_6_rame_fund_1.png",
           "image1": "/images/nucleu_de_6_rame_fund_pr.png",
-          "name": "Fund 6 Rame",
-          "descriere": "Fund pentru nucleu cu 6 rame"
+          "name": "Дно из 6 Рамок",
+          "descriere": "Дно для Нуклеуса из 6 рамок"
         }
       }
     }

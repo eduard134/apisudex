@@ -382,6 +382,7 @@
         {
             "id": 3,
             "categoryId": 1,
+            "image": "/images/stup_orizontal.png",
             "translations": {
                 "ro": {
                     "image": "/images/stup_orizontal.png",
@@ -400,9 +401,11 @@
         {
             "id": 4,
             "categoryId": 1,
+            "image": "/images/nucleu.png",
             "translations": {
                 "ro": {
                     "name": "Nucleu de 6 Rame",
+                    "pret1": "650/750 Lei",
                     "btn1": {
                         "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
@@ -426,18 +429,19 @@
                     }
                 },
                 "ru": {
-                    "name": "Ядро из 6 кадров",
+                    "pret1": "650/750 Лей",
+                    "name": "Нуклеус из 6 Рамок",
                     "btn1": {
                         "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
                         "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
-                        "name": "Kрышка на 12 рамок",
-                        "descriere": "Capac pentru nucleu cu 6 rame"
+                        "name": "Kрышка",
+                        "descriere": "Kрышка для Нуклеуса из 6 рамок"
                     },
                     "btn2": {
                         "pret1": "NaN",
-                        "name": "Corp 6 Rame",
-                        "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
+                        "name": "Корпус из 6 Рамок",
+                        "descriere": "Корпус для Нуклеуса из 6 рамок, высотой 230мм",
                         "image": "/images/nucleu_de_6_rame_corp_230_1.png",
                         "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
                     },
@@ -445,8 +449,8 @@
                         "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_fund_1.png",
                         "image1": "/images/nucleu_de_6_rame_fund_pr.png",
-                        "name": "Fund 6 Rame",
-                        "descriere": "Fund pentru nucleu cu 6 rame"
+                        "name": "Дно из 6 Рамок",
+                        "descriere": "Дно для Нуклеуса из 6 рамок"
                     }
                 }
             }
@@ -508,6 +512,7 @@
         {
             "id": 8,
             "categoryId": 3,
+            "image": "/images/rama_300_pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 300mm",
@@ -576,6 +581,7 @@
         {
             "id": 9,
             "categoryId": 3,
+            "image": "/images/rama_230pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 230mm",
@@ -644,6 +650,7 @@
         {
             "id": 10,
             "categoryId": 3,
+            "image": "/images/rama_145pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 145mm",
