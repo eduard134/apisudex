@@ -562,8 +562,8 @@ export default function Product() {
                           translatedProduct?.translations?.btn4?.image) ||
                         "/default-image.jpg"
                       }
-                      width={200}
-                      height={200}
+                      width={250}
+                      height={250}
                     />
                   </div>
                 ) : null}
