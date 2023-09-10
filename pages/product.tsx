@@ -138,6 +138,7 @@ export default function Product() {
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState(1);
   const [actvButton, setActvButton] = useState(1);
+  const [activButton, setActivButton] = useState(1)
   const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
