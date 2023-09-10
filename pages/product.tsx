@@ -138,6 +138,7 @@ export default function Product() {
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState(1);
   const [actvButton, setActvButton] = useState(1);
+  const [activButton, setActivButton] = useState(1)
   const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
@@ -539,7 +540,7 @@ export default function Product() {
                 />
               </div>
 
-              <div className="flex justify-center items-center mt-10 h-[20vh]">
+              <div className="flex justify-center items-center h-[20vh]">
                 {((actvButtonDisplay === "btn1" || selectedButton === "btn1") &&
                   translatedProduct?.translations?.btn1?.image) ||
                 ((actvButtonDisplay === "btn2" || selectedButton === "btn2") &&
