@@ -297,7 +297,6 @@
     "categoryId": 1,
     "translations": {
       "ro": {
-        "image": "/images/nucleu.png",
         "name": "Nucleu de 6 Rame",
         "btn1": {
           "pret1": "NaN",
@@ -322,7 +321,6 @@
         }
       },
       "ru": {
-        "image": "/images/nucleu.png",
         "name": "Нуклеус из 6 Рамок",
         "btn1": {
           "pret1": "NaN",
