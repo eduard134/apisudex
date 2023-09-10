@@ -540,7 +540,7 @@ export default function Product() {
                 />
               </div>
 
-              <div className="flex justify-center items-center sm:mb-0 mb-10 sm:mt-10 sm h-[20vh]">
+              <div className="flex justify-center items-center mb-10 sm:mt-10 h-[20vh]">
                 {((actvButtonDisplay === "btn1" || selectedButton === "btn1") &&
                   translatedProduct?.translations?.btn1?.image) ||
                 ((actvButtonDisplay === "btn2" || selectedButton === "btn2") &&
@@ -554,7 +554,7 @@ export default function Product() {
                 ((actvButtonDisplay === "btn4" || selectedButton === "btn4") &&
                   translatedProduct?.translations?.btn4?.image) ? (
                   <div
-                    className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                    className={`mr-10 border-2 border-[#F2A421] h-[80%] items-center flex ${
                       activeImageIndex === 1
                         ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                         : ""
@@ -588,6 +588,7 @@ export default function Product() {
                       }
                       width={100}
                       height={100}
+                      className="p-1"
                     />
                   </div>
                 ) : null}
@@ -605,43 +606,42 @@ export default function Product() {
                 ((actvButtonDisplay === "btn4" || selectedButton === "btn4") &&
                   translatedProduct?.translations?.btn4?.image1) ? (
                   <div
-                    className={`mr-10 border-2 border-[#F2A421] h-[100%] items-center flex ${
+                    className={`border-2 border-[#F2A421] h-[80%] items-center flex ${
                       activeImageIndex === 2
                         ? "bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500"
                         : ""
                     } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
                     onClick={() => handleImage2Click()}
                   >
-                    <div className="aspect-ratio-1/1">
-                      <Image
-                        alt=""
-                        src={
-                          ((actvButtonDisplay === "btn1" ||
-                            selectedButton === "btn1") &&
-                            translatedProduct?.translations?.btn1?.image1) ||
-                          ((actvButtonDisplay === "btn2" ||
-                            selectedButton === "btn2") &&
-                            translatedProduct?.translations?.btn2?.button1
-                              ?.image1) ||
-                          ((actvButtonDisplay === "btn2" ||
-                            selectedButton === "btn2") &&
-                            translatedProduct?.translations?.btn2?.image1) ||
-                          ((actvButtonDisplay === "btn3" ||
-                            selectedButton === "btn3") &&
-                            translatedProduct?.translations?.btn3?.button1
-                              ?.image1) ||
-                          ((actvButtonDisplay === "btn3" ||
-                            selectedButton === "btn3") &&
-                            translatedProduct?.translations?.btn3?.image1) ||
-                          ((actvButtonDisplay === "btn4" ||
-                            selectedButton === "btn4") &&
-                            translatedProduct?.translations?.btn4?.image1) ||
-                          "/default-image.jpg"
-                        }
-                        width={100}
-                        height={100}
-                      />
-                    </div>
+                    <Image
+                      alt=""
+                      src={
+                        ((actvButtonDisplay === "btn1" ||
+                          selectedButton === "btn1") &&
+                          translatedProduct?.translations?.btn1?.image1) ||
+                        ((actvButtonDisplay === "btn2" ||
+                          selectedButton === "btn2") &&
+                          translatedProduct?.translations?.btn2?.button1
+                            ?.image1) ||
+                        ((actvButtonDisplay === "btn2" ||
+                          selectedButton === "btn2") &&
+                          translatedProduct?.translations?.btn2?.image1) ||
+                        ((actvButtonDisplay === "btn3" ||
+                          selectedButton === "btn3") &&
+                          translatedProduct?.translations?.btn3?.button1
+                            ?.image1) ||
+                        ((actvButtonDisplay === "btn3" ||
+                          selectedButton === "btn3") &&
+                          translatedProduct?.translations?.btn3?.image1) ||
+                        ((actvButtonDisplay === "btn4" ||
+                          selectedButton === "btn4") &&
+                          translatedProduct?.translations?.btn4?.image1) ||
+                        "/default-image.jpg"
+                      }
+                      width={100}
+                      height={100}
+                      className="p-1"
+                    />
                   </div>
                 ) : null}
               </div>
@@ -701,7 +701,7 @@ export default function Product() {
                   </button>
                 )}
               </div>
-              <div className="flex justify-center font-nunito font-semibold text-md">
+              <div className="flex justify-center items-center font-nunito font-semibold text-md">
                 {showButton1 && (
                   <div className="mr-4">
                     <button
@@ -709,7 +709,7 @@ export default function Product() {
                         handleOpt1Click();
                         setActvButton(1); // Set the active button to 1
                       }}
-                      className={`anim w-full py-1 px-2 ${
+                      className={`anim w-full py-1 px-2 h-[10vh] sm:h-auto ${
                         actvButton === 1
                           ? "bg-white text-black"
                           : "bg-yellow-500 text-black"
@@ -726,7 +726,7 @@ export default function Product() {
                         handleOpt2Click();
                         setActvButton(2); // Set the active button to 2
                       }}
-                      className={`anim w-full py-1 px-2 ${
+                      className={`anim w-full py-1 px-2 h-[10vh] sm:h-auto ${
                         actvButton === 2
                           ? "bg-white text-black"
                           : "bg-yellow-500 text-black"
@@ -743,7 +743,7 @@ export default function Product() {
                         handleOpt3Click();
                         setActvButton(3); // Set the active button to 3
                       }}
-                      className={`anim w-full py-1 px-2 ${
+                      className={`anim w-full py-1 px-2 h-[10vh] sm:h-auto ${
                         actvButton === 3
                           ? "bg-white text-black"
                           : "bg-yellow-500 text-black"
@@ -917,14 +917,10 @@ export default function Product() {
                             <p className="line-through text-gray-400 text-lg md:text-sm ">
                               {selectedPrice} Lei
                             </p>
-                            <p className="text-xl">
-                              {selectedDiscount} Lei
-                            </p>
+                            <p className="text-xl">{selectedDiscount} Lei</p>
                           </div>
                         ) : (
-                          <p className="text-xl">
-                            {selectedPrice} Lei
-                          </p>
+                          <p className="text-xl">{selectedPrice} Lei</p>
                         )}
                       </>
                     ) : (
