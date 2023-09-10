@@ -464,16 +464,16 @@
         {
             "id": 5,
             "categoryId": 2,
-            "image": "/images/Caldare_32l.png",
+            "image": "/images/caldare_32l.png",
             "translations": {
                 "ro": {
-                    "image": "/images/Caldare_32l.png",
+                    "image": "/images/caldare_32l.png",
                     "name": "Căldare 32L",
                     "pret1": "89 Lei",
                     "descriere": "Căldare de 32 de litri"
                 },
                 "ru": {
-                    "image": "/images/Caldare_32l.png",
+                    "image": "/images/cldare_32l.png",
                     "name": "Ведро 32Л",
                     "pret1": "89 Лей",
                     "descriere": "Ведро 32 литра"
@@ -483,16 +483,16 @@
         {
             "id": 6,
             "categoryId": 2,
-            "image": "/images/Sirop_Invertit-Dulcofruct.png",
+            "image": "/images/sirop_invertit-dulcofruct.png",
             "translations": {
                 "ro": {
-                    "image": "/images/Sirop_Invertit-Dulcofruct.png",
+                    "image": "/images/sirop_invertit-dulcofruct.png",
                     "name": "Sirop Invertit-Dulcofruct",
                     "pret1": "23 Lei/KG",
                     "descriere": "Sirop invertit pentru mierea albinelor. 23 lei per kg de la 1 vrac"
                 },
                 "ru": {
-                    "image": "/images/Sirop_Invertit-Dulcofruct.png",
+                    "image": "/images/sirop_invertit-dulcofruct.png",
                     "name": "Инвертированный сироп Дулко-фрукт",
                     "pret1": "23 Лей/КГ",
                     "descriere": "Инвертный сироп для медоносных пчел. 23 лея за кг с 1 куба"
