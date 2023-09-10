@@ -240,7 +240,7 @@ export default function Home() {
           >
             <div className=" h-[78%] md:h-[70%] w-full mb-4 md:mb-4 flex justify-center items-center">
               <Image
-                src={product.image || "default.png"}
+                src={product.translations.image || "default.png"}
                 alt={product.translations.name}
                 width={150}
                 height={150}
