@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import drop from "./images/drop.png";
-import translateData from "./translate.json";
 import Footer from "./components/Footer";
 import useLanguage from "../public/LanguageContext";
 import {
