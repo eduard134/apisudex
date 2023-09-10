@@ -14,13 +14,13 @@ import Head from "next/head";
 interface Product {
   id: number;
   categoryId: number;
-  image?: string | undefined;
+  image?: string;
   image1?: string | undefined;
   name?: string;
   descriere?: string;
   translations: {
     ro: {
-      image?: string | undefined;
+      image?: string;
       image1?: string | undefined;
       name: string;
       pret1?: string;
