@@ -189,9 +189,13 @@ interface Product {
 
 interface CategoryTranslations {
   ro: {
+    image?: string | undefined;
+    image1?: string | undefined;
     name: string;
     pret1?: string;
     btn1?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -203,6 +207,8 @@ interface CategoryTranslations {
       reducere?: string;
     };
     btn2?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -214,6 +220,8 @@ interface CategoryTranslations {
       reducere?: string;
     };
     btn3?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -224,18 +232,24 @@ interface CategoryTranslations {
       descriere?: string;
       reducere?: string;
       button1?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name?: string;
         pret1?: string;
         reducere?: string;
         descriere?: string;
       };
       button2?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name?: string;
         pret1?: string;
         reducere?: string;
         descriere?: string;
       };
       button3?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name?: string;
         pret1?: string;
         reducere?: string;
@@ -243,6 +257,8 @@ interface CategoryTranslations {
       };
     };
     btn4?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -257,7 +273,11 @@ interface CategoryTranslations {
   ru: {
     name: string;
     pret1?: string;
+    image?: string | undefined;
+    image1?: string | undefined;
     btn1?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -266,8 +286,11 @@ interface CategoryTranslations {
       pret2?: string;
       pret3?: string;
       descriere?: string;
+      reducere?: string;
     };
     btn2?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -276,8 +299,11 @@ interface CategoryTranslations {
       pret2?: string;
       pret3?: string;
       descriere?: string;
+      reducere?: string;
     };
     btn3?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -288,18 +314,24 @@ interface CategoryTranslations {
       descriere?: string;
       reducere?: string;
       button1?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name?: string;
         pret1?: string;
         reducere?: string;
         descriere?: string;
       };
       button2?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name?: string;
         pret1?: string;
         reducere?: string;
         descriere?: string;
       };
       button3?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name?: string;
         pret1?: string;
         reducere?: string;
@@ -307,6 +339,8 @@ interface CategoryTranslations {
       };
     };
     btn4?: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       opt1?: string;
       opt2?: string;
@@ -315,6 +349,7 @@ interface CategoryTranslations {
       pret2?: string;
       pret3?: string;
       descriere?: string;
+      reducere?: string;
     };
   };
 }
