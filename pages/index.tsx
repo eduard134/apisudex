@@ -9,6 +9,7 @@ import {
   getTranslatedContent,
   getTranslatedArray,
 } from "./components/TranslateRoToRu";
+import Head from "next/head";
 
 interface Product {
   id: number;
@@ -302,6 +303,13 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Acasă - ApiSudex</title>
+        <meta
+          name="description"
+          content="Descoperă universul fascinant al apiculturii cu Apisudex - destinația ta principală pentru cunoaștere și echipamente apicole. Explorează o gamă diversificată de informații despre apicultură, tehnici de îngrijire a stupilor și colectare a mierii, împărtășite de experți în domeniu. Găsește cele mai inovatoare și eficiente soluții pentru gestionarea stupilor și producția de miere de calitate. Oferim o varietate de stupi și rame de cea mai bună calitate, adaptate nevoilor fiecărui apicultor, de la cei începători până la cei avansați. "
+        />
+      </Head>
       <div className="flex flex-col mt-12 px-2 sm:mt-20 items-center text-center">
         <div className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 font-volkron bg-cover bg-clip-text text-transparent bg-gradient-to-r from-dark_purple via-indigo to-dark_purple ">
           {content.Title1}

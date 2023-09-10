@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { useState, useMemo, useEffect } from "react";
 import useLanguage from "../public/LanguageContext";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
+import Head from "next/head";
 
 interface Product {
   id: number;
@@ -138,7 +139,7 @@ export default function Product() {
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState(1);
   const [actvButton, setActvButton] = useState(1);
-  const [activButton, setActivButton] = useState(1)
+  const [activButton, setActivButton] = useState(1);
   const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
@@ -166,7 +167,9 @@ export default function Product() {
   const [showImageBtn3, setImageBtn3] = useState(true);
   const [showImageBtn4, setImageBtn4] = useState(true);
   const [selectedDescription, setSelectedDescription] = useState<string | null>(
-    null
+    translatedProduct?.translations?.descriere ||
+      translatedProduct?.translations?.btn1?.descriere ||
+      null
   );
 
   const handleImage1Click = () => {
@@ -207,6 +210,27 @@ export default function Product() {
       const pret1Value = translatedProduct.translations.btn1.pret1;
       if (pret1Value !== undefined) {
         setSelectedPrice(parseFloat(pret1Value));
+      }
+    }
+
+    if (translatedProduct && translatedProduct.translations) {
+      const pret1Value = translatedProduct.translations.pret1;
+      if (pret1Value !== undefined) {
+        setSelectedPrice(parseFloat(pret1Value));
+      }
+    }
+
+    if (translatedProduct && translatedProduct.translations.descriere) {
+      const desc = translatedProduct.translations.descriere;
+      if (desc !== undefined) {
+        setSelectedDescription(desc);
+      }
+    }
+
+    if (translatedProduct && translatedProduct.translations.btn1?.descriere) {
+      const desc = translatedProduct.translations.btn1.descriere;
+      if (desc !== undefined) {
+        setSelectedDescription(desc);
       }
     }
   }, [translatedProduct]);
@@ -276,7 +300,8 @@ export default function Product() {
   };
 
   const handleButton1Click = () => {
-    setShowButton1(true);
+    const btn1 = translatedProduct?.translations?.btn1;
+    setShowButton1(!!(btn1 && (btn1.opt1 || btn1.opt1 || btn1.opt1)));
     setShowButton2(false);
     setShowButton3(false);
     setShowButton4(false);
@@ -284,7 +309,6 @@ export default function Product() {
     setActvButtonDisplay("btn1");
     setActvButton(1);
 
-    const btn1 = translatedProduct?.translations?.btn1;
     const selectedPriceValue = btn1?.pret1 || btn1?.pret2 || btn1?.pret3;
 
     setSelectedPrice(
@@ -297,15 +321,16 @@ export default function Product() {
   };
 
   const handleButton2Click = () => {
+    const btn2 = translatedProduct?.translations?.btn2;
+
     setShowButton1(false);
-    setShowButton2(true);
+    setShowButton2(!!(btn2 && (btn2.button1 || btn2.button2)));
     setShowButton3(false);
     setShowButton4(false);
     setActvButton(1);
     setActvButtonDisplay("btn2");
     setSelectedButton("btn2");
 
-    const btn2 = translatedProduct?.translations?.btn2;
     const selectedPriceValue =
       btn2?.button1?.pret1 || btn2?.button2?.pret1 || btn2?.pret1;
 
@@ -313,21 +338,20 @@ export default function Product() {
       selectedPriceValue !== undefined ? parseFloat(selectedPriceValue) : null
     );
 
-    setSelectedDescription(
-      translatedProduct?.translations?.btn2?.descriere || null
-    );
+    setSelectedDescription(btn2?.descriere || null);
   };
 
   const handleButton3Click = () => {
+    const btn3 = translatedProduct?.translations?.btn3;
+
     setShowButton1(false);
     setShowButton2(false);
-    setShowButton3(true);
+    setShowButton3(!!(btn3 && (btn3.button1 || btn3.button2 || btn3.button3)));
     setShowButton4(false);
     setActvButton(1);
     setActvButtonDisplay("btn3");
     setSelectedButton("btn3");
 
-    const btn3 = translatedProduct?.translations?.btn3;
     const selectedPriceValue =
       btn3?.button1?.pret1 ||
       btn3?.button2?.pret1 ||
@@ -354,15 +378,16 @@ export default function Product() {
   };
 
   const handleButton4Click = () => {
+    const btn4 = translatedProduct?.translations?.btn4;
+
     setShowButton1(false);
     setShowButton2(false);
     setShowButton3(false);
-    setShowButton4(true);
+    setShowButton4(!!(btn4 && (btn4.opt1 || btn4.opt1 || btn4.opt1)));
     setActvButton(1);
     setActvButtonDisplay("btn4");
     setSelectedButton("btn4");
 
-    const btn4 = translatedProduct?.translations?.btn4;
     const selectedPriceValue = btn4?.pret1 || btn4?.pret2 || btn4?.pret3;
 
     setSelectedPrice(
@@ -467,17 +492,16 @@ export default function Product() {
     );
   };
 
-  function setActiveButton(arg0: number) {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <div>
       {translatedProduct ? (
         <>
+          <Head>
+            <title>{translatedProduct.translations.name} - ApiSudex</title>
+          </Head>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
             <div className="w-[35%]">
-              <div className="w-auto flex items-center justify-center h-80 lg:mr-10 relative overflow-hidden mr-0">
+              <div className="w-auto flex items-center justify-center h-90 lg:mr-10 relative overflow-hidden mr-0">
                 <Image
                   alt=""
                   src={
@@ -562,8 +586,8 @@ export default function Product() {
                           translatedProduct?.translations?.btn4?.image) ||
                         "/default-image.jpg"
                       }
-                      width={250}
-                      height={250}
+                      width={120}
+                      height={120}
                     />
                   </div>
                 ) : null}
@@ -588,34 +612,36 @@ export default function Product() {
                     } hover:bg-gradient-to-br via-orange-400 from-yellow-500 to-yellow-500 p-2 rounded-md cursor-pointer`}
                     onClick={() => handleImage2Click()}
                   >
-                    <Image
-                      alt=""
-                      src={
-                        ((actvButtonDisplay === "btn1" ||
-                          selectedButton === "btn1") &&
-                          translatedProduct?.translations?.btn1?.image1) ||
-                        ((actvButtonDisplay === "btn2" ||
-                          selectedButton === "btn2") &&
-                          translatedProduct?.translations?.btn2?.button1
-                            ?.image1) ||
-                        ((actvButtonDisplay === "btn2" ||
-                          selectedButton === "btn2") &&
-                          translatedProduct?.translations?.btn2?.image1) ||
-                        ((actvButtonDisplay === "btn3" ||
-                          selectedButton === "btn3") &&
-                          translatedProduct?.translations?.btn3?.button1
-                            ?.image1) ||
-                        ((actvButtonDisplay === "btn3" ||
-                          selectedButton === "btn3") &&
-                          translatedProduct?.translations?.btn3?.image1) ||
-                        ((actvButtonDisplay === "btn4" ||
-                          selectedButton === "btn4") &&
-                          translatedProduct?.translations?.btn4?.image1) ||
-                        "/default-image.jpg"
-                      }
-                      width={200}
-                      height={200}
-                    />
+                    <div className="aspect-ratio-1/1">
+                      <Image
+                        alt=""
+                        src={
+                          ((actvButtonDisplay === "btn1" ||
+                            selectedButton === "btn1") &&
+                            translatedProduct?.translations?.btn1?.image1) ||
+                          ((actvButtonDisplay === "btn2" ||
+                            selectedButton === "btn2") &&
+                            translatedProduct?.translations?.btn2?.button1
+                              ?.image1) ||
+                          ((actvButtonDisplay === "btn2" ||
+                            selectedButton === "btn2") &&
+                            translatedProduct?.translations?.btn2?.image1) ||
+                          ((actvButtonDisplay === "btn3" ||
+                            selectedButton === "btn3") &&
+                            translatedProduct?.translations?.btn3?.button1
+                              ?.image1) ||
+                          ((actvButtonDisplay === "btn3" ||
+                            selectedButton === "btn3") &&
+                            translatedProduct?.translations?.btn3?.image1) ||
+                          ((actvButtonDisplay === "btn4" ||
+                            selectedButton === "btn4") &&
+                            translatedProduct?.translations?.btn4?.image1) ||
+                          "/default-image.jpg"
+                        }
+                        width={120}
+                        height={120}
+                      />
+                    </div>
                   </div>
                 ) : null}
               </div>

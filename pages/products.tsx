@@ -10,6 +10,7 @@ import {
   getTranslatedContent,
   getTranslatedArray,
 } from "./components/TranslateRoToRu";
+import Head from "next/head";
 
 interface Product {
   id: number;
@@ -323,10 +324,13 @@ const ProductsComponent = () => {
     : "All Products";
   return (
     <>
+      <Head>
+        <title>{categoryName} - ApiSudex</title>
+      </Head>
       <p className="text-center mt-10 text-4xl font-volkron font-bold">
         {categoryName}
       </p>
-      <div className="flex flex-wrap justify-center mt-10 lg:gap-8 gap-4">
+      <div className="flex flex-wrap justify-center mt-16 mb-16 lg:gap-8 gap-4">
         {filteredProducts.map((product: Product) => (
           <Link
             href={`/product?id=${product.id}`}
@@ -335,7 +339,7 @@ const ProductsComponent = () => {
           >
             <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
               <Image
-                src={product.image || "/default-image.jpg"}
+                src={product.image}
                 alt={
                   product.translations[language as keyof CategoryTranslations]
                     ?.name
@@ -345,33 +349,25 @@ const ProductsComponent = () => {
               />
             </div>
             <div className="font-bold text-base md:text-lg text-slate-600 mb-0 md:mb-1 font-nunito">
-              
-                <div className="flex flex-col items-center">
-                    {product.translations[
-                      language as keyof CategoryTranslations
-                    ]?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn1?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn2?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn3?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn3?.button1?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn3?.button2?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn3?.button3?.pret1 ||
-                      product.translations[
-                        language as keyof CategoryTranslations
-                      ]?.btn4?.pret1}
-            </div></div>
+              <div className="flex flex-col items-center">
+                {product.translations[language as keyof CategoryTranslations]
+                  ?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn1?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn2?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn3?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn3?.button1?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn3?.button2?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn3?.button3?.pret1 ||
+                  product.translations[language as keyof CategoryTranslations]
+                    ?.btn4?.pret1}
+              </div>
+            </div>
             <div className="font-semibold text-slate-600 text-sm md:text-base font-nunito text-center">
               {
                 product.translations[language as keyof CategoryTranslations]

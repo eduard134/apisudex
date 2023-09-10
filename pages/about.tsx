@@ -11,6 +11,7 @@ import quality from "./images/quality.png";
 import Footer from "./components/Footer";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
 import useLanguage from "../public/LanguageContext";
+import Head from "next/head";
 
 const about = () => {
   const router = useRouter();
@@ -23,6 +24,13 @@ const about = () => {
   const content = getTranslatedContent(language);
   return (
     <>
+      <Head>
+        <title>Despre Noi - ApiSudex</title>
+        <meta
+          name="description"
+          content="Bine ați venit la ApiSudex - pasiunea noastră pentru apicultură într-un magazin online! Suntem o echipă dedicată de apicultori și entuziaști ai naturii, cu o experiență bogată în lumea fascinantă a albinelor și a produselor apicole. La ApiSudex, ne străduim să împărtășim cunoștințele noastre și pasiunea pentru apicultură cu toți cei care doresc să descopere acest univers minunat."
+        />
+      </Head>
       <div className="flex flex-col items-center justify-center">
         <p className="text-center text-4xl font-volkron font-bold">
           {content.Nav3}
