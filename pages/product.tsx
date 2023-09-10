@@ -672,11 +672,11 @@ export default function Product() {
                           translatedProduct?.translations?.btn1?.image1) ||
                         ((actvButtonDisplay === "btn2" ||
                           selectedButton === "btn2") &&
-                          translatedProduct?.translations?.btn2?.button1
-                            ?.image1) ||
+                          translatedProduct?.translations?.btn2?.image1) ||
                         ((actvButtonDisplay === "btn2" ||
                           selectedButton === "btn2") &&
-                          translatedProduct?.translations?.btn2?.image1) ||
+                          translatedProduct?.translations?.btn2?.button1
+                            ?.image1) ||
                         ((actvButtonDisplay === "btn3" ||
                           selectedButton === "btn3") &&
                           translatedProduct?.translations?.btn3?.button1
