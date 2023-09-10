@@ -50,7 +50,8 @@
             "Total": "Total:",
             "Comanda": "Comandă acum la",
             "NoN": "Produsul nu a fost găsit",
-            "NonP": "Ne pare rău, produsul pe care îl căutați nu există."
+            "NonP": "Ne pare rău, produsul pe care îl căutați nu există.",
+            "Lei": "Lei"
         },
         "ru": {
             "Nav1": "Главное",
@@ -102,7 +103,8 @@
             "Total": "Итого:",
             "Comanda": "Закажите сейчас на",
             "NoN": "Товар не найден",
-            "NonP": "К сожалению, товар, который вы ищете, не существует."
+            "NonP": "К сожалению, товар, который вы ищете, не существует.",
+            "Lei": "Лей"
         }
     },
     "products": [
@@ -339,7 +341,7 @@
                         "descriere": "Корпус улья на 12 рамок, высотой 145мм",
                         "button1": {
                             "image": "/images/stup_12_rame_corp_145_pr.png",
-                            "image1": "/images/stup_12_rame_corp_145_1.png",
+                            "image1": "/images/stup_12_rame_corp_145_2.png",
                             "name": "145мм",
                             "pret1": "291.5 Лей",
                             "reducere": "265 Лей",
@@ -380,7 +382,6 @@
         {
             "id": 3,
             "categoryId": 1,
-            "image": "/images/stup_orizontal.png",
             "translations": {
                 "ro": {
                     "image": "/images/stup_orizontal.png",
@@ -399,28 +400,25 @@
         {
             "id": 4,
             "categoryId": 1,
-            "image": "/images/nucleu.png",
             "translations": {
                 "ro": {
                     "name": "Nucleu de 6 Rame",
-                    "pret1": "650/750 Lei",
                     "btn1": {
+                        "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
                         "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
                         "name": "Capac 6 Rame",
                         "descriere": "Capac pentru nucleu cu 6 rame"
                     },
-                    "btn3": {
+                    "btn2": {
+                        "pret1": "NaN",
                         "name": "Corp 6 Rame",
                         "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
-                        "button1": {
-                            "image": "/images/nucleu_de_6_rame_corp_230_1.png",
-                            "image1": "/images/nucleu_de_6_rame_corp_230_pr.png",
-                            "name": "230mm",
-                            "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm"
-                        }
+                        "image": "/images/nucleu_de_6_rame_corp_230_1.png",
+                        "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
                     },
-                    "btn4": {
+                    "btn3": {
+                        "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_fund_1.png",
                         "image1": "/images/nucleu_de_6_rame_fund_pr.png",
                         "name": "Fund 6 Rame",
@@ -428,29 +426,27 @@
                     }
                 },
                 "ru": {
-                    "name": "Пчелиное гнездо на 6 рамок",
-                    "pret1": "650/750 Лей",
+                    "name": "Ядро из 6 кадров",
                     "btn1": {
+                        "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
                         "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
-                        "name": "Kрышка на 6 рамок",
-                        "descriere": "Крышка для 6-ти рамочного гнездa"
+                        "name": "Kрышка на 12 рамок",
+                        "descriere": "Capac pentru nucleu cu 6 rame"
+                    },
+                    "btn2": {
+                        "pret1": "NaN",
+                        "name": "Corp 6 Rame",
+                        "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
+                        "image": "/images/nucleu_de_6_rame_corp_230_1.png",
+                        "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
                     },
                     "btn3": {
-                        "name": "Корпус 6 рам",
-                        "descriere": "Корпус для 6-ти рамочного гнездa, высотой 230мм",
-                        "button1": {
-                            "image": "/images/nucleu_de_6_rame_corp_230_1.png",
-                            "image1": "/images/nucleu_de_6_rame_corp_230_pr.png",
-                            "name": "230мм",
-                            "descriere": "Корпус для 6-ти рамочного гнездa, высотой 230мм"
-                        }
-                    },
-                    "btn4": {
+                        "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_fund_1.png",
                         "image1": "/images/nucleu_de_6_rame_fund_pr.png",
-                        "name": "Днище на 6 рамок",
-                        "descriere": "Днище для 6-ти рамочного гнездa "
+                        "name": "Fund 6 Rame",
+                        "descriere": "Fund pentru nucleu cu 6 rame"
                     }
                 }
             }
@@ -458,7 +454,6 @@
         {
             "id": 5,
             "categoryId": 2,
-            "image": "/images/Caldare_32l.png",
             "translations": {
                 "ro": {
                     "image": "/images/Caldare_32l.png",
@@ -477,7 +472,6 @@
         {
             "id": 6,
             "categoryId": 2,
-            "image": "/images/Sirop_Invertit-Dulcofruct.png",
             "translations": {
                 "ro": {
                     "image": "/images/Sirop_Invertit-Dulcofruct.png",
@@ -496,7 +490,6 @@
         {
             "id": 7,
             "categoryId": 2,
-            "image": "/images/fagure.png",
             "translations": {
                 "ro": {
                     "image": "/images/fagure.png",
@@ -515,7 +508,6 @@
         {
             "id": 8,
             "categoryId": 3,
-            "image": "/images/rama_300_pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 300mm",
@@ -584,7 +576,6 @@
         {
             "id": 9,
             "categoryId": 3,
-            "image": "/images/rama_230pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 230mm",
@@ -653,7 +644,6 @@
         {
             "id": 10,
             "categoryId": 3,
-            "image": "/images/rama_230pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 145mm",

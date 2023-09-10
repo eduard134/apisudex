@@ -915,12 +915,16 @@ export default function Product() {
                         {showButton3 && selectedDiscount ? (
                           <div className="flex flex-col items-center ml-1">
                             <p className="line-through text-gray-400 text-lg md:text-sm ">
-                              {selectedPrice} Lei
+                              {selectedPrice} {content.Lei}
                             </p>
-                            <p className="text-xl">{selectedDiscount} Lei</p>
+                            <p className="text-xl">
+                              {selectedDiscount} {content.Lei}
+                            </p>
                           </div>
                         ) : (
-                          <p className="text-xl">{selectedPrice} Lei</p>
+                          <p className="text-xl">
+                            {selectedPrice} {content.Lei}
+                          </p>
                         )}
                       </>
                     ) : (
