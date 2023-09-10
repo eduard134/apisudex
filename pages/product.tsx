@@ -638,8 +638,8 @@ export default function Product() {
                             translatedProduct?.translations?.btn4?.image1) ||
                           "/default-image.jpg"
                         }
-                        width={120}
-                        height={120}
+                        width={100}
+                        height={100}
                       />
                     </div>
                   </div>
