@@ -9,12 +9,22 @@ import EmailForm from "./components/EmailForm";
 import Link from "next/link";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
 import useLanguage from "../public/LanguageContext";
+import Head from "next/head";
 
 const ComponentName = () => {
   const { language } = useLanguage();
   const content = getTranslatedContent(language);
   return (
     <>
+      <Head>
+        <title>Contacte - ApiSudex</title>
+        <meta
+          name="description"
+          content="Bine ați venit la pagina de contact a ApiSudex - canalul nostru de comunicare cu voi, clienții și partenerii noștri! Suntem aici pentru a vă oferi suport și asistență în legătură cu orice întrebări sau solicitări aveți cu privire la produsele noastre apicole sau serviciile noastre.
+
+          La ApiSudex, credem în transparență și comunicare deschisă, de aceea suntem bucuroși să vă ascultăm și să vă ajutăm în orice fel posibil."
+        />
+      </Head>
       <p className="font-volkron font-bold text-4xl text-center">
         {content.Btn_about}
       </p>

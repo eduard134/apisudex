@@ -6,7 +6,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ro">
-        <Head>{/* Include the EmailJS script */}</Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

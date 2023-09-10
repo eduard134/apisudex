@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { useState, useMemo, useEffect } from "react";
 import useLanguage from "../public/LanguageContext";
 import { getTranslatedContent } from "./components/TranslateRoToRu";
+import Head from "next/head";
 
 interface Product {
   id: number;
@@ -138,7 +139,7 @@ export default function Product() {
   const content = getTranslatedContent(language);
   const [activeImageIndex, setActiveImageIndex] = useState(1);
   const [actvButton, setActvButton] = useState(1);
-  const [activButton, setActivButton] = useState(1)
+  const [activButton, setActivButton] = useState(1);
   const [actvButtonDisplay, setActvButtonDisplay] = useState("btn1");
 
   const handleImageClick = (index: number) => {
@@ -491,14 +492,13 @@ export default function Product() {
     );
   };
 
-  function setActiveButton(arg0: number) {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <div>
       {translatedProduct ? (
         <>
+          <Head>
+            <title>{translatedProduct.translations.name} - ApiSudex</title>
+          </Head>
           <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
             <div className="w-[35%]">
               <div className="w-auto flex items-center justify-center h-90 lg:mr-10 relative overflow-hidden mr-0">
