@@ -23,7 +23,7 @@
           "descriere": "Inel Chinga pentru stup cu 10 rame",
           "button1": {
             "image": "/images/stup_10_rame_inel_chinga_pr.png",
-            "image1": "/images/stup_10_rame_inel_capac_inferior_pr.png",
+            "image1": "/images/stup_10_rame_inel_capac_inferior_5.png",
             "name": "Chinga",
             "pret1": "150 Lei",
             "descriere": "Inel Chinga pentru stup cu 10 rame"
@@ -89,7 +89,7 @@
           "descriere": "Кольцо Наращивание на 10 рамок",
           "button1": {
             "image": "/images/stup_10_rame_inel_chinga_pr.png",
-            "image1": "/images/stup_10_rame_inel_chinga_1.png",
+            "image1": "/images/stup_10_rame_inel_capac_inferior_5.png",
             "name": "Кольцо Наращивание",
             "pret1": "150 Лей",
             "descriere": "Кольцо Наращивание на 10 рамок"
@@ -275,11 +275,13 @@
     "categoryId": 1,
     "translations": {
       "ro": {
+        "image": "/images/stup_orizontal.png",
         "name": "Stup Orizontal 22 Rame",
         "pret1": "1200 Lei",
         "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine"
       },
       "ru": {
+        "image": "/images/stup_orizontal.png",
         "name": "Лежак на 22 рамки",
         "pret1": "1200 Лей",
         "descriere": "Горизонтальный улей, рассчитанный на 22 рамки, обеспечивает достаточно места для развития пчелиной семьи"
