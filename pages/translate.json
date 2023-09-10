@@ -111,7 +111,7 @@
         {
             "id": 1,
             "categoryId": 1,
-            "image": "/images/stup_10_Rame.png",
+            "image": "/images/stup_10_rame.png",
             "translations": {
                 "ro": {
                     "name": "Stupi Verticali de 10 Rame",
@@ -183,7 +183,7 @@
                 "ru": {
                     "name": "Вертикальные ульи на 10 рамок",
                     "btn1": {
-                        "image": "/images/stup_10_rame_capac_10_rame_pr.png",
+                        "image": "/images/stup_10_rame.png",
                         "name": "Крышка 10 рамок",
                         "opt1": "Цинк, с теплоизоляцией",
                         "opt2": "Термоалюминий",
