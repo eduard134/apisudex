@@ -12,11 +12,6 @@ interface Product {
   categoryId: number;
   image?: string | undefined;
   image1?: string | undefined;
-  image2?: string | undefined;
-  image3?: string | undefined;
-  image4?: string;
-  image5?: string;
-  image6?: string;
   name?: string;
   descriere?: string;
   translations: {
