@@ -540,7 +540,7 @@ export default function Product() {
                 />
               </div>
 
-              <div className="flex justify-center items-center h-[20vh]">
+              <div className="flex justify-center items-center mt-10 h-[20vh]">
                 {((actvButtonDisplay === "btn1" || selectedButton === "btn1") &&
                   translatedProduct?.translations?.btn1?.image) ||
                 ((actvButtonDisplay === "btn2" || selectedButton === "btn2") &&
@@ -586,8 +586,8 @@ export default function Product() {
                           translatedProduct?.translations?.btn4?.image) ||
                         "/default-image.jpg"
                       }
-                      width={120}
-                      height={120}
+                      width={100}
+                      height={100}
                     />
                   </div>
                 ) : null}
