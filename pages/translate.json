@@ -111,7 +111,7 @@
         {
             "id": 1,
             "categoryId": 1,
-            "image": "/images/Stup_10_Rame.png",
+            "image": "/images/stup_10_Rame.png",
             "translations": {
                 "ro": {
                     "name": "Stupi Verticali de 10 Rame",
