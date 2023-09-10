@@ -511,12 +511,12 @@ export default function Product() {
                         : translatedProduct?.translations?.btn4?.image1)) ||
                     "/default-image.jpg"
                   }
-                  width={400}
-                  height={400}
+                  width={300}
+                  height={300}
                 />
               </div>
 
-              <div className="flex justify-center items-center mt-10 h-[20vh]">
+              <div className="flex justify-center items-center h-[20vh]">
                 {((actvButtonDisplay === "btn1" || selectedButton === "btn1") &&
                   translatedProduct?.translations?.btn1?.image) ||
                 ((actvButtonDisplay === "btn2" || selectedButton === "btn2") &&
