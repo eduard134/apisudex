@@ -330,7 +330,7 @@ const ProductsComponent = () => {
       <p className="text-center mt-10 text-4xl font-volkron font-bold">
         {categoryName}
       </p>
-      <div className="flex flex-wrap justify-center mt-10 lg:gap-8 gap-4">
+      <div className="flex flex-wrap justify-center mt-16 mb-16 lg:gap-8 gap-4">
         {filteredProducts.map((product: Product) => (
           <Link
             href={`/product?id=${product.id}`}
@@ -339,7 +339,7 @@ const ProductsComponent = () => {
           >
             <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
               <Image
-                src={product.image || "/default-image.jpg"}
+                src={product.image}
                 alt={
                   product.translations[language as keyof CategoryTranslations]
                     ?.name
