@@ -458,6 +458,7 @@
         {
             "id": 5,
             "categoryId": 2,
+            "image": "/images/Caldare_32l.png",
             "translations": {
                 "ro": {
                     "image": "/images/Caldare_32l.png",
@@ -476,6 +477,7 @@
         {
             "id": 6,
             "categoryId": 2,
+            "image": "/images/Sirop_Invertit-Dulcofruct.png",
             "translations": {
                 "ro": {
                     "image": "/images/Sirop_Invertit-Dulcofruct.png",
@@ -494,6 +496,7 @@
         {
             "id": 7,
             "categoryId": 2,
+            "image": "/images/fagure.png",
             "translations": {
                 "ro": {
                     "image": "/images/fagure.png",
