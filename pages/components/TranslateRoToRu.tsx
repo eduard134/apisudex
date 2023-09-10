@@ -10,10 +10,10 @@ import useLanguage from "../../public/LanguageContext";
 interface Product {
   id: number;
   categoryId: number;
-  image: string;
-  image1?: string;
-  image2?: string;
-  image3?: string;
+  image?: string | undefined;
+  image1?: string | undefined;
+  image2?: string | undefined;
+  image3?: string | undefined;
   image4?: string;
   image5?: string;
   image6?: string;
@@ -21,9 +21,13 @@ interface Product {
   descriere?: string;
   translations: {
     ro: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       pret1?: string;
       btn1?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -35,6 +39,8 @@ interface Product {
         reducere?: string;
       };
       btn2?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -46,6 +52,8 @@ interface Product {
         reducere?: string;
       };
       btn3?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -56,18 +64,24 @@ interface Product {
         descriere?: string;
         reducere?: string;
         button1?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button2?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button3?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
@@ -75,6 +89,8 @@ interface Product {
         };
       };
       btn4?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -89,7 +105,11 @@ interface Product {
     ru: {
       name: string;
       pret1?: string;
+      image?: string | undefined;
+      image1?: string | undefined;
       btn1?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -101,6 +121,8 @@ interface Product {
         reducere?: string;
       };
       btn2?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -112,6 +134,8 @@ interface Product {
         reducere?: string;
       };
       btn3?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -122,18 +146,24 @@ interface Product {
         descriere?: string;
         reducere?: string;
         button1?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button2?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button3?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
@@ -141,6 +171,8 @@ interface Product {
         };
       };
       btn4?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -154,6 +186,7 @@ interface Product {
     };
   };
 }
+
 const products: Product[] = translateData.products;
 
 export function getTranslatedContent(language: string) {
