@@ -14,20 +14,19 @@ import Head from "next/head";
 interface Product {
   id: number;
   categoryId: number;
-  image: string;
-  image1?: string;
-  image2?: string;
-  image3?: string;
-  image4?: string;
-  image5?: string;
-  image6?: string;
+  image?: string | undefined;
+  image1?: string | undefined;
   name?: string;
   descriere?: string;
   translations: {
     ro: {
+      image?: string | undefined;
+      image1?: string | undefined;
       name: string;
       pret1?: string;
       btn1?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -39,6 +38,8 @@ interface Product {
         reducere?: string;
       };
       btn2?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -50,6 +51,8 @@ interface Product {
         reducere?: string;
       };
       btn3?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -60,18 +63,24 @@ interface Product {
         descriere?: string;
         reducere?: string;
         button1?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button2?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button3?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
@@ -79,6 +88,8 @@ interface Product {
         };
       };
       btn4?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -93,7 +104,11 @@ interface Product {
     ru: {
       name: string;
       pret1?: string;
+      image?: string | undefined;
+      image1?: string | undefined;
       btn1?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -105,6 +120,8 @@ interface Product {
         reducere?: string;
       };
       btn2?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -116,6 +133,8 @@ interface Product {
         reducere?: string;
       };
       btn3?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -126,18 +145,24 @@ interface Product {
         descriere?: string;
         reducere?: string;
         button1?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button2?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
           descriere?: string;
         };
         button3?: {
+          image?: string | undefined;
+          image1?: string | undefined;
           name?: string;
           pret1?: string;
           reducere?: string;
@@ -145,6 +170,8 @@ interface Product {
         };
       };
       btn4?: {
+        image?: string | undefined;
+        image1?: string | undefined;
         name: string;
         opt1?: string;
         opt2?: string;
@@ -155,138 +182,6 @@ interface Product {
         descriere?: string;
         reducere?: string;
       };
-    };
-  };
-}
-
-interface CategoryTranslations {
-  ro: {
-    name: string;
-    pret1?: string;
-    btn1?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-      reducere?: string;
-    };
-    btn2?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-      reducere?: string;
-    };
-    btn3?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-      reducere?: string;
-      button1?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-      button2?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-      button3?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-    };
-    btn4?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-      reducere?: string;
-    };
-  };
-  ru: {
-    name: string;
-    pret1?: string;
-    btn1?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-    };
-    btn2?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-    };
-    btn3?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
-      reducere?: string;
-      button1?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-      button2?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-      button3?: {
-        name?: string;
-        pret1?: string;
-        reducere?: string;
-        descriere?: string;
-      };
-    };
-    btn4?: {
-      name: string;
-      opt1?: string;
-      opt2?: string;
-      opt3?: string;
-      pret1?: string;
-      pret2?: string;
-      pret3?: string;
-      descriere?: string;
     };
   };
 }
