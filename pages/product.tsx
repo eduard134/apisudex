@@ -709,7 +709,7 @@ export default function Product() {
                         handleOpt1Click();
                         setActvButton(1); // Set the active button to 1
                       }}
-                      className={`anim w-full py-1 px-2 h-[10vh] sm:h-auto ${
+                      className={`anim w-full py-1 px-2 h-[15vh] sm:h-auto ${
                         actvButton === 1
                           ? "bg-white text-black"
                           : "bg-yellow-500 text-black"
@@ -726,7 +726,7 @@ export default function Product() {
                         handleOpt2Click();
                         setActvButton(2); // Set the active button to 2
                       }}
-                      className={`anim w-full py-1 px-2 h-[10vh] sm:h-auto ${
+                      className={`anim w-full py-1 px-2 h-[15vh] sm:h-auto ${
                         actvButton === 2
                           ? "bg-white text-black"
                           : "bg-yellow-500 text-black"
@@ -743,7 +743,7 @@ export default function Product() {
                         handleOpt3Click();
                         setActvButton(3); // Set the active button to 3
                       }}
-                      className={`anim w-full py-1 px-2 h-[10vh] sm:h-auto ${
+                      className={`anim w-full py-1 px-2 h-[15vh] sm:h-auto ${
                         actvButton === 3
                           ? "bg-white text-black"
                           : "bg-yellow-500 text-black"
