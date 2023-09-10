@@ -347,6 +347,7 @@
     "categoryId": 2,
     "translations": {
       "ro": {
+        "image": "/images/caldare_32l.png",
         "name": "Căldare 32L",
         "pret1": "89 Lei",
         "descriere": "Căldare de 32 de litri"
@@ -364,6 +365,7 @@
     "categoryId": 2,
     "translations": {
       "ro": {
+        "image": "/images/sirop_invertit-dulcofruct.png",
         "name": "Sirop Invertit-Dulcofruct",
         "pret1": "23 Lei/KG",
         "descriere": "Sirop invertit pentru mierea albinelor. 23 lei per kg de la 1 vrac"
@@ -381,11 +383,13 @@
     "categoryId": 2,
     "translations": {
       "ro": {
+        "image": "/images/fagure.png",
         "name": "Fagure natural",
         "pret1": "200 Lei",
         "descriere": "Fagure pentru rame"
       },
       "ru": {
+        "image": "/images/fagure.png",
         "name": "Натуральные соты",
         "pret1": "200 Лей",
         "descriere": "Соты для рамок"
