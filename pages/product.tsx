@@ -499,8 +499,8 @@ export default function Product() {
           <Head>
             <title>{translatedProduct.translations.name} - ApiSudex</title>
           </Head>
-          <div className="flex lg:flex-row flex-col justify-center items-center mt-0 sm:mt-20 mb-20 relative">
-            <div className="w-[35%]">
+          <div className="flex lg:flex-row flex-col justify-center items-center mt-10 sm:mt-20 mb-20 relative">
+            <div className="sm:w-[35%] w-[100%]">
               <div className="w-auto flex items-center justify-center h-90 lg:mr-10 relative overflow-hidden mr-0">
                 <Image
                   alt=""
@@ -540,7 +540,7 @@ export default function Product() {
                 />
               </div>
 
-              <div className="flex justify-center items-center mt-10 h-[20vh]">
+              <div className="flex justify-center items-center sm:mb-0 mb-10 sm:mt-10 sm h-[20vh]">
                 {((actvButtonDisplay === "btn1" || selectedButton === "btn1") &&
                   translatedProduct?.translations?.btn1?.image) ||
                 ((actvButtonDisplay === "btn2" || selectedButton === "btn2") &&
@@ -917,12 +917,12 @@ export default function Product() {
                             <p className="line-through text-gray-400 text-lg md:text-sm ">
                               {selectedPrice} Lei
                             </p>
-                            <p className="text-sm md:text-xl">
+                            <p className="text-xl">
                               {selectedDiscount} Lei
                             </p>
                           </div>
                         ) : (
-                          <p className="text-sm md:text-xl">
+                          <p className="text-xl">
                             {selectedPrice} Lei
                           </p>
                         )}

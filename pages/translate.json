@@ -403,6 +403,7 @@
             "translations": {
                 "ro": {
                     "name": "Nucleu de 6 Rame",
+                    "pret1": "650/750 Lei",
                     "btn1": {
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
                         "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
@@ -428,6 +429,7 @@
                 },
                 "ru": {
                     "name": "Пчелиное гнездо на 6 рамок",
+                    "pret1": "650/750 Лей",
                     "btn1": {
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
                         "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",

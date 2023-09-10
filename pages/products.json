@@ -300,17 +300,13 @@
           "name": "Capac 6 Rame",
           "descriere": "Capac pentru nucleu cu 6 rame"
         },
-        "btn3": {
+        "btn2": {
           "name": "Corp 6 Rame",
           "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
-          "button1": {
-            "image": "/images/nucleu_de_6_rame_corp_230_1.png",
-            "image1": "/images/nucleu_de_6_rame_corp_230_pr.png",
-            "name": "230mm",
-            "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm"
-          }
+          "image": "/images/nucleu_de_6_rame_corp_230_1.png",
+          "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
         },
-        "btn4": {
+        "btn3": {
           "image": "/images/nucleu_de_6_rame_fund_1.png",
           "image1": "/images/nucleu_de_6_rame_fund_pr.png",
           "name": "Fund 6 Rame",

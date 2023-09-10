@@ -337,7 +337,7 @@ const ProductsComponent = () => {
             key={product.id}
             className="mb-6 md:mb-0 md:mr-[5vw] flex flex-col justify-center items-center rounded-md p-2 md:p-5 h-[full] lg:w-[15%] md:w-[35%] w-[45%] bg-gradient-to-br from-yellow-300 to-yellow-500 hover:bg-gradient-to-br hover:from-yellow-400 hover:to-yellow-200 shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 product-box"
           >
-            <div className="h-[80%] w-full mb-2 md:mb-4 flex justify-center items-center">
+            <div className="h-[80%] w-full mb-10 md:mb-4 flex justify-center items-center">
               <Image
                 src={product.image}
                 alt={
