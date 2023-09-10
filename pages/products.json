@@ -2,12 +2,12 @@
   {
     "id": 1,
     "categoryId": 1,
-    "image": "/public/images/stup_10_rame.png",
+    "image": "/images/stup_10_rame.png",
     "translations": {
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
         "btn1": {
-          "image": "/public/images/stup_10_rame_capac_10_rame_pr.png",
+          "image": "/images/stup_10_rame_capac_10_rame_pr.png",
           "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
           "name": "Capac 10 rame",
           "opt1": "Zinc, Termo-Izolat",
