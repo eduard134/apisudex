@@ -6,7 +6,6 @@
     "translations": {
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
-        "image": "/images/stup_10_rame.png",
         "btn1": {
           "image": "/images/stup_10_rame_capac_10_rame_pr.png",
           "image1": "/images/stup_10_rame_inel_capac_inferior_3.png",
@@ -73,7 +72,6 @@
         }
       },
       "ru": {
-        "image": "/images/stup_10_rame.png",
         "name": "Вертикальные ульи на 10 рамок",
         "btn1": {
           "image": "/images/stup_10_rame_capac_10_rame_pr.png",
@@ -147,7 +145,6 @@
     "image": "/images/stup_12.png",
     "translations": {
       "ro": {
-        "image": "/images/stup_12.png",
         "name": "Stupi Verticali de 12 Rame",
         "btn1": {
           "image": "/images/stup_12_rame_capac_1.png",
@@ -210,7 +207,6 @@
         }
       },
       "ru": {
-        "image": "/images/stup_12.png",
         "name": "Вертикальные ульи на 12 рамок",
         "btn1": {
           "image": "/images/stup_12_rame_capac_pr.png",
@@ -297,7 +293,6 @@
     "categoryId": 1,
     "translations": {
       "ro": {
-        "image": "/images/nucleu.png",
         "name": "Nucleu de 6 Rame",
         "btn1": {
           "pret1": "NaN",
@@ -322,7 +317,6 @@
         }
       },
       "ru": {
-        "image": "/images/nucleu.png",
         "name": "Нуклеус из 6 Рамок",
         "btn1": {
           "pret1": "NaN",
@@ -353,13 +347,13 @@
     "categoryId": 2,
     "translations": {
       "ro": {
-        "image": "/images/Caldare_32l.png",
+        "image": "/images/caldare_32l.png",
         "name": "Căldare 32L",
         "pret1": "89 Lei",
         "descriere": "Căldare de 32 de litri"
       },
       "ru": {
-        "image": "/images/Caldare_32l.png",
+        "image": "/images/caldare_32l.png",
         "name": "Ведро 32Л",
         "pret1": "89 Лей",
         "descriere": "Ведро 32 литра"

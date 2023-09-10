@@ -200,7 +200,7 @@
                         "descriere": "Кольцо Наращивание на 10 рамок",
                         "button1": {
                             "image": "/images/stup_10_rame_inel_chinga_pr.png",
-                            "image1": "/images/stup_10_rame_inel_chinga_1.png",
+                            "image1": "/images/stup_10_rame_inel_capac_inferior_5.png",
                             "name": "Кольцо Наращивание",
                             "pret1": "150 Лей",
                             "descriere": "Кольцо Наращивание на 10 рамок"
@@ -464,16 +464,16 @@
         {
             "id": 5,
             "categoryId": 2,
-            "image": "/images/Caldare_32l.png",
+            "image": "/images/caldare_32l.png",
             "translations": {
                 "ro": {
-                    "image": "/images/Caldare_32l.png",
+                    "image": "/images/caldare_32l.png",
                     "name": "Căldare 32L",
                     "pret1": "89 Lei",
                     "descriere": "Căldare de 32 de litri"
                 },
                 "ru": {
-                    "image": "/images/Caldare_32l.png",
+                    "image": "/images/cldare_32l.png",
                     "name": "Ведро 32Л",
                     "pret1": "89 Лей",
                     "descriere": "Ведро 32 литра"
