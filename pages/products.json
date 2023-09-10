@@ -232,7 +232,7 @@
           "descriere": "Корпус улья на 12 рамок, высотой 145мм",
           "button1": {
             "image": "/images/stup_12_rame_corp_145_pr.png",
-            "image1": "/images/stup_12_rame_corp_145_1.png",
+            "image1": "/images/stup_12_rame_corp_145_2.png",
             "name": "145мм",
             "pret1": "291.5 Лей",
             "reducere": "265 Лей",
@@ -295,18 +295,21 @@
       "ro": {
         "name": "Nucleu de 6 Rame",
         "btn1": {
+          "pret1": "NaN",
           "image": "/images/nucleu_de_6_rame_capac_1.png",
           "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
           "name": "Capac 6 Rame",
           "descriere": "Capac pentru nucleu cu 6 rame"
         },
         "btn2": {
+          "pret1": "NaN",
           "name": "Corp 6 Rame",
           "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
           "image": "/images/nucleu_de_6_rame_corp_230_1.png",
           "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
         },
         "btn3": {
+          "pret1": "NaN",
           "image": "/images/nucleu_de_6_rame_fund_1.png",
           "image1": "/images/nucleu_de_6_rame_fund_pr.png",
           "name": "Fund 6 Rame",
@@ -314,28 +317,27 @@
         }
       },
       "ru": {
-        "name": "Пчелиное гнездо на 6 рамок",
+        "name": "Ядро из 6 кадров",
         "btn1": {
+          "pret1": "NaN",
           "image": "/images/nucleu_de_6_rame_capac_1.png",
           "image1": "/images/nucleu_de_6_rame_capac_inferior_pr.png",
-          "name": "Kрышка на 6 рамок",
-          "descriere": "Крышка для 6-ти рамочного гнездa"
+          "name": "Kрышка на 12 рамок",
+          "descriere": "Capac pentru nucleu cu 6 rame"
+        },
+        "btn2": {
+          "pret1": "NaN",
+          "name": "Corp 6 Rame",
+          "descriere": "Corp pentru nucleu cu 6 rame, având înălțimea de 230mm",
+          "image": "/images/nucleu_de_6_rame_corp_230_1.png",
+          "image1": "/images/nucleu_de_6_rame_corp_230_pr.png"
         },
         "btn3": {
-          "name": "Корпус 6 рам",
-          "descriere": "Корпус для 6-ти рамочного гнездa, высотой 230мм",
-          "button1": {
-            "image": "/images/nucleu_de_6_rame_corp_230_1.png",
-            "image1": "/images/nucleu_de_6_rame_corp_230_pr.png",
-            "name": "230мм",
-            "descriere": "Корпус для 6-ти рамочного гнездa, высотой 230мм"
-          }
-        },
-        "btn4": {
+          "pret1": "NaN",
           "image": "/images/nucleu_de_6_rame_fund_1.png",
           "image1": "/images/nucleu_de_6_rame_fund_pr.png",
-          "name": "Днище на 6 рамок",
-          "descriere": "Днище для 6-ти рамочного гнездa "
+          "name": "Fund 6 Rame",
+          "descriere": "Fund pentru nucleu cu 6 rame"
         }
       }
     }

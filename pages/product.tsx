@@ -902,13 +902,13 @@ export default function Product() {
                   <div className="text-md font-nunito mb-6 font-semibold text-[#595459]">
                     {" "}
                     <span className="text-yellow-500 text-xl">
-                      Descriere:
+                      {content.Descriere}
                     </span>{" "}
                     <br /> {selectedDescription}
                   </div>
                 )}
                 <div className="flex items-end justify-between font-semibold text-yellow-500 mb-2 font-nunito">
-                  <p className="mr-2">Total: </p>
+                  <p className="mr-2">{content.Total} </p>
                   <p>
                     {selectedPrice !== null ? (
                       <>
@@ -929,7 +929,7 @@ export default function Product() {
                   </p>
                 </div>
                 <div className=" font-semibold text-yellow-500 mb-2 font-nunito flex justify-between">
-                  <p>Comandă acum la</p>
+                  <p>{content.Comanda}</p>
                   <p className="text-xl">076 723 462</p>
                 </div>
               </div>
