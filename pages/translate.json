@@ -405,13 +405,11 @@
         {
             "id": 4,
             "categoryId": 1,
-            "image": "/images/nucleu.png",
-            "pret1": "650/750 Lei",
             "translations": {
                 "ro": {
                     "image": "/images/nucleu.png",
                     "name": "Nucleu de 6 Rame",
-                 
+                    "pret1": "650/750 Lei",
                     "btn1": {
                         "pret1": "NaN",
                         "image": "/images/nucleu_de_6_rame_capac_1.png",
