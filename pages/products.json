@@ -2,6 +2,7 @@
   {
     "id": 1,
     "categoryId": 1,
+    "image": "/images/stup_10_rame.png",
     "translations": {
       "ro": {
         "name": "Stupi Verticali de 10 Rame",
@@ -143,6 +144,7 @@
   {
     "id": 2,
     "categoryId": 1,
+    "image": "/images/stup_12.png",
     "translations": {
       "ro": {
         "image": "/images/stup_12.png",
@@ -293,7 +295,6 @@
   {
     "id": 4,
     "categoryId": 1,
-    "image": "/images/nucleu.png",
     "translations": {
       "ro": {
         "image": "/images/nucleu.png",
