@@ -405,9 +405,9 @@
         {
             "id": 4,
             "categoryId": 1,
-            "image": "/images/nucleu.png",
             "translations": {
                 "ro": {
+                    "image": "/images/nucleu.png",
                     "pret1": "650/750 Lei",
                     "name": "Nucleu de 6 Rame",
                     "btn1": {
@@ -440,6 +440,7 @@
                     }
                 },
                 "ru": {
+                    "image": "/images/nucleu.png",
                     "name": "Нуклеус из 6 Рамок",
                     "pret1": "650/750 Лей",
                     "btn1": {
