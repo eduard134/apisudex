@@ -530,6 +530,7 @@
         {
             "id": 8,
             "categoryId": 3,
+            "image": "/images/rama_300_pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 300mm",
@@ -598,6 +599,7 @@
         {
             "id": 9,
             "categoryId": 3,
+            "image": "/images/rama_300_pr.png",
             "translations": {
                 "ro": {
                     "name": "Ramă 230mm",
