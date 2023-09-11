@@ -314,6 +314,13 @@
           "image1": "/images/nucleu_de_6_rame_fund_pr.png",
           "name": "Fund 6 Rame",
           "descriere": "Fund pentru nucleu cu 6 rame"
+        },
+        "btn4": {
+          "pret1": "NaN",
+          "name": "Inel Chinga",
+          "descriere": "Inel Chinga pentru Nucleu cu 6 rame",
+          "image": "/images/nucleu_inel_pr.png",
+          "image1": "/images/nucleu_inel_1.png"
         }
       },
       "ru": {
@@ -338,6 +345,13 @@
           "image1": "/images/nucleu_de_6_rame_fund_pr.png",
           "name": "Дно из 6 Рамок",
           "descriere": "Дно для Нуклеуса из 6 рамок"
+        },
+        "btn4": {
+          "pret1": "NaN",
+          "name": "Кольцо Наращивание",
+          "descriere": "Кольцо Наращивание для Нуклеуса из 6 рамок",
+          "image": "/images/nucleu_inel_pr.png",
+          "image1": "/images/nucleu_inel_1.png"
         }
       }
     }
@@ -404,28 +418,28 @@
         "name": "Ramă 300mm",
         "btn1": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Asamblată din Tei",
           "pret1": "17 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 300mm"
         },
         "btn2": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Asamblată din Pin",
           "pret1": "16 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 300mm"
         },
         "btn3": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Dezasamblată din Tei",
           "pret1": "10 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 300mm"
         },
         "btn4": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Dezasamblată din Pin",
           "pret1": "8.5 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 300mm"
@@ -435,28 +449,28 @@
         "name": "Рама 300мм",
         "btn1": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Собран из липы",
           "pret1": "17 Лей",
           "descriere": "Рамы из липы в сборе, высота: 300мм"
         },
         "btn2": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Собран из сосны",
           "pret1": "16 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 300 мм"
         },
         "btn3": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из липы",
           "pret1": "10 Лей",
           "descriere": "Липовыйая рама в разобранном виде, высота: 300мм"
         },
         "btn4": {
           "image": "/images/rama_300_pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из сосны",
           "pret1": "8.5 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 300 мм"
@@ -472,28 +486,28 @@
         "name": "Ramă 230mm",
         "btn1": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Asamblată din Tei",
           "pret1": "16 Lei",
           "descriere": "Ramă asamblată din lemn de tei, înălțime: 230mm"
         },
         "btn2": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Asamblată din Pin",
           "pret1": "15 Lei",
           "descriere": "Ramă asamblată din lemn de pin, înălțime: 230mm"
         },
         "btn3": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Dezasamblată din Tei",
           "pret1": "9 Lei",
           "descriere": "Ramă dezasamblată din lemn de tei, înălțime: 230mm"
         },
         "btn4": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Dezasamblată din Pin",
           "pret1": "8 Lei",
           "descriere": "Ramă dezasamblată din lemn de pin, înălțime: 230mm"
@@ -503,28 +517,28 @@
         "name": "Рама 230мм",
         "btn1": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Собран из липы",
           "pret1": "16 Лей",
           "descriere": "Рамы из липы в сборе, высота: 230мм"
         },
         "btn2": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Собран из сосны",
           "pret1": "15 Лей",
           "descriere": "Собранныйе рамы из соснового дерева, высота: 230 мм"
         },
         "btn3": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из липы",
           "pret1": "9 Лей",
           "descriere": "Липовая рама в разобранном виде, высота: 230мм"
         },
         "btn4": {
           "image": "/images/rama_230pr.png",
-          "image1": "/images/rama_145_2.png",
+          "image1": "/images/rama_300_2.png",
           "name": "Разобранный из сосны",
           "pret1": "8 Лей",
           "descriere": "Рама из соснового дерева в разобранном виде, высота: 230 мм"

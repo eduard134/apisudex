@@ -14,6 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
             name="google-site-verification"
             content="rfmUZHof7-SwUw3HEMPxxrCLnf9SD8_c4TPcKpWzvG4"
           />
+          <meta
+            name="google-site-verification"
+            content="Ae1FerjJiEXsjZacAi2UYg0-ONm5uNZuJbiA6riQ9TQ"
+          />
           <link rel="icon" href="logo.png" type="image/x-icon" />
           <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
           <link rel="mask-icon" href="logo.png" type="image/x-icon" />
