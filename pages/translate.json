@@ -111,10 +111,10 @@
         {
             "id": 1,
             "categoryId": 1,
-            "image": "/images/stup_10_rame.png",
+            "image": "/images/stup_vert_10.jpg",
             "translations": {
                 "ro": {
-                    "image": "/images/stup_10_rame.png",
+                    "image": "/images/stup_vert_10.jpg",
                     "name": "Stupi Verticali de 10 Rame",
                     "btn1": {
                         "image": "/images/stup_10_rame_capac_10_rame_pr.png",
@@ -182,10 +182,10 @@
                     }
                 },
                 "ru": {
-                    "image": "/images/stup_10_rame.png",
+                    "image": "/images/stup_vert_10.jpg",
                     "name": "Вертикальные ульи на 10 рамок",
                     "btn1": {
-                        "image": "/images/stup_10_rame.png",
+                        "image": "/images/stup_vert_10.jpg",
                         "name": "Крышка 10 рамок",
                         "opt1": "Цинк, с теплоизоляцией",
                         "opt2": "Термоалюминий",
@@ -386,16 +386,16 @@
         {
             "id": 3,
             "categoryId": 1,
-            "image": "/images/stup_oriz.png",
+            "image": "/images/stup-orizontal22.jpg",
             "translations": {
                 "ro": {
-                    "image": "/images/stup_oriz.png",
+                    "image": "/images/stup-orizontal22.jpg",
                     "name": "Stup Orizontal 22 Rame",
                     "pret1": "1200 Lei",
                     "descriere": "Un stup orizontal conceput pentru a găzdui 22 de rame, oferind un spațiu generos pentru dezvoltarea coloniei de albine"
                 },
                 "ru": {
-                    "image": "/images/stup_oriz.png",
+                    "image": "/images/stup-orizontal22.jpg",
                     "name": "Лежак на 22 рамки",
                     "pret1": "1200 Лей",
                     "descriere": "Горизонтальный улей, рассчитанный на 22 рамки, обеспечивает достаточно места для развития пчелиной семьи"
